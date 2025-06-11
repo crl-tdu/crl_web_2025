@@ -1,0 +1,49 @@
+/* カスタムフォントの設定 */
+body {
+  font-family: 'Inter', 'Noto Sans JP', 'Noto Serif JP', sans-serif;
+}
+
+/* フィルタリング時のトランジション */
+.portfolio-item {
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item.hide {
+  transform: scale(0.9);
+  opacity: 0;
+  display: none;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.filter-btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn.active {
+  background-color: #1d4ed8;
+  color: #ffffff;
+}
+
+footer p {
+  font-family: 'Noto Serif JP', serif;
+}
