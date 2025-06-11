@@ -1,0 +1,3147 @@
+修 士
+
+論
+
+文
+
+「空気を読める」アーキテクチャに基づく可変ア
+ドミッタンスによる操作支援
+Proposal of STA Architecture to Assist Human Manipulation
+using Variable Admittance Control
+
+東京電機大学大学院工学研究科
+電子システム工学専攻修士課程
+
+21KMH01 井上 温
+研究指導教員 教授 五十嵐 洋
+
+謝辞
+本研究を行うにあたり, 五十嵐洋教授 (東京電機大学) からは非常に熱心なご指導, ご佃
+撻を賜りました. 厚く御礼申し上げます. また, 和田成夫教授 (東京電機大学) には本論文
+の副査を務めていただき誠にありがとうございました. 厚く御礼申し上げます. 協調ロボ
+ティクス研究室 OB の皆様には, 研究議論を夜を徹して行い, 論文の投稿が迫る中で非常
+に有意義な助言を頂きました. 大変感謝しております. 最後に, 度重なる実験にご協力頂
+き, 日々の研究生活において切磋琢磨した協調ロボティクス研究室の皆様, 本研究に有形
+無形のご援助くださった全ての方々に感謝いたします.
+
+1
+
+目次
+第 1 章 緒論
+
+1
+
+1.1
+
+背景 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+2
+
+1.2
+
+関連研究 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+3
+
+1.2.1
+
+インピーダンス制御 . . . . . . . . . . . . . . . . . . . . . . . . .
+
+3
+
+1.2.2
+
+可変アドミッタンス制御を用いた操作支援 . . . . . . . . . . . . .
+
+4
+
+1.2.3
+
+Human Adaptive Mechatronics . . . . . . . . . . . . . . . . . . .
+
+6
+
+「空気を読める」システムアーキテクチャ . . . . . . . . . . . . . . . . .
+
+8
+
+1.3.1
+
+ヒューマンセンシング . . . . . . . . . . . . . . . . . . . . . . . .
+
+9
+
+1.3.2
+
+ヒューマンモデリング . . . . . . . . . . . . . . . . . . . . . . . .
+
+10
+
+1.3.3
+
+動作生成 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+11
+
+本研究の目的 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+12
+
+1.3
+
+1.4
+
+第 2 章 実験プラットフォーム
+
+13
+
+2.1
+
+入力インタフェース
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+14
+
+2.2
+
+コントローラ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+16
+
+2.3
+
+HMD . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+18
+
+2.4
+
+実験タスク
+
+19
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+第 3 章 制御手法
+
+20
+
+3.1
+
+DOB and RFOB . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+21
+
+3.2
+
+加速度制御による仮想機械インピーダンス制御 . . . . . . . . . . . . . . .
+
+22
+
+3.3
+
+可変アドミッタンス制御 . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+23
+
+第 4 章 実験 1 可変アドミッタンス制御時のリアルタイム学習における人間モデル
+パラメータの検討
+
+24
+
+4.1
+
+使用フレームワークおよびネットワーク . . . . . . . . . . . . . . . . . .
+
+25
+
+4.2
+
+データセット生成 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+26
+
+4.3
+
+人間モデル生成に向けたハイパーパラメータ最適化 . . . . . . . . . . . .
+
+27
+
+4.4
+
+人間モデル生成に向けたハイパーパラメータ最適化結果 . . . . . . . . . .
+
+30
+
+第 5 章 実験 2 インピーダンスパラメータに対する操作特性の調査
+
+5.1
+
+実験目的と実験条件
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+2
+
+34
+35
+
+5.2
+
+実験結果 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+第 6 章 実験 3 STA アーキテクチャによる可変アドミッタンス制御
+
+36
+39
+
+STA アーキテクチャによる可変アドミッタンス制御に向けた条件設定 . .
+
+40
+
+6.1.1
+
+実験内容 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+42
+
+6.1.2
+
+実験結果 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+43
+
+6.2
+
+固有振動数に対する人間モデルの妥当性 . . . . . . . . . . . . . . . . . .
+
+45
+
+6.3
+
+学習済み人間モデルによる制御検証 . . . . . . . . . . . . . . . . . . . . .
+
+46
+
+6.1
+
+第 7 章 結論
+
+47
+
+第 8 章 今後の展望
+
+49
+
+本研究に関する発表文献
+
+52
+
+その他の発表文献
+
+53
+
+3
+
+第 1 章 緒論
+
+本研究では，人間機械間の協調について，人間モデルを用いた機械からヒトへの協調
+操作支援を行う．本章では，以下の項目を述べる．
+1.1
+
+背景 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+2
+
+1.2
+
+関連研究 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+3
+
+1.2.1
+
+インピーダンス制御 . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+3
+
+1.2.2
+
+可変アドミッタンス制御を用いた操作支援 . . . . . . . . . . . . . . . .
+
+4
+
+1.2.3
+
+Human Adaptive Mechatronics . . . . . . . . . . . . . . . . . . . . . .
+
+6
+
+「空気を読める」システムアーキテクチャ . . . . . . . . . . . . . . . . . . .
+
+8
+
+1.3.1
+
+ヒューマンセンシング . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+9
+
+1.3.2
+
+ヒューマンモデリング . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+10
+
+1.3.3
+
+動作生成 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+11
+
+1.3
+
+1.4
+
+本研究の目的
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+1
+
+12
+
+1.1
+
+背景
+
+近年，日本における高齢者の割合は少子高齢化の影響により増加傾向であり，2060 年
+には 65 歳以上の高齢者人口割合が約 40%まで増加すると言われている [1]．加えて，若手
+作業員の減少によって作業員の平均年齢が高齢化していることが問題視されている．こ
+のため，システムの自動化やヒトの操作をアシストすることが求められている．機械の
+自動化として，ヒトの代替を目指し，ティーチングによる作業の自動化などが行われて
+いる．例えば，工場では工作機械の自動化からはじまり，産業用ロボットを用いた自動
+化が進んでいる．プロセスを自動化することで，規範動作においてヒトの代替が可能と
+なる．しかしながら，ヒトの持つ柔軟で繊細な動作や熟練者による勘所を再現すること
+は困難である．
+そのため，ヒューマンインタフェースを利用した人間機械間協調が研究されている．例
+えば，Medicaroid 社の Hitonori などの手術支援機器 [2] や，協働ロボットなどが用いら
+れている．これらの機器は，機械の持つ特性とヒトの持つ特性との融合を目指している．
+ヒトと機械の協調において，決まったタスクにフォーカスした操作支援システムでは，
+フォースフィードバック制御を用いた操作支援が有効である．一方，人間の持つスキル
+や直感，適応力などが必要とされるタスクにおいては，ヒトの意図の変化や環境の変化
+に適応可能な操作支援システムが必要となる．
+
+2
+
+1.2
+
+関連研究
+
+人間の持つスキルや直感，適応力などが必要とされるタスクでは，ヒトの意図の変化
+や環境の変化に適応可能な操作支援システムが必要となる．本節ではヒトと機械の協働
+に向けた制御技術について議論を行う．
+
+1.2.1
+
+インピーダンス制御
+
+ヒトと機械との協働には，ヒトの操作に適したインピーダンスパラメータを決定する
+ことが重要であるといわれている．インピーダンスモデルは，
+
+f = mẍ + dẋ + kx
+
+(1.1)
+
+で表される．ただし，f は力ベクトル，x は位置ベクトル，m は質量係数，d はダンピ
+ング係数，k はバネ係数である．池浦らは，ヒト–ヒト間協調におけるヒトの特性をイン
+ピーダンスパラメータを近似し，このパラメータを機械に適用して協調実験を行うこと
+で，人間機械間協調においてダンピング項が最も重要になると示した [3]．これによって，
+機械に人間の反応を模倣させることが可能であると示唆されている．孟らは，個人操作特
+性を考慮したインピーダンスパラメータ最適化のために，個人操作モデルをニューラル
+ネットワーク（Neural Network: NN）を用いて生成し，そのモデルを用いてシミュレー
+ションによるインピーダンスパラメータ最適化を行った [4]．しかしながら，個人操作モ
+デルの生成に用いるタスク環境のインピーダンスパラメータは一定値であり，初期イン
+ピーダンスパラメータに対する依存性は考慮していない．適切なダンピング係数は実行
+するタスクや機械と協調するヒトによって異なるため，状況に応じてインピーダンスパ
+ラメータを最適化することが必要となる．
+
+3
+
+1.2.2
+
+可変アドミッタンス制御を用いた操作支援
+
+ヒトと機械との協働には，ヒトの操作に適したインピーダンスパラメータを決定する
+ことが重要であるといわれている．そこで，Fig.1.1 に示すように，インピーダンスパラ
+メータをタスクの状況などに応じて変化させる，可変アドミッタンス制御を用いた操作
+支援が数多く研究されてきた．
+可変アドミッタンス制御では，仮想ダンピング係数，仮想質量係数，もしくはその両
+方を調整する．これらのインピーダンスパラメータを調整するために，ヒトの意図を定
+義する必要がある．
+
+Duchaine らは，仮想ダンパの調整を主とし，ヒトの直感的な操作を改善した [5]．この
+研究では，Fig.1.2 に示すように力の微分と速度を用いて意図を定義し，インピーダンス
+パラメータとの関連付けを行った．
+一方，Wang らは，軌道と移動方向を Long Short-Team Memory: LSTM を用いて学習
+し，人間の動きを予測した [6]．予測した軌跡をもとに，進行方向へのダンピング係数を
+減少する可変アドミッタンス制御を実現している．しかしながら，モデルはオフライン
+で事前にオフラインで学習する必要があり，短期的な予測は可能であるもののヒトの熟
+達による変化に対応することはできない．
+
+Virtual Model
+
+Position
+Control
+
+Plant
+
+Admittance
+Controller
+
+Fig. 1.1: Block diagram of basic variable admittance control.
+
+4
+
+Read
+
+Yes
+
+Rate of change
+of the force is
+positive
+
+and
+sensor
+
+from
+
+No
+
+Velocity is positive
+or
+equal to zero
+
+No
+
+Rate of change
+of the force is
+positive
+
+Yes
+
+No
+
+Yes
+
+Human wants to
+accelerate
+
+Human wants to
+deccelerate
+
+Human wants to
+deccelerate
+
+Human wants to
+accelerate
+
+Fig. 1.2: Interpretation of the time derivative of the force[5].
+
+5
+
+1.2.3
+
+Human Adaptive Mechatronics
+
+前述の通り，ヒトが必要となるシステムは数多くある．ここで，機械操作に対して行わ
+れるヒトの熟達に着目した研究が行われている．ヒトの操作パフォーマンスは操作スキ
+ルの熟達や好みによって左右される．これは時系列的に変化し，静的ではない．そのた
+め，Human Adaptive Mechatronics: HAM が提唱された [7]–[9]．Fig.1.3(a) に示す従来
+のシステムでは，ヒトが機械の動特性を学習し，内部モデル [10] を更新することで制御
+を行う．これに対し，Fig.1.3(b) に示す HAM ではヒトのスキルを常に機械側が同定し，
+スキルに合わせて機械特性を変化することでヒトの操作を支援する．機械側がヒトのス
+キルに寄り添うことで，人間機械系システムの操作パフォーマンスを引き上げることが
+可能となる．ここで，ヒトのスキルを評価するコントローラが必要となる．コントロー
+ラの設計は数多くの研究が行われ，スキル適応制御 [11] やサブリミナルキャリブレーショ
+ン [12] などがある．
+
+6
+
+Human
+
+Inverse model
+
+Control
+command
+
+Control
+error
+Reference
+
+Feedback
+controller
+
+Machine
+
+(a) Previous Human-Machine system
+Human
+
+Inverse model
+
+Control
+command
+
+HAM assist system
+
+Control
+error
+Reference
+
+Feedback
+controller
+
+Virtual
+model
+
+Controller
+
+Machine
+
+Skill
+controller
+
+(b) HAM system
+
+Fig. 1.3: Comparison of previous human-machine system and HAM system[8].
+
+7
+
+1.3
+
+「空気を読める」システムアーキテクチャ
+
+人間機械間協調において，ヒューマンセンシング (Human-Machine System: HMS) に
+よる操作意図の推定やスキル評価を取り入れたシステム設計が数多く提案されている．
+しかしながら，これらの多くはシステムによるアシストに対するヒトの反応について考
+慮されていない．そのため，タスクに対してパフォーマンスを向上するアシストであれ，
+機械とヒトとの間で齟齬が生じ，機械側が空気を読めない状態が発生する．五十嵐は「空
+気を読む」を工学的に扱うため，
+「空気を読める」システムアーキテクチャ(Sensing The
+
+Atmosphere: STA) を提案した [13]．本節では，
+「空気を読める」システムアーキテクチャ
+の構成について述べる．STA アーキテクチャでは，Fig.1.4 ヒューマンセンシングによる
+従来の HMS に加え，リアルタイムなヒューマンモデルの生成，モデル予測値に基づく
+動作生成によって構成される．
+
+Robot system
+Human being
+
+Human sensing
+Feedback information
+
+Evaluaiton function
+Feedback
+planner
+
+Motion
+planner
+
+(a) Architecture of conventional human-machine systems.
+
+Human being
+
++
+Z–1
+Z–1
+
+Human sensing
+
+STA Evaluaiton
+Feedback
+planner
+w/ STA
+
+–
+
+Human model
+
+Motion
+planner
+w/ STA
+
+Robot system
+with STA
+
+Machine learning
+(b) Architecture of proposes system with STA.
+
+Fig. 1.4: Architecture to Sense The Atmosphere: STA.
+
+8
+
+1.3.1
+
+ヒューマンセンシング
+
+ヒトの状態を観測するために，生体信号計測や力センシング，画像処理などが行われ
+ている．ここで，観測対象となる時変な要因は主にフィジカル要因とメンタル要因に大
+別される．フィジカル要因を用いた観測として，ヒトの身体的な動作である眼球運動を
+用いた注意視野推定 [14] や筋電，力情報を用いた意図推定 [5] が挙げられる．メンタル要
+因として，脳波を用いた感性推定 [15] や心拍を用いたストレス計測 [16] が挙げられる．
+これらの一部を用いたヒューマンセンシングによって，従来の操作支援が設計されて
+きた．しかし，これらの操作支援はそのセンシングした現在時間の状態を用いており，そ
+の状態に対して行う操作支援に対してヒトがどのような影響を与えるかは考慮されてい
+ない．
+さらに，ヒトの状態は時時刻刻と変化するため，機械とヒトとの間で齟齬が生じ，機
+械側が空気を読めない状態が発生する可能性がある．
+
+9
+
+1.3.2
+
+ヒューマンモデリング
+
+ヒューマンセンシングで計測したヒトの状態を用いてヒューマンモデルを構築するこ
+とで，ヒトの未来の状態を予測する．これにより，操作支援などの機械からのアプロー
+チによるヒトに対する影響を観測することが可能となる．モデルは Fig.1.5 に示すように
+データを取得して生成する．ヒューマンモデルの入力には，ヒューマンセンシングにて
+計測した人間の様子 uh [k − T ]，ヒトへのフィードバック情報 ub [k − T ]，システムの動
+作指令値 um [k − T ] を用いる．教示には現在の人間の様子 uh [k] を用いる．ただし，k は
+予測対象ステップ，T は過去サンプリングステップである．これをリアルタイムに学習
+することで，疲労などヒトの特性の変化に適応したヒューマンモデルの生成を行う．
+
+Human being
+
+Feedback
+information
+
+Teaching signal uh[k]
+
++
+
+Learning algorithms
+(e.g. back-propergation)
+
+Human sensing
+
+Time
+shifter
+
+Z –T
+
+STA Evaluaiton
+Feedback planner
+Motion planner
+
+Robot system
+with STA
+
+uh[k–T]
+
+Z –T
+ub[k–T]
+
+Z –T
+um[k–T]
+
+Human model
+
+(e. g. artificial neural networks)
+
+Fig. 1.5: Block diagrams of the human model.
+
+10
+
+–
+
+1.3.3
+
+動作生成
+
+ヒトの様子 uh が出力できるヒューマンモデルは，そのヒトのコピーと捉えることがで
+きるため，システムによるアシストを与えた際に，そのアシストにヒトがどのように反
+応するかを予測することができる．予測したヒトの様子 ûh に対する評価関数 J を，
+
+J = f ST A (ûh [k])
+
+(1.2)
+
+と定義する．そして，最急降下法を用いてこの評価関数 J を最小化するフィードバック
+指令値 ub ，um を決定する．
+
+∂J[k]
+∂ub [k]
+∂J[k]
+um [k] = um [k − 1] − µm
+∂um [k]
+ub [k] = ub [k − 1] − µb
+
+(1.3)
+(1.4)
+
+ただし，µb ，µm はタスクに応じた正の重み係数である．
+これをリアルタイムに行うことにより，ヒトの応答を用いた「空気を読んだ」動作生
+成を可能とする．
+
+11
+
+1.4
+
+本研究の目的
+
+本研究では，人間機械協調における機械からのアプローチによるヒトに対する影響に
+着目し，
+「空気の読める」システムアーキテクチャによる機械操作支援を提案し，その応
+用可能性の検証を目的とする．また，機械インピーダンスが変化する環境における人間
+モデルの生成可能性について検証し，操作特性のモデル化が可能か検討を行う．
+
+12
+
+第 2 章 実験プラットフォーム
+本章では，本研究で用いた実験環境について詳細に述べる．
+
+2.1
+
+入力インタフェース . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+14
+
+2.2
+
+コントローラ
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+16
+
+2.3
+
+HMD . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+18
+
+2.4
+
+実験タスク . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+19
+
+13
+
+2.1
+
+入力インタフェース
+
+ヒトが操作する入力インタフェースの外観を Fig.2.1 に示す．インタフェースは Table
+
+2.1 に示す 2 つのリニアアクチュエータとマイクロコントローラ（マイコン），D/A ボー
+ド，ヘッドマウントディスプレイ (Head-Mount Display: HMD)，コンピュータによって
+構成される．コンピュータ-マイコン間，コンピュータ-HMD 間は UDP/IP 通信によって
+接続される．操作者は立位姿勢にて上段に拘束された把持対象を握ることで操作を行う．
+入力インタフェースに用いたリニアアクチュエータの仕様を Table 2.1 に示す．2 つの
+リニアアクチュエータは交差するように設置し，リニアシャフトを用いて支持した．こ
+れによって，ヒトにフォースフィードバックを行う．本モータが駆動可能な瞬間最大推
+力は 90 N であり，瞬時最大電流は 2.7 A である．ただし，本研究では最大出力は 66 N，
+最大電流は 2.0 A に制限した．
+また，M 系列信号を用いたシステム同定 [17] により，使用したモータのノミナル値は
+
+Table 2.3 に示す通りになった．
+
+Fig. 2.1: 2-DoF Variable impedance actuator.
+
+14
+
+Table 2.1: Speciﬁcations.
+Speciﬁcation
+
+Parts
+Motor
+
+GHR GHR-15-300-S-M3-A3
+
+Motor driver
+
+Panasonic MINAS A5L MADHT1105L01
+
+Micro controller
+
+STMicroelectronics NUCLEO-F767ZI
+
+A/D Converter
+
+Analog Devices AD5754R 16bit
+
+Table 2.2: Linear actuator speciﬁations.
+Parameters
+Speciﬁcations
+Stroke length
+
+300 mm
+
+Rated thrust
+
+17 N
+
+Instantaneous maximum thrust
+
+90 N
+
+Stroke length
+
+300 mm
+
+Rated current
+
+0.51 Arms
+
+Instantaneous maximum current
+
+2.7 Arms
+
+Encoder resolution
+
+1 µm
+
+Table 2.3: Nominal parameters.
+Motor Nominal mass Nominal damping
+lower
+
+5.4915 kg
+
+2.5102 N/(m/s)
+
+upper
+
+1.1387 kg
+
+8.8656 N/(m/s)
+
+15
+
+2.2
+
+コントローラ
+
+コントローラは，制御を行うコンピュータ，モータドライバへの指令やエンコーダか
+らの出力から位置を計算するマイクロコントローラ，モータを駆動するモータドライバ
+によって構成した．
+マイクロコントローラには Fig.2.2 に示す STMictoelectonics NUCLEO-F767ZI を用い
+た．これに加え，Fig.2.3 に示す Analog Devices 社の AD5754 D/A コンバータを搭載し
+た DAC-HAT を用いることで，高精度なエンコータ値の読み込みを行った．
+コンピュータは，機械学習を用いた演算に加え，高速な処理が可能な制御マシンとし
+て Table 2.4 に示す構成とした．制御フレームワークとして Advanced Robot Control
+
+System V6(ARCS6) を使用した．
+モータドライバは，Fig.2.4 に示す Panasonic 社の MINAS A5L を用いた．これは最大
+出力が 10 A であり，リニアアクチュエータを十分に駆動できる．また，本モータドライ
+バはトルク制御が可能であるため，後述する制御手法を実装することができる．
+
+Fig. 2.2: NUCLEO-F767ZI
+
+16
+
+Fig. 2.3: DAC-HAT
+
+Fig. 2.4: Panasonic MINAS A5L motor driver
+
+Table 2.4: Computer speciﬁcations.
+Parts
+Speciﬁcation
+CPU
+
+Intel i9-12900K 16 Core 24 Thread 5.2 GHz
+
+Memory
+
+128GB DDR4 3200 MHz
+
+GPU
+
+NVidia RTX3090 GDDR6X 24 GB
+
+17
+
+2.3
+
+HMD
+
+被験者は Fig.2.5 に示す HMD を装着し，仮想空間内で作業を行う．本研究では Meta
+社 Meta Quest 2 を用いた．これは 1832 × 1080 /eye の解像度を持ち，リフレッシュレー
+トは 90 Hz である．内蔵されたカメラを用いたハンドトラッキング機能を用い，被験者
+の手を仮想空間上に表示することで作業上の違和感を減らした．
+
+(a) Front view.
+
+(b) Top view.
+
+Fig. 2.5: Meta Quest 2.
+
+18
+
+2.4
+
+実験タスク
+
+ref
+ref T
+Fig.2.6 に実験タスクを示す．目標位置 xref
+disp = [xdisp , ydisp ] は円軌道，もしくは正葉曲
+
+線軌道を描く．円軌道の時，
+
+
+
+
+
+xref
+disp = gdisp
+
+cos (2πt/Tdisp )
+
+
+
+(2.1)
+
+sin (2πt/Tdisp )
+
+でサンプリング時間ごとに移動する．また，正葉曲線軌道のとき，
+
+
+cos (2πt/Tdisp )
+
+
+xref
+disp = gdisp sin (4πt/Tdisp )
+sin (2πt/Tdisp )
+
+(2.2)
+
+でサンプリング時間ごとに移動する．ただし，gdisp はリニアアクチュエータの可動範囲
+に調整する正のゲイン，Tdisp は目標軌道 1 周にかかる時間であり，本研究では円軌道の
+時 gdisp = 0.1, Tdisp = 3 s，正葉曲線の時 gdisp = 0.15, Tdisp = 7 s とした．
+
+Fig. 2.6: Task Overview.
+
+19
+
+第 3 章 制御手法
+本章では，本研究で用いた制御手法について詳細に述べる．
+
+3.1
+
+DOB and RFOB . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+21
+
+3.2
+
+加速度制御による仮想機械インピーダンス制御 . . . . . . . . . . . . . . . . .
+
+22
+
+3.3
+
+可変アドミッタンス制御 . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+23
+
+20
+
+3.1
+
+DOB and RFOB
+
+本研究では，ヒトの操作する力を測定するために反力推定オブザーバ（Reaction Force
+
+OBServer: RFOB）[18] により反力を推定する．モータに入力される反力にはヒトの
+操作入力に加え，環境外乱などの多くの外乱が含まれる．そのため，外乱オブザーバ
+（Disturbance OBserver: DOB）[19] を用いることで外乱を推定することで制御ループ内
+から外乱を除去し，RTOB を用いてヒトの反力 F h を推定する．
+
+DOB と RFOB のブロック図を Fig.3.1 に示す．外乱 Fdis を推定することで F̂ dis を算出
+し，フィードバックループを構成することでロバストな制御を構築する．DOB によって
+外乱を除去した制御ループ内において，外乱から更に摩擦力 F̂ f rc を差し引くことで，反
+力 F̂ est のみを推定することが可能となる．ここで，x は位置，I は電流，F は力，M∗ . は
+質量項，KF は推力定数，g∗ は遮断周波数，I cmp は補償電流，∗n はノミナル値，∗DOB ，
+は DOB に用いる変数 ∗RF OB は RFOB に用いる変数を示す．
+
+Disturbance OBserver: DOB
+
+Reaction Force OBserver: RFOB
+
+Fig. 3.1: Block diagram of DOB and RFOB
+
+21
+
+3.2
+
+加速度制御による仮想機械インピーダンス制御
+
+仮想的なモータを見立てたとき，力 F̂ ext に対してモータが取るべき位置 xref ，速度
+
+ẋref ，加速度 ẍref は，
+ref
+ref
+F̂ ext (s) = Mv ẍref
+v (s) + Dv ẋv (s) + Kv xv (s),
+
+(3.1)
+
+よりそれぞれ，
+
+F̂ ext (s) − (Dv /s + Kv /s2 )xref
+1
+v (s)
+× 2,
+(3.2)
+Mv
+s
+F̂ ext (s) − (Dv /s + Kv /s2 )xref
+1
+v (s)
+ẋref
+(s)
+=
+× ,
+(3.3)
+v
+Mv
+s
+F̂ ext (s) − (Dv /s + Kv /s2 )xref
+v (s)
+ẍref
+(s)
+=
+(3.4)
+,
+v
+Mv
+で求まる．ただし， Mv は仮想的な質量, Dv は仮想的な粘性係数, Kv は仮想的なバネ定
+xref
+v (s) =
+
+数である．この指令に対し追従するように軌道追従させることによって，仮想機械イン
+ピーダンス制御を達成する．
+加速度制御による仮想機械インピーダンス制御のブロック図を Fig.3.2 に示す．ここで，
+
+K1 ，K2 は加速度制御に用いる位置ゲイン，速度ゲインである．
+Acceleration control w/ DOB&RFOB
+
+Virtual machine impedance
+Disturbance OBserver: DOB
+
+Reaction Force OBserver: RFOB
+
+Fig. 3.2: Acceleration control based virtual impedance control
+22
+
+3.3
+
+可変アドミッタンス制御
+
+前述した仮想機械インピーダンスを制御することにより，任意のダイナミクスを持つ
+モータを構成することができる．本研究では，STA アーキテクチャを用いた可変アドミッ
+タンス制御を行い，Mv , Dv , Kv を制御する．STA アーキテクチャを用いた可変アドミッ
+タンス制御のブロック図を Fig.3.3 に示す．ここで，各アドミッタンスパラメータはバネ
+定数 Kv を一定としたとき，固有振動数 ωn によって一意に決定することができる．
+
+Kv
+ωn2
+p
+Dv = 2 Mv Kv
+
+Mv =
+
+(3.5)
+(3.6)
+
+Dv = Dvc
+
+(3.7)
+
+ただし，Dvc は臨界減衰率であり，減衰比 ζ = 1 とする．本研究の STA アーキテクチャ
+を用いた可変アドミッタンス制御では，この固有振動数 ωn を制御する．
+Acceleration control w/ DOB&RFOB
+Task
+planner
+
+Human
+being
+
+Virtual machine impedance
+Disturbance OBserver: DOB
+
+STA
+subsystem
+
+Reaction Force OBserver: RFOB
+
+Fig. 3.3: Variable admittance control w/ STA.
+
+23
+
+第 4 章 実験 1 可変アドミッタンス制御時のリア
+ルタイム学習における人間モデルパラ
+メータの検討
+本章では，本研究における人間モデルの生成について，以下の項目を述べる．
+
+4.1
+
+使用フレームワークおよびネットワーク . . . . . . . . . . . . . . . . . . . . .
+
+25
+
+4.2
+
+データセット生成 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+26
+
+4.3
+
+人間モデル生成に向けたハイパーパラメータ最適化
+
+. . . . . . . . . . . . . .
+
+27
+
+4.4
+
+人間モデル生成に向けたハイパーパラメータ最適化結果 . . . . . . . . . . . .
+
+30
+
+24
+
+4.1
+
+使用フレームワークおよびネットワーク
+
+本研究で使用したプログラミング言語は C++17 であり，機械学習フレームワークと
+して Libtorch を使用した．Libtorch は Pytorch が提供する C++ API であり，リアルタ
+イムな学習に高速な処理速度を必要とするため採用した．
+また，ヒトの操作特性は時系列的に表現されると考え，人間モデルには時系列ネット
+ワークである Gated Recurrent Unit(GRU)[20] を使用した．GRU のネットワーク構成を
+
+Fig.4.1 に示す．GRU はリセットゲート，更新ゲートで構成される．
+更新ゲートでは，新たな記憶割合を調整し，長期記憶の更新割合の重み zt を生成する．
+
+zt = σ (Wz [xt , ht−1 ])
+
+(4.1)
+
+リセットゲートでは忘却割合を調整し，その重み rt を生成する．
+
+rt = σ (Wr [xt , ht−1 ])
+
+(4.2)
+
+重み rt を用いて，長期記憶の更新を行う h̃t を生成し，(1 − zt ) : z の比率で ht−1 と h̃t
+をそれぞれ重み付けし，長期記憶 ht を更新する．
+
+h̃t = tanh (Wh [xt , rt ◦ ht−1 ])
+
+(4.3)
+
+ht = (1 − zt ) ◦ h̃t−1 + zt ◦ ht
+
+(4.4)
+
+ただし，W はパラメータ行列，xt は入力ベクトルである．
+本章では，活性化関数を Relu，最適化関数を adam[21] に設定した．
+
+Reset
+gate
+
+GRU
+
+Update
+gate
+
+tanh
+
+Fig. 4.1: Gated Recurrent Unit
+
+25
+
+4.2
+
+データセット生成
+
+モデル生成に必要なパラメータを決定するため，被験者 2 人に対して実験を行った．実
+験は円軌道を描くターゲットに対する追従実験とし，72 秒間の操作を行った．ダイナミ
+クスは仮想ダンパ Dv のみを 5−15 N/m/s の範囲で 3 秒ごとにランダムに変化させ，その
+時のデータを取得した．実験データ取得時のブロック図を Fig.4.2 に示す．取得したデー
+タの内 12−60 s のデータを学習用とし，60−72 s のデータを検証用とした．ただし，サン
+プリング周期は 1 ms である．
+Target
+planner
+Human
+being
+
+Parameter
+planner
+
+Virtual model
+(Admittance
+control)
+
+Position
+controller
+
+Motor interface
+w/ DOB&RFOB
+
+Data buffering
+Dynamics
+parameters
+
+Position output
+from
+virtual model
+
+Force of
+human input
+
+Fig. 4.2: Block diagram for collecting experimental data.
+
+26
+
+Target position
+
+4.3
+
+人間モデル生成に向けたハイパーパラメータ最適化
+
+取得したデータを用いて，人間モデルの生成を試みる．人間モデルの生成に用いた NN
+の構成を Table 4.1 に示す．
+エポック数とバッチサイズは，リアルタイムに人間モデルを生成することを考慮し，ど
+ちらも 1 とした．Table 4.1 のパラメータは固定とし，人間モデル生成に必要なハイパー
+パラメータを探索した．設定したハイパーパラメータを Table 4.2 に示す．ここで，遅
+れステップ Tdel は NN の出力するステップと最新の入力の時間差のことを示し，間隔ス
+テップ Tint はサンプリングステップに対する間引き量を表す．概要図を Fig.4.3 に示す．
+また，各ゲインは，各入力は 0–1 の範囲になる範囲の内，最適なゲインを決定するパラ
+メータである．また，本研究では x 軸と y 軸の 2 軸を扱う．これらを 1 つのモデルとして
+生成できるか，もしくは各軸ごとにモデルを生成する必要があるか検討するため，Table
+
+4.1 の入出力層に 1 軸のみ，もしくは 2 軸を扱うかを含め探索した．
+ハイパーパラメータの探索および最適化ツールとして Optuna[22] を用いた．また，最
+適化アルゴリズムには NSGA–II[23] を用いた．これは進化型多目的最適化アルゴリズム
+であり，2 つ以上の目的関数のパレート最適解を探索する．目的関数は x 軸の位置のコ
+サイン類似度の最大化，y 軸の位置のコサイン類似度の最大化の 2 つを設定した．ここ
+で，コサイン類似度を計算する際の位置は，学習した人間モデルの力出力 F̂h によりバー
+チャルモデルを駆動した結果となる．すなわち，人間モデルが仮想的なモータに対して
+実際の被験者に使用したターゲットの動きに対してどのような力入力を行ったかを表す．
+実際の被験者の力入力による位置軌跡と人間モデルの予測した力入力による位置軌跡が
+近いほど，被験者の操作特性を学習した人間モデルであると解釈した．人間モデル評価
+時のブロック図を Fig.4.4 に示す．
+また，トライアル数は 2000 回 以上とした．ただし，コサイン類似度が 0.999 以上となっ
+た場合は早期終了するものとした．
+
+27
+
+Table 4.1: NN settings.
+Value
+
+Parameters
+
+Position error, Velocity error, Acceleration error, Force,
+
+Inputs
+
+Virtual mass, Virtual damping, Virtual spring
+
+Output
+
+Force
+
+Optimizer
+
+Adam
+
+Activation function
+
+Relu
+
+Epoch
+
+1
+
+Batch size
+
+1
+
+Table 4.2: Optimization parameters.
+Parameters
+Optimization range
+NNs
+
+Single or Double
+
+Hidden dim
+
+1 to 50
+
+Sequence
+
+1 to 20
+
+Delay steps Tdel
+
+1 to 300 or 200
+
+Interval steps Tint
+
+1 to 100
+
+Learning rate
+
+0.0001 to 0.003
+
+Gain of Position error
+
+50 to 80
+
+Gain of Velocity error
+
+1 to 15
+
+Gain of Acceleration error
+
+0.001 to 0.2
+
+Gain of Force error
+
+0.01 to 0.1
+
+Reset
+gate
+
+GRU
+
+Update
+gate
+
+tanh
+
+Fig. 4.3: Example of dataset parameters.
+28
+
+Saved data
+Dynamics
+parameters
+
+Position output
+from
+virtual model
+
+Force of
+human input
+
+Target position
+
+Accuracy
+buffer
+Virtual model
+
+NN
+
+Fig. 4.4: Block diagram of evaluation for trained human models.
+
+29
+
+4.4
+
+人間モデル生成に向けたハイパーパラメータ最適化結果
+
+人間モデル生成に向けたハイパーパラメータ最適化を行い，最適化した人間モデルによ
+るバーチャルモデル操作の結果を Fig.4.5 に示す．ただし，(1)–(4) は次の条件時である．
+
+(1) Two NNs to output x-axis and y-axis (Delay steps = 200)
+(2) Output x-axis and y-axis in a single NN (Delay steps = 200)
+(3) Two NNs to output x-axis and y-axis (Delay steps = Interval steps)
+(4) Output x-axis and y-axis in a single NN (Delay steps = Interval steps)
+また，各条件時に最適化した各人間モデルのコサイン類似度を Table 4.3 に示す．また，
+条件 (4) 時の時系列予測結果を Fig.4.4 に，最適化したパラメータを Table 4.4 に示す．こ
+れらの結果から，時系列データの遅れステップ Tdel と間隔ステップ Tint は同一パラメー
+タとして扱い，更に 10 Steps，すなわち 10 ms 程度が良好な予測精度を得ることができる
+ことがわかる．遅れステップ Tdel をヒトの認知の遅れと同一な値として設計する場合に
+おいては，間隔ステップ Tint を異なる値として任意に決定することは困難であり，人間
+モデルの生成において依存パラメータとして考察する．また，条件 (4) 時において，良
+好な予測精度を得ていることから，ダイナミクス変化を含む人間モデルの生成可能性を
+示唆した．
+
+30
+
+Two NNs(Delay=200ms) (1)
+single NN(Delay=200ms) (2)
+Two NNs(Delay=Interval) (3)
+single NN(Delay=Interval) (4)
+
+0.25
+
+Probability
+
+0.20
+
+0.15
+
+0.10
+
+0.05
+
+0.00
+
+−0.4
+
+−0.2
+
+0.0
+Positional error of x-axis
+
+0.2
+
+0.4
+
+(a) x axis
+
+Two NNs(Delay=200ms) (1)
+single NN(Delay=200ms) (2)
+Two NNs(Delay=Interval) (3)
+single NN(Delay=Interval) (4)
+
+0.35
+
+0.30
+
+Probability
+
+0.25
+
+0.20
+
+0.15
+
+0.10
+
+0.05
+
+0.00
+
+−0.4
+
+−0.2
+
+0.0
+Positional error of y-axis
+
+0.2
+
+0.4
+
+(b) y axis
+
+Fig. 4.5: Histogram of positional error(best parameters).
+
+31
+
+Table 4.3: Tuning results.
+Cosine Similarity
+Pattern
+x-axis
+y-axis
+(1)
+
+0.997
+
+0.992
+
+(2)
+
+0.690
+
+0.833
+
+(3)
+
+0.998
+
+0.996
+
+(4)
+
+0.999
+
+0.999
+
+0.5
+Predict
+Label
+
+Position [m]
+
+0.4
+0.3
+0.2
+0.1
+0.0
+60
+
+62
+
+64
+
+66
+
+68
+
+70
+
+30
+
+Predict
+Label
+
+20
+Force [N]
+
+72
+
+10
+0
+−10
+−20
+−30
+60
+
+62
+
+64
+
+66
+Time [s]
+
+68
+
+70
+
+72
+
+(a) x axis
+0.5
+Predict
+Label
+
+Position [m]
+
+0.4
+0.3
+0.2
+0.1
+0.0
+60
+
+62
+
+64
+
+66
+
+68
+
+70
+
+30
+
+Predict
+Label
+
+20
+Force [N]
+
+72
+
+10
+0
+−10
+−20
+−30
+60
+
+62
+
+64
+
+66
+Time [s]
+
+68
+
+70
+
+72
+
+(b) y axis
+
+Fig. 4.6: Prediction result between operated by model and by human.
+
+32
+
+Table 4.4: Best parameters (pattern 4).
+Parameters
+
+Optimized values
+
+NNs
+
+Single
+
+Hidden dim
+
+22
+
+Sequence
+
+2
+
+Delay steps Tdel
+
+10
+
+Interval steps Tint
+
+10
+
+Learning rate
+
+0.0005
+
+Gain of Position error
+
+[65, 78]
+
+Gain of Velocity error
+
+[15, 8]
+
+Gain of Acceleration error
+
+[0.1013, 0.0309]
+
+Gain of Force error
+
+[0.1, 0.01]
+
+33
+
+第 5 章 実験 2 インピーダンスパラメータに対す
+る操作特性の調査
+本章では，本研究で使用したインタフェースにおけるインピーダンスパラメータに対
+する操作特性の調査について，以下の項目を述べる．
+
+5.1
+
+実験目的と実験条件 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+35
+
+5.2
+
+実験結果 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+36
+
+34
+
+5.1
+
+実験目的と実験条件
+
+ヒトの持つ操作特性には個人差がある．本研究では，可変アドミッタンス制御により
+固有振動数 ωn を制御するが，ヒトにより最も操作しやすい ωn は異なる．ここでは，固
+有振動数 ωn に対する追従誤差により比較を行う．ここで，追従誤差 ex は，
+
+ex = xref
+disp − x
+
+(5.1)
+
+で表される．ただし，x = [xx .xy ] はそれぞれ操作オブジェクトの x 軸の位置，y 軸の位
+置である．実験タスクは円軌道追従，正葉曲線追従の 2 つを行い，1 周ごとの位置追従
+誤差 ẽx を二乗平均平方根誤差 (Root mean-squared error: RMSE) により，
+v
+u
+N
+u1 X
+e2x [k]
+ẽx = t
+N
+
+(5.2)
+
+k=0
+
+で算出した．ここで，N は 1 周あたりのサンプリング数であり，円軌道追従の時 3000，
+正葉曲線追従の時 7000 である．また，速度 ẋ についても同様に算出した．
+実験は円軌道追従の時 90 s 間，正葉曲線追従の時 192 s 間行い，それぞれ 26 周の軌道
+を描かせた．また，固有振動数 ωn は 4 rad/s から 10 rad/s まで 1 rad/s 刻みで 7 回実験を
+行った．
+
+35
+
+5.2
+
+実験結果
+
+20 代男子 4 名に対する円軌道追従時の実験結果を Fig.5.1 に，正葉曲線追従時の結果
+を Fig.5.2 に示す．実験結果より，被験者毎に個人差があり，最適なインピーダンスパラ
+メータが異なることがわかる．また，正葉曲線追従時において，被験者 2 の ωn = 7 rad/s
+時における 1 周毎の位置追従誤差を Fig.5.3 に示す．結果より，1 周毎に RMSE 値は異な
+り，タスク終了間際の操作能力の低下は疲労などの要因によると考えられる．
+次に，速度追従誤差について検討する．円軌道追従時の実験結果を Fig.5.4 に，正葉曲
+線追従時の結果を Fig.5.5 に示す．速度追従誤差については位置追従誤差と異なり，ωn が
+小さい，すなわちより重い操作感の状態になるほど誤差が小さくなることがわかる．
+これらの結果より，STA アーキテクチャにおいて，位置誤差と速度誤差を用いた評価
+関数の作成には，目標となる ωn が異なるため，本研究では位置誤差のみを評価関数に使
+用することとした．
+
+Root mean-squared error of x-axis
+
+0.0150
+
+0.0125
+
+ωn (rad/s)
+4
+5
+6
+7
+8
+9ns
+10
+ns
+
+***
+
+**
+
+**
+
+****
+****
+
+****
+
+ns
+ns
+
+0.0175
+
+ns
+****
+
+*
+
+****
+***
+
+0.0100
+
+0.0200
+
+****
+
+Root mean-squared error of y-axis
+
+0.0175
+
+ns
+
+****
+
+**
+
+****
+ns
+
+****
+
+**
+ns
+
+0.0075
+
+0.0050
+
+0.0125
+
+***
+****
+
+*
+
+****
+
+****
+
+ns
+
+****
+
+**
+****
+
+ns
+****
+
+ns
+***
+
+0.0100
+
+**
+
+**
+
+****
+
+ns
+
+****
+
+ns
+ns
+
+**
+
+ns
+
+****
+
+0.0075
+0.0050
+
+0.0025
+
+0.0000
+
+0.0150
+
+ωn (rad/s)
+4
+5
+6
+7
+8
+9
+10
+ns
+
+0.0025
+
+1
+
+2
+
+3
+
+0.0000
+
+4
+
+1
+
+2
+
+3
+
+Subject
+
+Subject
+
+(a) x axis
+
+(b) y axis
+
+4
+
+Fig. 5.1: Comparison of the root mean-square error of the cumulative position tracking at each
+impedance parameter (Circle tracking task).
+
+36
+
+0.014
+
+ns
+**
+***
+
+Root mean-squared error of x-axis
+
+****
+0.012
+
+****
+
+ns
+**
+
+*
+****
+
+****
+
+****
+
+0.002
+0.000
+
+****
+****
+ns
+
+ωn (rad/s)
+4
+5
+6
+7
+8
+9
+10
+
+0.0150
+0.0125
+
+3
+
+****
+
+****
+
+*
+
+*
+
+****
+
+0.0075
+
+**
+
+****
+
+****
+****
+
+****
+
+****
+
+0.0000
+
+4
+
+*
+
+****
+
+****
+
+****
+ns
+
+0.0100
+
+0.0025
+
+2
+
+ns
+**
+
+0.0050
+
+1
+
+****
+
+****
+
+***
+****
+
+**
+*
+
+0.008
+
+0.004
+
+0.0175
+
+*
+
+****
+
+****
+****
+
+0.010
+
+0.006
+
+**
+
+****
+
+****
+
+ns
+
+0.0200
+
+****
+
+****
+
+Root mean-squared error of y-axis
+
+0.016
+
+ωn (rad/s)
+4
+5
+6
+7
+8
+9
+10
+1
+
+2
+
+3
+
+Subject
+
+Subject
+
+(a) x axis
+
+(b) y axis
+
+4
+
+Fig. 5.2: Comparison of the root mean-square error of the cumulative position tracking at each
+impedance parameter(Rose curve tracking task).
+
+0.010
+
+Root mean-squared error
+
+0.008
+
+0.006
+
+0.004
+
+0.002
+
+0.000
+
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+Trial
+(a) x-axis
+
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+Trial
+(b) y-axis
+
+Fig. 5.3: Root mean-square error of the cumulative position tracking for each cycle of the
+task(Subject 2).
+
+37
+
+0.04
+
+**
+
+****
+
+***
+
+****
+
+****
+
+*
+
+****
+
+**
+
+ns
+**
+
+****
+***
+
+****
+
+ns
+
+****
+
+****
+
+ns
+
+****
+
+**
+ns
+
+ns
+
+0.03
+
+0.06
+
+Root mean-squared error of y-axis
+
+Root mean-squared error of x-axis
+
+0.05
+
+ωn (rad/s)
+4
+5
+6
+7
+8
+9ns
+10
+ns
+
+ns
+
+0.02
+
+0.01
+
+0.05
+
+0.04
+
+**
+
+ωn (rad/s)
+4
+5
+6
+7
+8
+9
+10
+ns
+
+****
+
+****
+
+***
+
+****
+**
+
+****
+
+***
+
+****
+
+**
+
+****
+
+ns
+
+ns
+
+****
+****
+
+ns
+
+*
+
+ns
+
+****
+
+**
+ns
+
+ns
+0.03
+
+ns
+
+0.02
+
+0.01
+
+0.00
+
+1
+
+2
+
+3
+
+0.00
+
+4
+
+1
+
+2
+
+3
+
+Subject
+
+4
+
+Subject
+
+(a) x axis
+
+(b) y axis
+
+Fig. 5.4: Comparison of the root mean-square error of the cumulative velocity tracking at each
+impedance parameter (Circle tracking task).
+
+ns
+
+****
+
+**
+***
+****
+
+Root mean-squared error of x-axis
+
+0.05
+ns
+
+**
+0.04
+
+****
+
+****
+
+****
+
+****
+
+*
+
+*
+
+****
+
+****
+
+****
+
+0.06
+
+*
+**
+****
+****
+
+****
+0.03
+
+0.01
+
+0.00
+
+ns
+
+ωn (rad/s)
+4
+5
+6
+7
+8
+9
+10
+
+****
+
+**
+
+****
+
+***
+****
+
+0.05
+
+ωn (rad/s)
+4
+5
+6
+* 7
+8
+9
+10
+**
+
+****
+
+ns
+
+****
+
+0.02
+
+****
+
+0.07
+
+****
+
+Root mean-squared error of y-axis
+
+0.06
+
+ns
+**
+
+0.04
+
+****
+
+****
+
+*
+****
+
+*
+
+****
+
+****
+
+****
+
+****
+
+****
+
+****
+ns
+
+0.03
+
+0.02
+
+0.01
+
+1
+
+2
+
+3
+
+0.00
+
+4
+
+Subject
+
+1
+
+2
+
+3
+
+4
+
+Subject
+
+(a) x axis
+
+(b) y axis
+
+Fig. 5.5: Comparison of the root mean-square error of the cumulative velocity tracking at each
+impedance parameter(Rose curve tracking task).
+
+38
+
+第 6 章 実験 3 STA アーキテクチャによる可変ア
+ドミッタンス制御
+本章では，本研究の提案する STA アーキテクチャによる可変アドミッタンス制御に
+ついて，以下の項目を述べる．
+
+STA アーキテクチャによる可変アドミッタンス制御に向けた条件設定 . . . .
+
+40
+
+6.1.1
+
+実験内容 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+42
+
+6.1.2
+
+実験結果 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+43
+
+6.2
+
+固有振動数に対する人間モデルの妥当性 . . . . . . . . . . . . . . . . . . . . .
+
+45
+
+6.3
+
+学習済み人間モデルによる制御検証 . . . . . . . . . . . . . . . . . . . . . . .
+
+46
+
+6.1
+
+39
+
+6.1
+
+STA アーキテクチャによる可変アドミッタンス制御に向けた条件
+設定
+
+本研究では，先行研究である STA アーキテクチャを基に，個人に最適なインピーダン
+スパラメータに制御する可変アドミッタンス制御を行う．ここで，STA アーキテクチャ
+における各パラメータを決定する．
+本研究では，ヒューマンセンシングの対象は力 F h とする．力には疲労や慣れなど，時
+時刻刻と変化する要因が含まれる．これをヒトの様子 uh とすることで制御を行う．
+次に，ヒューマンモデルを考える．ヒューマンモデルには実験 1 と同様に GRU を使用
+し，活性化関数を Relu，最適化関数を adam に設定した．ヒューマンモデルはリアルタ
+イムに学習される．タイミング図を Fig.6.1 に示す．インタフェースの制御周期は 1 kHz
+であり，人間モデルの学習は 500 Hz で実行する．そして，50 Hz で学習したモデルの重
+みをコピーし，動作生成に用いる予測を行う．
+最後に動作生成を考える．リアルタイムに学習を行う人間モデルの入力に対して変化
+量 ∆ωn を与えることで，∆ωn によるヒトの操作特性の変化を予測する．ここで，人間
+モデルの入力要素となる固有振動数 ωn± は ∆ωn により，
+
+ωn± [k] = ωn [k] ± ∆ωn ,
+
+(6.1)
+
+となる．この変化量を与えた時の Fx をそれぞれ予測し，仮想インピーダンスモデルを
+駆動することで，位置の軌道 x̂± を算出する．予測するサンプリングステップ数を N と
+した時，予測した F̂ h に対する評価値 J ± は，
+
+J ± = f ST A (ûh [k])
+2
+1 X  ref
+±
+xdisp [l] − x̂ [l] ,
+=
+N l=k
+N
+
+(6.2)
+
+と定義する．そして，最急降下法を用いてこの評価関数 J を最小化するフィードバック
+指令値 um を ωn とし，
+
+∂J[k]
+∂ωn [k]
+J + [k − 1] − J − [k − 1]
+= ωn [k − 1] − µm
+,
+2∆ωn
+
+ωn [k] = ωn [k − 1] − µm
+
+で更新する．
+
+40
+
+(6.3)
+(6.4)
+
+Copy weights
+
+Feedback parameters
+STA thread
+(20 ms)
+
+STA thread
+(20 ms)
+
+Input data
+Learning
+thread
+(2 ms)
+
+Learning
+thread
+(2 ms)
+
+Learning
+thread
+(2 ms)
+
+Learning
+thread
+(2 ms)
+
+Control thread (1 ms)
+Time [ms]
+
+Fig. 6.1: Timing diagram of human model transfer between control threads.
+
+41
+
+6.1.1
+
+実験内容
+
+提案手法の制御可能性の検証のため，215 秒間の正葉曲線追従作業を行った．はじめ
+の 12 秒間はイニシャライズ，12–75 秒の間は ωn をランダムに変化することで人間モデ
+ルの事前学習を行い，その後 STA を適用した．ωn は 3.5–10.5 rad/s で制限した．提案手
+法における各パラメータは ∆ω = 0.05 rad，N = 20 step，µm = 30 とした．人間モデル
+に用いたパラメータを Table 6.1 に示す．
+Table 6.1: NN Settings.
+Parameters
+values
+Hidden dim
+
+22
+
+Sequence
+
+2
+
+Delay steps Tdel
+
+10
+
+Interval steps Tint
+
+10
+
+Learning rate
+
+0.0005
+
+Gain of Position error
+
+[65, 78]
+
+Gain of Velocity error
+
+[15, 8]
+
+Gain of Acceleration error
+
+[0.1013, 0.0309]
+
+Gain of Force error
+
+[0.1, 0.01]
+
+Gain of Natural frequency
+
+[0.1, 0.1]
+
+42
+
+6.1.2
+
+実験結果
+
+20 代男性 4 名の被験者に対し，実験 2 にて各 ωn における位置追従誤差 ẽx の中で最良
+A
+であった時と提案手法による位置追従誤差 ẽST
+との比較を Fig.6.2 に示す．また，被験
+x
+
+者 1 名に対する，提案手法による ωn のヒストグラムと実験 2 による各 ωn に対する操作
+パフォーマンスを Fig.6.3 に示す．結果より，提案手法による有効性は見られず，事前実
+験にて観測した最適な ωn に対して収束していないことがわかった．
+0.012
+w/o
+w/ STA
+0.010
+
+ns
+
+Root mean-squared error
+
+ns
+0.008
+
+0.006
+
+0.004
+
+0.002
+
+0.000
+
+x-axis
+
+y-axis
+
+Fig. 6.2: Comparison of the averaged RMSE of the position error with ﬁxed natural frequencies
+and with STA.
+
+43
+
+3
+
+7.5
+
+Density
+
+Density
+
+10.0
+
+5.0
+2.5
+0.0
+
+4
+
+6
+8
+Natural frequency [rad/s]
+
+2
+1
+0
+
+10
+
+4
+
+6
+8
+Natural frequency [rad/s]
+
+10
+
+5
+6
+7
+8
+9
+Natural frequency [rad/s]
+
+10
+
+1.5
+1.0
+0.5
+0.0
+
+4
+
+5
+6
+7
+8
+9
+Natural frequency [rad/s]
+
+10
+
+Averaged root mean-squared error
+
+Averaged root mean-squared error
+
+(a) Histogram of natural frequencies by STA.
+1.5
+1.0
+0.5
+0.0
+
+4
+
+(1) x-axis
+(2) y-axis
+(b) Average value of RMSE for changes in natural frequency.
+
+Fig. 6.3: Comparison of histograms of natural frequencies adjusted by the STA and each RMSE
+when ﬁxed(Subject 2).
+
+44
+
+6.2
+
+固有振動数に対する人間モデルの妥当性
+
+実験結果より，本実験で構築した人間モデルでは ωn に対するヒトの変化を予測できて
+いないと考えられる．そこで，実験 2 にて収集した各 ωn におけるデータを基に，実験に
+て使用したパラメータを用いて学習し，人間モデルによる仮想インピーダンスモデルの
+駆動を行うことで，実データと同様の位置追従誤差 ẽx が得られるか確認した．各入力に
+対するゲインは実験時と同様とし，Epoch 数を 100，バッチサイズを 8196，学習係数を
+
+1 × 10−5 ，Early stopping の patience は 7 とした．
+学習結果を Fig.6.4 に示す．結果より，十分に学習したモデルにおいても被験者と同様
+のパフォーマンスを示すことができず，人間モデルの生成に問題があることがわかった．
+本稿では入力に Fx と ωn を含めることで，ωn の変化によるヒトの操作特性の変化を予
+測できると仮定したが，入力パラメータやモデルの選択に問題があったといえる．
+2.5
+
+2.5
+ωn (rad/s)
+4
+5
+6
+7
+8
+9
+10
+
+2.0
+Normalized root mean-squared error of y-axis
+
+Normalized root mean-squared error of x-axis
+
+2.0
+
+1.5
+
+1.0
+
+0.5
+
+0.0
+
+1
+
+2
+
+3
+
+ωn (rad/s)
+4
+5
+6
+7
+8
+9
+10
+
+1.5
+
+1.0
+
+0.5
+
+0.0
+
+4
+
+1
+
+2
+
+Subject
+
+3
+
+4
+
+Subject
+
+(a) Normalized position error of x-axis pre- (b) Normalized position error of y-axis predicted by model.
+dicted by model.
+2.5
+
+2.5
+Task
+NF4
+NF5
+NF6
+NF7
+NF8
+NF9
+NF10
+
+2.0
+Average position performance of y-axis
+
+Average position performance of x-axis
+
+2.0
+
+1.5
+
+1.0
+
+0.5
+
+0.0
+
+Task
+NF4
+NF5
+NF6
+NF7
+NF8
+NF9
+NF10
+
+1.5
+
+1.0
+
+0.5
+
+1
+
+2
+
+3
+Subject
+
+4
+
+0.0
+
+5
+
+(c) Normalized position error of x-axis.
+
+1
+
+2
+
+3
+Subject
+
+4
+
+5
+
+(d) Normalized position error of y-axis.
+
+Fig. 6.4: Compare of normalized position error.
+
+45
+
+6.3
+
+学習済み人間モデルによる制御検証
+
+静的な固有振動数 ωn に対するヒトの操作特性と，動的に変化する時の操作特性は異な
+る可能性がある．そこで，学習した人間モデルに対してリアルタイムに転移学習 (transfer
+
+learning: TL) を行うことで操作特性の獲得が可能となると仮定し，実験を行った．比較
+のため，リアルタイムに転移学習を行わない場合も行った．実験条件は 6.1.1 と同様と
+した．
+実験 2 にて各 ωn における位置追従誤差 ẽx の中で最良であった時と提案手法による位
+A
+置追従誤差 ẽST
+，転移学習時，学習済モデルの読込のみとの比較を Fig.6.5 に示す．結
+x
+
+果より，十分な事前学習を行なったモデルを用いた場合に対しても提案手法の有効性を
+確認できなかった．
+0.0200
+w/o
+w/ STA
+w/ STA and w/ TL
+w/ STA and w/o TL
+
+0.0175
+
+0.0150
+Root mean-squared error
+
+ns
+ns
+
+ns
+
+0.0125
+
+ns
+
+ns
+ns
+
+ns
+0.0100
+
+ns
+
+ns
+ns
+
+ns
+
+ns
+
+0.0075
+
+0.0050
+
+0.0025
+
+0.0000
+
+x-axis
+
+y-axis
+
+Fig. 6.5: Comparison of the averaged RMSE of the position error with ﬁxed natural frequencies,
+with STA, with STA and TL, and with STA and only loaded trained model.
+
+46
+
+第 7 章 結論
+
+先行研究では，ヒューマンセンシングにより計測したヒトの様子をロボットシステム
+への行動司令値やフィードバック生成の評価に加えることができれば，
+「空気を読める」
+システムが実現できると考え，STA アーキテクチャが提案された．しかし，アーキテク
+チャの提案に留まっており，実際に制御として適用できるかは確認されていなかった．
+そこで本研究では，STA アーキテクチャに基づき，操作インタフェースのインピーダ
+ンスパラメータをヒトの力操作を用いて個人に最適なインピーダンスパラメータに制御
+する可変アドミッタンス制御の実現を目指した．
+まず，実験に用いる入力インタフェースを構築し，加速度制御による仮想機械インピー
+ダンス制御を実装した．仮想環境内に入力インタフェースを再現することで，表示され
+る操作オブジェクトと入力インタフェースとの位置を一致した．
+次に，リアルタイムな人間モデル生成に向けて実験データを収集し，エポック数 1，バッ
+チ数 1 の時を想定してハイパーパラメータの探索を行った．その結果，予測可能なパラ
+メータを求め，可変インピーダンス環境における人間モデル生成の可能性を示唆した．
+そして，インピーダンスパラメータに対する力操作特性の調査を行った．連続する目標
+軌道に追従する操作を行った結果より，被験者毎の操作特性により，最適なインピーダ
+ンスパラメータが異なることが確認された．また，位置追従と速度追従では特性が異な
+り，速度追従では重い操作感を提示するパラメータほど誤差が小さくなることがわかっ
+た．これらより，位置誤差と速度誤差を組み合わせた評価関数の作成を行うと最適なイ
+ンピーダンスパラメータに収束できない可能性があることを示唆した．
+これらの結果から，STA アーキテクチャによる可変アドミッタンス制御の検証を行っ
+た．位置追従誤差を用いた評価関数を定義し，リアルタイムに人間モデルの生成を行い
+つつ実験を行った．その結果，最適なインピーダンスパラメータに向けて制御できない結
+果を得た．この結果から人間モデルに問題があると考え，インピーダンスパラメータに
+対する人間モデルの妥当性を検証した．各インピーダンスパラメータにおける実験デー
+タを基に，実験にて使用したパラメータを用いて学習し，人間モデルによる仮想インピー
+ダンスモデルの駆動を行うことで，実データと同様の操作パフォーマンスが得られるか
+確認した．結果より，十分に学習したモデルにおいても被験者と同様の操作パフォーマ
+47
+
+ンスを示すことができず，人間モデルの生成に問題があることがわかった．
+以上より，STA アーキテクチャによる可変アドミッタンス制御において，インピーダ
+ンスパラメータに対応する人間モデルの精度が十分に満たされていないことがわかった．
+また，評価関数に位置追従誤差と速度追従誤差のどちらも含めたインピーダンスパラメー
+タ最適化手法には十分に個人操作特性の解析を行う前処理が必要となると結論付ける．
+
+48
+
+第 8 章 今後の展望
+
+本研究で提案した手法にはインピーダンスパラメータに対応する人間モデルの精度が
+不足していることから，モデルパラメータの最適化を行う．また，人間モデルは全結合
+型 NN による生成も報告されており，GRU のみではなく，時系列 Transformer など他の
+モデルも検討を行う．リアルタイムな人間モデル生成を必要とする制御手法の制約によ
+り，深層学習を行うことが困難であることから，10 ms 程度の学習周期を確保するモデ
+ルとパラメータの選択を行う．
+本研究では評価値として位置追従誤差と速度追従誤差に着目したが，力情報に含まれ
+る操作意図や他のメンタル要因など，ヒトから取得できる要素は多くある．そのため，ヒ
+トの操作意図の考慮を含めた評価関数を定義することで最適なインピーダンスパラメー
+タレンジ内で操作意図を考慮した可変アドミッタンス制御を目指す．
+更には，STA アーキテクチャに基づき，フォースフィードバックなどのアクティブな
+操作支援を設計することで STA アーキテクチャの応用可能性を確認する．
+
+49
+
+参考文献
+
+[1]
+
+“Annual health, labourand welfare report,” General Welfare and Labour, Ministry of
+health, labour and welfare in japan, 2015, pp. 4–19.
+
+[2]
+
+手術支援ロボット hinotori, ja, https : / / www . medicaroid . com / product / hinotori/,
+
+Accessed: 2023-1-3.
+[3]
+
+R. Ikeura, H. Monden, and H. Inooka: “Cooperative motion control of a robot and a
+human,” Proceedings of 1994 3rd IEEE International Workshop on Robot and Human
+Communication, Jul. 1994, pp. 112–117.
+
+[4]
+
+孟子群 and 五十嵐洋, “個人操作特性を考慮した操作対象ダイナミクスの最適化,” 第 20 回
+システムインテグレーション部門講演会, pp. 2506–2511, 2019.
+
+[5]
+
+V. Duchaine and C. M. Gosselin: “General model of Human-Robot cooperation using a
+novel velocity based variable impedance control,” Second Joint EuroHaptics Conference
+and Symposium on Haptic Interfaces for Virtual Environment and Teleoperator Systems
+(WHC’07), Mar. 2007, pp. 446–451.
+
+[6]
+
+Y. Wang, Y. Yang, B. Zhao, et al., “Variable admittance control based on trajectory
+prediction of human hand motion for physical Human-Robot interaction,” NATO Adv.
+Sci. Inst. Ser. E Appl. Sci., vol. 11, no. 12, p. 5651, Jun. 2021.
+
+[7]
+
+K. Furuta, “Control of pendulum: From super Mechano-System to human adaptive
+mechatronics,” vol. 2, 1498–1507 Vol.2, Dec. 2003.
+
+[8]
+
+S. Suzuki, K. Kurihara, K. Furuta, F. Harashima, and Y. Pan: “Variable dynamic assist
+control on haptic system for human adaptive mechatronics,” Proceedings of the 44th IEEE
+Conference on Decision and Control, Dec. 2005, pp. 4596–4601.
+
+[9]
+
+S. Suzuki, K. Kurihara, K. Furuta, F. Harashima, and Y. Pan: “Variable dynamic assist
+control on haptic system for human adaptive mechatronics,” Proceedings of the 44th IEEE
+Conference on Decision and Control, Dec. 2005, pp. 4596–4601.
+
+[10]
+
+M. Kawato, K. Furukawa, and R. Suzuki, “A hierarchical neural-network model for
+control and learning of voluntary movement,” Biol. Cybern., vol. 57, no. 3, pp. 169–185,
+1987.
+
+50
+
+[11]
+
+K. Tervo and H. N. Koivo, “Adaptation of the Human-Machine interface to the human
+skill and dynamic characteristics,” IFAC Proceedings Volumes, vol. 47, no. 3, pp. 3539–
+3544, Jan. 2014.
+
+[12]
+
+H. Igarashi: “Subliminal calibration for machine operation,” 2009 35th Annual Conference of IEEE Industrial Electronics, Nov. 2009, pp. 4268–4273.
+
+[13]
+
+五十嵐洋: “「空気を読める」システムアーキテクチャ,” 【D】平成 29 年電気学会産業応用
+部門大会講演論文集, 2017, pp. 47–50.
+
+[14]
+
+石原義大 and 五十嵐洋, “さりげないアシストのための attention map による人間の注意
+推定,” 電気学会論文誌Ｃ（電子・情報・システム部門誌）, vol. 137, no. 9, pp. 1185–1191,
+
+2017.
+[15]
+
+満倉靖恵, “脳波解析による感性アナライジング,” 電気学会誌, vol. 136, no. 10, pp. 687–690,
+
+2016.
+[16]
+
+Electrophysiology,Task Force of the European Society of Cardiology the North American
+Society of Pacing, “Heart rate variability,” Circulation, vol. 93, no. 5, pp. 1043–1065,
+Mar. 1996.
+
+[17]
+
+足立修一: システム同定の基礎. 東京電機大学出版局, 2009.
+
+[18]
+
+T. Murakami, F. Yu, and K. Ohnishi, “Torque sensorless control in multidegree-offreedom manipulator,” IEEE Trans. Ind. Electron., vol. 40, no. 2, pp. 259–265, Apr.
+1993.
+
+[19]
+
+K. Ohnishi, M. Shibata, and T. Murakami, “Motion control for advanced mechatronics,”
+IEEE/ASME Trans. Mechatron., vol. 1, no. 1, pp. 56–67, Mar. 1996.
+
+[20]
+
+J. Chung, C. Gulcehre, K. Cho, and Y. Bengio, “Empirical evaluation of gated recurrent
+neural networks on sequence modeling,” Dec. 2014. arXiv: 1412.3555 [cs.NE].
+
+[21]
+
+D. P. Kingma and J. L. Ba: “Adam: A method for stochastic optimization,” 3rd International Conference on Learning Representations, ICLR 2015 - Conference Track Proceedings, International Conference on Learning Representations, ICLR, Dec. 2015.
+
+[22]
+
+T. Akiba, S. Sano, T. Yanase, T. Ohta, and M. Koyama, “Optuna: A next-generation
+hyperparameter optimization framework,” Jul. 2019. arXiv: 1907.10902 [cs.LG].
+
+[23]
+
+K. Deb, A. Pratap, S. Agarwal, and T. Meyarivan, “A fast and elitist multiobjective
+genetic algorithm: NSGA-II,” IEEE Trans. Evol. Comput., vol. 6, no. 2, pp. 182–197,
+Apr. 2002.
+
+51
+
+本研究に関する発表文献
+
+1. Yutaka Inoue, Ryo Watanabe and Hiroshi Igarashi:
+
+On-Line Optimization of
+
+Virtual Dynamics to Maximize Machine Operation Performance and Minimize
+Stress Levels , 2022 JSME-IIP/ASME-ISPS Joint International Conference on
+Micromechatronics for Information and Precision Equipment (MIPE2022), A3-304, Nagoya, Japan, August 28-31, 2022.
+2. 井上温，五十嵐洋: 「空気を読める」アーキテクチャに基づく可変アドミッタンス
+による操作支援 ，日本機械学会情報知能精密機器部門講演会 IIP2023，2023/3/3．
+
+52
+
+その他の発表文献
+
+1. 井上温，五十嵐洋:
+
+STA アーキテクチャによるシングルコプタ UAV の姿勢制御 ，
+
+日本機械学会情報知能精密機器部門講演会 IIP2020，P12，2020/03/26．
+
+2. 井上温，五十嵐洋:
+
+運搬アシスト用 UAV の開発 -STA アーキテクチャによる姿勢制
+
+御- ，日本機械学会ロボティクス・メカトロニクス講演会 20，2A1-B03，2020/5/29．
+
+3. 井上温，五十嵐洋:
+
+複数の Coaxial-UAV による協調搬送に向けた姿勢制御 ，日
+
+本機械学会ロボティクス・メカトロニクス講演会 21，1P3-B09，2021/6/9．
+
+4. 井上温，渡辺亮，五十嵐洋:
+
+相互位置関係が未知の複数の Coaxial-UAV による協
+
+調搬送のための姿勢制御-2DoF 姿勢制御に向けた設置位置推定- ，日本機械学会ロ
+ボティクス・メカトロニクス講演会 22，1P1-G02，2022/6/2．
+
+53
+
+
