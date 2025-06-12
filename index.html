@@ -3,170 +3,504 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>協調ロボティクス研究室 | 東京電機大学</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>協調ロボティクス研究室 | Neural Network Interface</title>
+  <meta name="description" content="協調ロボティクス研究室 - 最先端AI・ロボティクス・ヒューマンインタフェース研究">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body>
 
-<!-- ヘッダー -->
-<header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
-  <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <a href="#" class="text-3xl font-serif font-semibold text-blue-800 tracking-tight">
-      協調ロボティクス研究室
-    </a>
-    <div class="hidden md:flex items-center space-x-8">
-      <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">研究室について</a>
-      <a href="#portfolio" class="text-gray-600 hover:text-blue-600 transition-colors">研究テーマ</a>
-      <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">アクセス</a>
+<!-- Interactive Particle Canvas -->
+<canvas id="particle-canvas"></canvas>
+
+<!-- Header -->
+<header class="header">
+  <div class="header__container">
+    <div class="header__logo">
+      <img src="assets/images/crl_logo_wb.png" alt="CRL Logo" class="header__logo-image">
+      <span class="header__logo-text">CRL</span>
     </div>
-    <!-- モバイルメニューボタン（ハンバーガー） -->
-    <div class="md:hidden">
-      <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-      </button>
-    </div>
-  </nav>
-  <!-- モバイルメニュー -->
-  <div id="mobile-menu" class="hidden md:hidden">
-    <a href="#about" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">研究室について</a>
-    <a href="#portfolio" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">研究テーマ</a>
-    <a href="#contact" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">アクセス</a>
+    <nav class="nav" id="nav">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#research" class="nav__link">Research</a>
+      <a href="#stats" class="nav__link">Data</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="nav-toggle" aria-label="メニューを開く">
+      ☰
+    </button>
   </div>
 </header>
 
 <main>
-  <!-- ヒーローセクション -->
-  <section class="relative bg-gradient-to-r from-blue-700 via-purple-700 to-pink-500 text-white py-20 md:py-32 overflow-hidden">
-    <div class="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
-    <div class="relative container mx-auto px-6 text-center z-10">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">「空気を読める賢さ」を機械に</h1>
-      <p class="text-lg md:text-xl max-w-3xl mx-auto opacity-90">20年後に人々を笑顔にする「技術の種」を育む、未来志向のAI応用研究</p>
+  <!-- Hero Section -->
+  <section class="section section--hero" id="hero">
+    <div class="container">
+      <div class="hero fade-in-up">
+        <h1 class="hero__title text-gradient">
+          Cooperative Robotics Laboratory
+        </h1>
+        <p class="hero__subtitle">
+          人工知能とロボティクスが織りなす未来<br>
+          「空気を読める賢さ」を機械に実装する次世代研究
+        </p>
+        <a href="#research" class="hero__cta glass">
+          Explore Research
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- 研究室について -->
-  <section id="about" class="py-16 md:py-24 bg-white">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-blue-900">ABOUT US</h2>
-        <p class="text-gray-600 mt-2">私たちの目指すもの</p>
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="projects__header fade-in-up">
+        <h2 class="projects__title">About Our Lab</h2>
+        <p class="projects__subtitle">
+          東京電機大学 工学部 電子システム工学科<br>
+          人工知能、ヒューマンインタフェース、ロボティクスの融合研究
+        </p>
       </div>
-      <p class="max-w-4xl mx-auto text-center text-lg leading-relaxed text-gray-700">
-        協調ロボティクス研究室では、「協調」をキーワードに、人間と機械が自然に協力しあえる未来を目指しています。人間のように「空気を読める」賢さを機械に与えることで、生活の質を向上させ、社会が直面する課題を解決する革新的な技術を創造します。人間センシング、モーションコントロール、チームワーク支援など、多岐にわたるテーマで、夢のある研究に取り組んでいます。
-      </p>
+      
+      <div class="glass" style="padding: 3rem; border-radius: 20px; margin: 2rem auto; max-width: 900px;">
+        <p style="font-size: 1.1rem; line-height: 1.8; text-align: center;">
+          協調ロボティクス研究室では、「協調」をキーワードに、人間と機械が自然に協力しあえる未来の実現を目指しています。
+          人間のように「空気を読める」賢さを機械に与えることで、生活の質を向上させ、社会が直面する課題を解決する革新的な技術を創造します。
+          人間センシング、モーションコントロール、チームワーク支援など、多岐にわたるテーマで、夢のある研究に取り組んでいます。
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- ポートフォリオセクション -->
-  <section id="portfolio" class="py-16 md:py-24">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-blue-900">RESEARCH THEMES</h2>
-        <p class="text-gray-600 mt-2">研究テーマ</p>
+  <!-- Statistics Section -->
+  <section class="section stats-section" id="stats">
+    <div class="container">
+      <div class="stats__container fade-in-up">
+        <div class="search__input-wrapper">
+          <input type="text" id="search-box" class="search__input" placeholder="研究テーマを検索... (AI, ロボット, センシング)">
+          <span class="search__icon">🔍</span>
+        </div>
+        
+        <div class="stats">
+          <div class="stats__item pulse">
+            <span class="stats__number" data-count="990">990</span>
+            <span class="stats__label">Research Images</span>
+          </div>
+          <div class="stats__item pulse">
+            <span class="stats__number" data-count="91">91</span>
+            <span class="stats__label">Project Files</span>
+          </div>
+          <div class="stats__item pulse">
+            <span class="stats__number" data-count="6">6</span>
+            <span class="stats__label">Years Data</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects-section" id="research">
+    <div class="container">
+      <div class="projects__header fade-in-up">
+        <h2 class="projects__title">Research Projects</h2>
+        <p class="projects__subtitle">
+          最先端の研究プロジェクト群 - AIとロボティクスが織りなすイノベーション
+        </p>
       </div>
 
-      <!-- フィルタリングボタン -->
-      <div id="portfolio-filters" class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12">
-        <button class="filter-btn active bg-blue-600 text-white px-5 py-2 rounded-full font-semibold text-sm transition-all hover:shadow-md transition-transform duration-200 transform hover:-translate-y-0.5" data-filter="*">すべて</button>
-        <button class="filter-btn bg-white text-gray-700 px-5 py-2 rounded-full font-semibold text-sm border border-gray-300 hover:bg-blue-50 transition-all hover:shadow-md transition-transform duration-200 transform hover:-translate-y-0.5" data-filter="sensing">人間センシング</button>
-        <button class="filter-btn bg-white text-gray-700 px-5 py-2 rounded-full font-semibold text-sm border border-gray-300 hover:bg-blue-50 transition-all hover:shadow-md transition-transform duration-200 transform hover:-translate-y-0.5" data-filter="hms">人間機械システム</button>
-        <button class="filter-btn bg-white text-gray-700 px-5 py-2 rounded-full font-semibold text-sm border border-gray-300 hover:bg-blue-50 transition-all hover:shadow-md transition-transform duration-200 transform hover:-translate-y-0.5" data-filter="teamwork">チームワーク支援</button>
-        <button class="filter-btn bg-white text-gray-700 px-5 py-2 rounded-full font-semibold text-sm border border-gray-300 hover:bg-blue-50 transition-all hover:shadow-md transition-transform duration-200 transform hover:-translate-y-0.5" data-filter="motion">モーションコントロール</button>
-        <button class="filter-btn bg-white text-gray-700 px-5 py-2 rounded-full font-semibold text-sm border border-gray-300 hover:bg-blue-50 transition-all hover:shadow-md transition-transform duration-200 transform hover:-translate-y-0.5" data-filter="robot">ロボット間協調</button>
+      <!-- Filter System -->
+      <div class="projects__filters fade-in-up" id="portfolio-filters">
+        <button class="filter-btn active" data-filter="*">All Projects</button>
+        <button class="filter-btn" data-filter="sensing">Human Sensing</button>
+        <button class="filter-btn" data-filter="hms">Human-Machine</button>
+        <button class="filter-btn" data-filter="teamwork">Teamwork AI</button>
+        <button class="filter-btn" data-filter="motion">Motion Control</button>
+        <button class="filter-btn" data-filter="robot">Robot Cooperation</button>
       </div>
 
-      <!-- ポートフォリオグリッド -->
-      <div class="portfolio-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-container">
-        <!-- カードはJavaScriptによって挿入されます -->
+      <!-- Projects Grid -->
+      <div class="projects__grid fade-in-up" id="portfolio-container">
+        <!-- Cards will be injected by JavaScript -->
       </div>
     </div>
   </section>
 </main>
 
-<!-- フッター -->
-<footer id="contact" class="bg-blue-900 text-white">
-  <div class="container mx-auto px-6 py-10 text-center">
-    <p class="text-lg font-semibold">協調ロボティクス研究室 | 東京電機大学</p>
-    <p class="mt-2 text-blue-100 font-serif text-base">〒120-8551 東京都足立区千住旭町5番</p>
-    <p class="mt-2 text-blue-100 font-serif text-base">お問い合わせは <a href="mailto:example@dendai.ac.jp" class="underline hover:text-white transition-colors">example@dendai.ac.jp</a> まで</p>
-    <p class="mt-6 text-sm text-blue-300">&copy; 2024 Collaborative Robotics Laboratory. All Rights Reserved.</p>
+<!-- Footer -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__section">
+        <h3>Cooperative Robotics Lab</h3>
+        <p>東京電機大学 工学部 電子システム工学科</p>
+        <p>次世代AI・ロボティクス研究の最前線</p>
+      </div>
+      <div class="footer__section">
+        <h3>Research Fields</h3>
+        <p>• 人工知能 (Artificial Intelligence)</p>
+        <p>• ヒューマンインタフェース (Human Interface)</p>
+        <p>• ロボティクス (Robotics)</p>
+        <p>• 認知科学 (Cognitive Science)</p>
+        <p>• 生体信号処理 (Biological Signal Processing)</p>
+      </div>
+      <div class="footer__section">
+        <h3>Contact</h3>
+        <p>〒120-8551 東京都足立区千住旭町5番</p>
+        <p>Tokyo Denki University</p>
+        <p><a href="mailto:example@dendai.ac.jp">example@dendai.ac.jp</a></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 Cooperative Robotics Laboratory. All Rights Reserved.</p>
+    </div>
   </div>
 </footer>
 
-
+<!-- JavaScript -->
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // モバイルメニューのトグル
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    mobileMenuButton.addEventListener('click', function() {
-      mobileMenu.classList.toggle('hidden');
+document.addEventListener('DOMContentLoaded', function() {
+  // Interactive Particle System
+  const canvas = document.getElementById('particle-canvas');
+  const ctx = canvas.getContext('2d');
+  let particles = [];
+  let mouseX = 0;
+  let mouseY = 0;
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+
+  function createParticle(x, y) {
+    return {
+      x: x || Math.random() * canvas.width,
+      y: y || Math.random() * canvas.height,
+      vx: (Math.random() - 0.5) * 0.5,
+      vy: (Math.random() - 0.5) * 0.5,
+      life: 1,
+      decay: Math.random() * 0.01 + 0.005,
+      size: Math.random() * 2 + 1,
+      color: Math.random() > 0.5 ? '#6366F1' : '#10F0C4'
+    };
+  }
+
+  function updateParticles() {
+    for (let i = particles.length - 1; i >= 0; i--) {
+      const p = particles[i];
+      
+      // Update position
+      p.x += p.vx;
+      p.y += p.vy;
+      
+      // Mouse interaction
+      const dx = mouseX - p.x;
+      const dy = mouseY - p.y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      
+      if (distance < 100) {
+        const force = (100 - distance) / 100;
+        p.vx += dx * force * 0.001;
+        p.vy += dy * force * 0.001;
+      }
+      
+      // Update life
+      p.life -= p.decay;
+      
+      // Remove dead particles
+      if (p.life <= 0) {
+        particles.splice(i, 1);
+      }
+    }
+    
+    // Add new particles
+    if (particles.length < 50) {
+      particles.push(createParticle());
+    }
+  }
+
+  function drawParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    particles.forEach(p => {
+      ctx.save();
+      ctx.globalAlpha = p.life;
+      ctx.fillStyle = p.color;
+      ctx.shadowBlur = 10;
+      ctx.shadowColor = p.color;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
     });
-
-    // ポートフォリオのフィルタリング機能
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const portfolioItems = () => document.querySelectorAll('.portfolio-item');
-    const portfolioGrid = document.querySelector('.portfolio-grid');
-
-    filterButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        // 他のボタンのアクティブ状態を解除
-        filterButtons.forEach(btn => {
-          btn.classList.remove('active', 'bg-blue-600', 'text-white');
-          btn.classList.add('bg-white', 'text-gray-700');
-        });
-        // クリックされたボタンをアクティブに
-        this.classList.add('active', 'bg-blue-600', 'text-white');
-        this.classList.remove('bg-white', 'text-gray-700');
-
-        const selectedFilter = this.getAttribute('data-filter');
-
-        // アイテムの表示を更新
-        portfolioItems().forEach(item => {
-          item.classList.add('hide');
-        });
-
-        // アニメーションのために少し待機
-        setTimeout(() => {
-          portfolioItems().forEach(item => {
-            if (selectedFilter === '*' || item.getAttribute('data-category') === selectedFilter) {
-              item.style.display = 'block';
-              setTimeout(() => item.classList.remove('hide'), 50);
-            } else {
-              item.style.display = 'none';
-            }
-          });
-        }, 300);
+    
+    // Draw connections
+    particles.forEach((p1, i) => {
+      particles.slice(i + 1).forEach(p2 => {
+        const dx = p1.x - p2.x;
+        const dy = p1.y - p2.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+        
+        if (distance < 100) {
+          ctx.save();
+          ctx.globalAlpha = (1 - distance / 100) * 0.3;
+          ctx.strokeStyle = '#6366F1';
+          ctx.lineWidth = 0.5;
+          ctx.beginPath();
+          ctx.moveTo(p1.x, p1.y);
+          ctx.lineTo(p2.x, p2.y);
+          ctx.stroke();
+          ctx.restore();
+        }
       });
+    });
+  }
+
+  function animate() {
+    updateParticles();
+    drawParticles();
+    requestAnimationFrame(animate);
+  }
+
+  // Initialize particles
+  resizeCanvas();
+  for (let i = 0; i < 30; i++) {
+    particles.push(createParticle());
+  }
+
+  // Event listeners
+  window.addEventListener('resize', resizeCanvas);
+  window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  animate();
+
+  // Mobile Navigation Toggle
+  const navToggle = document.getElementById('nav-toggle');
+  const nav = document.getElementById('nav');
+  
+  navToggle.addEventListener('click', function() {
+    nav.classList.toggle('nav--active');
+  });
+
+  // Smooth Scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+        nav.classList.remove('nav--active');
+      }
     });
   });
 
-  fetch('data/project_2025.json')
-    .then(response => response.json())
-    .then(data => {
-      const container = document.getElementById('portfolio-container');
-      data.projects.forEach(project => {
-        const item = document.createElement('div');
-        item.className = `portfolio-item bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow duration-300`;
-        item.setAttribute('data-category', project.category);
+  // Intersection Observer for animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
 
-        item.innerHTML = `
-          <img src="${project.thumb}" alt="${project.title}" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
-          <div class="p-6">
-            <span class="inline-block bg-gray-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full mb-3">${project.tag}</span>
-            <h3 class="text-xl font-bold mb-2">${project.title}</h3>
-            <p class="text-gray-600 text-sm mb-2">${project.summary}</p>
-            <a href="${project.detail_link}" class="text-blue-600 text-sm font-semibold hover:underline">詳細を見る</a>
-          </div>
-        `;
-        container.appendChild(item);
-      });
-    })
-    .catch(error => {
-      console.error('プロジェクトの読み込みに失敗しました:', error);
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animation = 'fade-in-up 0.8s ease-out forwards';
+      }
     });
+  }, observerOptions);
+
+  document.querySelectorAll('.fade-in-up').forEach(el => {
+    observer.observe(el);
+  });
+
+  // Load Portfolio Data
+  async function loadPortfolio() {
+    try {
+      console.log('Loading portfolio data...');
+      
+      let response;
+      try {
+        response = await fetch('public/data/enhanced-research-projects.json');
+        if (!response.ok) throw new Error('Enhanced data not found');
+      } catch (e) {
+        console.log('Fallback to project.json');
+        response = await fetch('project.json');
+      }
+      
+      const data = await response.json();
+      console.log('Loaded data:', data);
+      
+      const container = document.getElementById('portfolio-container');
+      const projects = Array.isArray(data) ? data : data.projects || [];
+      
+      if (projects.length === 0) {
+        container.innerHTML = '<div class="glass" style="padding: 2rem; text-align: center;">研究プロジェクトデータを読み込み中...</div>';
+        return;
+      }
+
+      projects.forEach((project, index) => {
+        const card = createProjectCard(project, index);
+        container.appendChild(card);
+      });
+
+      initializeFilters();
+      console.log(`Loaded ${projects.length} projects`);
+      
+    } catch (error) {
+      console.error('Error loading portfolio:', error);
+      document.getElementById('portfolio-container').innerHTML = 
+        '<div class="glass" style="padding: 2rem; text-align: center; color: var(--neural-rose);">プロジェクトデータの読み込みに失敗しました</div>';
+    }
+  }
+
+  function createProjectCard(project, index) {
+    const card = document.createElement('div');
+    card.className = 'project-card';
+    card.setAttribute('data-category', project.category || 'other');
+    card.style.animationDelay = `${index * 0.1}s`;
+    
+    let imagePath = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM2MzY2RjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMEYwQzQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjEiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxNHB4IiBmaWxsPSIjRjhGQUZDIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+UkVTRUFSQ0ggSU1BR0U8L3RleHQ+PC9zdmc+';
+    
+    if (project.thumbnail) {
+      imagePath = project.thumbnail.startsWith('proc/') 
+        ? `public/images/thumbnails/${project.thumbnail.split('/').pop()}`
+        : project.thumbnail;
+    } else if (project.image_path) {
+      imagePath = `public/images/thumbnails/${project.image_path.split('/').pop()}`;
+    }
+    
+    const tags = project.tags ? project.tags.slice(0, 2) : [project.category || 'research'];
+    const tagElements = tags.map(tag => 
+      `<span class="project-card__tag">${tag.toUpperCase()}</span>`
+    ).join('');
+    
+    card.innerHTML = `
+      <div class="project-card__year-badge">${project.year || '2024'}</div>
+      <img src="${imagePath}" alt="${project.title}" class="project-card__image" 
+           onerror="this.src='${imagePath}'">
+      <div class="project-card__content">
+        <div class="project-card__tags">
+          ${tagElements}
+        </div>
+        <h3 class="project-card__title">${project.title || 'Untitled Project'}</h3>
+        <div class="project-card__author">${project.author || 'Anonymous'}</div>
+        <p class="project-card__abstract">${project.abstract || project.description || '研究の詳細情報を読み込み中...'}</p>
+      </div>
+    `;
+    
+    return card;
+  }
+
+  function initializeFilters() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.project-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const filter = this.getAttribute('data-filter');
+        
+        filterBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        portfolioItems.forEach(item => {
+          const category = item.getAttribute('data-category');
+          
+          if (filter === '*' || category === filter) {
+            item.style.display = 'block';
+            item.style.transform = 'scale(1)';
+            item.style.opacity = '1';
+          } else {
+            item.style.transform = 'scale(0.8)';
+            item.style.opacity = '0';
+            setTimeout(() => {
+              if (item.style.opacity === '0') {
+                item.style.display = 'none';
+              }
+            }, 300);
+          }
+        });
+      });
+    });
+  }
+
+  // Search Functionality
+  const searchBox = document.getElementById('search-box');
+  if (searchBox) {
+    searchBox.addEventListener('input', function() {
+      const searchTerm = this.value.toLowerCase();
+      const portfolioItems = document.querySelectorAll('.project-card');
+      
+      portfolioItems.forEach(item => {
+        const title = item.querySelector('.project-card__title').textContent.toLowerCase();
+        const abstract = item.querySelector('.project-card__abstract').textContent.toLowerCase();
+        const author = item.querySelector('.project-card__author').textContent.toLowerCase();
+        
+        if (title.includes(searchTerm) || abstract.includes(searchTerm) || author.includes(searchTerm)) {
+          item.style.display = 'block';
+          item.style.opacity = '1';
+          item.style.transform = 'scale(1)';
+        } else {
+          item.style.opacity = '0';
+          item.style.transform = 'scale(0.8)';
+          setTimeout(() => {
+            if (item.style.opacity === '0') {
+              item.style.display = 'none';
+            }
+          }, 300);
+        }
+      });
+    });
+  }
+
+  // Counter Animation
+  function animateCounters() {
+    const counters = document.querySelectorAll('.stats__number');
+    
+    counters.forEach(counter => {
+      const target = parseInt(counter.getAttribute('data-count'));
+      const duration = 2000;
+      const increment = target / (duration / 16);
+      let current = 0;
+      
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
+        counter.textContent = Math.floor(current);
+      }, 16);
+    });
+  }
+
+  // Trigger counter animation when stats section is visible
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounters();
+        statsObserver.unobserve(entry.target);
+      }
+    });
+  });
+
+  const statsSection = document.querySelector('.stats-section');
+  if (statsSection) {
+    statsObserver.observe(statsSection);
+  }
+
+  // Initialize everything
+  loadPortfolio();
+  
+  console.log('🚀 Neural Network Interface Initialized');
+});
 </script>
+
 </body>
 </html>
