@@ -116,8 +116,8 @@ cd /Users/igarashi/local/2025_crl_www
 mkdir -p project/{year}/{data,img,img_all}
 
 # 学部論文・修士論文を一括処理
-for f in proc/txt/{year}_*.txt; do
-  name=$(basename "$f" .txt)
+for f in proc/txt_/{year}_*.txt_; do
+  name=$(basename "$f" .txt_)
   echo "Processing: $name"
   claude thesis_process.md "$f" --mode abst > project/{year}/${name}_abst.md
 done

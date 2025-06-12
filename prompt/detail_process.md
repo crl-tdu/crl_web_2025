@@ -161,19 +161,19 @@ project/
 ### Step 1: ファイル確認
 ```bash
 # 対象ファイルの存在確認
-ls proc/txt/{year}_{B/M}_{name}.txt
+ls proc/txt_/{year}_{B/M}_{name}.txt_
 
 # ファイル冒頭の確認（タイトル・氏名抽出）
-head -20 proc/txt/{year}_{B/M}_{name}.txt
+head -20 proc/txt_/{year}_{B/M}_{name}.txt_
 ```
 
 ### Step 2: 情報抽出・確認
 ```bash
 # 基本情報の抽出確認
-Read proc/txt/{year}_{B/M}_{name}.txt --limit 50
+Read proc/txt_/{year}_{B/M}_{name}.txt_ --limit 50
 
 # 発表業績の確認（修士論文のみ）
-tail -100 proc/txt/{year}_{B/M}_{name}.txt | grep -A 20 "発表"
+tail -100 proc/txt_/{year}_{B/M}_{name}.txt_ | grep -A 20 "発表"
 ```
 
 ### Step 3: 詳細レポート生成
@@ -232,9 +232,9 @@ echo "Processing year: $YEAR"
 echo "Checking files in proc/txt/..."
 
 # ファイル存在確認
-for file in $BASE_DIR/proc/txt/${YEAR}_*.txt; do
+for file in $BASE_DIR/proc/txt_/${YEAR}_*.txt_; do
     if [ -f "$file" ]; then
-        basename=$(basename "$file" .txt)
+        basename=$(basename "$file" .txt_)
         echo "Found: $basename"
         
         # 基本情報確認

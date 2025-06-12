@@ -43,7 +43,7 @@ check_current_status() {
     # 既存画像数確認
     img_all_count=$(find proc/img_all -name "*.png" 2>/dev/null | wc -l | tr -d ' ')
     img_output_count=$(find proc/img -name "*.png" 2>/dev/null | wc -l | tr -d ' ')
-    txt_count=$(find proc/txt -name "*.txt" 2>/dev/null | wc -l | tr -d ' ')
+    txt_count=$(find proc/txt_ -name "*.txt" 2>/dev/null | wc -l | tr -d ' ')
     
     echo "  全抽出画像: ${img_all_count}枚"
     echo "  代表画像: ${img_output_count}枚"

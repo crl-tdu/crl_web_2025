@@ -1,10 +1,25 @@
+---
+title: "修士論文 - onogawa (2024)"
+author: "onogawa"
+year: 2024
+degree: "修士論文"
+degree_code: "M"
+filename: "2024_M_onogawa.md"
+generated: "2025-06-12 17:36:44"
+---
+
 # 修士論文 - onogawa (2024)
+
+**修士論文** | **2024年度** | **著者**: onogawa
+
+**English Title**: All data used in modeling
+
 
 ##  仮想環境における変化の見落としを予測可能な
 
 # Attention TriGrid の提案
 
-#### **Proposal of Attention TriGrid that Can Predict User Oversight** **of Changes in Virtual Environments** 東京電機大学大学院工学研究科 電子システム工学専攻修士課程 23KMH06 小野川 樹 研究指導教員教授五十嵐洋
+#### **Proposal of Attention TriGrid that Can Predict User Oversight** **of Changes in Virtual Environments** 東京電機大学大学院工学研究科 電子システム工学専攻修士課程 23KM$H_{06}$ 小野川 樹 研究指導教員教授五十嵐洋
 
 #### 謝辞
 
@@ -26,13 +41,12 @@
 
 1
 
+## ## 目次
 
-## 目次
+- 第 **1** 章 緒論 **1**
 
 
-第 **1** 章 緒論 **1**
-
-1.1 背景 *. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 2
+### 背景 *. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 2
 
 1.1.1 非注意性盲目 (IB) と変化盲目 (CB) の概観 *. . . . . . . . . . . .* 2
 
@@ -40,45 +54,45 @@
 
 1.1.3 仮想環境における変化の見落とし予測の必要性 *. . . . . . . . . .* 3
 
-1.2 先行研究 *. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 4
+### 先行研究 *. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 4
 
 1.2.1 視線の方向に着目した視覚的注意評価 *. . . . . . . . . . . . . . .* 4
 
 1.2.2 視覚的注意のヒートマップ分析 *. . . . . . . . . . . . . . . . . . .* 6
 
-1.3 本研究の目的・位置づけと貢献 *. . . . . . . . . . . . . . . . . . . . . . .* 7
+### 本研究の目的・位置づけと貢献 *. . . . . . . . . . . . . . . . . . . . . . .* 7
 
 第 **2** 章 提案手法 **8**
 
-2.1 Attention TriGrid （ ATG ） *. . . . . . . . . . . . . . . . . . . . . . . . .* 9
+### Attention TriGrid （ ATG ） *. . . . . . . . . . . . . . . . . . . . . . . . .* 9
 
 2.1.1 分散を注視点位置差としたガウス関数 *. . . . . . . . . . . . . . .* 9
 
 2.1.2 積分による記憶を考慮した注意分布の形成 *. . . . . . . . . . . . .* 11
 
-2.2 ロジスティクス回帰による気づきやすさのモデル化 *. . . . . . . . . . . .* 12
+### ロジスティクス回帰による気づきやすさのモデル化 *. . . . . . . . . . . .* 12
 
-2.3 ATG のパラメータチューニングによる視覚的注意の個人設計 *. . . . . . .* 14
+### ATG のパラメータチューニングによる視覚的注意の個人設計 *. . . . . . .* 14
 
-2.4 ATG の応用可能性 *. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 17
+### ATG の応用可能性 *. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 17
 
 第 **3** 章 データ収集環境 **19**
 
-3.1 仮想環境の動作 *. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 20
+### 仮想環境の動作 *. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 20
 
-3.2 データ収集の条件 *. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 22
+### データ収集の条件 *. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 22
 
 第 **4** 章 個人モデルの構築結果 **23**
 
-4.1 被験者ごとのモデル性能まとめ *. . . . . . . . . . . . . . . . . . . . . . .* 24
+### 被験者ごとのモデル性能まとめ *. . . . . . . . . . . . . . . . . . . . . . .* 24
 
 4.1.1 モデルの説明力について *. . . . . . . . . . . . . . . . . . . . . . .* 24
 
 4.1.2 予測精度について *. . . . . . . . . . . . . . . . . . . . . . . . . . .* 24
 
-4.2 モデルの個人差について *. . . . . . . . . . . . . . . . . . . . . . . . . . .* 26
+### モデルの個人差について *. . . . . . . . . . . . . . . . . . . . . . . . . . .* 26
 
-4.3 被験者の注意力について *. . . . . . . . . . . . . . . . . . . . . . . . . . .* 27
+### 被験者の注意力について *. . . . . . . . . . . . . . . . . . . . . . . . . . .* 27
 
 4.3.1 被験者ごとの選択的注意力の違い *. . . . . . . . . . . . . . . . . .* 27
 
@@ -88,9 +102,9 @@
 
 第 **5** 章 一般化モデルの構築結果 **30**
 
-5.1 モデル性能 *. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 31
+### モデル性能 *. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 31
 
-5.2 個人モデルとの比較 *. . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 33
+### 個人モデルとの比較 *. . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 33
 
 5.2.1 個人モデルと一般化モデルの性能差 *. . . . . . . . . . . . . . . . .* 33
 
@@ -98,7 +112,7 @@
 
 第 **6** 章 **ATG** のパラメータ解析結果 **35**
 
-6.1 気づいた回数とパラメータの相関 *. . . . . . . . . . . . . . . . . . . . . .* 36
+### 気づいた回数とパラメータの相関 *. . . . . . . . . . . . . . . . . . . . . .* 36
 
 6.1.1 注意分布のベースライン値を決める *C* の影響 *. . . . . . . . . . .* 37
 
@@ -106,7 +120,7 @@
 
 6.1.3 相互作用項 *µ* × *C* の影響 *. . . . . . . . . . . . . . . . . . . . . . .* 37
 
-6.2 各パラメータ同士の相関 *. . . . . . . . . . . . . . . . . . . . . . . . . . .* 38
+### 各パラメータ同士の相関 *. . . . . . . . . . . . . . . . . . . . . . . . . . .* 38
 
 6.2.1 各軸の *C* における相関 *. . . . . . . . . . . . . . . . . . . . . . . .* 38
 
@@ -114,7 +128,7 @@
 
 6.2.3 各軸の相互作用項 *µ* × *C* における相関 *. . . . . . . . . . . . . . .* 39
 
-6.3 ATG による注意分布設計の説明可能性 *. . . . . . . . . . . . . . . . . . .* 40
+### ATG による注意分布設計の説明可能性 *. . . . . . . . . . . . . . . . . . .* 40
 
 6.3.1 各軸の *C* における説明可能性 *. . . . . . . . . . . . . . . . . . . .* 40
 
@@ -124,9 +138,9 @@
 
 第 **7** 章 結論 **42**
 
-7.1 まとめ *. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 43
+### まとめ *. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 43
 
-7.2 今後の展望 *. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 45
+### 今後の展望 *. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .* 45
 
 7.2.1 説明変数に関する検討 *. . . . . . . . . . . . . . . . . . . . . . . .* 45
 
@@ -254,7 +268,7 @@ VR アプリケーションの設計において非常に有用である．例�
 
 4
 
-|Gaze Point|Col2|
+|Gaze Point|Co$l_{2}$|
 |---|---|
 |Gaze Point||
 
@@ -365,21 +379,19 @@ Attention TriGrid (ATG)
 
 注意を空間的に評価できる Attention TriGrid (ATG) を式 2.1 ， 2.2 で定義する．
 
-*α* *xyz* [ *k* ] = *T* [1] 1
+*$\alpha$* *xyz* [ *k* ] = *T* [1] 1
 
-*k*
-∑
+*k*∑
 
 *l* = *k−T* 2
 
 1
 
-√(2 *πσ* *x* [ *l* ] *σ* *y* [ *l* ] *σ* *z* [ *l* ]) [3]
+√(2 *$\pi$$\sigma$* *x* [ *l* ] *$\sigma$* *y* [ *l* ] *$\sigma$* *z* [ *l* ]) [3]
 
-2 *σ* *z* [2] [[] *[l]* []]
+2 *$\sigma$* *z* [2] [[] *[l]* []]
 
-(2.1)
-))
+(2.1)))
 
 exp
 
@@ -389,24 +401,24 @@ exp
 
 ( *x −* *x* *p* ) [2]
 
-2 *σ* *x* [2] [[] *[l]* []]
+2 *$\sigma$* *x* [2] [[] *[l]* []]
 
 (
 
 *−* *x* *p* ) [2] + [(] *[y]* *[ −]* *[y]* *[p]* [)] [2]
 
-2 *σ* *x* [2] [[] *[l]* []] 2 *σ* [2] [[] *[l]* []]
+2 *$\sigma$* *x* [2] [[] *[l]* []] 2 *$\sigma$* [2] [[] *[l]* []]
 
 *[ −]* *[y]* *[p]* [)] [2] + [(] *[z][ −]* *[z]* *[p]* [)] [2]
 
-2 *σ* *y* [2] [[] *[l]* []] 2 *σ* *z* [2] [[] *[l]* []]
+2 *$\sigma$* *y* [2] [[] *[l]* []] 2 *$\sigma$* *z* [2] [[] *[l]* []]
 
-***σ*** = ***µ*** ( ***x*** *p* [ *k* ] *−* ***x*** *p* [ *k −* 1]) [2] + ***C*** (2.2)
+***$\sigma$*** = ***µ*** ( ***x*** *p* [ *k* ] *−* ***x*** *p* [ *k −* 1]) [2] + ***C*** (2.2)
 √
 
 ATG は注視点（ *x* *p* ， *y* *p* ， *z* *p* ) とした時， 3 次元グリット上に設けたある点（ *x* ， *y* ， *z* ）の
 
-ATG *α* *xyz* として定義する．ただし， ***σ*** = [ *σ* *x* *, σ* *y* *, σ* *z* ] *[T]* ， ***x*** *∗* = [ *x* *∗* *, y* *∗* *, z* *∗* ] *[T]* である．
+ATG *$\alpha$* *xyz* として定義する．ただし， ***$\sigma$*** = [ *$\sigma$* *x* *, $\sigma$* *y* *, $\sigma$* *z* ] *[T]* ， ***x*** *∗* = [ *x* *∗* *, y* *∗* *, z* *∗* ] *[T]* である．
 
 この関数は，注視点（ *x* *p* ， *y* *p* ， *z* *p* ) を中心としたガウス分布を基に考案され，空間上に
 
@@ -420,13 +432,13 @@ ATG *α* *xyz* として定義する．ただし， ***σ*** = [ *σ* *x* *, σ*
 
 **2.1.1** 分散を注視点位置差としたガウス関数
 
-ATG の分散である式 2.2 の ***σ*** は，注視点の変化量，即ち視線速度により変化する．こ
+ATG の分散である式 2.2 の ***$\sigma$*** は，注視点の変化量，即ち視線速度により変化する．こ
 
 れは注視点位置差が大きいときは広い範囲を浅く注意し，注視点位置差が小さいときは
 
-狭い範囲を深く注意している状態を再現する．つまり，図 2.1 のように ***σ*** が大きいとき，
+狭い範囲を深く注意している状態を再現する．つまり，図 2.1 のように ***$\sigma$*** が大きいとき，
 
-広い範囲に小さい値で注意分布が広がり， ***σ*** が小さいとき，狭い範囲に高い値で注意分
+広い範囲に小さい値で注意分布が広がり， ***$\sigma$*** が小さいとき，狭い範囲に高い値で注意分
 
 布が広がる．
 
@@ -496,7 +508,7 @@ ATG の分散である式 2.2 の ***σ*** は，注視点の変化量，即ち�
 
 0
 
-(a) Small Variance ( *σ* = 1 *.* 0)
+(a) Small Variance ( *$\sigma$* = 1 *.* 0)
 
 6
 
@@ -506,8 +518,7 @@ ATG の分散である式 2.2 の ***σ*** は，注視点の変化量，即ち�
 
 0
 
-(b) Large Variance ( *σ* = 2 *.* 5)
-Fig. 2.1: Formation of ATGs due to differences in variance. (a) Small Variance and (b) Large
+(b) Large Variance ( *$\sigma$* = 2 *.* 5)Fig. 2.1: Formation of ATGs due to differences in variance. (a) Small Variance and (b) Large
 
 Variance are shown for comparison. 10
 
@@ -519,7 +530,7 @@ Variance are shown for comparison. 10
 
 プの注視点が抜粋され，計算に使用される．そして， *T* 2 まで計算が終了するごと 1 */T* 1 が
 
-乗算された後， *α* *xyz* に加算される．このような順序により，時系列に沿った注視点の動
+乗算された後， *$\alpha$* *xyz* に加算される．このような順序により，時系列に沿った注視点の動
 
 きが考慮された注意分布が形成される．
 
@@ -602,7 +613,7 @@ TriGrid (ATG).
 
 パラメータ探索において，評価関数 *E* combine を式 2.4 のように定義した：
 
-*E* combine = *α · E* pValue + (1 *−* *α* )(1 *−* *E* accuracy ) (2.4)
+*E* combine = *$\alpha$ · E* pValue + (1 *−* *$\alpha$* )(1 *−* *E* accuracy ) (2.4)
 
 ここで，
 
@@ -610,11 +621,11 @@ TriGrid (ATG).
 
 - *E* accuracy は予測正解率．
 
-- *α* は重み付けパラメータであり，本研究では *α* = 0 *.* 6 に設定．
+- *$\alpha$* は重み付けパラメータであり，本研究では *$\alpha$* = 0 *.* 6 に設定．
 
-この評価関数の *α* は， p 値とモデルの予測正解率のバランスを調整する役割を持つ．本
+この評価関数の *$\alpha$* は， p 値とモデルの予測正解率のバランスを調整する役割を持つ．本
 
-研究では，モデルの性能向上を優先するため， *α* の値を 0.6 に設定した．
+研究では，モデルの性能向上を優先するため， *$\alpha$* の値を 0.6 に設定した．
 
 表 2.1 に示した探索パラメータに基づき探索には，ベイズ最適化を採用し， Python ラ
 
@@ -672,7 +683,7 @@ TriGrid (ATG).
 
 Table 2.1: Parameters to explore
 
-|Col1|Parameters name|
+|Co$l_{1}$|Parameters name|
 |---|---|
 |Preservation of attention|T, T<br>1 2|
 |Spread of attention|µ∗ = [µ x, µ y, µ z]T|
@@ -694,8 +705,7 @@ Predicting [ⅱ]Test Data
 
 and [ⅰ]Accuacy
 
-and get [ⅱ]Accuacy
-ATG optimization with Optuna
+and get [ⅱ]AccuacyATG optimization with Optuna
 
 Fig. 2.3: Model building and ATG optimization process with Optuna.
 
@@ -837,7 +847,7 @@ VR ゴーグル（ Vive Pro Eye ）を使用した．データ収集は， 90 Hz
 
 Fig. 3.1: Virtual space presented to subjects.
 
-|Subject's<br>work<br>VR<br>Black<br>Ball|Col2|
+|Subject's<br>work<br>VR<br>Black<br>Ball|Co$l_{2}$|
 |---|---|
 |Subject's<br>work<br>VR<br>Black<br>Ball||
 |Subject's<br>work<br>VR<br>Black<br>Ball||
@@ -964,7 +974,7 @@ bias を超えていない．これら被験者 J ， K ， L の共通点とし
 
 Table 4.1: Performance evaluation of logistics regression model built for each subjects.
 
-|Subject|Noticed|Not noticed|x1 p-Value|Pseudo R-squ.|Test data bias|[i]Accuracy|[ii]Accuracy|
+|Subject|Noticed|Not noticed|$x_{1}$ p-Value|Pseudo R-squ.|Test data bias|[i]Accuracy|[ii]Accuracy|
 |---|---|---|---|---|---|---|---|
 |A|56|184|p<0.05|0.020|0.767|0.819|0.650|
 |B|71|169|p<0.001|0.149|0.653|0.806|0.700|
@@ -1019,13 +1029,13 @@ ATG によって計算された注意度を表し，縦軸は黒ボールの出�
 
 0.0
 
-|Col1|Col2|
+|Co$l_{1}$|Co$l_{2}$|
 |---|---|
 |||
 |||
 |||
 
-0.0 0.2 0.4 0.6 0.8 1.0
+### 0.2 0.4 0.6 0.8 1.0
 Attention TriGrid (ATG)
 
 Fig. 4.1: Probability of each subjects noticing changes to the Attention TriGrid (ATG).
@@ -1138,7 +1148,7 @@ Fig. 4.2: Total number of seconds that each subject’s gaze vector intersected 
 
 60
 
-|Col1|Col2|Col3|Col4|Col5|Col6|Col7|Col8|Col9|Subjects<br>Subject A<br>Subject B<br>Subject C<br>Subject D<br>Subject E<br>Subject F<br>Subject G<br>Subject H<br>Subject I<br>Subject J<br>Subject K<br>Subject L|
+|Co$l_{1}$|Co$l_{2}$|Co$l_{3}$|Co$l_{4}$|Co$l_{5}$|Co$l_{6}$|Co$l_{7}$|Co$l_{8}$|Co$l_{9}$|Subjects<br>Subject A<br>Subject B<br>Subject C<br>Subject D<br>Subject E<br>Subject F<br>Subject G<br>Subject H<br>Subject I<br>Subject J<br>Subject K<br>Subject L|
 |---|---|---|---|---|---|---|---|---|---|
 |||||||||||
 |||||||||||
@@ -1241,14 +1251,14 @@ Table 5.1: Performance evaluation of logistics regression generalized model
 
 0.0
 
-|Col1|Col2|Col3|Col4|Col5|
+|Co$l_{1}$|Co$l_{2}$|Co$l_{3}$|Co$l_{4}$|Co$l_{5}$|
 |---|---|---|---|---|
 ||||||
 ||||||
 ||||||
 ||||||
 
-0.0 0.2 0.4 0.6 0.8 1.0
+### 0.2 0.4 0.6 0.8 1.0
 Attention TriGrid (ATG)
 
 Fig. 5.1: Probability of each subjects noticing changes to the Attention TriGrid (ATG).
@@ -1350,7 +1360,7 @@ Table 5.2: Performance evaluation of logistics regression model built for each s
 
 0.50
 
-|Col1|Col2|Col3|Col4|Col5|Col6|
+|Co$l_{1}$|Co$l_{2}$|Co$l_{3}$|Co$l_{4}$|Co$l_{5}$|Co$l_{6}$|
 |---|---|---|---|---|---|
 |||||||
 |||||||
@@ -1393,7 +1403,7 @@ Fig. 5.2: Correlation coefficient between the number of times noticed and the pa
 
 1.00
 
-μx μy μz Cx Cy Cz μx*Cx μy*Cy μz*Cz notice
+$\mu$x $\mu$y $\mu$z Cx Cy Cz $\mu$x*Cx $\mu$y*Cy $\mu$z*Cz notice
 
 0.75
 
@@ -1460,7 +1470,7 @@ Fig. 6.1: Correlation coefficient between the number of times noticed and the pa
 最後に，相互作用項 *µ* × *C* の影響について述べる．相互作用項（ *µ* × *C* ）については，
 
 *µ* *x* × *C* *x* （ 0.35 ）が中程度の正の相関を示した一方で， *µ* *y* × *C* *y* （ 0.02 ）および *µ* *z* × *C* *z* （
-0.35 ）は低いまたは負の相関を示した．これらの結果は，注意分布の広がりが方向ごと
+### ）は低いまたは負の相関を示した．これらの結果は，注意分布の広がりが方向ごと
 
 に異なる寄与を持つことを示している．
 
@@ -1759,28 +1769,22 @@ and the mean distance of fixation points.
 
 0.2
 
-Subject A
-Subject B
-Subject C
-Subject D
-Subject E
-Subject F
-Subject G
-Subject H
-Subject I
-Subject J
-Subject K
-Subject L
+Subject ASubject B
+Subject CSubject D
+Subject ESubject F
+Subject GSubject H
+Subject ISubject J
+Subject KSubject L
 
 0.0
 
-|Col1|Col2|
+|Co$l_{1}$|Co$l_{2}$|
 |---|---|
 |||
 |||
 |||
 
-0.0 0.2 0.4 0.6 0.8 1.0
+### 0.2 0.4 0.6 0.8 1.0
 Average distance between change position and fixation point
 
 Fig. 7.1: Probability of noticing a change for the average distance between the change location
@@ -2029,7 +2033,7 @@ vol. 24, no. 2, pp. 287-303, Feb. 2012.
 
 Luminance in Pupillometry for Field Measurements of Cognitive Workload”, in
 
-IEEE Sensors Journal, vol. 21, no. 5, pp. 6393-6400, 1 March1, 2021.
+IEEE Sensors Journal, vol. 21, no. 5, pp. 6393-6400, 1 Marc$h_{1}$, 2021.
 
 [28] V. Delvigne, H. Wannous, T. Dutoit, L. Ris and J. -P. Vandeborre ： “PhyDAA:
 
@@ -2049,11 +2053,11 @@ Systems for Video Technology, vol. 32, no. 5, pp. 2612-2623, May 2022 ．
 
 て生じた非注意性盲目の数値化 ”, 日本機械学会ロボティクス・メカトロニクス講
 
-演会’ 23, 2P1-H23, 2023/06/30.
+演会’ 23, 2$P_{1}$-$H_{23}$, 2023/06/30.
 
 **[iii]** 小野川樹, 五十嵐洋 : “VR ユーザーの視線データを利用した非注意性盲目の予測
 
-モデル構築 ”, 日本機械学会ロボティクス・メカトロニクス講演会’ 24, 2P2-R09,
+モデル構築 ”, 日本機械学会ロボティクス・メカトロニクス講演会’ 24, 2$P_{2}$-$R_{09}$,
 
 2024/05/31.
 
