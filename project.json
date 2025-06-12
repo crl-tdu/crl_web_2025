@@ -123,7 +123,7 @@
     },
     {
       "id": "2019_M_y.uchida",
-      "title": "論　文触覚刺激による運動錯覚時の上腕運動特性評価",
+      "title": "触覚刺激による運動錯覚時の上腕運動特性評価",
       "year": 2019,
       "type": "修士",
       "tag": "人間センシング",
@@ -133,15 +133,15 @@
       "detail_link": "project/2019/2019_M_y.uchida_detail.html"
     },
     {
-      "id": "2019_M_z.meng_2",
+      "id": "2019_M_z.meng",
       "title": "個人操作特性を考慮した操作対象ダイナミクスの最適化",
       "year": 2019,
       "type": "修士",
       "tag": "個人操作特性",
       "category": "hms",
       "summary": "個人操作特性分析による人間機械システムのパーソナライゼーション技術",
-      "thumb": "project/2019/img/2019_M_z.meng_2_thumb.png",
-      "detail_link": "project/2019/2019_M_z.meng_2_detail.html"
+      "thumb": "project/2019/img/2019_M_z.meng_thumb.png",
+      "detail_link": "project/2019/2019_M_z.meng_detail.html"
     },
     {
       "id": "2020_B_a.inoue",
@@ -353,15 +353,15 @@
       "detail_link": "project/2021/2021_B_s.watanabe_detail.html"
     },
     {
-      "id": "2021_B_t.kasai",
+      "id": "2021_B_t.kassai",
       "title": "機械操作における自己主体感の評価",
       "year": 2021,
       "type": "学部",
       "tag": "自己主体感",
       "category": "hms",
       "summary": "動的作業における連続した自己主体感をNNで評価する手法",
-      "thumb": "project/2021/img/2021_B_t.kasai_thumb.png",
-      "detail_link": "project/2021/2021_B_t.kasai_detail.html"
+      "thumb": "project/2021/img/2021_B_t.kassai_thumb.png",
+      "detail_link": "project/2021/2021_B_t.kassai_detail.html"
     },
     {
       "id": "2021_B_t.shike",
@@ -802,17 +802,6 @@
       "summary": "低コストワイヤセンサによる座位姿勢モニタリングシステム",
       "thumb": "project/2023/img/2023_M_y.yamada_thumb.png",
       "detail_link": "project/2023/2023_M_y.yamada_detail.html"
-    },
-    {
-      "id": "2023_M_01",
-      "title": "操作支援下における自己主体感の評価",
-      "year": 2023,
-      "type": "修士",
-      "tag": "自己主体感",
-      "category": "sensing",
-      "summary": "操作支援システムにおける最適な自己主体感維持手法",
-      "thumb": "project/2023/img/2023_M_01_thumb.png",
-      "detail_link": "project/2023/2023_M_01_detail.html"
     },
     {
       "id": "2024_B_a.noto",
