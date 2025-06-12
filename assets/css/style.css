@@ -1,35 +1,88 @@
-/* カスタムフォントの設定 */
+/* 全体フォント設定 */
 body {
   font-family: 'Inter', 'Noto Sans JP', 'Noto Serif JP', sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* フィルタリング時のトランジション */
+/* カード全体のスタイル */
 .portfolio-item {
   transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .portfolio-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
 
+/* 非表示カード */
 .portfolio-item.hide {
-  transform: scale(0.9);
+  transform: scale(0.95);
   opacity: 0;
   display: none;
 }
 
+/* 画像 */
 .portfolio-item img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
+/* カード内のテキスト領域 */
+.portfolio-item .p-6 {
+  padding: 1.5rem;
+}
+
+/* タグ（上部の分類ラベル） */
+.portfolio-item span {
+  background-color: #e5e7eb;
+  color: #111827;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+/* タイトル */
+.portfolio-item h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+/* 概要テキスト */
+.portfolio-item p {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+/* 詳細リンク */
+.portfolio-item a {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.portfolio-item a:hover {
+  text-decoration: underline;
+}
+
+/* フィルターボタン */
 .filter-btn {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -44,6 +97,27 @@ body {
   color: #ffffff;
 }
 
+/* フッター */
 footer p {
   font-family: 'Noto Serif JP', serif;
+}
+
+/* 検索ボックス */
+#search-box {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 1.5rem auto;
+  display: block;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+#search-box:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
