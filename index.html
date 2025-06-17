@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>協調ロボティクス研究室 | Neural Network Interface</title>
-  <meta name="description" content="協調ロボティクス研究室 - 最先端AI・ロボティクス・ヒューマンインタフェース研究">
+  <title>協調ロボティクス研究室 | 東京電機大学</title>
+  <meta name="description" content="東京電機大学 協調ロボティクス研究室 - 人工知能・ロボティクス・ヒューマンインタフェース研究で未来を創造">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -25,6 +25,7 @@
     <nav class="nav" id="nav">
       <a href="#about" class="nav__link">About</a>
       <a href="#research" class="nav__link">Research</a>
+      <a href="#publications" class="nav__link">研究業績</a>
       <a href="#stats" class="nav__link">Data</a>
       <a href="#contact" class="nav__link">Contact</a>
     </nav>
@@ -39,15 +40,16 @@
   <section class="section section--hero" id="hero">
     <div class="container">
       <div class="hero fade-in-up">
-        <h1 class="hero__title text-gradient">
-          Cooperative Robotics Laboratory
+        <h1 class="hero__title">
+          協調ロボティクス研究室
         </h1>
         <p class="hero__subtitle">
-          人工知能とロボティクスが織りなす未来<br>
-          「空気を読める賢さ」を機械に実装する次世代研究
+          人と機械が協力しあう未来を創造<br>
+          AI・ロボティクス・ヒューマンインタフェースの最先端研究<br>
+          <strong>夢のある技術で社会課題を解決</strong>
         </p>
-        <a href="#research" class="hero__cta glass">
-          Explore Research
+        <a href="#research" class="hero__cta">
+          研究内容を見る
         </a>
       </div>
     </div>
@@ -66,9 +68,12 @@
       
       <div class="glass" style="padding: 3rem; border-radius: 20px; margin: 2rem auto; max-width: 900px;">
         <p style="font-size: 1.1rem; line-height: 1.8; text-align: center;">
-          協調ロボティクス研究室では、「協調」をキーワードに、人間と機械が自然に協力しあえる未来の実現を目指しています。
-          人間のように「空気を読める」賢さを機械に与えることで、生活の質を向上させ、社会が直面する課題を解決する革新的な技術を創造します。
-          人間センシング、モーションコントロール、チームワーク支援など、多岐にわたるテーマで、夢のある研究に取り組んでいます。
+          <strong>協調ロボティクス研究室</strong>では、「協調」をキーワードに、人間と機械が自然に協力しあえる未来の実現を目指しています。<br><br>
+          🤖 <strong>人工知能</strong>：人間のように考える賢いシステム<br>
+          🎯 <strong>ヒューマンインタフェース</strong>：人と機械の自然な対話<br>
+          🔧 <strong>ロボティクス</strong>：人を支援する協調ロボット<br><br>
+          高校生の皆さんにとって身近な技術から、大学院レベルの高度な研究まで、
+          幅広いテーマで「夢のある研究」に取り組んでいます。
         </p>
       </div>
     </div>
@@ -79,22 +84,22 @@
     <div class="container">
       <div class="stats__container fade-in-up">
         <div class="search__input-wrapper">
-          <input type="text" id="search-box" class="search__input" placeholder="研究テーマを検索... (AI, ロボット, センシング)">
           <span class="search__icon">🔍</span>
+          <input type="text" id="search-box" class="search__input" placeholder="研究テーマを検索... (AI, ロボット, センシング)">
         </div>
         
         <div class="stats">
           <div class="stats__item pulse">
             <span class="stats__number" data-count="990">990</span>
-            <span class="stats__label">Research Images</span>
+            <span class="stats__label">研究画像</span>
           </div>
           <div class="stats__item pulse">
             <span class="stats__number" data-count="91">91</span>
-            <span class="stats__label">Project Files</span>
+            <span class="stats__label">研究プロジェクト</span>
           </div>
           <div class="stats__item pulse">
             <span class="stats__number" data-count="6">6</span>
-            <span class="stats__label">Years Data</span>
+            <span class="stats__label">年間のデータ</span>
           </div>
         </div>
       </div>
@@ -105,20 +110,21 @@
   <section class="section projects-section" id="research">
     <div class="container">
       <div class="projects__header fade-in-up">
-        <h2 class="projects__title">Research Projects</h2>
+        <h2 class="projects__title">研究プロジェクト</h2>
         <p class="projects__subtitle">
-          最先端の研究プロジェクト群 - AIとロボティクスが織りなすイノベーション
+          学部生から大学院生まで取り組む多彩な研究テーマ<br>
+          AI・ロボティクス・ヒューマンインタフェースの最前線
         </p>
       </div>
 
       <!-- Filter System -->
       <div class="projects__filters fade-in-up" id="portfolio-filters">
-        <button class="filter-btn active" data-filter="*">All Projects</button>
-        <button class="filter-btn" data-filter="sensing">Human Sensing</button>
-        <button class="filter-btn" data-filter="hms">Human-Machine</button>
-        <button class="filter-btn" data-filter="teamwork">Teamwork AI</button>
-        <button class="filter-btn" data-filter="motion">Motion Control</button>
-        <button class="filter-btn" data-filter="robot">Robot Cooperation</button>
+        <button class="filter-btn active" data-filter="*">すべて</button>
+        <button class="filter-btn" data-filter="sensing">センシング</button>
+        <button class="filter-btn" data-filter="hms">ヒューマン・マシン</button>
+        <button class="filter-btn" data-filter="teamwork">チームワークAI</button>
+        <button class="filter-btn" data-filter="motion">モーション制御</button>
+        <button class="filter-btn" data-filter="robot">ロボット協調</button>
       </div>
 
       <!-- Projects Grid -->
@@ -127,34 +133,96 @@
       </div>
     </div>
   </section>
+
+  <!-- Publications Section -->
+  <section class="section publications-section" id="publications">
+    <div class="container">
+      <div class="projects__header fade-in-up">
+        <h2 class="projects__title">研究業績</h2>
+        <p class="projects__subtitle">
+          学術雑誌論文・受賞・講演・国際会議発表の実績<br>
+          協調ロボティクス分野での研究成果
+        </p>
+      </div>
+
+      <!-- Publications Search and Filter -->
+      <div class="publications__controls fade-in-up">
+        <div class="search__input-wrapper">
+          <span class="search__icon">🔍</span>
+          <input type="text" id="publications-search" class="search__input" placeholder="論文タイトル、著者名で検索...">
+        </div>
+        
+        <div class="publications__filters" id="publications-filters">
+          <button class="filter-btn active" data-filter="*">すべて</button>
+          <button class="filter-btn" data-filter="journal">論文</button>
+          <button class="filter-btn" data-filter="award">受賞</button>
+          <button class="filter-btn" data-filter="lecture">講演</button>
+          <button class="filter-btn" data-filter="conference">国際会議</button>
+          <button class="filter-btn" data-filter="domestic">国内学会</button>
+        </div>
+      </div>
+
+      <!-- Publications List -->
+      <div class="publications__list fade-in-up" id="publications-container">
+        <div class="glass" style="padding: 2rem; text-align: center; color: var(--text-secondary);">
+          研究業績データを読み込み中...
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
+
+<!-- Research Detail Modal -->
+<div id="research-modal" class="modal" style="display: none;">
+  <div class="modal__overlay">
+    <div class="modal__container">
+      <div class="modal__header">
+        <h3 class="modal__title"></h3>
+        <button class="modal__close" aria-label="モーダルを閉じる">&times;</button>
+      </div>
+      <div class="modal__content">
+        <div class="modal__image-section">
+          <img src="" alt="" class="modal__image">
+          <div class="modal__year-badge"></div>
+        </div>
+        <div class="modal__info">
+          <div class="modal__author"></div>
+          <div class="modal__tags"></div>
+          <div class="modal__abstract"></div>
+          <div class="modal__details"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Footer -->
 <footer class="footer" id="contact">
   <div class="container">
     <div class="footer__content">
       <div class="footer__section">
-        <h3>Cooperative Robotics Lab</h3>
+        <h3>協調ロボティクス研究室</h3>
         <p>東京電機大学 工学部 電子システム工学科</p>
-        <p>次世代AI・ロボティクス研究の最前線</p>
+        <p>人と機械が協力する未来を創造</p>
+        <p>高校生・大学生・大学院生歓迎</p>
       </div>
       <div class="footer__section">
-        <h3>Research Fields</h3>
-        <p>• 人工知能 (Artificial Intelligence)</p>
-        <p>• ヒューマンインタフェース (Human Interface)</p>
-        <p>• ロボティクス (Robotics)</p>
-        <p>• 認知科学 (Cognitive Science)</p>
-        <p>• 生体信号処理 (Biological Signal Processing)</p>
+        <h3>研究分野</h3>
+        <p>🤖 人工知能 (AI)</p>
+        <p>🎯 ヒューマンインタフェース</p>
+        <p>🔧 ロボティクス</p>
+        <p>🧠 認知科学</p>
+        <p>📊 生体信号処理</p>
       </div>
       <div class="footer__section">
-        <h3>Contact</h3>
+        <h3>アクセス・お問い合わせ</h3>
         <p>〒120-8551 東京都足立区千住旭町5番</p>
-        <p>Tokyo Denki University</p>
-        <p><a href="mailto:example@dendai.ac.jp">example@dendai.ac.jp</a></p>
+        <p>東京電機大学 千住キャンパス</p>
+        <p><a href="mailto:example@dendai.ac.jp">研究室見学・相談はこちら</a></p>
       </div>
     </div>
     <div class="footer__bottom">
-      <p>&copy; 2024 Cooperative Robotics Laboratory. All Rights Reserved.</p>
+      <p>&copy; 2024 協調ロボティクス研究室 - 東京電機大学. All Rights Reserved.</p>
     </div>
   </div>
 </footer>
@@ -162,7 +230,7 @@
 <!-- JavaScript -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Interactive Particle System
+  // Fresh Particle System with UDC Colors
   const canvas = document.getElementById('particle-canvas');
   const ctx = canvas.getContext('2d');
   let particles = [];
@@ -178,12 +246,12 @@ document.addEventListener('DOMContentLoaded', function() {
     return {
       x: x || Math.random() * canvas.width,
       y: y || Math.random() * canvas.height,
-      vx: (Math.random() - 0.5) * 0.5,
-      vy: (Math.random() - 0.5) * 0.5,
+      vx: (Math.random() - 0.5) * 0.3,
+      vy: (Math.random() - 0.5) * 0.3,
       life: 1,
-      decay: Math.random() * 0.01 + 0.005,
-      size: Math.random() * 2 + 1,
-      color: Math.random() > 0.5 ? '#6366F1' : '#10F0C4'
+      decay: Math.random() * 0.008 + 0.003,
+      size: Math.random() * 1.5 + 0.5,
+      color: Math.random() > 0.5 ? '#0075C7' : '#FF6900'
     };
   }
 
@@ -195,15 +263,15 @@ document.addEventListener('DOMContentLoaded', function() {
       p.x += p.vx;
       p.y += p.vy;
       
-      // Mouse interaction
+      // Mouse interaction (gentler)
       const dx = mouseX - p.x;
       const dy = mouseY - p.y;
       const distance = Math.sqrt(dx * dx + dy * dy);
       
-      if (distance < 100) {
-        const force = (100 - distance) / 100;
-        p.vx += dx * force * 0.001;
-        p.vy += dy * force * 0.001;
+      if (distance < 80) {
+        const force = (80 - distance) / 80;
+        p.vx += dx * force * 0.0005;
+        p.vy += dy * force * 0.0005;
       }
       
       // Update life
@@ -215,8 +283,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
     
-    // Add new particles
-    if (particles.length < 50) {
+    // Add new particles (fewer for cleaner look)
+    if (particles.length < 25) {
       particles.push(createParticle());
     }
   }
@@ -226,9 +294,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     particles.forEach(p => {
       ctx.save();
-      ctx.globalAlpha = p.life;
+      ctx.globalAlpha = p.life * 0.6;
       ctx.fillStyle = p.color;
-      ctx.shadowBlur = 10;
+      ctx.shadowBlur = 8;
       ctx.shadowColor = p.color;
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
@@ -236,18 +304,18 @@ document.addEventListener('DOMContentLoaded', function() {
       ctx.restore();
     });
     
-    // Draw connections
+    // Draw gentle connections
     particles.forEach((p1, i) => {
       particles.slice(i + 1).forEach(p2 => {
         const dx = p1.x - p2.x;
         const dy = p1.y - p2.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
         
-        if (distance < 100) {
+        if (distance < 80) {
           ctx.save();
-          ctx.globalAlpha = (1 - distance / 100) * 0.3;
-          ctx.strokeStyle = '#6366F1';
-          ctx.lineWidth = 0.5;
+          ctx.globalAlpha = (1 - distance / 80) * 0.2;
+          ctx.strokeStyle = '#0075C7';
+          ctx.lineWidth = 0.3;
           ctx.beginPath();
           ctx.moveTo(p1.x, p1.y);
           ctx.lineTo(p2.x, p2.y);
@@ -266,7 +334,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Initialize particles
   resizeCanvas();
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 20; i++) {
     particles.push(createParticle());
   }
 
@@ -341,7 +409,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const projects = Array.isArray(data) ? data : data.projects || [];
       
       if (projects.length === 0) {
-        container.innerHTML = '<div class="glass" style="padding: 2rem; text-align: center;">研究プロジェクトデータを読み込み中...</div>';
+        container.innerHTML = '<div class="glass" style="padding: 2rem; text-align: center; color: var(--text-secondary);">研究プロジェクトデータを読み込み中...</div>';
         return;
       }
 
@@ -356,7 +424,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } catch (error) {
       console.error('Error loading portfolio:', error);
       document.getElementById('portfolio-container').innerHTML = 
-        '<div class="glass" style="padding: 2rem; text-align: center; color: var(--neural-rose);">プロジェクトデータの読み込みに失敗しました</div>';
+        '<div class="glass" style="padding: 2rem; text-align: center; color: var(--text-light);">プロジェクトデータの読み込みに失敗しました</div>';
     }
   }
 
@@ -365,6 +433,9 @@ document.addEventListener('DOMContentLoaded', function() {
     card.className = 'project-card';
     card.setAttribute('data-category', project.category || 'other');
     card.style.animationDelay = `${index * 0.1}s`;
+    
+    // Add click handler for modal
+    card.addEventListener('click', () => openModal(project));
     
     let imagePath = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM2MzY2RjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMEYwQzQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjEiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxNHB4IiBmaWxsPSIjRjhGQUZDIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+UkVTRUFSQ0ggSU1BR0U8L3RleHQ+PC9zdmc+';
     
@@ -381,6 +452,10 @@ document.addEventListener('DOMContentLoaded', function() {
       `<span class="project-card__tag">${tag.toUpperCase()}</span>`
     ).join('');
     
+    // Clean markdown syntax from abstract content
+    let cleanAbstract = project.abstract || project.description || '研究の詳細情報を読み込み中...';
+    cleanAbstract = cleanAbstract.replace(/\*\*(.+?)\*\*/g, '$1'); // Remove ** markdown
+    
     card.innerHTML = `
       <div class="project-card__year-badge">${project.year || '2024'}</div>
       <img src="${imagePath}" alt="${project.title}" class="project-card__image" 
@@ -391,7 +466,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <h3 class="project-card__title">${project.title || 'Untitled Project'}</h3>
         <div class="project-card__author">${project.author || 'Anonymous'}</div>
-        <p class="project-card__abstract">${project.abstract || project.description || '研究の詳細情報を読み込み中...'}</p>
+        <p class="project-card__abstract">${cleanAbstract}</p>
       </div>
     `;
     
@@ -495,10 +570,278 @@ document.addEventListener('DOMContentLoaded', function() {
     statsObserver.observe(statsSection);
   }
 
+  // Modal functionality
+  const modal = document.getElementById('research-modal');
+  const modalClose = document.querySelector('.modal__close');
+  const modalOverlay = document.querySelector('.modal__overlay');
+
+  async function openModal(project) {
+    // Populate modal content
+    document.querySelector('.modal__title').textContent = project.title || 'Untitled Project';
+    document.querySelector('.modal__author').textContent = `研究者: ${project.author || 'Anonymous'}`;
+    document.querySelector('.modal__year-badge').textContent = project.year || '2024';
+    
+    // Set image
+    const modalImage = document.querySelector('.modal__image');
+    let imagePath = project.thumbnail || project.image_path;
+    if (imagePath) {
+      if (imagePath.startsWith('proc/')) {
+        imagePath = `public/images/thumbnails/${imagePath.split('/').pop()}`;
+      }
+      modalImage.src = imagePath;
+      modalImage.alt = project.title || 'Research Image';
+    } else {
+      modalImage.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDc1QzciLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNGRjY5MDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjEiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNHB4IiBmaWxsPSIjMDA3NUM3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+🔬 研究画像</dGV4dD48L3N2Zz4=';
+      modalImage.alt = 'Research Placeholder';
+    }
+    
+    // Set tags
+    const tagsContainer = document.querySelector('.modal__tags');
+    tagsContainer.innerHTML = '';
+    const tags = project.tags || [project.category || 'research'];
+    tags.slice(0, 5).forEach(tag => {
+      const tagElement = document.createElement('span');
+      tagElement.className = 'modal__tag';
+      tagElement.textContent = tag.toUpperCase();
+      tagsContainer.appendChild(tagElement);
+    });
+    
+    // Set abstract (from _abst.md)
+    document.querySelector('.modal__abstract').textContent = 
+      project.abstract || '研究の概要情報が利用できません。';
+    
+    // Load and display detailed content from _detail.md
+    const detailsContainer = document.querySelector('.modal__details');
+    detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細情報を読み込み中...</div>';
+    
+    if (project.detail_file) {
+      try {
+        const response = await fetch(project.detail_file);
+        if (response.ok) {
+          const markdownContent = await response.text();
+          const htmlContent = parseMarkdownToHTML(markdownContent);
+          detailsContainer.innerHTML = htmlContent;
+        } else {
+          detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細情報の読み込みに失敗しました。</div>';
+        }
+      } catch (error) {
+        console.error('Error loading detail file:', error);
+        detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細情報が利用できません。</div>';
+      }
+    } else {
+      detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細ファイルが見つかりません。</div>';
+    }
+    
+    // Show modal
+    modal.style.display = 'block';
+    setTimeout(() => {
+      modal.classList.add('active');
+    }, 10);
+    
+    // Prevent body scroll
+    document.body.style.overflow = 'hidden';
+  }
+
+  // Simple Markdown to HTML parser for detail content
+  function parseMarkdownToHTML(markdown) {
+    let html = markdown;
+    
+    // Parse headers
+    html = html.replace(/^### (.+)$/gm, '<h4>$1</h4>');
+    html = html.replace(/^## (.+)$/gm, '<h3>$1</h3>');
+    html = html.replace(/^# (.+)$/gm, '<h2>$1</h2>');
+    
+    // Parse bold text
+    html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    
+    // Parse line breaks and paragraphs
+    html = html.replace(/\n\n/g, '</p><p>');
+    html = html.replace(/\n/g, '<br>');
+    html = '<p>' + html + '</p>';
+    
+    // Clean up empty paragraphs
+    html = html.replace(/<p><\/p>/g, '');
+    html = html.replace(/<p><br>/g, '<p>');
+    html = html.replace(/<br><\/p>/g, '</p>');
+    
+    // Parse horizontal rules
+    html = html.replace(/---/g, '<hr>');
+    
+    // Handle research paper citations
+    html = html.replace(/- (.+):/g, '<div class="citation"><strong>$1:</strong>');
+    html = html.replace(/pp\. ([\d-]+)/g, 'pp. $1</div>');
+    
+    return html;
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+    setTimeout(() => {
+      modal.style.display = 'none';
+      document.body.style.overflow = '';
+    }, 300);
+  }
+
+  // Modal event listeners
+  modalClose.addEventListener('click', closeModal);
+  modalOverlay.addEventListener('click', (e) => {
+    if (e.target === modalOverlay) {
+      closeModal();
+    }
+  });
+
+  // ESC key to close modal
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  // Touch swipe to close on mobile
+  let startY = 0;
+  modalOverlay.addEventListener('touchstart', (e) => {
+    startY = e.touches[0].clientY;
+  });
+
+  modalOverlay.addEventListener('touchmove', (e) => {
+    if (window.innerWidth <= 768) { // Mobile only
+      const currentY = e.touches[0].clientY;
+      const diffY = currentY - startY;
+      
+      if (diffY > 100) { // Swipe down threshold
+        closeModal();
+      }
+    }
+  });
+
+  // Publications functionality
+  async function loadPublications() {
+    try {
+      console.log('Loading publications data...');
+      
+      const response = await fetch('publications.json');
+      const data = await response.json();
+      console.log('Loaded publications:', data);
+      
+      const container = document.getElementById('publications-container');
+      const publications = data.publications || [];
+      
+      if (publications.length === 0) {
+        container.innerHTML = '<div class="glass" style="padding: 2rem; text-align: center; color: var(--text-secondary);">研究業績データが見つかりません</div>';
+        return;
+      }
+
+      // 表示
+      displayPublications(publications);
+      initializePublicationsFilters(publications);
+      
+      console.log(`Loaded ${publications.length} publications`);
+      
+    } catch (error) {
+      console.error('Error loading publications:', error);
+      document.getElementById('publications-container').innerHTML = 
+        '<div class="glass" style="padding: 2rem; text-align: center; color: var(--text-light);">研究業績データの読み込みに失敗しました</div>';
+    }
+  }
+
+  function displayPublications(publications) {
+    const container = document.getElementById('publications-container');
+    container.innerHTML = '';
+    
+    publications.forEach((pub, index) => {
+      const item = createPublicationItem(pub, index);
+      container.appendChild(item);
+    });
+  }
+
+  function createPublicationItem(pub, index) {
+    const item = document.createElement('div');
+    item.className = 'publication-item fade-in-up';
+    item.setAttribute('data-category', pub.category);
+    item.style.animationDelay = `${index * 0.05}s`;
+    
+    const categoryText = getCategoryText(pub.category);
+    const authorsText = pub.authors.length > 0 ? pub.authors.join(', ') : '著者情報なし';
+    
+    item.innerHTML = `
+      <div class="publication-item__header">
+        <span class="publication-item__category publication-item__category--${pub.category}">
+          ${categoryText}
+        </span>
+        <span class="publication-item__year">${pub.year || '年不明'}</span>
+      </div>
+      ${pub.title ? `<h3 class="publication-item__title">${pub.title}</h3>` : ''}
+      <div class="publication-item__authors">${authorsText}</div>
+      <div class="publication-item__text">${pub.text}</div>
+      ${pub.link ? `<a href="${pub.link}" target="_blank" rel="noopener" class="publication-item__link">詳細を見る</a>` : ''}
+    `;
+    
+    return item;
+  }
+
+  function getCategoryText(category) {
+    const categoryMap = {
+      'journal': '📄 学術雑誌',
+      'award': '🏆 受賞',
+      'lecture': '🎤 講演',
+      'conference': '🌍 国際会議',
+      'domestic': '🇯🇵 国内学会',
+      'other': '📋 その他'
+    };
+    return categoryMap[category] || '📋 その他';
+  }
+
+  function initializePublicationsFilters(publications) {
+    const filterBtns = document.querySelectorAll('#publications-filters .filter-btn');
+    const searchBox = document.getElementById('publications-search');
+
+    // フィルターボタン
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const filter = this.getAttribute('data-filter');
+        
+        filterBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        filterPublications(publications, filter, searchBox.value);
+      });
+    });
+
+    // 検索機能
+    if (searchBox) {
+      searchBox.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+        const activeFilter = document.querySelector('#publications-filters .filter-btn.active').getAttribute('data-filter');
+        
+        filterPublications(publications, activeFilter, searchTerm);
+      });
+    }
+  }
+
+  function filterPublications(publications, categoryFilter, searchTerm) {
+    let filtered = publications;
+    
+    // カテゴリフィルター
+    if (categoryFilter !== '*') {
+      filtered = filtered.filter(pub => pub.category === categoryFilter);
+    }
+    
+    // 検索フィルター
+    if (searchTerm) {
+      filtered = filtered.filter(pub => {
+        const searchableText = `${pub.title} ${pub.authors.join(' ')} ${pub.text}`.toLowerCase();
+        return searchableText.includes(searchTerm);
+      });
+    }
+    
+    displayPublications(filtered);
+  }
+
   // Initialize everything
   loadPortfolio();
+  loadPublications();
   
-  console.log('🚀 Neural Network Interface Initialized');
+  console.log('🎓 協調ロボティクス研究室 - UDC準拠デザインシステム + モーダル機能 + 研究業績表示 初期化完了 🤖');
 });
 </script>
 
