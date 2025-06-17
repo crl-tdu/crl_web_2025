@@ -625,8 +625,8 @@ a:hover::after {
 
 .project-card__tag {
   padding: var(--space-xs) var(--space-md);
-  background: linear-gradient(135deg, var(--udc-blue), #0056A3);
-  color: var(--text-on-blue);
+  background: var(--udc-orange);
+  color: var(--text-on-orange);
   border-radius: 12px;
   font-family: var(--font-mono);
   font-size: var(--text-xs);
@@ -1003,8 +1003,8 @@ a:hover::after {
 
 .modal__tag {
   padding: var(--space-xs) var(--space-md);
-  background: linear-gradient(135deg, var(--udc-blue), var(--udc-orange));
-  color: var(--text-on-blue);
+  background: var(--udc-orange);
+  color: var(--text-on-orange);
   border-radius: 12px;
   font-family: var(--font-mono);
   font-size: var(--text-xs);

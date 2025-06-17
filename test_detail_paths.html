@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Path Test</title>
+</head>
+<body>
+    <h1>Detail File Path Test</h1>
+    <div id="test-results"></div>
+    
+    <script>
+        async function testDetailPaths() {
+            const response = await fetch('project.json');
+            const data = await response.json();
+            const projects = data.projects;
+            
+            const results = document.getElementById('test-results');
+            let html = '<ul>';
+            let errorCount = 0;
+            
+            for (const project of projects.slice(0, 10)) { // Test first 10 projects
+                const detailPath = project.detail_file;
+                if (detailPath) {
+                    try {
+                        const detailResponse = await fetch(detailPath);
+                        if (detailResponse.ok) {
+                            html += `<li style="color: green;">✓ ${project.id}: ${detailPath}</li>`;
+                        } else {
+                            html += `<li style="color: red;">✗ ${project.id}: ${detailPath} (${detailResponse.status})</li>`;
+                            errorCount++;
+                        }
+                    } catch (err) {
+                        html += `<li style="color: red;">✗ ${project.id}: ${detailPath} (Network Error)</li>`;
+                        errorCount++;
+                    }
+                }
+            }
+            
+            html += '</ul>';
+            html = `<p>Tested first 10 projects. Errors: ${errorCount}</p>` + html;
+            results.innerHTML = html;
+        }
+        
+        testDetailPaths();
+    </script>
+</body>
+</html>

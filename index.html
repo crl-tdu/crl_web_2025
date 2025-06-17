@@ -20,11 +20,11 @@
   <div class="header__container">
     <div class="header__logo">
       <img src="assets/images/crl_logo_wb.png" alt="CRL Logo" class="header__logo-image">
-      <span class="header__logo-text">CRL</span>
+      <span class="header__logo-text">協調ロボティクス研究室</span>
     </div>
     <nav class="nav" id="nav">
       <a href="#about" class="nav__link">About</a>
-      <a href="#research" class="nav__link">Research</a>
+      <a href="#research" class="nav__link">研究テーマ</a>
       <a href="#publications" class="nav__link">研究業績</a>
       <a href="#stats" class="nav__link">Data</a>
       <a href="#contact" class="nav__link">Contact</a>
@@ -465,7 +465,7 @@ document.addEventListener('DOMContentLoaded', function() {
           ${tagElements}
         </div>
         <h3 class="project-card__title">${project.title || 'Untitled Project'}</h3>
-        <div class="project-card__author">${project.author || 'Anonymous'}</div>
+        <div class="project-card__author">${project.author || 'Anonymous'} (${project.year || '2024'}年度 ${project.type || '論文'})</div>
         <p class="project-card__abstract">${cleanAbstract}</p>
       </div>
     `;
@@ -616,12 +616,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (project.detail_file) {
       try {
+        console.log('Loading detail file:', project.detail_file);
         const response = await fetch(project.detail_file);
         if (response.ok) {
           const markdownContent = await response.text();
           const htmlContent = parseMarkdownToHTML(markdownContent);
           detailsContainer.innerHTML = htmlContent;
         } else {
+          console.error('Failed to load detail file:', response.status, response.statusText);
           detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細情報の読み込みに失敗しました。</div>';
         }
       } catch (error) {

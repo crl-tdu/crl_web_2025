@@ -1,0 +1,2834 @@
+{
+  "total_files": 91,
+  "successful_count": 91,
+  "error_count": 0,
+  "success_rate": 1.0,
+  "avg_quality_improvement": 0.030989010989011037,
+  "total_quality_improvement": 2.8200000000000043,
+  "avg_original_quality": 0.7517582417582417,
+  "avg_refined_quality": 0.7827472527472528,
+  "processing_time": "2025-06-12T17:36:44.782815",
+  "results": [
+    {
+      "filename": "2021_B_c.xu.md",
+      "metadata": {
+        "filename": "2021_B_c.xu.md",
+        "year": "2021",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "c.xu",
+        "title": "学士論文 - c.xu (2021)",
+        "english_title": null,
+        "abstract": "i"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.69
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.10000000000000009,
+      "original_size": 6721,
+      "refined_size": 6932,
+      "processed_at": "2025-06-12T17:36:44.233039"
+    },
+    {
+      "filename": "2023_B_r.uchida.md",
+      "metadata": {
+        "filename": "2023_B_r.uchida.md",
+        "year": "2023",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "r.uchida",
+        "title": "学士論文 - r.uchida (2023)",
+        "english_title": null,
+        "abstract": "よって VDT 作業時にストレスに合わせたフィードバックを行いストレス軽減を行う必要性がある．これを可能にするため，ストレスのリアルタイム推定手法として眼球情報に着目した．従来の眼球情報を用いたストレス推定手法では，評価方法がアンケートなどの主観評価で行われているため，本研究では精神的作業負荷の客観的手法とされている LF/HF を VDT 作業ストレスと定義し，眼球情報とストレスの関連性を調査した．実験結果より，瞬きと瞳孔経はストレスと関連性がある可能性を示唆した．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.7,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.78
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.7,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.82
+      },
+      "improvement": 0.039999999999999925,
+      "original_size": 10951,
+      "refined_size": 11542,
+      "processed_at": "2025-06-12T17:36:44.236512"
+    },
+    {
+      "filename": "2020_B_k.yoshida.md",
+      "metadata": {
+        "filename": "2020_B_k.yoshida.md",
+        "year": "2020",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "k.yoshida",
+        "title": "学士論文 - k.yoshida (2020)",
+        "english_title": null,
+        "abstract": "このシステムはアイトラッキングとして Tobii Eye Tracker 4C を用い，またドライビングシミュレータは Unity ， Racing wheel によって構成されている．これら Tobii ， Unity は言語を C# で統合することができる．これによって視線と運転の同時データ取得を行う．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 11760,
+      "refined_size": 12146,
+      "processed_at": "2025-06-12T17:36:44.239361"
+    },
+    {
+      "filename": "2024_B_r.kato.md",
+      "metadata": {
+        "filename": "2024_B_r.kato.md",
+        "year": "2024",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "r.kato",
+        "title": "学士論文 - r.kato (2024)",
+        "english_title": "Number of Steps",
+        "abstract": "エージェントがマーカーからの斥力を考慮することで探索範囲の拡大を促進し，さらに正規分布に基づく勾配を活用することで持続的な探索を可能とした．シミュレーション実験により，従来のランダムウォー"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 13902,
+      "refined_size": 14379,
+      "processed_at": "2025-06-12T17:36:44.245017"
+    },
+    {
+      "filename": "2021_M_n.takahashi.md",
+      "metadata": {
+        "filename": "2021_M_n.takahashi.md",
+        "year": "2021",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "n.takahashi",
+        "title": "修士論文 - n.takahashi (2021)",
+        "english_title": "LeaderFollower",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 18973,
+      "refined_size": 19521,
+      "processed_at": "2025-06-12T17:36:44.252099"
+    },
+    {
+      "filename": "2019_M_g.sasaki.md",
+      "metadata": {
+        "filename": "2019_M_g.sasaki.md",
+        "year": "2019",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "g.sasaki",
+        "title": "修士論文 - g.sasaki (2019)",
+        "english_title": "Cooperative Task Assistance using Force Feedback",
+        "abstract": "本研究では，協調作業における力情報を考慮するため各作業者に力のインタラクション"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.69
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.10000000000000009,
+      "original_size": 63237,
+      "refined_size": 65358,
+      "processed_at": "2025-06-12T17:36:44.277998"
+    },
+    {
+      "filename": "2020_B_h.nishimura.md",
+      "metadata": {
+        "filename": "2020_B_h.nishimura.md",
+        "year": "2020",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "h.nishimura",
+        "title": "学士論文 - h.nishimura (2020)",
+        "english_title": null,
+        "abstract": "i"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.75
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.040000000000000036,
+      "original_size": 11809,
+      "refined_size": 12061,
+      "processed_at": "2025-06-12T17:36:44.282114"
+    },
+    {
+      "filename": "2024_M_s.tsuchiya.md",
+      "metadata": {
+        "filename": "2024_M_s.tsuchiya.md",
+        "year": "2024",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "s.tsuchiya",
+        "title": "修士論文 - s.tsuchiya (2024)",
+        "english_title": null,
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 17601,
+      "refined_size": 18304,
+      "processed_at": "2025-06-12T17:36:44.286575"
+    },
+    {
+      "filename": "2022_M_h.yoshida.md",
+      "metadata": {
+        "filename": "2022_M_h.yoshida.md",
+        "year": "2022",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "h.yoshida",
+        "title": "修士論文 - h.yoshida (2022)",
+        "english_title": "Joint International Conference on Micromechatronics for Information and Preci",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.6900000000000001
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.7500000000000001
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 17274,
+      "refined_size": 17692,
+      "processed_at": "2025-06-12T17:36:44.294537"
+    },
+    {
+      "filename": "2024_B_a.noto.md",
+      "metadata": {
+        "filename": "2024_B_a.noto.md",
+        "year": "2024",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "a.noto",
+        "title": "学士論文 - a.noto (2024)",
+        "english_title": "NOFRAR",
+        "abstract": "実験結果より，提案手法が他の手法より酔いを軽減したことから有効性があることを示唆した．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 11297,
+      "refined_size": 11794,
+      "processed_at": "2025-06-12T17:36:44.297965"
+    },
+    {
+      "filename": "2024_M_i.kato.md",
+      "metadata": {
+        "filename": "2024_M_i.kato.md",
+        "year": "2024",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "i.kato",
+        "title": "修士論文 - i.kato (2024)",
+        "english_title": null,
+        "abstract": "FEP は Helmholtz が唱えた無意識的推論 [8] を元に KarlFriston らが提唱している脳の"
+      },
+      "original_quality": {
+        "structure": 0.3,
+        "readability": 0.6000000000000001,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.63
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.16000000000000003,
+      "original_size": 22979,
+      "refined_size": 23371,
+      "processed_at": "2025-06-12T17:36:44.304570"
+    },
+    {
+      "filename": "2019_B_h.emori.md",
+      "metadata": {
+        "filename": "2019_B_h.emori.md",
+        "year": "2019",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "h.emori",
+        "title": "学士論文 - h.emori (2019)",
+        "english_title": null,
+        "abstract": "i"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 8548,
+      "refined_size": 8875,
+      "processed_at": "2025-06-12T17:36:44.307161"
+    },
+    {
+      "filename": "2022_B_t.onogawa.md",
+      "metadata": {
+        "filename": "2022_B_t.onogawa.md",
+        "year": "2022",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "t.onogawa",
+        "title": "学士論文 - t.onogawa (2022)",
+        "english_title": null,
+        "abstract": "i"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 15304,
+      "refined_size": 15799,
+      "processed_at": "2025-06-12T17:36:44.311700"
+    },
+    {
+      "filename": "2019_B_r.mukawa.md",
+      "metadata": {
+        "filename": "2019_B_r.mukawa.md",
+        "year": "2019",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "r.mukawa",
+        "title": "学士論文 - r.mukawa (2019)",
+        "english_title": null,
+        "abstract": "を提案し，ロボットの協調性向上を目指す．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 10704,
+      "refined_size": 11098,
+      "processed_at": "2025-06-12T17:36:44.314599"
+    },
+    {
+      "filename": "2023_B_ke.nakamura.md",
+      "metadata": {
+        "filename": "2023_B_ke.nakamura.md",
+        "year": "2023",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "ke.nakamura",
+        "title": "学士論文 - ke.nakamura (2023)",
+        "english_title": "Step",
+        "abstract": "難であり，特にボトルネック環境では転倒や雑踏事故の危険性が高ま る．本研究では，駅の階段などの両方向移動が考えられるボトルネッ クに焦点を当て，譲り合いを改善するための誘導ロボットを提案する． これにより，人とロボットの 1:1 のすれ違いだけでなく，群衆全体を 誘導する方法が求められる．先行研究では避難誘導などの一方向への 誘導が中心だったが，本研究では両方向への移動に適した群衆誘導の システムを提案し，その有効性を検証する．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 15037,
+      "refined_size": 15450,
+      "processed_at": "2025-06-12T17:36:44.319065"
+    },
+    {
+      "filename": "2024_M_r.tanaka.md",
+      "metadata": {
+        "filename": "2024_M_r.tanaka.md",
+        "year": "2024",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "r.tanaka",
+        "title": "修士論文 - r.tanaka (2024)",
+        "english_title": "Evaluation of Postural Sway Induced by Auditory Stimulus",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 1.0,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.84
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.7500000000000001
+      },
+      "improvement": -0.08999999999999986,
+      "original_size": 27947,
+      "refined_size": 28373,
+      "processed_at": "2025-06-12T17:36:44.328085"
+    },
+    {
+      "filename": "2021_M_h.nakanishi.md",
+      "metadata": {
+        "filename": "2021_M_h.nakanishi.md",
+        "year": "2021",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "h.nakanishi",
+        "title": "修士論文 - h.nakanishi (2021)",
+        "english_title": "Audio Interface\n\nON or OFF\n\nConverter",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 24595,
+      "refined_size": 25218,
+      "processed_at": "2025-06-12T17:36:44.338430"
+    },
+    {
+      "filename": "2023_B_h.kitaiwa.md",
+      "metadata": {
+        "filename": "2023_B_h.kitaiwa.md",
+        "year": "2023",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "h.kitaiwa",
+        "title": "学士論文 - h.kitaiwa (2023)",
+        "english_title": null,
+        "abstract": "i"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 13303,
+      "refined_size": 13555,
+      "processed_at": "2025-06-12T17:36:44.341673"
+    },
+    {
+      "filename": "2020_B_y.oda.md",
+      "metadata": {
+        "filename": "2020_B_y.oda.md",
+        "year": "2020",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "y.oda",
+        "title": "学士論文 - y.oda (2020)",
+        "english_title": null,
+        "abstract": "を用いることは視覚的負荷が増加し，ストレスとして人体に影響を与える．自分がどれだけストレスを抱えているのか判別する手段として，"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.2,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.63
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.16000000000000003,
+      "original_size": 9500,
+      "refined_size": 9906,
+      "processed_at": "2025-06-12T17:36:44.345646"
+    },
+    {
+      "filename": "2021_M_k.tozuka.md",
+      "metadata": {
+        "filename": "2021_M_k.tozuka.md",
+        "year": "2021",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "k.tozuka",
+        "title": "修士論文 - k.tozuka (2021)",
+        "english_title": "For Further Development of VR Technology:",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.6900000000000001
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.7500000000000001
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 45087,
+      "refined_size": 45641,
+      "processed_at": "2025-06-12T17:36:44.360684"
+    },
+    {
+      "filename": "2019_B_y.sugano.md",
+      "metadata": {
+        "filename": "2019_B_y.sugano.md",
+        "year": "2019",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "y.sugano",
+        "title": "学士論文 - y.sugano (2019)",
+        "english_title": null,
+        "abstract": "ションを構築して有用性を検討した．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 14083,
+      "refined_size": 14337,
+      "processed_at": "2025-06-12T17:36:44.365541"
+    },
+    {
+      "filename": "2024_M_m.nakamura.md",
+      "metadata": {
+        "filename": "2024_M_m.nakamura.md",
+        "year": "2024",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "m.nakamura",
+        "title": "修士論文 - m.nakamura (2024)",
+        "english_title": "Target\nMovement",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.3,
+        "readability": 0.6000000000000001,
+        "consistency": 0.8,
+        "metadata": 0.7999999999999999,
+        "total": 0.5900000000000001
+      },
+      "refined_quality": {
+        "structure": 0.3,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.63
+      },
+      "improvement": 0.039999999999999925,
+      "original_size": 14611,
+      "refined_size": 15097,
+      "processed_at": "2025-06-12T17:36:44.371317"
+    },
+    {
+      "filename": "2019_M_z.meng.md",
+      "metadata": {
+        "filename": "2019_M_z.meng.md",
+        "year": "2019",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "z.meng",
+        "title": "修士論文 - z.meng (2019)",
+        "english_title": "Human internal model\n\nT ime",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.3,
+        "readability": 0.6000000000000001,
+        "consistency": 0.6,
+        "metadata": 0.9999999999999999,
+        "total": 0.59
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.20000000000000007,
+      "original_size": 30396,
+      "refined_size": 30702,
+      "processed_at": "2025-06-12T17:36:44.383141"
+    },
+    {
+      "filename": "2021_M_h.sugano.md",
+      "metadata": {
+        "filename": "2021_M_h.sugano.md",
+        "year": "2021",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "h.sugano",
+        "title": "修士論文 - h.sugano (2021)",
+        "english_title": "Method of Motion Design for Adapt to the Environment by",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 1.0,
+        "readability": 0.6000000000000001,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.84
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": -0.04999999999999993,
+      "original_size": 31769,
+      "refined_size": 32241,
+      "processed_at": "2025-06-12T17:36:44.393908"
+    },
+    {
+      "filename": "2022_M_a.nishimura.md",
+      "metadata": {
+        "filename": "2022_M_a.nishimura.md",
+        "year": "2022",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "a.nishimura",
+        "title": "修士論文 - a.nishimura (2022)",
+        "english_title": "Estimating Individual Reliance on Assistant System",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 1.0,
+        "readability": 0.6000000000000001,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.84
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": -0.04999999999999993,
+      "original_size": 31739,
+      "refined_size": 32182,
+      "processed_at": "2025-06-12T17:36:44.403445"
+    },
+    {
+      "filename": "2020_B_y.baba.md",
+      "metadata": {
+        "filename": "2020_B_y.baba.md",
+        "year": "2020",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "y.baba",
+        "title": "学士論文 - y.baba (2020)",
+        "english_title": "Input Output",
+        "abstract": "な情報から相手の意図を推定することが不可能である．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.69
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.10000000000000009,
+      "original_size": 10737,
+      "refined_size": 10978,
+      "processed_at": "2025-06-12T17:36:44.406862"
+    },
+    {
+      "filename": "2020_B_y.okakuji.md",
+      "metadata": {
+        "filename": "2020_B_y.okakuji.md",
+        "year": "2020",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "y.okakuji",
+        "title": "学士論文 - y.okakuji (2020)",
+        "english_title": null,
+        "abstract": "情報収集を効率的かつ安全に行う必要がある．災害現場において二次災害を伴わないレスキューロボットやウェアラブルデバイスによる情報収集の研究が行われている．そのため本研究では自己位置推定と地図構築の行える SLAM と呼ばれるアルゴリズムをウェアラブルデバイスとして使用し，使用者の周囲の状況を把握し安全性の向上を目標とした．本論文では 2 ウィンドウで SLAM が構築する地図とサーモグラフィの測定情報を表示させる方法と，両ウィンドウの測定値の評価を行う．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 13679,
+      "refined_size": 14501,
+      "processed_at": "2025-06-12T17:36:44.412261"
+    },
+    {
+      "filename": "2022_B_t.bitoh.md",
+      "metadata": {
+        "filename": "2022_B_t.bitoh.md",
+        "year": "2022",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "t.bitoh",
+        "title": "学士論文 - t.bitoh (2022)",
+        "english_title": null,
+        "abstract": "しかし心理的評価，被験者の感じているストレスというのはアンケー"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 7674,
+      "refined_size": 7936,
+      "processed_at": "2025-06-12T17:36:44.414579"
+    },
+    {
+      "filename": "2023_B_k.sudo.md",
+      "metadata": {
+        "filename": "2023_B_k.sudo.md",
+        "year": "2023",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "k.sudo",
+        "title": "学士論文 - k.sudo (2023)",
+        "english_title": null,
+        "abstract": "触覚分野の研究の需要が高まってきている．触覚にも様々な種類があるが．中でも硬さは物体の認知に重要な要素である．硬さ提示を行うデバイスは既に製品化されているが，デバイスの大規模化や高コスト化，ユーザビリティの低さといった問題を抱えている．硬さ提示には物理的な力のフィードバックが必要であるためアクチュエータの実装が不可欠であることが原因である．そこで代替的に振動のみを用いることでこれらの欠点を解消できるが，物理的フィードバックに比べて提示するには感覚が弱いという欠点を持つ．本研究では，振動による硬さ提示のメリットを損なわず，硬さ感覚の提示の向上を目的とする．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 7964,
+      "refined_size": 8487,
+      "processed_at": "2025-06-12T17:36:44.416950"
+    },
+    {
+      "filename": "2022_B_s.sanuka.md",
+      "metadata": {
+        "filename": "2022_B_s.sanuka.md",
+        "year": "2022",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "s.sanuka",
+        "title": "学士論文 - s.sanuka (2022)",
+        "english_title": "Level",
+        "abstract": "しかし，触力覚提示デバイス用いた手法に勝る大きな触力覚を疑似触力覚によって提示している研究は無い．また，疑似触力覚について臨場感が低下する上限などの定量的評価がされている研究も少ない．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.75
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.040000000000000036,
+      "original_size": 13036,
+      "refined_size": 13673,
+      "processed_at": "2025-06-12T17:36:44.420306"
+    },
+    {
+      "filename": "2023_B_g.otsuka.md",
+      "metadata": {
+        "filename": "2023_B_g.otsuka.md",
+        "year": "2023",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "g.otsuka",
+        "title": "学士論文 - g.otsuka (2023)",
+        "english_title": null,
+        "abstract": "i"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 9573,
+      "refined_size": 9962,
+      "processed_at": "2025-06-12T17:36:44.424540"
+    },
+    {
+      "filename": "2020_M_s.koizumi.md",
+      "metadata": {
+        "filename": "2020_M_s.koizumi.md",
+        "year": "2020",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "s.koizumi",
+        "title": "修士論文 - s.koizumi (2020)",
+        "english_title": null,
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.69
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.10000000000000009,
+      "original_size": 16308,
+      "refined_size": 16635,
+      "processed_at": "2025-06-12T17:36:44.431694"
+    },
+    {
+      "filename": "2021_B_t.shike.md",
+      "metadata": {
+        "filename": "2021_B_t.shike.md",
+        "year": "2021",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "t.shike",
+        "title": "学士論文 - t.shike (2021)",
+        "english_title": null,
+        "abstract": "～ 近年，自動化された運転環境下 ( レベル 1 3) においていずれのレベルも運転者の介入が必要であるため覚醒状態の低下が懸念されている．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 8467,
+      "refined_size": 8781,
+      "processed_at": "2025-06-12T17:36:44.434254"
+    },
+    {
+      "filename": "2022_B_t.oriuchi.md",
+      "metadata": {
+        "filename": "2022_B_t.oriuchi.md",
+        "year": "2022",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "t.oriuchi",
+        "title": "学士論文 - t.oriuchi (2022)",
+        "english_title": null,
+        "abstract": "i"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 12762,
+      "refined_size": 13113,
+      "processed_at": "2025-06-12T17:36:44.437650"
+    },
+    {
+      "filename": "2022_B_y.noguchi.md",
+      "metadata": {
+        "filename": "2022_B_y.noguchi.md",
+        "year": "2022",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "y.noguchi",
+        "title": "学士論文 - y.noguchi (2022)",
+        "english_title": "TIONS ON NEURAL SYSTEMS AND REHABILITATION EN",
+        "abstract": "日中の眠気はその人の集中力を奪うため，結果として生産性の低下等の悪影響が生じる．この眠気による問題を解決するために，振動や芳香等の物理刺激を用いて眠気低減を試みる研究はあるが，リアルタイム性が無いという課題が報告されている．したがって本稿では，タスク遂行中に眠気が存在することを前提として，タスク中に手掌部へ低周波電気刺激を提示した時の覚醒作用の評価を目的とする．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 7464,
+      "refined_size": 7947,
+      "processed_at": "2025-06-12T17:36:44.439536"
+    },
+    {
+      "filename": "2020_M_t.kosaka.md",
+      "metadata": {
+        "filename": "2020_M_t.kosaka.md",
+        "year": "2020",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "t.kosaka",
+        "title": "修士論文 - t.kosaka (2020)",
+        "english_title": null,
+        "abstract": "本研究で作成したマッピングデバイスの概要を説明する．研究の流れを整理するため"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 14615,
+      "refined_size": 15000,
+      "processed_at": "2025-06-12T17:36:44.444172"
+    },
+    {
+      "filename": "2023_M_k.kobayashi.md",
+      "metadata": {
+        "filename": "2023_M_k.kobayashi.md",
+        "year": "2023",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "k.kobayashi",
+        "title": "修士論文 - k.kobayashi (2023)",
+        "english_title": "TargetLearning",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.3,
+        "readability": 0.6000000000000001,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.63
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.16000000000000003,
+      "original_size": 35869,
+      "refined_size": 36309,
+      "processed_at": "2025-06-12T17:36:44.455094"
+    },
+    {
+      "filename": "2019_M_y.uchida.md",
+      "metadata": {
+        "filename": "2019_M_y.uchida.md",
+        "year": "2019",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "y.uchida",
+        "title": "修士論文 - y.uchida (2019)",
+        "english_title": "A B C D E F",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 0.8,
+        "metadata": 0.7,
+        "total": 0.6900000000000001
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 0.8,
+        "metadata": 0.7,
+        "total": 0.6900000000000001
+      },
+      "improvement": 0.0,
+      "original_size": 24694,
+      "refined_size": 25271,
+      "processed_at": "2025-06-12T17:36:44.465068"
+    },
+    {
+      "filename": "2024_M_k.ohya.md",
+      "metadata": {
+        "filename": "2024_M_k.ohya.md",
+        "year": "2024",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "k.ohya",
+        "title": "修士論文 - k.ohya (2024)",
+        "english_title": "The Design of a Real-Time Adaptive Interface",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 1.0,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.84
+      },
+      "refined_quality": {
+        "structure": 1.0,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.84
+      },
+      "improvement": 0.0,
+      "original_size": 18357,
+      "refined_size": 19039,
+      "processed_at": "2025-06-12T17:36:44.471633"
+    },
+    {
+      "filename": "2022_M_a.inoue.md",
+      "metadata": {
+        "filename": "2022_M_a.inoue.md",
+        "year": "2022",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "a.inoue",
+        "title": "修士論文 - a.inoue (2022)",
+        "english_title": "Read and from\n\nsensor\n\nHuman wants to\n\naccelerate\n\nHuman wants to\n\ndeccelerate\n\nHuman wants to Human wants to\n\ndeccelerate accelerate\n\ndeccelerate\n\nHuman wants to",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 36581,
+      "refined_size": 37422,
+      "processed_at": "2025-06-12T17:36:44.484174"
+    },
+    {
+      "filename": "2024_B_k.hayashi.md",
+      "metadata": {
+        "filename": "2024_B_k.hayashi.md",
+        "year": "2024",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "k.hayashi",
+        "title": "学士論文 - k.hayashi (2024)",
+        "english_title": null,
+        "abstract": "そこで，本研究ではストレスを変化させることで逆にパフォーマンスを上げる事ができないかと考えた．具体的には，虚偽心拍フィードバックを用いてストレスを変化させた．パフォーマンスの変化を調査した．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 9175,
+      "refined_size": 9569,
+      "processed_at": "2025-06-12T17:36:44.486821"
+    },
+    {
+      "filename": "2024_M_onogawa.md",
+      "metadata": {
+        "filename": "2024_M_onogawa.md",
+        "year": "2024",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "onogawa",
+        "title": "修士論文 - onogawa (2024)",
+        "english_title": "All data used in modeling",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 41047,
+      "refined_size": 41685,
+      "processed_at": "2025-06-12T17:36:44.501959"
+    },
+    {
+      "filename": "2022_M_y.baba.md",
+      "metadata": {
+        "filename": "2022_M_y.baba.md",
+        "year": "2022",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "y.baba",
+        "title": "修士論文 - y.baba (2022)",
+        "english_title": "Parameters Values",
+        "abstract": "図を Fig. 3.2 に示す．話者にはマイクから 10 cm ほどの距離から指示の発声を指定した．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 22195,
+      "refined_size": 22810,
+      "processed_at": "2025-06-12T17:36:44.508408"
+    },
+    {
+      "filename": "2023_B_r.yanase.md",
+      "metadata": {
+        "filename": "2023_B_r.yanase.md",
+        "year": "2023",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "r.yanase",
+        "title": "学士論文 - r.yanase (2023)",
+        "english_title": "Finger holder",
+        "abstract": "従来の研究において単純な操作を主としているため，重要性が低いと考えられる．そこで，生活に必要かつ複雑な動作として，筆記動作に着目した．筆記動作において，指の力加減が重要であるとの研究例があるが，指の力を変化させることによって筆記動作を熟達させる研究は少ない．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.69
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.10000000000000009,
+      "original_size": 17654,
+      "refined_size": 18196,
+      "processed_at": "2025-06-12T17:36:44.513819"
+    },
+    {
+      "filename": "2024_M_y.yamada.md",
+      "metadata": {
+        "filename": "2024_M_y.yamada.md",
+        "year": "2024",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "y.yamada",
+        "title": "修士論文 - y.yamada (2024)",
+        "english_title": "Development of Wire Array Sensor for Analysis and",
+        "abstract": "- デバイスの構成"
+      },
+      "original_quality": {
+        "structure": 0.6,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.76
+      },
+      "refined_quality": {
+        "structure": 0.3,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.67
+      },
+      "improvement": -0.08999999999999997,
+      "original_size": 19138,
+      "refined_size": 19652,
+      "processed_at": "2025-06-12T17:36:44.518532"
+    },
+    {
+      "filename": "2020_M_y.yamasaki.md",
+      "metadata": {
+        "filename": "2020_M_y.yamasaki.md",
+        "year": "2020",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "y.yamasaki",
+        "title": "修士論文 - y.yamasaki (2020)",
+        "english_title": "Term",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.2,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.63
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.7500000000000001
+      },
+      "improvement": 0.1200000000000001,
+      "original_size": 23085,
+      "refined_size": 23713,
+      "processed_at": "2025-06-12T17:36:44.527519"
+    },
+    {
+      "filename": "2020_M_b.poitrimol.md",
+      "metadata": {
+        "filename": "2020_M_b.poitrimol.md",
+        "year": "2020",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "b.poitrimol",
+        "title": "修士論文 - b.poitrimol (2020)",
+        "english_title": "I then searched and found out that they could be used as haptic interfaces to interact",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 0.8,
+        "metadata": 0.7999999999999999,
+        "total": 0.65
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.7500000000000001
+      },
+      "improvement": 0.10000000000000009,
+      "original_size": 50216,
+      "refined_size": 50778,
+      "processed_at": "2025-06-12T17:36:44.542921"
+    },
+    {
+      "filename": "2021_B_m.suga.md",
+      "metadata": {
+        "filename": "2021_B_m.suga.md",
+        "year": "2021",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "m.suga",
+        "title": "学士論文 - m.suga (2021)",
+        "english_title": null,
+        "abstract": "テレワークにより運動時間が減少し，着座姿勢時間が増加した．長時間の着座姿勢は様々な疾患にかかる可能性を増加させ，死亡リスクを増加させることがわかっている [1] ．それらの疾患は足部の血流悪化によるものである．そのため予防としてふくらはぎにマッサージを施すことが挙げられる．しかし，症状がある人に対しては最高荷重値でマッサージを施したほうが良いが，症状がない人は心地よさを重視してマッサージを施したほうが良い [2] ．また，快不快推定方法として脳波が挙げられる．よって，マッサージ機と脳波を組み合わせることで人に合わせた動作するマッサージを施すことができる．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 8653,
+      "refined_size": 9154,
+      "processed_at": "2025-06-12T17:36:44.546368"
+    },
+    {
+      "filename": "2024_B_r.hiratsuka.md",
+      "metadata": {
+        "filename": "2024_B_r.hiratsuka.md",
+        "year": "2024",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "r.hiratsuka",
+        "title": "学士論文 - r.hiratsuka (2024)",
+        "english_title": null,
+        "abstract": "マンスへの影響が未調査であったことから単音発声タスクにより検証した．実験では被験者に異なるダイナミクス設定をランダムに提示し，"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 16572,
+      "refined_size": 17183,
+      "processed_at": "2025-06-12T17:36:44.550815"
+    },
+    {
+      "filename": "2023_M_t.kassai.md",
+      "metadata": {
+        "filename": "2023_M_t.kassai.md",
+        "year": "2023",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "t.kassai",
+        "title": "修士論文 - t.kassai (2023)",
+        "english_title": "Delay Conditions",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.69
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.10000000000000009,
+      "original_size": 27041,
+      "refined_size": 27409,
+      "processed_at": "2025-06-12T17:36:44.559846"
+    },
+    {
+      "filename": "2019_B_k.kobayashi.md",
+      "metadata": {
+        "filename": "2019_B_k.kobayashi.md",
+        "year": "2019",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "k.kobayashi",
+        "title": "学士論文 - k.kobayashi (2019)",
+        "english_title": "CFO estimation and teamwork evaluation using",
+        "abstract": "Teamwork was evaluated with a post-experiment questionnaire sur vey. However, it has some problems, such as subjective and not beingin realtime. Also, team composition is mainly based on performance,"
+      },
+      "original_quality": {
+        "structure": 1.0,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.82
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": -0.029999999999999916,
+      "original_size": 20480,
+      "refined_size": 21021,
+      "processed_at": "2025-06-12T17:36:44.565367"
+    },
+    {
+      "filename": "2024_B_h.nakamura.md",
+      "metadata": {
+        "filename": "2024_B_h.nakamura.md",
+        "year": "2024",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "h.nakamura",
+        "title": "学士論文 - h.nakamura (2024)",
+        "english_title": "Vol.57, no.11, 2015.",
+        "abstract": "近年，人間 機械協調の機会が増加している．操作支援システムは人間の作業負担の軽減や運動能力・操作技術の向上を図っている．しかし，支援に対する効果の個人差が問題となる．現状の操作支援システムのほとんどは半自動体制の形式をとっており，操作の多くを操作者に依存している．そのような状況下で操作者と支援の間に不和があると，思わぬトラブルや事故を生み出す恐れがある．このような操作支援との不和を解消するためには，個人差を考慮する必要がある．そこで本研究では，個人差を考慮した操作支援システムを開発するため，"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 8964,
+      "refined_size": 9482,
+      "processed_at": "2025-06-12T17:36:44.567899"
+    },
+    {
+      "filename": "2020_B_r.hikino.md",
+      "metadata": {
+        "filename": "2020_B_r.hikino.md",
+        "year": "2020",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "r.hikino",
+        "title": "学士論文 - r.hikino (2020)",
+        "english_title": "ACTIONS ON AUTOMATION SCIENCE AND ENGINEER",
+        "abstract": "そこで本稿では，ステアリングを握る握力を利用し，ドライバーの操作を予測することでステアリングアシストに利用する手法を提案する．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 8105,
+      "refined_size": 8502,
+      "processed_at": "2025-06-12T17:36:44.570535"
+    },
+    {
+      "filename": "2022_B_k.ohya.md",
+      "metadata": {
+        "filename": "2022_B_k.ohya.md",
+        "year": "2022",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "k.ohya",
+        "title": "学士論文 - k.ohya (2022)",
+        "english_title": null,
+        "abstract": "解消していかなければならない．そこで，簡単に行うことのできる呼吸によるストレス低減効果が注目されている．特に，呼吸は自律神経に影響を与えることが知られており，ストレス低減に効果的であると考えられている．本研究では，自律神経活動の指標である自律神経機能活性度を用いて，呼吸手法ごとの自律神経への影響を調査し，呼吸とストレスの関係性について確認する．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 7273,
+      "refined_size": 7682,
+      "processed_at": "2025-06-12T17:36:44.577131"
+    },
+    {
+      "filename": "2021_M_y.kakutani.md",
+      "metadata": {
+        "filename": "2021_M_y.kakutani.md",
+        "year": "2021",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "y.kakutani",
+        "title": "修士論文 - y.kakutani (2021)",
+        "english_title": null,
+        "abstract": "本研究では, 運動技能熟達過程の関節剛性を評価し，運動制御の最適化支援を実現する"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 12134,
+      "refined_size": 12434,
+      "processed_at": "2025-06-12T17:36:44.581732"
+    },
+    {
+      "filename": "2024_M_la.nicolas.md",
+      "metadata": {
+        "filename": "2024_M_la.nicolas.md",
+        "year": "2024",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "la.nicolas",
+        "title": "修士論文 - la.nicolas (2024)",
+        "english_title": "Principles and behavior algorithms",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.7500000000000001
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.7500000000000001
+      },
+      "improvement": 0.0,
+      "original_size": 67050,
+      "refined_size": 67353,
+      "processed_at": "2025-06-12T17:36:44.602567"
+    },
+    {
+      "filename": "2024_B_s.imamura.md",
+      "metadata": {
+        "filename": "2024_B_s.imamura.md",
+        "year": "2024",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "s.imamura",
+        "title": "学士論文 - s.imamura (2024)",
+        "english_title": null,
+        "abstract": "tentional Blindness, IB ）を軽減し， AR システムの安全性と効率性を向上させることを目的としている．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 21759,
+      "refined_size": 22053,
+      "processed_at": "2025-06-12T17:36:44.607186"
+    },
+    {
+      "filename": "2019_B_k.tozuka.md",
+      "metadata": {
+        "filename": "2019_B_k.tozuka.md",
+        "year": "2019",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "k.tozuka",
+        "title": "学士論文 - k.tozuka (2019)",
+        "english_title": "Virtual Pet Robot with Haptic Display",
+        "abstract": "チャル上に自由度の高いペットロボットの作成を試みる . 使用するケー"
+      },
+      "original_quality": {
+        "structure": 1.0,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.8799999999999999
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": -0.08999999999999986,
+      "original_size": 17526,
+      "refined_size": 18055,
+      "processed_at": "2025-06-12T17:36:44.613520"
+    },
+    {
+      "filename": "2019_B_h.nakanishi.md",
+      "metadata": {
+        "filename": "2019_B_h.nakanishi.md",
+        "year": "2019",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "h.nakanishi",
+        "title": "学士論文 - h.nakanishi (2019)",
+        "english_title": null,
+        "abstract": "i"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.69
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.10000000000000009,
+      "original_size": 11679,
+      "refined_size": 12004,
+      "processed_at": "2025-06-12T17:36:44.617458"
+    },
+    {
+      "filename": "2024_B_d.nakajima.md",
+      "metadata": {
+        "filename": "2024_B_d.nakajima.md",
+        "year": "2024",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "d.nakajima",
+        "title": "学士論文 - d.nakajima (2024)",
+        "english_title": null,
+        "abstract": "ラルネットワークが多く用いられている．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 12644,
+      "refined_size": 12919,
+      "processed_at": "2025-06-12T17:36:44.621058"
+    },
+    {
+      "filename": "2019_B_r.ogasawara.md",
+      "metadata": {
+        "filename": "2019_B_r.ogasawara.md",
+        "year": "2019",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "r.ogasawara",
+        "title": "学士論文 - r.ogasawara (2019)",
+        "english_title": null,
+        "abstract": "視覚負荷環境下における生体信号によるストレス推定と視線運動の相関を検討，視覚を利用したストレス推定へのアプローチを行う．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.69
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.10000000000000009,
+      "original_size": 9798,
+      "refined_size": 10169,
+      "processed_at": "2025-06-12T17:36:44.623990"
+    },
+    {
+      "filename": "2021_B_s.watanabe.md",
+      "metadata": {
+        "filename": "2021_B_s.watanabe.md",
+        "year": "2021",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "s.watanabe",
+        "title": "学士論文 - s.watanabe (2021)",
+        "english_title": null,
+        "abstract": "コミュニケーションは協調作業など他者との意思疎通において重要なものである．さらにそのコミュニケーションの根幹にあるものとしてリズムがある．従ってリズムの同期は重要な課題である．本研究では，"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 9391,
+      "refined_size": 9767,
+      "processed_at": "2025-06-12T17:36:44.628006"
+    },
+    {
+      "filename": "2021_B_h.tagaya.md",
+      "metadata": {
+        "filename": "2021_B_h.tagaya.md",
+        "year": "2021",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "h.tagaya",
+        "title": "学士論文 - h.tagaya (2021)",
+        "english_title": null,
+        "abstract": "実験結果としては，映像処理による肩，肘，手首の座標データの取得，グラフ化が可能となった．それにより，適切なフォーム時の特徴量を数値として評価することができるようになった．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 6608,
+      "refined_size": 6915,
+      "processed_at": "2025-06-12T17:36:44.630834"
+    },
+    {
+      "filename": "2022_B_r.tanaka.md",
+      "metadata": {
+        "filename": "2022_B_r.tanaka.md",
+        "year": "2022",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "r.tanaka",
+        "title": "学士論文 - r.tanaka (2022)",
+        "english_title": "COP",
+        "abstract": "i"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 12064,
+      "refined_size": 12447,
+      "processed_at": "2025-06-12T17:36:44.633850"
+    },
+    {
+      "filename": "2021_B_t.yamamoto.md",
+      "metadata": {
+        "filename": "2021_B_t.yamamoto.md",
+        "year": "2021",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "t.yamamoto",
+        "title": "学士論文 - t.yamamoto (2021)",
+        "english_title": null,
+        "abstract": "ラルネットワークの 1 つである長・短期記憶ネットワーク（ Long Short Term Memory:LSTM ）を用いた筋電図（ Electromyography:EMG ）への時系列予測を行ない，その有効性と可能性を示す．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.75
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.040000000000000036,
+      "original_size": 22236,
+      "refined_size": 22933,
+      "processed_at": "2025-06-12T17:36:44.640155"
+    },
+    {
+      "filename": "2020_B_y.yoshida.md",
+      "metadata": {
+        "filename": "2020_B_y.yoshida.md",
+        "year": "2020",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "y.yoshida",
+        "title": "学士論文 - y.yoshida (2020)",
+        "english_title": null,
+        "abstract": "そこで本研究では，睡眠中の体温変化と睡眠深度との関係に注目し，"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 8622,
+      "refined_size": 8909,
+      "processed_at": "2025-06-12T17:36:44.644463"
+    },
+    {
+      "filename": "2019_B_n.takahashi.md",
+      "metadata": {
+        "filename": "2019_B_n.takahashi.md",
+        "year": "2019",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "n.takahashi",
+        "title": "学士論文 - n.takahashi (2019)",
+        "english_title": null,
+        "abstract": "i"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.69
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.10000000000000009,
+      "original_size": 11676,
+      "refined_size": 11997,
+      "processed_at": "2025-06-12T17:36:44.648161"
+    },
+    {
+      "filename": "2024_B_mi.nakamura.md",
+      "metadata": {
+        "filename": "2024_B_mi.nakamura.md",
+        "year": "2024",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "mi.nakamura",
+        "title": "学士論文 - mi.nakamura (2024)",
+        "english_title": null,
+        "abstract": "背景として不器用さに関する支援研究は今日までに多く行われているが，その多くは発達障害児を対象としており，健常者や青年を対象とした研究は限られている，また，先行研究において「不器用さの自己認知」と作業パフォーマンスに有意な関係が見られず，認知の不器用さと操作の不器用さが必ずしも一致しないことが示されている．本研究では，この認知のズレが作業パフォーマンスやメタ認知に及ぼす影響を分析し，視覚的フィードバックの導入による変化を検討した．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 21790,
+      "refined_size": 22317,
+      "processed_at": "2025-06-12T17:36:44.653355"
+    },
+    {
+      "filename": "2021_M_k.kobayashi.md",
+      "metadata": {
+        "filename": "2021_M_k.kobayashi.md",
+        "year": "2021",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "k.kobayashi",
+        "title": "修士論文 - k.kobayashi (2021)",
+        "english_title": "A Collaborative Work Analysis Method",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 1.0,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.84
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.7500000000000001
+      },
+      "improvement": -0.08999999999999986,
+      "original_size": 38026,
+      "refined_size": 38403,
+      "processed_at": "2025-06-12T17:36:44.669844"
+    },
+    {
+      "filename": "2023_B_j.ryuu.md",
+      "metadata": {
+        "filename": "2023_B_j.ryuu.md",
+        "year": "2023",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "j.ryuu",
+        "title": "学士論文 - j.ryuu (2023)",
+        "english_title": null,
+        "abstract": "i"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 15076,
+      "refined_size": 15859,
+      "processed_at": "2025-06-12T17:36:44.673977"
+    },
+    {
+      "filename": "2023_M_m.tagaya.md",
+      "metadata": {
+        "filename": "2023_M_m.tagaya.md",
+        "year": "2023",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "m.tagaya",
+        "title": "修士論文 - m.tagaya (2023)",
+        "english_title": null,
+        "abstract": "実験結果としては，動的時間伸縮での数値評価により，振動刺激のフィードバックを行うと投射の横ブレが小さくなることがわかった．それにより，ダーツ投射フォームのブレを認識でき，ブレの少ないフォームの早期習得が可能になった．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 17630,
+      "refined_size": 18136,
+      "processed_at": "2025-06-12T17:36:44.679423"
+    },
+    {
+      "filename": "2022_B_i.kato.md",
+      "metadata": {
+        "filename": "2022_B_i.kato.md",
+        "year": "2022",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "i.kato",
+        "title": "学士論文 - i.kato (2022)",
+        "english_title": null,
+        "abstract": "マンスが発揮されず適度なストレス状態の時でしか，パフォーマンスを発揮する事ができない．よって，パフォーマンスとストレスの関係性を考慮するには適度なストレスを維持する必要性がある．本研究では，ストレスコントロールによるパフォーマンスの発揮を目的とする．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 8613,
+      "refined_size": 8966,
+      "processed_at": "2025-06-12T17:36:44.681924"
+    },
+    {
+      "filename": "2022_B_s.tsuchiya.md",
+      "metadata": {
+        "filename": "2022_B_s.tsuchiya.md",
+        "year": "2022",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "s.tsuchiya",
+        "title": "学士論文 - s.tsuchiya (2022)",
+        "english_title": null,
+        "abstract": "i"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 10657,
+      "refined_size": 10929,
+      "processed_at": "2025-06-12T17:36:44.685070"
+    },
+    {
+      "filename": "2021_B_d.yamazaki.md",
+      "metadata": {
+        "filename": "2021_B_d.yamazaki.md",
+        "year": "2021",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "d.yamazaki",
+        "title": "学士論文 - d.yamazaki (2021)",
+        "english_title": null,
+        "abstract": "多くの時間を要する．能力取得には，能力の向上が欠かせず，これらには，運動主体感と身体所有感が関わっている．また，近年の研究では，"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 5550,
+      "refined_size": 5847,
+      "processed_at": "2025-06-12T17:36:44.687067"
+    },
+    {
+      "filename": "2020_B_a.inoue.md",
+      "metadata": {
+        "filename": "2020_B_a.inoue.md",
+        "year": "2020",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "a.inoue",
+        "title": "学士論文 - a.inoue (2020)",
+        "english_title": "Target rpm",
+        "abstract": "UAV は様々な場面で活用されており，荷物搬送に利用することで既存の搬送手段の代替とすることが可能となる．これまでの UAV による搬送では，搬送可能な重量に制限がある．そのため，複数機を用いた搬送について研究が行われてきた．従来の複数機を用いた研究では，"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 15796,
+      "refined_size": 16563,
+      "processed_at": "2025-06-12T17:36:44.692533"
+    },
+    {
+      "filename": "2021_B_k.kobayashi.md",
+      "metadata": {
+        "filename": "2021_B_k.kobayashi.md",
+        "year": "2021",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "k.kobayashi",
+        "title": "学士論文 - k.kobayashi (2021)",
+        "english_title": null,
+        "abstract": "実用を考えると環境による外乱などからターゲットのモデル化は困難であると考えられる . 既存の牧羊犬モデルではターゲットの性質に依存するため, 適切にターゲットをモデル化する必要がある ."
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 16180,
+      "refined_size": 16550,
+      "processed_at": "2025-06-12T17:36:44.698014"
+    },
+    {
+      "filename": "2023_B_s.fujiwara.md",
+      "metadata": {
+        "filename": "2023_B_s.fujiwara.md",
+        "year": "2023",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "s.fujiwara",
+        "title": "学士論文 - s.fujiwara (2023)",
+        "english_title": null,
+        "abstract": "リニアアクチュエータを用いて調査した．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 9815,
+      "refined_size": 10084,
+      "processed_at": "2025-06-12T17:36:44.701530"
+    },
+    {
+      "filename": "2019_B_r.maruyama.md",
+      "metadata": {
+        "filename": "2019_B_r.maruyama.md",
+        "year": "2019",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "r.maruyama",
+        "title": "学士論文 - r.maruyama (2019)",
+        "english_title": null,
+        "abstract": "i"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.2,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.63
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.16000000000000003,
+      "original_size": 9367,
+      "refined_size": 9663,
+      "processed_at": "2025-06-12T17:36:44.704231"
+    },
+    {
+      "filename": "2022_B_n.ito.md",
+      "metadata": {
+        "filename": "2022_B_n.ito.md",
+        "year": "2022",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "n.ito",
+        "title": "学士論文 - n.ito (2022)",
+        "english_title": "Biased Representation of Force Distribution",
+        "abstract": "触覚提示が重要となる．しかしながら多くの触覚提示デバイスは重量，"
+      },
+      "original_quality": {
+        "structure": 1.0,
+        "readability": 0.6000000000000001,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.84
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": -0.04999999999999993,
+      "original_size": 19429,
+      "refined_size": 19985,
+      "processed_at": "2025-06-12T17:36:44.709214"
+    },
+    {
+      "filename": "2022_B_y.yamada.md",
+      "metadata": {
+        "filename": "2022_B_y.yamada.md",
+        "year": "2022",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "y.yamada",
+        "title": "学士論文 - y.yamada (2022)",
+        "english_title": null,
+        "abstract": "i"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 8853,
+      "refined_size": 9236,
+      "processed_at": "2025-06-12T17:36:44.711924"
+    },
+    {
+      "filename": "2022_B_k.sato.md",
+      "metadata": {
+        "filename": "2022_B_k.sato.md",
+        "year": "2022",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "k.sato",
+        "title": "学士論文 - k.sato (2022)",
+        "english_title": "Step",
+        "abstract": "人間が制御規則を定める方法ではタスクの環境の変化に対応することは困難である．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 16693,
+      "refined_size": 16982,
+      "processed_at": "2025-06-12T17:36:44.715938"
+    },
+    {
+      "filename": "2022_B_m.nakamura.md",
+      "metadata": {
+        "filename": "2022_B_m.nakamura.md",
+        "year": "2022",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "m.nakamura",
+        "title": "学士論文 - m.nakamura (2022)",
+        "english_title": null,
+        "abstract": "ルを落としたときの触覚・力覚の違いを小型のデバイスで再現することを目的とした．そこで本研究では，モータの慣性力の方向を瞬時に変更することで，衝撃力と衝撃位置を提示できる小型のデバイスを作成した．加速度センサを用いた測定とアンケートを行い本研究で作成したデバイスで衝撃力と衝撃位置を知覚できることを確認した．"
+      },
+      "original_quality": {
+        "structure": 1.0,
+        "readability": 0.6000000000000001,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.84
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": -0.04999999999999993,
+      "original_size": 9911,
+      "refined_size": 10369,
+      "processed_at": "2025-06-12T17:36:44.719128"
+    },
+    {
+      "filename": "2024_B_y.takahashi.md",
+      "metadata": {
+        "filename": "2024_B_y.takahashi.md",
+        "year": "2024",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "y.takahashi",
+        "title": "学士論文 - y.takahashi (2024)",
+        "english_title": "Vol. 102, pp. 86-89, 2024.",
+        "abstract": "これまで，協調作業の効率を向上させるためのアシスト手法に関する研究が行われてきた．しかし，これらの手法はコミュニケーションに依存していたり，作業環境に影響を受けやすい，またはリアルタイム性に欠けるといった課題が見受けられた．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 15729,
+      "refined_size": 16307,
+      "processed_at": "2025-06-12T17:36:44.722688"
+    },
+    {
+      "filename": "2024_B_s.tahara.md",
+      "metadata": {
+        "filename": "2024_B_s.tahara.md",
+        "year": "2024",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "s.tahara",
+        "title": "学士論文 - s.tahara (2024)",
+        "english_title": null,
+        "abstract": "徒手による指示が行われるが，間接的であり意図が正確に伝わらない問題がある．このような問題に対して，電気刺激を用いて外部から筋をコントロールする手法は直接的な動作の教示ができるが筋疲労を誘発するという問題点がある．これは学習者の筋骨格構造に不整合な筋活動を誘発させることにより発生していると考えられる．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 20841,
+      "refined_size": 21566,
+      "processed_at": "2025-06-12T17:36:44.728143"
+    },
+    {
+      "filename": "2019_M_r.joly.md",
+      "metadata": {
+        "filename": "2019_M_r.joly.md",
+        "year": "2019",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "r.joly",
+        "title": "修士論文 - r.joly (2019)",
+        "english_title": "ACO is granting an easier algorithm design thanks to its intrinsic parameters which al",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.2,
+        "consistency": 0.8,
+        "metadata": 0.7999999999999999,
+        "total": 0.5900000000000001
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.7500000000000001
+      },
+      "improvement": 0.16000000000000003,
+      "original_size": 37237,
+      "refined_size": 37696,
+      "processed_at": "2025-06-12T17:36:44.739515"
+    },
+    {
+      "filename": "2020_M_k.nakamura.md",
+      "metadata": {
+        "filename": "2020_M_k.nakamura.md",
+        "year": "2020",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "k.nakamura",
+        "title": "修士論文 - k.nakamura (2020)",
+        "english_title": null,
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.7500000000000001
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.7999999999999999,
+        "total": 0.7500000000000001
+      },
+      "improvement": 0.0,
+      "original_size": 14306,
+      "refined_size": 14594,
+      "processed_at": "2025-06-12T17:36:44.749946"
+    },
+    {
+      "filename": "2021_B_t.kassai.md",
+      "metadata": {
+        "filename": "2021_B_t.kassai.md",
+        "year": "2021",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "t.kassai",
+        "title": "学士論文 - t.kassai (2021)",
+        "english_title": null,
+        "abstract": "の抑制が期待される．しかし，自動システムは未知のトラブルには対応できないこと，不要な支援による事故などが考えられる．これを解決するために人間を中心とした自動システムとの協調作業に注目が集まっている．人間中心となるには ” 自己主体感 ” を考慮することが重要であり，これを評価する研究がなされている．しかし，従来の評価手法ではスイッチ押下動作など，単発的な作業で評価を行っているため，"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 9243,
+      "refined_size": 9656,
+      "processed_at": "2025-06-12T17:36:44.753278"
+    },
+    {
+      "filename": "2024_B_r.morishita.md",
+      "metadata": {
+        "filename": "2024_B_r.morishita.md",
+        "year": "2024",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "r.morishita",
+        "title": "学士論文 - r.morishita (2024)",
+        "english_title": null,
+        "abstract": "本研究では，機械操作技能向上の手法としてプラセボ効果に着目をして実験を行った．被験者には熟達支援システムを掛けていると偽り実験を行ってもらった．結果としては，プラセボ効果のみでは熟達効果は表れなかった．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.4,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.73
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.06000000000000005,
+      "original_size": 8453,
+      "refined_size": 8785,
+      "processed_at": "2025-06-12T17:36:44.756509"
+    },
+    {
+      "filename": "2024_M_n.ito.md",
+      "metadata": {
+        "filename": "2024_M_n.ito.md",
+        "year": "2024",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "n.ito",
+        "title": "修士論文 - n.ito (2024)",
+        "english_title": "EInvestigation of the Impact of Force Distribution",
+        "abstract": "20 代男性 4 人の被験者に対して実物の棒を振る動作における力分布を測定した．被験"
+      },
+      "original_quality": {
+        "structure": 1.0,
+        "readability": 0.6000000000000001,
+        "consistency": 0.8,
+        "metadata": 0.9999999999999999,
+        "total": 0.84
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": -0.04999999999999993,
+      "original_size": 36046,
+      "refined_size": 36722,
+      "processed_at": "2025-06-12T17:36:44.769475"
+    },
+    {
+      "filename": "2023_M_s.watanabe.md",
+      "metadata": {
+        "filename": "2023_M_s.watanabe.md",
+        "year": "2023",
+        "degree": "M",
+        "degree_jp": "修士論文",
+        "author": "s.watanabe",
+        "title": "修士論文 - s.watanabe (2023)",
+        "english_title": "Drum\n\nMIDI Converter\n\nHeadphone",
+        "abstract": null
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 28322,
+      "refined_size": 28707,
+      "processed_at": "2025-06-12T17:36:44.778598"
+    },
+    {
+      "filename": "2024_B_m.kashiwagi.md",
+      "metadata": {
+        "filename": "2024_B_m.kashiwagi.md",
+        "year": "2024",
+        "degree": "B",
+        "degree_jp": "学士論文",
+        "author": "m.kashiwagi",
+        "title": "学士論文 - m.kashiwagi (2024)",
+        "english_title": null,
+        "abstract": "プドッグシステムにおいて誘導タスクを行い，追跡エージェントである dog のエネルギーの考慮をすることで，省エネルギーかつ高い誘導効率の両立が可能なアルゴリズムの設計を目的とする．"
+      },
+      "original_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "refined_quality": {
+        "structure": 0.7,
+        "readability": 0.6000000000000001,
+        "consistency": 1.0,
+        "metadata": 0.9999999999999999,
+        "total": 0.79
+      },
+      "improvement": 0.0,
+      "original_size": 13086,
+      "refined_size": 13459,
+      "processed_at": "2025-06-12T17:36:44.782573"
+    }
+  ]
+}
