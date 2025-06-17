@@ -386,7 +386,7 @@
     {
       "id": "2019_修_g.sasaki",
       "title": "協調技能を考慮した力覚フィードバックによる協調作業アシスト",
-      "author": "佐々木元気",
+      "author": "佐々木 元気",
       "year": 2019,
       "type": "修士論文",
       "tags": [
@@ -405,9 +405,9 @@
       "category": "teamwork"
     },
     {
-      "id": "2019_学_k.kobayashi",
+      "id": "2019_B_k.kobayashi",
       "title": "力のインタラクションを考慮した人間モデルによるCFOの推定とチームワーク評価",
-      "author": "小林 航",
+      "author": "小林 航大",
       "year": 2019,
       "type": "学士論文",
       "tags": [
@@ -447,9 +447,9 @@
       "category": "sensing"
     },
     {
-      "id": "2019_学_n.takahashi",
+      "id": "2019_B_n.takahashi",
       "title": "描画動作のための力覚提示デバイスによる相補教示支援",
-      "author": "高橋夏 子",
+      "author": "高橋 奈央",
       "year": 2019,
       "type": "学士論文",
       "tags": [
@@ -468,7 +468,7 @@
       "category": "hms"
     },
     {
-      "id": "2019_学_h.nakanishi",
+      "id": "2019_B_h.nakanishi",
       "title": "ダイナミクス変化による鍵盤楽器学習支援システムの提案",
       "author": "中西 光",
       "year": 2019,
@@ -489,9 +489,9 @@
       "category": "hms"
     },
     {
-      "id": "2019_学_y.sugano",
+      "id": "2019_B_y.sugano",
       "title": "個性模倣によるリアルタイム環境適応アルゴリズム",
-      "author": "菅野湧 大",
+      "author": "菅野 湧大",
       "year": 2019,
       "type": "学士論文",
       "tags": [
@@ -510,7 +510,7 @@
       "category": "teamwork"
     },
     {
-      "id": "2019_学_r.mukawa",
+      "id": "2019_B_r.mukawa",
       "title": "協調性向上のためのAttention Gridによる注意推定",
       "author": "武川玲 於奈",
       "year": 2019,
@@ -531,7 +531,7 @@
       "category": "sensing"
     },
     {
-      "id": "2019_学_k.tozuka",
+      "id": "2019_B_k.tozuka",
       "title": "触覚提示を利用した仮想ペットロボット",
       "author": "戸塚健 太",
       "year": 2019,
@@ -573,7 +573,7 @@
       "category": "teamwork"
     },
     {
-      "id": "2019_学_r.maruyama",
+      "id": "2019_B_r.maruyama",
       "title": "二重反転プロペラを用いた天井吸着ドローン",
       "author": "丸山 遼",
       "year": 2019,
@@ -594,7 +594,7 @@
       "category": "teamwork"
     },
     {
-      "id": "2019_学_r.ogasawara",
+      "id": "2019_B_r.ogasawara",
       "title": "視覚負荷における視線動作を用いたストレス推定",
       "author": "小笠原 竜",
       "year": 2019,
@@ -636,7 +636,7 @@
       "category": "hms"
     },
     {
-      "id": "2019_学_h.emori",
+      "id": "2019_B_h.emori",
       "title": "生体信号と体温の相関性を用いたストレス軽減デバイスの開発",
       "author": "江森弘 樹",
       "year": 2019,
@@ -657,7 +657,7 @@
       "category": "sensing"
     },
     {
-      "id": "2020_学_y.okakuji",
+      "id": "2020_B_y.okakuji",
       "title": "ウェアラブルデバイスSLAM",
       "author": "岡久地 雄希",
       "year": 2020,
@@ -721,7 +721,7 @@
       "category": "motion"
     },
     {
-      "id": "2020_学_a.inoue",
+      "id": "2020_B_a.inoue",
       "title": "複数のCoaxial-UAVによる協調搬送に向けた姿勢制御",
       "author": "井上暁 人",
       "year": 2020,
@@ -763,7 +763,7 @@
       "category": "motion"
     },
     {
-      "id": "2020_学_r.hikino",
+      "id": "2020_B_r.hikino",
       "title": "握力を利用したステアリングアシスト機構",
       "author": "引野涼 平",
       "year": 2020,
@@ -805,7 +805,7 @@
       "category": "sensing"
     },
     {
-      "id": "2020_学_y.oda",
+      "id": "2020_B_y.oda",
       "title": "眼球運動測定によるリアルタイムストレス評価",
       "author": "小田雄 也",
       "year": 2020,
@@ -826,7 +826,7 @@
       "category": "sensing"
     },
     {
-      "id": "2020_学_h.nishimura",
+      "id": "2020_B_h.nishimura",
       "title": "自動化した機械操作に対する人間の信頼推定",
       "author": "西村晴 也",
       "year": 2020,
@@ -847,7 +847,7 @@
       "category": "teamwork"
     },
     {
-      "id": "2020_学_y.baba",
+      "id": "2020_B_y.baba",
       "title": "口調から言葉の尺度を推定する会話システム",
       "author": "馬場悠 加",
       "year": 2020,
@@ -868,7 +868,7 @@
       "category": "teamwork"
     },
     {
-      "id": "2020_学_y.yoshida",
+      "id": "2020_B_y.yoshida",
       "title": "仮眠中の体温変化が及ぼすその後の作業効率の変化",
       "author": "吉田悠 音",
       "year": 2020,
@@ -910,7 +910,7 @@
       "category": "hms"
     },
     {
-      "id": "2020_学_k.yoshida",
+      "id": "2020_B_k.yoshida",
       "title": "視線情報を用いた運転行動の推定",
       "author": "吉田紘 祐",
       "year": 2020,
@@ -952,7 +952,7 @@
       "category": "other"
     },
     {
-      "id": "2021_学_k.kobayashi",
+      "id": "2021_B_k.kobayashi",
       "title": "未知ターゲットを適応的に誘導するマルチエージェントの設計",
       "author": "小林皓 介",
       "year": 2021,
@@ -973,7 +973,7 @@
       "category": "teamwork"
     },
     {
-      "id": "2021_学_m.suga",
+      "id": "2021_B_m.suga",
       "title": "感性値を用いたHuman Adaptive Air Unitの開発",
       "author": "菅真 琴",
       "year": 2021,
@@ -1036,9 +1036,9 @@
       "category": "motion"
     },
     {
-      "id": "2021_学_h.tagaya",
+      "id": "2021_B_h.tagaya",
       "title": "特徴量検出による投射動作の運動熟達支援",
-      "author": "田ヶ谷悠人",
+      "author": "多賀谷光",
       "year": 2021,
       "type": "学士論文",
       "tags": [
@@ -1057,7 +1057,7 @@
       "category": "sensing"
     },
     {
-      "id": "2021_学_t.yamamoto",
+      "id": "2021_B_t.yamamoto",
       "title": "長・短期記憶ネットワークによる筋電位の時系列予測",
       "author": "山本拓 真",
       "year": 2021,
@@ -1099,7 +1099,7 @@
       "category": "teamwork"
     },
     {
-      "id": "2021_学_s.watanabe",
+      "id": "2021_B_s.watanabe",
       "title": "ヒト-ロボット間における場のリズムの同期と制御",
       "author": "渡邊 新",
       "year": 2021,
@@ -1141,7 +1141,7 @@
       "category": "teamwork"
     },
     {
-      "id": "2021_学_c.xu",
+      "id": "2021_B_c.xu",
       "title": "筋疲労を考慮したアダプティブパワーアシストスーツ",
       "author": "徐晨",
       "year": 2021,
@@ -1162,7 +1162,7 @@
       "category": "sensing"
     },
     {
-      "id": "2021_学_d.yamazaki",
+      "id": "2021_B_d.yamazaki",
       "title": "運動能力向上を目的とした主体感の制御",
       "author": "山崎大 河",
       "year": 2021,
@@ -1204,7 +1204,7 @@
       "category": "motion"
     },
     {
-      "id": "2021_学_t.kassai",
+      "id": "2021_B_t.kassai",
       "title": "機械操作における自己主体感の評価",
       "author": "葛西拓 音",
       "year": 2021,
@@ -1225,9 +1225,9 @@
       "category": "teamwork"
     },
     {
-      "id": "2021_学_t.shike",
+      "id": "2021_B_t.shike",
       "title": "快・不快を用いた温度提示による覚醒状態の促進",
-      "author": "志氣利 記",
+      "author": "四家大輝",
       "year": 2021,
       "type": "学士論文",
       "tags": [
@@ -1246,7 +1246,7 @@
       "category": "sensing"
     },
     {
-      "id": "2022_学_s.tsuchiya",
+      "id": "2022_B_s.tsuchiya",
       "title": "温度変化による力覚生起現象の知覚調査",
       "author": "土屋翔 悟",
       "year": 2022,
@@ -1267,7 +1267,7 @@
       "category": "sensing"
     },
     {
-      "id": "2022_学_y.noguchi",
+      "id": "2022_B_y.noguchi",
       "title": "電気刺激を用いた眠気低減システム",
       "author": "野口悠 太",
       "year": 2022,
@@ -1288,7 +1288,7 @@
       "category": "sensing"
     },
     {
-      "id": "2022_学_t.oriuchi",
+      "id": "2022_B_t.oriuchi",
       "title": "視線分析による注意推定から必要なアシストを選別するシステム",
       "author": "折内拓 弥",
       "year": 2022,
@@ -1309,7 +1309,7 @@
       "category": "sensing"
     },
     {
-      "id": "2022_学_t.bitoh",
+      "id": "2022_B_t.bitoh",
       "title": "脳波を用いた温度変化による心理的ストレスの低減",
       "author": "尾藤巧 真",
       "year": 2022,
@@ -1330,7 +1330,7 @@
       "category": "sensing"
     },
     {
-      "id": "2022_学_s.sanuka",
+      "id": "2022_B_s.sanuka",
       "title": "視覚刺激による疑似触力覚効果の評価",
       "author": "佐貫晴 香",
       "year": 2022,
@@ -1372,7 +1372,7 @@
       "category": "teamwork"
     },
     {
-      "id": "2022_学_r.tanaka",
+      "id": "2022_B_r.tanaka",
       "title": "聴覚刺激を用いた重心動揺の評価",
       "author": "田中 良",
       "year": 2022,
@@ -1414,7 +1414,7 @@
       "category": "teamwork"
     },
     {
-      "id": "2022_学_i.kato",
+      "id": "2022_B_i.kato",
       "title": "温度に着目した適度なストレス誘導デバイスの開発",
       "author": "加藤 泉",
       "year": 2022,
@@ -1435,7 +1435,7 @@
       "category": "sensing"
     },
     {
-      "id": "2022_学_y.yamada",
+      "id": "2022_B_y.yamada",
       "title": "座位姿勢の解析および矯正に向けたワイヤアレイセンサの開発",
       "author": "山田侑 果",
       "year": 2022,
@@ -1477,7 +1477,7 @@
       "category": "sensing"
     },
     {
-      "id": "2022_学_k.ohya",
+      "id": "2022_B_k.ohya",
       "title": "呼吸手法の変化による自律神経機能活性度への影響",
       "author": "大谷健 太郎",
       "year": 2022,
@@ -1498,7 +1498,7 @@
       "category": "sensing"
     },
     {
-      "id": "2022_学_k.sato",
+      "id": "2022_B_k.sato",
       "title": "マルチロボットシステムによる協調作業及び人間介入がシステムに及ぼす影響",
       "author": "佐藤恒 星",
       "year": 2022,
@@ -1519,7 +1519,7 @@
       "category": "teamwork"
     },
     {
-      "id": "2022_学_t.onogawa",
+      "id": "2022_B_t.onogawa",
       "title": "気づかれない行動のための眼球運動に伴う三次元注意分布推定",
       "author": "小野川 拓馬",
       "year": 2022,
@@ -1540,7 +1540,7 @@
       "category": "sensing"
     },
     {
-      "id": "2022_学_n.ito",
+      "id": "2022_B_n.ito",
       "title": "仮想環境における振動グローブを用いた力分布の偏り表現",
       "author": "伊藤成 哉",
       "year": 2022,
@@ -1582,7 +1582,7 @@
       "category": "sensing"
     },
     {
-      "id": "2022_学_m.nakamura",
+      "id": "2022_B_m.nakamura",
       "title": "把持物体への衝撃位置を再現可能な小型の触覚デバイス",
       "author": "中村磨 生",
       "year": 2022,
@@ -1603,7 +1603,7 @@
       "category": "hms"
     },
     {
-      "id": "2023_学_j.ryuu",
+      "id": "2023_B_j.ryuu",
       "title": "聴覚刺激を用いたリズム誘導による協働作業におけるストレス増加の抑制の実現",
       "author": "劉俊 宇",
       "year": 2023,
@@ -1644,7 +1644,7 @@
       "student_name": "小林虎太郎"
     },
     {
-      "id": "2023_学_r.yanase",
+      "id": "2023_B_r.yanase",
       "title": "力覚提示による道具使用時の指先動作の熟達支援",
       "author": "柳瀬 凌",
       "year": 2023,
@@ -1664,7 +1664,7 @@
       "category": "hms"
     },
     {
-      "id": "2023_学_s.fujiwara",
+      "id": "2023_B_s.fujiwara",
       "title": "温度変化による力覚生起現象の定量化",
       "author": "藤原理 史",
       "year": 2023,
@@ -1684,7 +1684,7 @@
       "category": "sensing"
     },
     {
-      "id": "2023_学_g.otsuka",
+      "id": "2023_B_g.otsuka",
       "title": "振動刺激における睡眠導入の補助",
       "author": "大塚元 暉",
       "year": 2023,
@@ -1704,7 +1704,7 @@
       "category": "sensing"
     },
     {
-      "id": "2023_学_h.kitaiwa",
+      "id": "2023_B_h.kitaiwa",
       "title": "握り動作における痛み緩和バイアスの調査",
       "author": "北岩 花",
       "year": 2023,
@@ -1724,7 +1724,7 @@
       "category": "sensing"
     },
     {
-      "id": "2023_学_k.sudo",
+      "id": "2023_B_k.sudo",
       "title": "他部位刺激による硬さ感覚の向上",
       "author": "須藤晃 司",
       "year": 2023,
@@ -1744,7 +1744,7 @@
       "category": "sensing"
     },
     {
-      "id": "2023_学_r.uchida",
+      "id": "2023_B_r.uchida",
       "title": "VDT作業時における眼球情報とストレスの関連性の調査",
       "author": "内田瑠 偉",
       "year": 2023,
@@ -1764,7 +1764,7 @@
       "category": "sensing"
     },
     {
-      "id": "2023_学_ke.nakamura",
+      "id": "2023_B_ke.nakamura",
       "title": "ボトルネックにおいてすれ違う群衆の誘導アルゴリズムの提案",
       "author": "中村圭 佑",
       "year": 2023,
@@ -1842,7 +1842,7 @@
       "category": "sensing"
     },
     {
-      "id": "2024_学_r.kato",
+      "id": "2024_B_r.kato",
       "title": "2024年度学部論文 - 加藤 涼雅",
       "author": "加藤涼 雅",
       "year": 2024,
@@ -1861,7 +1861,7 @@
       "category": "sensing"
     },
     {
-      "id": "2024_学_d.nakajima",
+      "id": "2024_B_d.nakajima",
       "title": "リアルタイムストレス指標を用いた遠隔操作環境における遅延補完システム",
       "author": "中島大 地",
       "year": 2024,
@@ -1881,7 +1881,7 @@
       "category": "sensing"
     },
     {
-      "id": "2024_学_h.nakamura",
+      "id": "2024_B_h.nakamura",
       "title": "個人差を考慮した可変インピーダンス支援",
       "author": "中村春 樹",
       "year": 2024,
@@ -1901,7 +1901,7 @@
       "category": "hms"
     },
     {
-      "id": "2024_学_y.takahashi",
+      "id": "2024_B_y.takahashi",
       "title": "2024年度学部論文 - 高橋 雄斗",
       "author": "高橋雄 斗",
       "year": 2024,
@@ -1920,7 +1920,7 @@
       "category": "sensing"
     },
     {
-      "id": "2024_学_k.hayashi",
+      "id": "2024_B_k.hayashi",
       "title": "虚偽心拍フィードバックを用いたパフォーマンスの向上",
       "author": "林恵 大",
       "year": 2024,
@@ -1940,7 +1940,7 @@
       "category": "sensing"
     },
     {
-      "id": "2024_学_r.morishita",
+      "id": "2024_B_r.morishita",
       "title": "2024年度学部論文 - 森下 遼",
       "author": "森下 遼",
       "year": 2024,
@@ -1979,7 +1979,7 @@
       "category": "hms"
     },
     {
-      "id": "2024_学_r.hiratsuka",
+      "id": "2024_B_r.hiratsuka",
       "title": "力覚フィードバックを用いたVR空間での重心動揺測定",
       "author": "平塚瑠 偉",
       "year": 2024,
@@ -1999,7 +1999,7 @@
       "category": "sensing"
     },
     {
-      "id": "2024_学_s.tahara",
+      "id": "2024_B_s.tahara",
       "title": "2024年度学部論文 - 田原 彩人",
       "author": "田原彩 人",
       "year": 2024,
@@ -2018,7 +2018,7 @@
       "category": "sensing"
     },
     {
-      "id": "2024_学_s.imamura",
+      "id": "2024_B_s.imamura",
       "title": "2024年度学部論文 - 今村 海音",
       "author": "今村海 音",
       "year": 2024,
@@ -2037,7 +2037,7 @@
       "category": "sensing"
     },
     {
-      "id": "2024_学_a.noto",
+      "id": "2024_B_a.noto",
       "title": "VR酔いを軽減する視覚的注意分布を利用したレンダリング手法の提案",
       "author": "能登朱 音",
       "year": 2024,
@@ -2077,7 +2077,7 @@
       "category": "sensing"
     },
     {
-      "id": "2024_学_mi.nakamura",
+      "id": "2024_B_mi.nakamura",
       "title": "二人での協調搬送における音フィードバックによる同期性の評価",
       "author": "中村美 咲",
       "year": 2024,
@@ -2117,7 +2117,7 @@
       "category": "motion"
     },
     {
-      "id": "2024_学_m.kashiwagi",
+      "id": "2024_B_m.kashiwagi",
       "title": "エネルギー効率を考慮したマルチエージェントの誘導",
       "author": "柏木 匠",
       "year": 2024,
