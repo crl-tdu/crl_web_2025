@@ -50,9 +50,9 @@
     </div>
     <nav class="nav" id="nav" role="navigation" aria-label="メインナビゲーション">
       <a href="#about" class="nav__link" role="menuitem">About</a>
+      <a href="#stats" class="nav__link" role="menuitem">データ</a>
       <a href="#research" class="nav__link" role="menuitem">研究テーマ</a>
       <a href="#publications" class="nav__link" role="menuitem">研究業績</a>
-      <a href="#stats" class="nav__link" role="menuitem">Data</a>
       <a href="#contact" class="nav__link" role="menuitem">Contact</a>
     </nav>
     <button class="nav__toggle" id="nav-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
@@ -108,26 +108,17 @@
   <!-- Statistics Section -->
   <section class="section stats-section" id="stats" aria-labelledby="stats-title">
     <div class="container">
+      <div class="projects__header fade-in-up">
+        <h2 class="projects__title" id="stats-title">研究分野データ</h2>
+        <p class="projects__subtitle">
+          主要研究分野別のプロジェクト数<br>
+          人間センシング・人間機械系・チームワーク・協調理論の4つの核心領域
+        </p>
+      </div>
+      
       <div class="stats__container fade-in-up">
-        <div class="search__input-wrapper">
-          <label for="search-box" class="sr-only">研究テーマを検索</label>
-          <span class="search__icon" aria-hidden="true">🔍</span>
-          <input type="text" id="search-box" class="search__input" placeholder="研究テーマを検索... (AI, ロボット, センシング)" aria-label="研究テーマを検索" role="searchbox">
-        </div>
-        
-        <div class="stats" role="region" aria-label="研究データ統計">
-          <div class="stats__item pulse">
-            <span class="stats__number" data-count="820" aria-label="820個の研究画像">820</span>
-            <span class="stats__label">研究画像</span>
-          </div>
-          <div class="stats__item pulse">
-            <span class="stats__number" data-count="86" aria-label="86件の研究プロジェクト">86</span>
-            <span class="stats__label">研究プロジェクト</span>
-          </div>
-          <div class="stats__item pulse">
-            <span class="stats__number" data-count="6" aria-label="6年間のデータ">6</span>
-            <span class="stats__label">年間のデータ</span>
-          </div>
+        <div class="stats" role="region" aria-label="研究分野統計" id="research-stats">
+          <!-- 研究分野統計は動的に生成されます -->
         </div>
       </div>
     </div>
@@ -142,6 +133,13 @@
           学部生から大学院生まで取り組む多彩な研究テーマ<br>
           AI・ロボティクス・ヒューマンインタフェースの最前線
         </p>
+      </div>
+
+      <!-- Search System -->
+      <div class="search__input-wrapper fade-in-up">
+        <label for="search-box" class="sr-only">研究テーマを検索</label>
+        <span class="search__icon" aria-hidden="true">🔍</span>
+        <input type="text" id="search-box" class="search__input" placeholder="研究テーマを検索... (AI, ロボット, センシング)" aria-label="研究テーマを検索" role="searchbox">
       </div>
 
       <!-- Filter System -->
@@ -518,10 +516,16 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
       }
 
+      // プロジェクトデータをグローバル変数に保存
+      window.projectsData = projects;
+
       projects.forEach((project, index) => {
         const card = createProjectCard(project, index);
         container.appendChild(card);
       });
+
+      // 研究分野統計を生成・表示
+      generateResearchStats(projects);
 
       initializeFilters();
       console.log(`Loaded ${projects.length} projects`);
@@ -533,10 +537,53 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+  // 研究分野統計を生成・表示する関数
+  function generateResearchStats(projects) {
+    const researchFields = {
+      '人間センシング': 0,
+      '人間機械系': 0,
+      'チームワーク': 0,
+      '協調理論': 0
+    };
+
+    // 各プロジェクトのキーワードをカウント
+    projects.forEach(project => {
+      if (project.keywords) {
+        project.keywords.forEach(keyword => {
+          if (researchFields.hasOwnProperty(keyword)) {
+            researchFields[keyword]++;
+          }
+        });
+      }
+    });
+
+    // 統計データを表示
+    const statsContainer = document.getElementById('research-stats');
+    if (statsContainer) {
+      statsContainer.innerHTML = '';
+      
+      Object.entries(researchFields).forEach(([field, count], index) => {
+        const statsItem = document.createElement('div');
+        statsItem.className = 'stats__item pulse';
+        statsItem.innerHTML = `
+          <span class="stats__number" data-count="${count}" aria-label="${count}件の${field}研究">${count}</span>
+          <span class="stats__label">${field}</span>
+        `;
+        statsContainer.appendChild(statsItem);
+      });
+
+      // カウンターアニメーションを再実行
+      setTimeout(() => {
+        animateCounters();
+      }, 500);
+    }
+  }
+
   function createProjectCard(project, index) {
     const card = document.createElement('div');
     card.className = 'project-card';
     card.setAttribute('data-category', project.degree_code || project.category || 'other');
+    card.setAttribute('data-index', index); // インデックスを追加
     card.style.animationDelay = `${index * 0.1}s`;
     
     // Add click handler for modal
@@ -544,18 +591,35 @@ document.addEventListener('DOMContentLoaded', function() {
     
     let imagePath = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM2MzY2RjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMEYwQzQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjEiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxNHB4IiBmaWxsPSIjRjhGQUZDIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+UkVTRUFSQ0ggSU1BR0U8L3RleHQ+PC9zdmc+';
     
-    // Generate thumbnail path from file_id
+    // Generate image path from file_id - use overview image for consistency with modal
     if (project.file_id) {
-      imagePath = `proc/img/${project.file_id}_thumbnail.png`;
+      imagePath = `proc/img/${project.file_id}_overview.png`;
     } else if (project.thumbnail) {
       imagePath = project.thumbnail;
     } else if (project.image_path) {
       imagePath = project.image_path;
     }
     
-    const tags = project.keywords ? project.keywords.slice(0, 2) : (project.tags ? project.tags.slice(0, 2) : [project.degree_type || 'research']);
-    const tagElements = tags.map(tag => 
-      `<span class="project-card__tag">${tag.toUpperCase()}</span>`
+    // 研究分野タグを優先的に表示（人間センシング、人間機械系、チームワーク、協調理論）
+    const researchTags = ['人間センシング', '人間機械系', 'チームワーク', '協調理論'];
+    let displayTags = [];
+    
+    if (project.keywords) {
+      // まず研究分野タグを抽出
+      const foundResearchTags = project.keywords.filter(tag => researchTags.includes(tag));
+      displayTags = [...foundResearchTags];
+      
+      // 研究分野タグが不足している場合、他のキーワードで補完
+      if (displayTags.length < 2) {
+        const otherTags = project.keywords.filter(tag => !researchTags.includes(tag));
+        displayTags = [...displayTags, ...otherTags].slice(0, 2);
+      }
+    } else {
+      displayTags = project.tags ? project.tags.slice(0, 2) : [project.degree_type || 'research'];
+    }
+    
+    const tagElements = displayTags.map(tag => 
+      `<span class="project-card__tag">${tag}</span>`
     ).join('');
     
     // Clean markdown syntax from abstract content
@@ -601,16 +665,18 @@ document.addEventListener('DOMContentLoaded', function() {
             const category = item.getAttribute('data-category');
             shouldShow = category === filter;
           } else {
-            // Filter by keywords
-            const tags = item.querySelectorAll('.project-card__tag');
-            for (let tag of tags) {
-              const tagText = tag.textContent.toLowerCase();
-              if ((filter === 'sensing' && tagText.includes('人間センシング')) ||
-                  (filter === 'hms' && tagText.includes('人間機械系')) ||
-                  (filter === 'teamwork' && tagText.includes('チームワーク')) ||
-                  (filter === 'theory' && tagText.includes('協調理論'))) {
+            // Filter by keywords - プロジェクトデータから直接キーワードを確認
+            // カードのindex属性からプロジェクトデータを取得
+            const cardIndex = parseInt(item.getAttribute('data-index'));
+            if (!isNaN(cardIndex) && window.projectsData && window.projectsData[cardIndex]) {
+              const project = window.projectsData[cardIndex];
+              const keywords = project.keywords || [];
+              
+              if ((filter === 'sensing' && keywords.includes('人間センシング')) ||
+                  (filter === 'hms' && keywords.includes('人間機械系')) ||
+                  (filter === 'teamwork' && keywords.includes('チームワーク')) ||
+                  (filter === 'theory' && keywords.includes('協調理論'))) {
                 shouldShow = true;
-                break;
               }
             }
           }

@@ -14,9 +14,9 @@
       2023,
       2024
     ],
-    "last_updated": "2025-06-18T20:43:13.235523",
+    "last_updated": "2025-06-18T22:00:00.000000",
     "version": "2.4",
-    "note": "Smart tag reassignment based on research content relevance"
+    "note": "Title inconsistencies fixed based on detail files"
   },
   "projects": [
     {
@@ -61,7 +61,7 @@
     },
     {
       "file_id": "2019_B_k.kobayashi",
-      "title": "力のインタラクションを考慮した人間モデルによる適応的誘導",
+      "title": "力のインタラクションを考慮した人間モデルによるCFOの推定とチームワーク評価",
       "title_en": "",
       "author": "小林 航大",
       "student_id": "15EH040",
@@ -119,7 +119,7 @@
     },
     {
       "file_id": "2019_B_r.maruyama",
-      "title": "Ceiling Adsorption UAV using Contra Rotating Propellers",
+      "title": "二重反転プロペラを用いた天井吸着ドローン",
       "title_en": "Ceiling Adsorption UAV using Contra Rotating Propellers",
       "author": "丸山 凌一",
       "student_id": "16EH104",
@@ -138,7 +138,7 @@
     },
     {
       "file_id": "2019_B_r.mukawa",
-      "title": "Multi-agent による個性模倣と適応学習システム",
+      "title": "協調性向上のためのAttention Gridによる注意推定",
       "title_en": "",
       "author": "夢川 凌央",
       "student_id": "16EH102",
@@ -157,7 +157,7 @@
     },
     {
       "file_id": "2019_B_r.ogasawara",
-      "title": "協調フローオペレーションによるチームワーク評価",
+      "title": "視覚負荷における視線動作を用いたストレス推定",
       "title_en": "",
       "author": "小笠原 涼",
       "student_id": "16EH062",
@@ -175,7 +175,7 @@
     },
     {
       "file_id": "2019_B_y.sugano",
-      "title": "協調作業における協調意識の定量評価",
+      "title": "個性模倣によるリアルタイム環境適応アルゴリズム",
       "title_en": "",
       "author": "菅野 遥平",
       "student_id": "16EH069",
@@ -194,7 +194,7 @@
     },
     {
       "file_id": "2019_M_g.sasaki",
-      "title": "協調作業における協調意識の定量化",
+      "title": "協調技能を考慮した力覚フィードバックによる協調作業アシスト",
       "title_en": "",
       "author": "佐々木 元気",
       "student_id": "18KMH09",
@@ -213,7 +213,7 @@
     },
     {
       "file_id": "2019_M_y.uchida",
-      "title": "身体振動による運動錯覚の定量評価および触覚デバイスへの応用",
+      "title": "触覚刺激による運動錯覚時の上腕運動特性評価",
       "title_en": "",
       "author": "内田 優",
       "student_id": "18KMH12",
@@ -232,7 +232,7 @@
     },
     {
       "file_id": "2019_M_z.meng",
-      "title": "個人適応化を考慮したワイヤ駆動触覚デバイスによる仮想物体操作",
+      "title": "個人操作特性を考慮した操作対象ダイナミクスの最適化",
       "title_en": "",
       "author": "孟 子群",
       "student_id": "18KMH11",
@@ -252,7 +252,7 @@
     },
     {
       "file_id": "2020_B_a.inoue",
-      "title": "IoTデバイスを用いた作業時ストレス計測システム",
+      "title": "複数のCoaxial-UAVによる協調搬送に向けた姿勢制御",
       "title_en": "",
       "author": "井上 温",
       "student_id": "17EH005",
@@ -271,7 +271,7 @@
     },
     {
       "file_id": "2020_B_h.nishimura",
-      "title": "仮想デバイスモデルによる両手操作支援システム",
+      "title": "自動化した機械操作に対する人間の信頼推定",
       "title_en": "",
       "author": "西村 晃",
       "student_id": "17EH088",
@@ -309,7 +309,7 @@
     },
     {
       "file_id": "2020_B_r.hikino",
-      "title": "握力変化を利用したステアリングアシストシステム",
+      "title": "握力を利用したステアリングアシスト機構",
       "title_en": "",
       "author": "引野 諒平",
       "student_id": "17EH095",
@@ -327,7 +327,7 @@
     },
     {
       "file_id": "2020_B_y.baba",
-      "title": "多層化マッピングによる位置情報重畳センシング",
+      "title": "口調から言葉の尺度を推定する会話システム",
       "title_en": "",
       "author": "馬場 柚貴",
       "student_id": "17EH092",
@@ -344,7 +344,7 @@
     },
     {
       "file_id": "2020_B_y.oda",
-      "title": "眼球運動とストレス評価に関する相関性の調査",
+      "title": "眼球運動測定によるリアルタイムストレス評価",
       "title_en": "",
       "author": "小田 侑暉",
       "student_id": "17EH065",
@@ -363,7 +363,7 @@
     },
     {
       "file_id": "2020_B_y.okakuji",
-      "title": "眼球運動による運転者の信頼推定",
+      "title": "ウェアラブルデバイス SLAM",
       "title_en": "",
       "author": "大角地 優季",
       "student_id": "17EH067",
@@ -382,7 +382,7 @@
     },
     {
       "file_id": "2020_B_y.yoshida",
-      "title": "音声コミュニケーションにおける口調解析とシステムへの応用",
+      "title": "仮眠中の体温変化が及ぼすその後の作業効率の変化",
       "title_en": "",
       "author": "吉田 悠虎",
       "student_id": "17EH090",
@@ -400,7 +400,7 @@
     },
     {
       "file_id": "2020_M_b.poitrimol",
-      "title": "仮想空間におけるワイヤ駆動ハプティクスを用いたグラスピングインタフェース",
+      "title": "Grasping Interface for Virtual Reality Using Wire-Driven Positioning Interface",
       "title_en": "",
       "author": "Poitrimol Bastien",
       "student_id": "19KMH06",
@@ -420,7 +420,7 @@
     },
     {
       "file_id": "2020_M_k.nakamura",
-      "title": "作業パフォーマンス向上のための生体情報を用いたストレス評価",
+      "title": "ストレス応答と操作パフォーマンスの相関性検討",
       "title_en": "",
       "author": "中村 叶弥",
       "student_id": "19KMH07",
@@ -439,7 +439,7 @@
     },
     {
       "file_id": "2020_M_s.koizumi",
-      "title": "バイマニュアルオペレーションのための自己規範支援システム",
+      "title": "両手操作における自己規範操作支援",
       "title_en": "",
       "author": "小泉 芹直",
       "student_id": "19KMH05",
@@ -458,7 +458,7 @@
     },
     {
       "file_id": "2020_M_t.kosaka",
-      "title": "仮眠における体温制御による睡眠慣性抑制効果に関する研究",
+      "title": "重畳情報分離のための回転複合センサによる多層化マッピング",
       "title_en": "",
       "author": "小坂 太一",
       "student_id": "19KMH04",
@@ -515,7 +515,7 @@
     },
     {
       "file_id": "2021_B_h.tagaya",
-      "title": "指先動作の力覚提示による熟達支援",
+      "title": "特徴量検出による投射動作の運動熟達支援",
       "title_en": "",
       "author": "多賀谷 光",
       "student_id": "18EH601",
@@ -534,7 +534,7 @@
     },
     {
       "file_id": "2021_B_k.kobayashi",
-      "title": "協調フローオペレーションによるチームワーク評価システム",
+      "title": "未知ターゲットを適応的に誘導するマルチエージェントの設計",
       "title_en": "",
       "author": "小林 虎太郎",
       "student_id": "18EH616",
@@ -552,7 +552,7 @@
     },
     {
       "file_id": "2021_B_m.suga",
-      "title": "温度による力覚生起現象の定量化",
+      "title": "感性値を用いた Human Adaptive Air Unit の開発",
       "title_en": "",
       "author": "須賀 美晴",
       "student_id": "18EH609",
@@ -571,7 +571,7 @@
     },
     {
       "file_id": "2021_B_t.kassai",
-      "title": "機械学習による牧羊犬アルゴリズムの高度化",
+      "title": "機械操作における自己主体感の評価",
       "title_en": "",
       "author": "葛西 大河",
       "student_id": "18EH602",
@@ -589,7 +589,7 @@
     },
     {
       "file_id": "2021_B_t.shike",
-      "title": "感情状態推定のためのストレス定量計測システム",
+      "title": "快・不快を用いた温度提示による覚醒状態の促進",
       "title_en": "",
       "author": "四家 大輝",
       "student_id": "18EH608",
@@ -626,7 +626,7 @@
     },
     {
       "file_id": "2021_M_h.sugano",
-      "title": "個性模倣と自己学習を備えたマルチエージェントによる不確かなターゲット群の適応誘導システム",
+      "title": "個性模倣と多様性維持による環境に合わせた動作設計手法",
       "title_en": "",
       "author": "菅野 遥平",
       "student_id": "20KMH20",
@@ -646,7 +646,7 @@
     },
     {
       "file_id": "2021_M_k.kobayashi",
-      "title": "協調フローオペレーションによるチームワーク評価",
+      "title": "チームワーク評価における協調作業解析手法",
       "title_en": "",
       "author": "小林 航大",
       "student_id": "20KMH18",
@@ -664,7 +664,7 @@
     },
     {
       "file_id": "2021_M_k.tozuka",
-      "title": "マルチエージェントによる不確かなターゲット群の適応誘導システム",
+      "title": "VR技術の更なる発展に向けて：汎用的な触覚モデリング",
       "title_en": "",
       "author": "戸塚 圭亮",
       "student_id": "20KMH21",
@@ -701,7 +701,7 @@
     },
     {
       "file_id": "2022_B_i.kato",
-      "title": "個人適応を考慮したロボットによる操作支援システム",
+      "title": "温度に着目した適度なストレス誘導デバイスの開発",
       "title_en": "",
       "author": "加藤 一沙",
       "student_id": "19EH015",
@@ -720,7 +720,7 @@
     },
     {
       "file_id": "2022_B_k.ohya",
-      "title": "可変インピーダンス特性による個人差を考慮した支援システム",
+      "title": "呼吸手法の変化による自律神経機能活性度への影響",
       "title_en": "",
       "author": "大矢 和磨",
       "student_id": "19EH020",
@@ -739,7 +739,7 @@
     },
     {
       "file_id": "2022_B_k.sato",
-      "title": "マルチエージェント協調のための強化学習と模倣学習の融合手法",
+      "title": "マルチロボットシステムによる協調作業及び人間介入がシステムに及ぼす影響",
       "title_en": "",
       "author": "佐藤 航成",
       "student_id": "19EH026",
@@ -758,7 +758,7 @@
     },
     {
       "file_id": "2022_B_m.nakamura",
-      "title": "他部位刺激による振動を用いた硬さ提示の向上",
+      "title": "把持物体への衝撃位置を再現可能な小型の触覚デバイス",
       "title_en": "",
       "author": "中村 美月",
       "student_id": "19EH036",
@@ -775,7 +775,7 @@
     },
     {
       "file_id": "2022_B_n.ito",
-      "title": "温度による力覚生起現象の個人差に関する研究",
+      "title": "仮想環境における振動グローブを用いた力分布の偏り表現",
       "title_en": "",
       "author": "伊藤 那月",
       "student_id": "19EH006",
@@ -794,7 +794,7 @@
     },
     {
       "file_id": "2022_B_r.tanaka",
-      "title": "ドライビングシミュレータによる注意状態と視線挙動解析",
+      "title": "聴覚刺激を用いた重心動揺の評価",
       "title_en": "",
       "author": "田中 龍介",
       "student_id": "19EH031",
@@ -813,7 +813,7 @@
     },
     {
       "file_id": "2022_B_s.sanuka",
-      "title": "力覚フィードバックによる指先動作の熟達支援",
+      "title": "視覚刺激による疑似触力覚効果の評価",
       "title_en": "",
       "author": "佐怒賀 慎吾",
       "student_id": "19EH024",
@@ -832,7 +832,7 @@
     },
     {
       "file_id": "2022_B_t.bitoh",
-      "title": "温度提示デバイスによる感情値を用いたストレス評価",
+      "title": "脳波を用いた温度変化による心理的ストレスの低減",
       "title_en": "",
       "author": "尾藤 友樹",
       "student_id": "19EH018",
@@ -851,7 +851,7 @@
     },
     {
       "file_id": "2022_B_t.onogawa",
-      "title": "サーモグラフィを用いたSLAMシステムの開発",
+      "title": "気づかれない行動のための眼球運動に伴う三次元注意分布推定",
       "title_en": "",
       "author": "小野川 樹",
       "student_id": "19EH019",
@@ -870,7 +870,7 @@
     },
     {
       "file_id": "2022_B_t.oriuchi",
-      "title": "リアルタイム計測による生体信号を用いた認知負荷推定",
+      "title": "視線分析による注意推定から必要なアシストを選別するシステム",
       "title_en": "",
       "author": "織内 翼",
       "student_id": "19EH017",
@@ -889,7 +889,7 @@
     },
     {
       "file_id": "2022_B_y.noguchi",
-      "title": "円軌道追従操作における操作パフォーマンス向上に関する研究",
+      "title": "電気刺激を用いた眠気低減システム",
       "title_en": "",
       "author": "野口 柚祐",
       "student_id": "19EH038",
@@ -907,7 +907,7 @@
     },
     {
       "file_id": "2022_B_y.yamada",
-      "title": "個性模倣と自己学習を備えたマルチエージェントによる不確かなターゲット群の適応誘導システム",
+      "title": "座位姿勢の解析および矯正に向けたワイヤアレイセンサの開発",
       "title_en": "",
       "author": "山田 侑果",
       "student_id": "19EH043",
@@ -926,7 +926,7 @@
     },
     {
       "file_id": "2022_M_a.nishimura",
-      "title": "触覚技術を用いた物理シミュレーションのためのデータ駆動型触覚モデリング",
+      "title": "アシストシステムに対する個人差を考慮した依存度の推定手法の提案",
       "title_en": "",
       "author": "西村 晃",
       "student_id": "21KMH24",
@@ -945,7 +945,7 @@
     },
     {
       "file_id": "2022_M_h.yoshida",
-      "title": "個性模倣と自己学習を備えたマルチエージェントによる不確かなターゲット群の適応誘導システム",
+      "title": "熱刺激を用いた覚醒補助がもたらす睡眠慣性抑制効果の検証",
       "title_en": "",
       "author": "吉田 悠虎",
       "student_id": "21KMH22",
@@ -964,7 +964,7 @@
     },
     {
       "file_id": "2022_M_y.baba",
-      "title": "多層化マッピングによる位置情報重畳センシング",
+      "title": "個々の聞き手の解釈に基づく話者の表現のモデルへの検討",
       "title_en": "",
       "author": "馬場 柚貴",
       "student_id": "21KMH21",
@@ -981,7 +981,7 @@
     },
     {
       "file_id": "2023_B_g.otsuka",
-      "title": "VDT作業時における眼球情報とストレスの関連性の調査",
+      "title": "2024 年度 卒業論文",
       "title_en": "",
       "author": "大塚 凱",
       "student_id": "20EH018",
@@ -1000,7 +1000,7 @@
     },
     {
       "file_id": "2023_B_h.kitaiwa",
-      "title": "ボトルネックにおいてすれ違う群衆の誘導アルゴリズムの提案",
+      "title": "2023 年度 卒業論文",
       "title_en": "",
       "author": "北岩 隼人",
       "student_id": "20EH015",
@@ -1019,7 +1019,7 @@
     },
     {
       "file_id": "2023_B_j.ryuu",
-      "title": "VDT作業時における眼球情報とストレスの関連性の調査",
+      "title": "2023 年度 卒業論文",
       "title_en": "",
       "author": "劉 樹鵬",
       "student_id": "20EH048",
@@ -1038,7 +1038,7 @@
     },
     {
       "file_id": "2023_B_k.sudo",
-      "title": "他部位刺激による振動を用いた硬さ提示の向上",
+      "title": "2023 年度 卒業論文",
       "title_en": "",
       "author": "須藤 浩介",
       "student_id": "20EH029",
@@ -1055,7 +1055,7 @@
     },
     {
       "file_id": "2023_B_ke.nakamura",
-      "title": "ボトルネックにおいてすれ違う群衆の誘導アルゴリズムの提案",
+      "title": "2023 年度 卒業論文",
       "title_en": "",
       "author": "中村 圭佑",
       "student_id": "20EH035",
@@ -1074,7 +1074,7 @@
     },
     {
       "file_id": "2023_B_r.uchida",
-      "title": "VDT作業時における眼球情報とストレスの関連性の調査",
+      "title": "2023 年度 卒業論文",
       "title_en": "",
       "author": "内田 凌太郎",
       "student_id": "20EH020",
@@ -1093,7 +1093,7 @@
     },
     {
       "file_id": "2023_B_r.yanase",
-      "title": "眼球運動による運転者の信頼推定",
+      "title": "2023 年度 卒業論文",
       "title_en": "",
       "author": "梁瀬 琉真",
       "student_id": "20EH046",
@@ -1112,7 +1112,7 @@
     },
     {
       "file_id": "2023_B_s.fujiwara",
-      "title": "感情状態推定のためのストレス定量計測システム",
+      "title": "温度変化による力覚生起現象の定量化",
       "title_en": "",
       "author": "藤原 志温",
       "student_id": "20EH041",
@@ -1131,7 +1131,7 @@
     },
     {
       "file_id": "2023_M_k.kobayashi",
-      "title": "協調フローオペレーションによるチームワーク評価",
+      "title": "個性模倣と自己学習を備えたマルチエージェントによる不確かなターゲット群の適応誘導システム",
       "title_en": "",
       "author": "小林 虎太郎",
       "student_id": "22KMH25",
@@ -1149,7 +1149,7 @@
     },
     {
       "file_id": "2023_M_m.tagaya",
-      "title": "指先動作の力覚提示による熟達支援",
+      "title": "特徴量検出による投射動作の運動熟達支援",
       "title_en": "",
       "author": "多賀谷 光",
       "student_id": "22KMH26",
@@ -1168,7 +1168,7 @@
     },
     {
       "file_id": "2023_M_t.kassai",
-      "title": "機械学習による牧羊犬アルゴリズムの高度化",
+      "title": "操作支援下における自己主体感の評価",
       "title_en": "",
       "author": "葛西 大河",
       "student_id": "22KMH24",
@@ -1186,7 +1186,7 @@
     },
     {
       "file_id": "2023_M_k.ohya",
-      "title": "ストレス解析によるリアルタイム適応型インタフェースの設計",
+      "title": "リアルタイム適応型インタフェースの設計",
       "title_en": "",
       "author": "大矢 和磨",
       "student_id": "22KMH28",
@@ -1205,7 +1205,7 @@
     },
     {
       "file_id": "2023_M_la.nicolas",
-      "title": "ネットワーク計画ツールとしての欲求経路創発シミュレーションマルチエージェントシステムの開発と評価",
+      "title": "ネットワーク計画ツールとしての欲求経路創発",
       "title_en": "",
       "author": "ニコラ ルイアンドレ",
       "student_id": "22KMH30",
@@ -1225,7 +1225,7 @@
     },
     {
       "file_id": "2023_M_n.ito",
-      "title": "仮想環境での振動触覚グローブを用いた力分布の提示が把持動作に及ぼす影響",
+      "title": "仮想環境での振動触覚グローブを用いた",
       "title_en": "",
       "author": "伊藤 那月",
       "student_id": "22KMH31",
@@ -1246,7 +1246,7 @@
     },
     {
       "file_id": "2023_M_onogawa",
-      "title": "仮想環境における変化の見落としを予測可能なAttention TriGridの提案",
+      "title": "仮想環境における変化の見落としを予測可能な",
       "title_en": "",
       "author": "小野川 樹",
       "student_id": "22KMH32",
@@ -1266,7 +1266,7 @@
     },
     {
       "file_id": "2023_M_r.tanaka",
-      "title": "聴覚刺激の提示を伴う身体動揺評価 - 骨導音での実験と検討",
+      "title": "聴覚刺激の提示を伴う身体動揺評価",
       "title_en": "",
       "author": "田中 龍介",
       "student_id": "22KMH33",
@@ -1286,7 +1286,7 @@
     },
     {
       "file_id": "2023_M_y.yamada",
-      "title": "座位姿勢の解析および矯正に向けたワイヤアレイセンサの開発",
+      "title": "座位姿勢の解析および矯正に向けたワイヤアレイ",
       "title_en": "",
       "author": "山田 侑果",
       "student_id": "22KMH34",
@@ -1306,7 +1306,7 @@
     },
     {
       "file_id": "2024_B_a.noto",
-      "title": "VR酔いを軽減する視覚的注意分布を利用したレンダリング手法の提案",
+      "title": "2024 年度 卒業論文",
       "title_en": "",
       "author": "能登 彩花",
       "student_id": "21EH071",
@@ -1325,7 +1325,7 @@
     },
     {
       "file_id": "2024_B_d.nakajima",
-      "title": "リアルタイムストレス指標を用いた遠隔操作環境における遅延補完システム",
+      "title": "2024 年度 卒業論文",
       "title_en": "",
       "author": "中嶋 大智",
       "student_id": "21EH033",
@@ -1345,7 +1345,7 @@
     },
     {
       "file_id": "2024_B_h.nakamura",
-      "title": "VR環境における力覚フィードバックを用いた重心動揺測定システム",
+      "title": "2024 年度 卒業論文",
       "title_en": "",
       "author": "中村 弘樹",
       "student_id": "21EH036",
@@ -1364,7 +1364,7 @@
     },
     {
       "file_id": "2024_B_k.hayashi",
-      "title": "個人差を考慮した可変インピーダンス支援システム",
+      "title": "2024 年度 卒業論文",
       "title_en": "",
       "author": "林 健輔",
       "student_id": "21EH079",
@@ -1383,7 +1383,7 @@
     },
     {
       "file_id": "2024_B_m.kashiwagi",
-      "title": "VR環境における力覚フィードバックを用いた重心動揺測定システム",
+      "title": "2024 年度 卒業論文",
       "title_en": "",
       "author": "柏木 水輝",
       "student_id": "21EH010",
@@ -1402,7 +1402,7 @@
     },
     {
       "file_id": "2024_B_mi.nakamura",
-      "title": "VRにおけるサブリミナル学習支援システム",
+      "title": "2024 年度 卒業論文",
       "title_en": "",
       "author": "中村 美月",
       "student_id": "21EH037",
@@ -1421,7 +1421,7 @@
     },
     {
       "file_id": "2024_B_r.hiratsuka",
-      "title": "群ロボットによる効率的な探索アルゴリズムの開発",
+      "title": "2024年度 卒業論文",
       "title_en": "",
       "author": "平塚 亮気",
       "student_id": "21EH086",
@@ -1439,7 +1439,7 @@
     },
     {
       "file_id": "2024_B_r.kato",
-      "title": "マーカーを用いた群ロボットによる効率的な探索アルゴリズムの開発",
+      "title": "2024 年度 卒業論文",
       "title_en": "",
       "author": "加藤 陸生",
       "student_id": "21EH019",
@@ -1458,7 +1458,7 @@
     },
     {
       "file_id": "2024_B_r.morishita",
-      "title": "群ロボットによる効率的な探索アルゴリズムの開発",
+      "title": "2024 年度 卒業論文",
       "title_en": "",
       "author": "森下 陸",
       "student_id": "21EH065",
@@ -1476,7 +1476,7 @@
     },
     {
       "file_id": "2024_B_s.imamura",
-      "title": "群ロボットによる効率的な探索アルゴリズムの開発",
+      "title": "2024 年度 卒業論文",
       "title_en": "",
       "author": "今村 心哉",
       "student_id": "21EH003",
@@ -1494,7 +1494,7 @@
     },
     {
       "file_id": "2024_B_s.tahara",
-      "title": "群ロボットによる効率的な探索アルゴリズムの開発",
+      "title": "2024 年度 卒業論文",
       "title_en": "",
       "author": "田原 駿",
       "student_id": "21EH049",
@@ -1512,7 +1512,7 @@
     },
     {
       "file_id": "2024_B_y.takahashi",
-      "title": "個人差を考慮した可変インピーダンス支援システム",
+      "title": "2024年度 卒業論文",
       "title_en": "",
       "author": "高橋 勇輝",
       "student_id": "21EH050",
@@ -1531,7 +1531,7 @@
     },
     {
       "file_id": "2024_M_i.kato",
-      "title": "機械学習を用いた追従操作におけるサプライズの推定",
+      "title": "機械学習を用いた追従操作における",
       "title_en": "",
       "author": "加藤 一沙",
       "student_id": "23KMH30",
@@ -1551,7 +1551,7 @@
     },
     {
       "file_id": "2024_M_k.ohya",
-      "title": "個人差を考慮した可変インピーダンス支援システム",
+      "title": "リアルタイム適応型インタフェースの設計",
       "title_en": "",
       "author": "大矢 和磨",
       "student_id": "23KMH31",
@@ -1570,7 +1570,7 @@
     },
     {
       "file_id": "2024_M_m.nakamura",
-      "title": "VRにおけるサブリミナル学習支援システム",
+      "title": "VR 空間のサブリミナルな物理パラメータ変化に",
       "title_en": "",
       "author": "中村 美月",
       "student_id": "23KMH33",
@@ -1589,7 +1589,7 @@
     },
     {
       "file_id": "2024_M_n.ito",
-      "title": "温度による力覚生起現象の個人差に関する研究",
+      "title": "仮想環境での振動触覚グローブを用いた",
       "title_en": "",
       "author": "伊藤 那月",
       "student_id": "23KMH34",
@@ -1608,7 +1608,7 @@
     },
     {
       "file_id": "2024_M_r.tanaka",
-      "title": "ドライビングシミュレータによる注意状態と視線挙動解析",
+      "title": "聴覚刺激の提示を伴う身体動揺評価",
       "title_en": "",
       "author": "田中 龍介",
       "student_id": "23KMH36",
@@ -1627,7 +1627,7 @@
     },
     {
       "file_id": "2024_M_y.yamada",
-      "title": "個性模倣と自己学習を備えたマルチエージェントによる不確かなターゲット群の適応誘導システム",
+      "title": "座位姿勢の解析および矯正に向けたワイヤアレイ",
       "title_en": "",
       "author": "山田 侑果",
       "student_id": "23KMH38",
