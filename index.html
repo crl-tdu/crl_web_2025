@@ -139,7 +139,8 @@
       <div class="search__input-wrapper fade-in-up">
         <label for="search-box" class="sr-only">研究テーマを検索</label>
         <span class="search__icon" aria-hidden="true">🔍</span>
-        <input type="text" id="search-box" class="search__input" placeholder="研究テーマを検索... (AI, ロボット, センシング)" aria-label="研究テーマを検索" role="searchbox">
+        <input type="text" id="search-box" class="search__input" placeholder="研究テーマを検索... (AI, ロボット, センシング)" aria-label="研究テーマを検索" role="searchbox" autocomplete="off">
+        <div id="search-suggestions" class="search__suggestions"></div>
       </div>
 
       <!-- Filter System -->
@@ -584,6 +585,7 @@ document.addEventListener('DOMContentLoaded', function() {
     card.className = 'project-card';
     card.setAttribute('data-category', project.degree_code || project.category || 'other');
     card.setAttribute('data-index', index); // インデックスを追加
+    card.setAttribute('data-keywords', (project.keywords || []).join(' '));
     card.style.animationDelay = `${index * 0.1}s`;
     
     // Add click handler for modal
@@ -591,9 +593,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     let imagePath = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM2MzY2RjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMEYwQzQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjEiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxNHB4IiBmaWxsPSIjRjhGQUZDIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+UkVTRUFSQ0ggSU1BR0U8L3RleHQ+PC9zdmc+';
     
-    // Generate image path from file_id - use overview image for consistency with modal
+    // Generate image path from file_id - use thumbnail image for card
     if (project.file_id) {
-      imagePath = `proc/img/${project.file_id}_overview.png`;
+      imagePath = `proc/img/${project.file_id}_thumbnail.png`;
     } else if (project.thumbnail) {
       imagePath = project.thumbnail;
     } else if (project.image_path) {
@@ -699,32 +701,212 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Search Functionality
+  // Search Functionality with Autocomplete
   const searchBox = document.getElementById('search-box');
+  const suggestionsBox = document.getElementById('search-suggestions');
+  let keywordsData = [];
+  let selectedSuggestionIndex = -1;
+  
+  // Load keywords data
+  async function loadKeywords() {
+    try {
+      const response = await fetch('data/keywords.json');
+      const data = await response.json();
+      keywordsData = data.all_keywords || [];
+    } catch (error) {
+      console.error('Error loading keywords:', error);
+    }
+  }
+  
+  // Initialize keywords
+  loadKeywords();
+  
+  function showSuggestions(searchTerm) {
+    if (!searchTerm || searchTerm.length < 1) {
+      suggestionsBox.style.display = 'none';
+      return;
+    }
+    
+    const normalizedSearch = searchTerm.toLowerCase();
+    let suggestions;
+    
+    if (normalizedSearch.includes('*')) {
+      // Convert wildcard pattern to regex for suggestions
+      const escapedPattern = normalizedSearch
+        .replace(/[.+?^${}()|[\]\\]/g, '\\$&')
+        .replace(/\*/g, '.*');
+      const searchPattern = new RegExp(escapedPattern);
+      
+      suggestions = keywordsData
+        .filter(item => searchPattern.test(item.keyword.toLowerCase()))
+        .slice(0, 8);
+    } else {
+      suggestions = keywordsData
+        .filter(item => item.keyword.toLowerCase().includes(normalizedSearch))
+        .slice(0, 8);
+    }
+    
+    if (suggestions.length === 0) {
+      suggestionsBox.style.display = 'none';
+      return;
+    }
+    
+    suggestionsBox.innerHTML = suggestions.map((item, index) => `
+      <div class="search__suggestion-item" data-index="${index}" data-keyword="${item.keyword}">
+        <span class="suggestion-keyword">${highlightMatch(item.keyword, searchTerm)}</span>
+        <span class="suggestion-count">${item.count}件</span>
+      </div>
+    `).join('');
+    
+    suggestionsBox.style.display = 'block';
+    selectedSuggestionIndex = -1;
+  }
+  
+  function highlightMatch(text, searchTerm) {
+    if (searchTerm.includes('*')) {
+      // For wildcard patterns, highlight the matched parts
+      const escapedPattern = searchTerm
+        .replace(/[.+?^${}()|[\]\\]/g, '\\$&')
+        .replace(/\*/g, '(.*)');
+      const regex = new RegExp(escapedPattern, 'gi');
+      return text.replace(regex, (match) => `<strong>${match}</strong>`);
+    } else {
+      const regex = new RegExp(`(${searchTerm})`, 'gi');
+      return text.replace(regex, '<strong>$1</strong>');
+    }
+  }
+  
+  function hideSuggestions() {
+    setTimeout(() => {
+      suggestionsBox.style.display = 'none';
+      selectedSuggestionIndex = -1;
+    }, 200);
+  }
+  
+  function selectSuggestion(index) {
+    const items = suggestionsBox.querySelectorAll('.search__suggestion-item');
+    items.forEach((item, i) => {
+      if (i === index) {
+        item.classList.add('selected');
+      } else {
+        item.classList.remove('selected');
+      }
+    });
+  }
+  
+  function performSearch(searchTerm) {
+    const portfolioItems = document.querySelectorAll('.project-card');
+    
+    // If search term is empty, show all
+    if (searchTerm === '') {
+      portfolioItems.forEach(item => {
+        item.style.display = 'block';
+        item.style.opacity = '1';
+        item.style.transform = 'scale(1)';
+      });
+      return;
+    }
+    
+    // Convert wildcard pattern to regex
+    const normalizedSearch = searchTerm.toLowerCase();
+    let searchPattern;
+    
+    if (normalizedSearch.includes('*')) {
+      // Escape special regex characters except *
+      const escapedPattern = normalizedSearch
+        .replace(/[.+?^${}()|[\]\\]/g, '\\$&')
+        .replace(/\*/g, '.*');
+      searchPattern = new RegExp(escapedPattern);
+    }
+    
+    portfolioItems.forEach(item => {
+      const title = item.querySelector('.project-card__title').textContent.toLowerCase();
+      const abstract = item.querySelector('.project-card__abstract').textContent.toLowerCase();
+      const author = item.querySelector('.project-card__author').textContent.toLowerCase();
+      const keywords = item.dataset.keywords ? item.dataset.keywords.toLowerCase() : '';
+      
+      let matches = false;
+      
+      if (searchPattern) {
+        // Use regex pattern matching
+        matches = searchPattern.test(title) || 
+                  searchPattern.test(abstract) || 
+                  searchPattern.test(author) ||
+                  searchPattern.test(keywords);
+      } else {
+        // Use simple includes
+        matches = title.includes(normalizedSearch) || 
+                  abstract.includes(normalizedSearch) || 
+                  author.includes(normalizedSearch) ||
+                  keywords.includes(normalizedSearch);
+      }
+      
+      if (matches) {
+        item.style.display = 'block';
+        item.style.opacity = '1';
+        item.style.transform = 'scale(1)';
+      } else {
+        item.style.opacity = '0';
+        item.style.transform = 'scale(0.8)';
+        setTimeout(() => {
+          if (item.style.opacity === '0') {
+            item.style.display = 'none';
+          }
+        }, 300);
+      }
+    });
+  }
+  
   if (searchBox) {
     searchBox.addEventListener('input', function() {
-      const searchTerm = this.value.toLowerCase();
-      const portfolioItems = document.querySelectorAll('.project-card');
+      const searchTerm = this.value;
+      showSuggestions(searchTerm);
+      performSearch(searchTerm);
+    });
+    
+    searchBox.addEventListener('focus', function() {
+      if (this.value) {
+        showSuggestions(this.value);
+      }
+    });
+    
+    searchBox.addEventListener('blur', function() {
+      hideSuggestions();
+    });
+    
+    // Keyboard navigation
+    searchBox.addEventListener('keydown', function(e) {
+      const items = suggestionsBox.querySelectorAll('.search__suggestion-item');
       
-      portfolioItems.forEach(item => {
-        const title = item.querySelector('.project-card__title').textContent.toLowerCase();
-        const abstract = item.querySelector('.project-card__abstract').textContent.toLowerCase();
-        const author = item.querySelector('.project-card__author').textContent.toLowerCase();
-        
-        if (title.includes(searchTerm) || abstract.includes(searchTerm) || author.includes(searchTerm)) {
-          item.style.display = 'block';
-          item.style.opacity = '1';
-          item.style.transform = 'scale(1)';
-        } else {
-          item.style.opacity = '0';
-          item.style.transform = 'scale(0.8)';
-          setTimeout(() => {
-            if (item.style.opacity === '0') {
-              item.style.display = 'none';
-            }
-          }, 300);
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        selectedSuggestionIndex = Math.min(selectedSuggestionIndex + 1, items.length - 1);
+        selectSuggestion(selectedSuggestionIndex);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        selectedSuggestionIndex = Math.max(selectedSuggestionIndex - 1, -1);
+        selectSuggestion(selectedSuggestionIndex);
+      } else if (e.key === 'Enter' && selectedSuggestionIndex >= 0) {
+        e.preventDefault();
+        const selectedItem = items[selectedSuggestionIndex];
+        if (selectedItem) {
+          searchBox.value = selectedItem.dataset.keyword;
+          performSearch(selectedItem.dataset.keyword);
+          hideSuggestions();
         }
-      });
+      }
+    });
+  }
+  
+  // Click on suggestion
+  if (suggestionsBox) {
+    suggestionsBox.addEventListener('click', function(e) {
+      const item = e.target.closest('.search__suggestion-item');
+      if (item) {
+        searchBox.value = item.dataset.keyword;
+        performSearch(item.dataset.keyword);
+        hideSuggestions();
+      }
     });
   }
 
@@ -787,12 +969,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (authorElement) authorElement.textContent = `研究者: ${project.author || 'Anonymous'}`;
     if (yearBadgeElement) yearBadgeElement.textContent = project.year || '2024';
     
-    // Set image - use overview image for modal
+    // Set image - use thumbnail image for modal
     const modalImage = document.querySelector('.modal__image');
     if (modalImage) {
       let imagePath;
       if (project.file_id) {
-        imagePath = `proc/img/${project.file_id}_overview.png`;
+        imagePath = `proc/img/${project.file_id}_thumbnail.png`;
       } else if (project.thumbnail) {
         imagePath = project.thumbnail;
       } else if (project.image_path) {
