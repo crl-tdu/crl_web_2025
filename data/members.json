@@ -814,7 +814,7 @@
       "member_id": "k.ohya",
       "name": "大矢 和磨",
       "file_identifier": "k.ohya",
-      "student_ids": ["19EH020", "23KMH31"],
+      "student_ids": ["19EH020", "22KMH28", "23KMH31"],
       "entry_year": 2019,
       "active_years": [2019, 2020, 2021, 2022, 2023, 2024],
       "degrees": [
@@ -824,6 +824,13 @@
           "title": "可変インピーダンス特性による個人差を考慮した支援システム",
           "file_id": "2022_B_k.ohya",
           "student_id": "19EH020"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2023,
+          "title": "ストレス解析によるリアルタイム適応型インタフェースの設計",
+          "file_id": "2023_M_k.ohya",
+          "student_id": "22KMH28"
         },
         {
           "degree_type": "修士論文",
@@ -885,7 +892,7 @@
       "member_id": "n.ito",
       "name": "伊藤 那月",
       "file_identifier": "n.ito",
-      "student_ids": ["19EH006", "23KMH34"],
+      "student_ids": ["19EH006", "22KMH31", "23KMH34"],
       "entry_year": 2019,
       "active_years": [2019, 2020, 2021, 2022, 2023, 2024],
       "degrees": [
@@ -895,6 +902,13 @@
           "title": "温度による力覚生起現象の個人差に関する研究",
           "file_id": "2022_B_n.ito",
           "student_id": "19EH006"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2023,
+          "title": "仮想環境での振動触覚グローブを用いた力分布の提示が把持動作に及ぼす影響",
+          "file_id": "2023_M_n.ito",
+          "student_id": "22KMH31"
         },
         {
           "degree_type": "修士論文",
@@ -911,7 +925,7 @@
       "member_id": "r.tanaka",
       "name": "田中 龍介",
       "file_identifier": "r.tanaka",
-      "student_ids": ["19EH031", "23KMH36"],
+      "student_ids": ["19EH031", "22KMH33", "23KMH36"],
       "entry_year": 2019,
       "active_years": [2019, 2020, 2021, 2022, 2023, 2024],
       "degrees": [
@@ -921,6 +935,13 @@
           "title": "ドライビングシミュレータによる注意状態と視線挙動解析",
           "file_id": "2022_B_r.tanaka",
           "student_id": "19EH031"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2023,
+          "title": "聴覚刺激の提示を伴う身体動揺評価 - 骨導音での実験と検討",
+          "file_id": "2023_M_r.tanaka",
+          "student_id": "22KMH33"
         },
         {
           "degree_type": "修士論文",
@@ -1001,7 +1022,7 @@
       "member_id": "t.onogawa",
       "name": "小野川 樹",
       "file_identifier": "t.onogawa",
-      "student_ids": ["19EH019", "23KMH35"],
+      "student_ids": ["19EH019", "22KMH32", "23KMH35"],
       "entry_year": 2019,
       "active_years": [2019, 2020, 2021, 2022, 2023, 2024],
       "degrees": [
@@ -1011,6 +1032,13 @@
           "title": "サーモグラフィを用いたSLAMシステムの開発",
           "file_id": "2022_B_t.onogawa",
           "student_id": "19EH019"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2023,
+          "title": "仮想環境における変化の見落としを予測可能なAttention TriGridの提案",
+          "file_id": "2023_M_onogawa",
+          "student_id": "22KMH32"
         },
         {
           "degree_type": "修士論文",
@@ -1065,7 +1093,7 @@
       "member_id": "y.yamada",
       "name": "山田 侑果",
       "file_identifier": "y.yamada",
-      "student_ids": ["19EH043", "23KMH38"],
+      "student_ids": ["19EH043", "22KMH34", "23KMH38"],
       "entry_year": 2019,
       "active_years": [2019, 2020, 2021, 2022, 2023, 2024],
       "degrees": [
@@ -1075,6 +1103,13 @@
           "title": "個性模倣と自己学習を備えたマルチエージェントによる不確かなターゲット群の適応誘導システム",
           "file_id": "2022_B_y.yamada",
           "student_id": "19EH043"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2023,
+          "title": "座位姿勢の解析および矯正に向けたワイヤアレイセンサの開発",
+          "file_id": "2023_M_y.yamada",
+          "student_id": "22KMH34"
         },
         {
           "degree_type": "修士論文",
@@ -1091,10 +1126,17 @@
       "member_id": "la.nicolas",
       "name": "ニコラ ルイアンドレ",
       "file_identifier": "la.nicolas",
-      "student_ids": ["23KMH32"],
+      "student_ids": ["22KMH30", "23KMH32"],
       "entry_year": 2023,
       "active_years": [2023, 2024],
       "degrees": [
+        {
+          "degree_type": "修士論文",
+          "year": 2023,
+          "title": "ネットワーク計画ツールとしての欲求経路創発シミュレーションマルチエージェントシステムの開発と評価",
+          "file_id": "2023_M_la.nicolas",
+          "student_id": "22KMH30"
+        },
         {
           "degree_type": "修士論文",
           "year": 2024,
