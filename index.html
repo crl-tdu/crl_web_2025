@@ -704,81 +704,107 @@ document.addEventListener('DOMContentLoaded', function() {
   const modalOverlay = document.querySelector('.modal__overlay');
 
   async function openModal(project) {
+    console.log('Opening modal for project:', project);
+    
+    // Check if modal exists
+    if (!modal) {
+      console.error('Modal element not found');
+      return;
+    }
+    
     // Populate modal content
-    document.querySelector('.modal__title').textContent = project.title || 'Untitled Project';
-    document.querySelector('.modal__author').textContent = `研究者: ${project.author || 'Anonymous'}`;
-    document.querySelector('.modal__year-badge').textContent = project.year || '2024';
+    const titleElement = document.querySelector('.modal__title');
+    const authorElement = document.querySelector('.modal__author');
+    const yearBadgeElement = document.querySelector('.modal__year-badge');
+    
+    if (titleElement) titleElement.textContent = project.title || 'Untitled Project';
+    if (authorElement) authorElement.textContent = `研究者: ${project.author || 'Anonymous'}`;
+    if (yearBadgeElement) yearBadgeElement.textContent = project.year || '2024';
     
     // Set image - use overview image for modal
     const modalImage = document.querySelector('.modal__image');
-    let imagePath;
-    if (project.file_id) {
-      imagePath = `proc/img/${project.file_id}_overview.png`;
-    } else if (project.thumbnail) {
-      imagePath = project.thumbnail;
-    } else if (project.image_path) {
-      imagePath = project.image_path;
-    } else {
-      imagePath = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDc1QzciLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNGRjY5MDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjEiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNHB4IiBmaWxsPSIjMDA3NUM3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+🔬 研究画像</dGV4dD48L3N2Zz4=';
+    if (modalImage) {
+      let imagePath;
+      if (project.file_id) {
+        imagePath = `proc/img/${project.file_id}_overview.png`;
+      } else if (project.thumbnail) {
+        imagePath = project.thumbnail;
+      } else if (project.image_path) {
+        imagePath = project.image_path;
+      } else {
+        imagePath = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDc1QzciLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNGRjY5MDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjEiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNHB4IiBmaWxsPSIjMDA3NUM3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+🔬 研究画像</dGV4dD48L3N2Zz4=';
+      }
+      modalImage.src = imagePath;
+      modalImage.alt = project.title || 'Research Image';
+      
+      // Add error handling for image loading
+      modalImage.onerror = function() {
+        this.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDc1QzciLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNGRjY5MDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjEiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNHB4IiBmaWxsPSIjMDA3NUM3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+🔬 研究画像</dGV4dD48L3N2Zz4=';
+      };
     }
-    modalImage.src = imagePath;
-    modalImage.alt = project.title || 'Research Image';
     
     // Set tags
     const tagsContainer = document.querySelector('.modal__tags');
-    tagsContainer.innerHTML = '';
-    const tags = project.keywords || project.tags || [project.degree_type || 'research'];
-    tags.slice(0, 5).forEach(tag => {
-      const tagElement = document.createElement('span');
-      tagElement.className = 'modal__tag';
-      tagElement.textContent = tag.toUpperCase();
-      tagsContainer.appendChild(tagElement);
-    });
+    if (tagsContainer) {
+      tagsContainer.innerHTML = '';
+      const tags = project.keywords || project.tags || [project.degree_type || 'research'];
+      tags.slice(0, 5).forEach(tag => {
+        const tagElement = document.createElement('span');
+        tagElement.className = 'modal__tag';
+        tagElement.textContent = tag.toUpperCase();
+        tagsContainer.appendChild(tagElement);
+      });
+    }
     
     // Set abstract - try to load from abst file
     const abstractContainer = document.querySelector('.modal__abstract');
-    if (project.abstract) {
-      abstractContainer.textContent = project.abstract;
-    } else if (project.file_id) {
-      // Try to load abstract from file
-      try {
-        const abstResponse = await fetch(`project/abst/${project.file_id}_abst.md`);
-        if (abstResponse.ok) {
-          const abstContent = await abstResponse.text();
-          abstractContainer.textContent = abstContent.replace(/^---[\s\S]*?---\s*/, '').trim() || '研究の概要情報が利用できません。';
-        } else {
+    if (abstractContainer) {
+      if (project.abstract) {
+        abstractContainer.textContent = project.abstract;
+      } else if (project.file_id) {
+        // Try to load abstract from file
+        try {
+          const abstResponse = await fetch(`project/abst/${project.file_id}_abst.md`);
+          if (abstResponse.ok) {
+            const abstContent = await abstResponse.text();
+            abstractContainer.textContent = abstContent.replace(/^---[\s\S]*?---\s*/, '').trim() || '研究の概要情報が利用できません。';
+          } else {
+            abstractContainer.textContent = `${project.title}の研究プロジェクトです。`;
+          }
+        } catch (error) {
+          console.error('Error loading abstract:', error);
           abstractContainer.textContent = `${project.title}の研究プロジェクトです。`;
         }
-      } catch (error) {
-        abstractContainer.textContent = `${project.title}の研究プロジェクトです。`;
+      } else {
+        abstractContainer.textContent = '研究の概要情報が利用できません。';
       }
-    } else {
-      abstractContainer.textContent = '研究の概要情報が利用できません。';
     }
     
     // Load and display detailed content from _detail.md
     const detailsContainer = document.querySelector('.modal__details');
-    detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細情報を読み込み中...</div>';
-    
-    if (project.file_id) {
-      try {
-        const detailPath = `project/detail/${project.file_id}_detail.md`;
-        console.log('Loading detail file:', detailPath);
-        const response = await fetch(detailPath);
-        if (response.ok) {
-          const markdownContent = await response.text();
-          const htmlContent = parseMarkdownToHTML(markdownContent);
-          detailsContainer.innerHTML = htmlContent;
-        } else {
-          console.error('Failed to load detail file:', response.status, response.statusText);
-          detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細情報の読み込みに失敗しました。</div>';
+    if (detailsContainer) {
+      detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細情報を読み込み中...</div>';
+      
+      if (project.file_id) {
+        try {
+          const detailPath = `project/detail/${project.file_id}_detail.md`;
+          console.log('Loading detail file:', detailPath);
+          const response = await fetch(detailPath);
+          if (response.ok) {
+            const markdownContent = await response.text();
+            const htmlContent = parseMarkdownToHTML(markdownContent);
+            detailsContainer.innerHTML = htmlContent;
+          } else {
+            console.error('Failed to load detail file:', response.status, response.statusText);
+            detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細情報の読み込みに失敗しました。</div>';
+          }
+        } catch (error) {
+          console.error('Error loading detail file:', error);
+          detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細情報が利用できません。</div>';
         }
-      } catch (error) {
-        console.error('Error loading detail file:', error);
-        detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細情報が利用できません。</div>';
+      } else {
+        detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細ファイルが見つかりません。</div>';
       }
-    } else {
-      detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細ファイルが見つかりません。</div>';
     }
     
     // Show modal
@@ -832,12 +858,16 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Modal event listeners
-  modalClose.addEventListener('click', closeModal);
-  modalOverlay.addEventListener('click', (e) => {
-    if (e.target === modalOverlay) {
-      closeModal();
-    }
-  });
+  if (modalClose) {
+    modalClose.addEventListener('click', closeModal);
+  }
+  if (modalOverlay) {
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) {
+        closeModal();
+      }
+    });
+  }
 
   // ESC key to close modal
   document.addEventListener('keydown', (e) => {
@@ -847,21 +877,23 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Touch swipe to close on mobile
-  let startY = 0;
-  modalOverlay.addEventListener('touchstart', (e) => {
-    startY = e.touches[0].clientY;
-  });
+  if (modalOverlay) {
+    let startY = 0;
+    modalOverlay.addEventListener('touchstart', (e) => {
+      startY = e.touches[0].clientY;
+    });
 
-  modalOverlay.addEventListener('touchmove', (e) => {
-    if (window.innerWidth <= 768) { // Mobile only
-      const currentY = e.touches[0].clientY;
-      const diffY = currentY - startY;
-      
-      if (diffY > 100) { // Swipe down threshold
-        closeModal();
+    modalOverlay.addEventListener('touchmove', (e) => {
+      if (window.innerWidth <= 768) { // Mobile only
+        const currentY = e.touches[0].clientY;
+        const diffY = currentY - startY;
+        
+        if (diffY > 100) { // Swipe down threshold
+          closeModal();
+        }
       }
-    }
-  });
+    });
+  }
 
   // Publications functionality
   async function loadPublications() {
@@ -987,6 +1019,16 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Initialize everything
+  console.log('🎓 初期化開始 - 協調ロボティクス研究室');
+  
+  // Check if modal exists
+  const modalElement = document.getElementById('research-modal');
+  if (modalElement) {
+    console.log('✅ Modal element found');
+  } else {
+    console.error('❌ Modal element NOT found');
+  }
+  
   loadPortfolio();
   loadPublications();
   
