@@ -3,13 +3,13 @@
 
 ### 学術雑誌
 
- 1. Bastien Poitrimol, Hiroshi Igarashi: ''A Cable-Based Haptic Interface With a Reconfigurable Structure'', Journal of Mechanisms Robotics, Vol. 17, Issue 1, June 7, 2024. DOI: [10.1115/1.4065318](https://doi.org/10.1115/1.4065318)
+ 1. Bastien Poitrimol, Hiroshi Igarashi: ''A Cable-Based Haptic Interface With a Reconfigurable Structure'', Journal of Mechanisms Robotics, Vol. 17, Issue 1, June 7, 2024. DOI: [10.1115/1.4065318](https://asmedigitalcollection.asme.org/mechanismsrobotics/article/17/1/010901/1199324/A-Cable-Based-Haptic-Interface-With-a)
  1. Keisuke Tozuka and Hiroshi Igarashi: ''A Simplified Texture Modeling Using a Physical and Perceptual Rule-Based Approach'', IEEE Access, Vol. 12, pp. 59868–59879, April 22, 2024. DOI: [10.1109/ACCESS.2024.3392272](https://doi.org/10.1109/ACCESS.2024.3392272)
  1. Bastien Poitrimol, Hiroshi Igarashi: ''Workspace of Cable-Based Haptic Device Using Linear Actuator'', Journal of Signal Processing, Vol. 24, No. 4, pp. 149–152, July 2020. DOI: [10.2299/jsp.24.149](https://doi.org/10.2299/jsp.24.149)
  1. Masaki Tanaka, Hiroshi Igarashi: ''Feedback Assistance with Concern For Others in Cooperative Work'', Journal of Signal Processing, Vol. 22, No. 4, pp. 223–226, July 2018. DOI: [10.2299/jsp.22.223](https://doi.org/10.2299/jsp.22.223)
  1. 石原 義大, 五十嵐 洋: ''さりげないアシストのためのAttention Mapによる人間の注意推定'', 電気学会論文誌Ｃ（電子・情報・システム部門誌）, Vol. 137, No. 9, pp. 1185–1191, September 1, 2017. DOI: [10.1541/ieejeiss.137.1171](https://doi.org/10.1541/ieejeiss.137.1171)
  1. Harumi Kobayashi, Tetsuya Yasuda, Hiroshi Igarashi, Satoshi Suzuki: ''Language Use in Joint Action: The Means of Referent Expressions, '' International Journal of Social Robotics, 2018. DOI: [10.1007/s12369-017-0462-3](https://doi.org/10.1007/s12369-017-0462-3)
- 1. Shigeru Toyama, Yasuhiro Tanaka, Satoshi Shirogane, Takashi Nakamura, Tokio Umino, Ryo Uehara, Takuma Okamoto, Hiroshi Igarashi: ''Development of Wearable Sheet-Type Shear Force Sensor and Measurement System that is Insusceptible to Temperature and Pressure,'' Sensors Vol. 17, No. 8, 1752, August 2017. DOI: [10.3390/s17081752](https://doi.org/10.3390/s17081752)
+ 1. Shigeru Toyama, Yasuhiro Tanaka, Satoshi Shirogane, Takashi Nakamura, Tokio Umino, Ryo Uehara, Takuma Okamoto, Hiroshi Igarashi: ''Development of Wearable Sheet-Type Shear Force Sensor and Measurement System that is Insusceptible to Temperature and Pressure,'' Sensors Vol. 17, No. 8, 1752, August 2017. DOI: [10.3390/s17081752](https://www.mdpi.com/1424-8220/17/8/1752)
  1. Naoya Tsujita and Hiroshi Igarashi: ''Estimation of Concern for Others and Its Application in Ping-Pong Game'', Journal of Signal Processing, Vol. 18, No. 4, pp. 233–236, July 2014. DOI: [10.2299/jsp.18.233](http://dx.doi.org/10.2299/jsp.18.233)
  1. 五十嵐 洋: ''機械操作早期熟達のためのサブリミナルキャリブレーション'', シミュレーション学会誌, Vol. 33, No. 2, pp. 42–47, June 2014. [CiNii Articles](https://cir.nii.ac.jp/crid/1572824502724504448)
  1. Satoshi Suzuki, Hiroshi Igarashi, Harumi Kobayashi, Tetsuya Yasuda and Fumio Harashima: ''Human Adaptive Mechatronics and Human-System Modeling'', International Journal of Advanced Robotic Systems, Vol. 10, No. 152, 2013. [ResearchGate](https://www.researchgate.net/publication/273996844_Human_Adaptive_Mechatronics_and_Human-System_Modelling)
@@ -60,7 +60,7 @@
 
 ### 著書・解説
 
- 1. H. Igarashi: ''Remote and Telerobotics'' (chapter 9: ''Subliminal Calibration for Machine Operation''), INTECH, 2010. ISBN: [978-953-307-081-0](https://www.intechopen.com/books/remote-and-telerobotics/).
+ 1. H. Igarashi: ''Remote and Telerobotics'' (chapter 9: ''Subliminal Calibration for Machine Operation''), INTECH, 2010. ISBN: [978-953-307-081-0](https://www.intechopen.com/books/3593).
  1. 五十嵐 洋: ''操作支援に向けた人間認知特性評価'', 日本ロボット学会誌, Vol. 25, No. 3, pp.346-348, 2007.
 
 -----
@@ -165,7 +165,7 @@
  1. H. Igarashi: ''Human Adaptive Assist Planning without Operator Awareness'', The 2007 IEEE International Conference on Systems, Man, and Cybernetics, pp. 2933-2938, 2007. [IEEE Xplore](https://ieeexplore.ieee.org/document/4436842)
  1. T. Sugita, S. Suzuki, J. Kolodko and H. Igarashi: ''Development of Head-Mounted Eye Tracking System achieving Environmental Recognition Ability'', SICE Annual Conference 2007, pp. 1887-1891, 2007. [IEEE Xplore](https://ieeexplore.ieee.org/document/4407886)
  1. T. Sasaki, A. Takeya, H. Igarashi and S. Suzuki: ''Operation Skill Quantification for Mobile Vehicle Operation'', SICE Annual Conference 2007, pp. 274-279, 2007. [IEEE Xplore](https://ieeexplore.ieee.org/document/4406859)
- 1. H. Igarashi, A. Takeya, F. Harashima and M. Kakikura: ''Human Adaptive Assist Planning for Teleoperation'', The 32nd Annual Conference of the IEEE Industrial Electronics Society, pp. 4522-4527, 2006. [IEEE Xplore](https://ieeexplore.ieee.org/document/4067332)
+ 1. H. Igarashi, A. Takeya, F. Harashima and M. Kakikura: ''Human Adaptive Assist Planning for Teleoperation'', The 32nd Annual Conference of the IEEE Industrial Electronics Society, pp. 4522-4527, 2006. [IEEE Xplore](https://ieeexplore.ieee.org/document/4776707)
  1. H. Igarashi and M. Kakikura: ''Identifying Sensitivity of Users to Alert Display Parameters in Graphical User Interfaces'', IEEE International Conference on Systems, Man, and Cybernetics, pp. 115-120, October 2006. [IEEE Xplore](https://ieeexplore.ieee.org/document/4072223)
  1. H. Igarashi, S. Suzuki, T. Sugita, M. Kurisu and M. Kakikura: ''Extraction of Visual Attention with Gaze Duration and Saliency Map'', IEEE International Conference on Control Applications, pp. 562-567, October 2006. [IEEE Xplore](https://ieeexplore.ieee.org/document/4003295)
  1. Y. Maeda, S. Suzuki, H. Igarashi and K. Hidaka: ''Evaluation of Human Skill in Teleoperation System'', SICE-ICCAS Joint Conference, pp. 5339-5344, 2006. [IEEE Xplore](https://ieeexplore.ieee.org/document/4222049)
