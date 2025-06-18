@@ -1,0 +1,1490 @@
+{
+  "metadata": {
+    "description": "研究室メンバーデータベース（人物管理）",
+    "created_date": "2025-06-18",
+    "source": "proc/txt/thesis.json",
+    "total_members": 71,
+    "bachelor_only": 31,
+    "master_only": 8,
+    "bachelor_to_master": 32
+  },
+  "members": [
+    {
+      "member_id": "h.emori",
+      "name": "江森 弘樹",
+      "file_identifier": "h.emori",
+      "student_ids": ["16EH013"],
+      "entry_year": 2016,
+      "active_years": [2016, 2017, 2018, 2019],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2019,
+          "title": "生体信号と体温の相関性を用いたストレス軽減デバイスの開発",
+          "file_id": "2019_B_h.emori",
+          "student_id": "16EH013"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2016-2019"
+    },
+    {
+      "member_id": "h.nakanishi",
+      "name": "中西 光",
+      "file_identifier": "h.nakanishi",
+      "student_ids": ["16EH081", "20KMH19"],
+      "entry_year": 2016,
+      "active_years": [2016, 2017, 2018, 2019, 2020, 2021],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2019,
+          "title": "ダイナミクス変化による鍵盤楽器学習支援システムの提案",
+          "file_id": "2019_B_h.nakanishi",
+          "student_id": "16EH081"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2021,
+          "title": "早期楽器演奏熟達支援システム",
+          "file_id": "2021_M_h.nakanishi",
+          "student_id": "20KMH19"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2016-2021"
+    },
+    {
+      "member_id": "k.kobayashi_2015",
+      "name": "小林 航大",
+      "file_identifier": "k.kobayashi",
+      "student_ids": ["15EH040", "20KMH18"],
+      "entry_year": 2015,
+      "active_years": [2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2019,
+          "title": "力のインタラクションを考慮した人間モデルによる適応的誘導",
+          "file_id": "2019_B_k.kobayashi",
+          "student_id": "15EH040"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2021,
+          "title": "協調フローオペレーションによるチームワーク評価",
+          "file_id": "2021_M_k.kobayashi",
+          "student_id": "20KMH18"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2015-2021"
+    },
+    {
+      "member_id": "k.tozuka",
+      "name": "戸塚 圭亮",
+      "file_identifier": "k.tozuka",
+      "student_ids": ["16EH077", "20KMH21"],
+      "entry_year": 2016,
+      "active_years": [2016, 2017, 2018, 2019, 2020, 2021],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2019,
+          "title": "触覚提示を利用した仮想ペットロボット",
+          "file_id": "2019_B_k.tozuka",
+          "student_id": "16EH077"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2021,
+          "title": "マルチエージェントによる不確かなターゲット群の適応誘導システム",
+          "file_id": "2021_M_k.tozuka",
+          "student_id": "20KMH21"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2016-2021"
+    },
+    {
+      "member_id": "n.takahashi",
+      "name": "高橋 奈央",
+      "file_identifier": "n.takahashi",
+      "student_ids": ["16EH064", "20KMH15"],
+      "entry_year": 2016,
+      "active_years": [2016, 2017, 2018, 2019, 2020, 2021],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2019,
+          "title": "描画動作のための力覚提示デバイスによる相補教示支援",
+          "file_id": "2019_B_n.takahashi",
+          "student_id": "16EH064"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2021,
+          "title": "描画動作のための力覚提示デバイスによる相補教示支援",
+          "file_id": "2021_M_n.takahashi",
+          "student_id": "20KMH15"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2016-2021"
+    },
+    {
+      "member_id": "r.maruyama",
+      "name": "丸山 凌一",
+      "file_identifier": "r.maruyama",
+      "student_ids": ["16EH104"],
+      "entry_year": 2016,
+      "active_years": [2016, 2017, 2018, 2019],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2019,
+          "title": "Ceiling Adsorption UAV using Contra Rotating Propellers",
+          "file_id": "2019_B_r.maruyama",
+          "student_id": "16EH104"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2016-2019"
+    },
+    {
+      "member_id": "r.mukawa",
+      "name": "夢川 凌央",
+      "file_identifier": "r.mukawa",
+      "student_ids": ["16EH102"],
+      "entry_year": 2016,
+      "active_years": [2016, 2017, 2018, 2019],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2019,
+          "title": "Multi-agent による個性模倣と適応学習システム",
+          "file_id": "2019_B_r.mukawa",
+          "student_id": "16EH102"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2016-2019"
+    },
+    {
+      "member_id": "r.ogasawara",
+      "name": "小笠原 涼",
+      "file_identifier": "r.ogasawara",
+      "student_ids": ["16EH062"],
+      "entry_year": 2016,
+      "active_years": [2016, 2017, 2018, 2019],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2019,
+          "title": "協調フローオペレーションによるチームワーク評価",
+          "file_id": "2019_B_r.ogasawara",
+          "student_id": "16EH062"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2016-2019"
+    },
+    {
+      "member_id": "y.sugano",
+      "name": "菅野 遥平",
+      "file_identifier": "y.sugano",
+      "student_ids": ["16EH069", "20KMH20"],
+      "entry_year": 2016,
+      "active_years": [2016, 2017, 2018, 2019, 2020, 2021],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2019,
+          "title": "協調作業における協調意識の定量評価",
+          "file_id": "2019_B_y.sugano",
+          "student_id": "16EH069"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2021,
+          "title": "個性模倣と自己学習を備えたマルチエージェントによる不確かなターゲット群の適応誘導システム",
+          "file_id": "2021_M_h.sugano",
+          "student_id": "20KMH20"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2016-2021"
+    },
+    {
+      "member_id": "g.sasaki",
+      "name": "佐々木 元気",
+      "file_identifier": "g.sasaki",
+      "student_ids": ["18KMH09"],
+      "entry_year": 2018,
+      "active_years": [2018, 2019],
+      "degrees": [
+        {
+          "degree_type": "修士論文",
+          "year": 2019,
+          "title": "協調作業における協調意識の定量化",
+          "file_id": "2019_M_g.sasaki",
+          "student_id": "18KMH09"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2018-2019"
+    },
+    {
+      "member_id": "r.joly",
+      "name": "Joly Raphaël",
+      "file_identifier": "r.joly",
+      "student_ids": ["18KMH08"],
+      "entry_year": 2018,
+      "active_years": [2018, 2019],
+      "degrees": [
+        {
+          "degree_type": "修士論文",
+          "year": 2019,
+          "title": "ハプティクスを用いた協調搬送における適応的力配分制御",
+          "file_id": "2019_M_r.joly",
+          "student_id": "18KMH08"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2018-2019"
+    },
+    {
+      "member_id": "y.uchida",
+      "name": "内田 優",
+      "file_identifier": "y.uchida",
+      "student_ids": ["18KMH12"],
+      "entry_year": 2018,
+      "active_years": [2018, 2019],
+      "degrees": [
+        {
+          "degree_type": "修士論文",
+          "year": 2019,
+          "title": "身体振動による運動錯覚の定量評価および触覚デバイスへの応用",
+          "file_id": "2019_M_y.uchida",
+          "student_id": "18KMH12"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2018-2019"
+    },
+    {
+      "member_id": "z.meng",
+      "name": "孟 子群",
+      "file_identifier": "z.meng",
+      "student_ids": ["18KMH11"],
+      "entry_year": 2018,
+      "active_years": [2018, 2019],
+      "degrees": [
+        {
+          "degree_type": "修士論文",
+          "year": 2019,
+          "title": "個人適応化を考慮したワイヤ駆動触覚デバイスによる仮想物体操作",
+          "file_id": "2019_M_z.meng",
+          "student_id": "18KMH11"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2018-2019"
+    },
+    {
+      "member_id": "a.inoue",
+      "name": "井上 温",
+      "file_identifier": "a.inoue",
+      "student_ids": ["17EH005", "21KMH23"],
+      "entry_year": 2017,
+      "active_years": [2017, 2018, 2019, 2020, 2021, 2022],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2020,
+          "title": "IoTデバイスを用いた作業時ストレス計測システム",
+          "file_id": "2020_B_a.inoue",
+          "student_id": "17EH005"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2022,
+          "title": "個人操作特性のリアルタイム学習による適応的ロボット制御",
+          "file_id": "2022_M_a.inoue",
+          "student_id": "21KMH23"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2017-2022"
+    },
+    {
+      "member_id": "h.nishimura",
+      "name": "西村 晃",
+      "file_identifier": "h.nishimura",
+      "student_ids": ["17EH088", "21KMH24"],
+      "entry_year": 2017,
+      "active_years": [2017, 2018, 2019, 2020, 2021, 2022],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2020,
+          "title": "仮想デバイスモデルによる両手操作支援システム",
+          "file_id": "2020_B_h.nishimura",
+          "student_id": "17EH088"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2022,
+          "title": "触覚技術を用いた物理シミュレーションのためのデータ駆動型触覚モデリング",
+          "file_id": "2022_M_a.nishimura",
+          "student_id": "21KMH24"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2017-2022"
+    },
+    {
+      "member_id": "k.yoshida",
+      "name": "吉田 光佑",
+      "file_identifier": "k.yoshida",
+      "student_ids": ["17EH087"],
+      "entry_year": 2017,
+      "active_years": [2017, 2018, 2019, 2020],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2020,
+          "title": "視線情報を用いた運転行動の推定",
+          "file_id": "2020_B_k.yoshida",
+          "student_id": "17EH087"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2017-2020"
+    },
+    {
+      "member_id": "r.hikino",
+      "name": "引野 諒平",
+      "file_identifier": "r.hikino",
+      "student_ids": ["17EH095"],
+      "entry_year": 2017,
+      "active_years": [2017, 2018, 2019, 2020],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2020,
+          "title": "握力変化を利用したステアリングアシストシステム",
+          "file_id": "2020_B_r.hikino",
+          "student_id": "17EH095"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2017-2020"
+    },
+    {
+      "member_id": "y.baba",
+      "name": "馬場 柚貴",
+      "file_identifier": "y.baba",
+      "student_ids": ["17EH092", "21KMH21"],
+      "entry_year": 2017,
+      "active_years": [2017, 2018, 2019, 2020, 2021, 2022],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2020,
+          "title": "多層化マッピングによる位置情報重畳センシング",
+          "file_id": "2020_B_y.baba",
+          "student_id": "17EH092"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2022,
+          "title": "多層化マッピングによる位置情報重畳センシング",
+          "file_id": "2022_M_y.baba",
+          "student_id": "21KMH21"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2017-2022"
+    },
+    {
+      "member_id": "y.oda",
+      "name": "小田 侑暉",
+      "file_identifier": "y.oda",
+      "student_ids": ["17EH065"],
+      "entry_year": 2017,
+      "active_years": [2017, 2018, 2019, 2020],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2020,
+          "title": "眼球運動とストレス評価に関する相関性の調査",
+          "file_id": "2020_B_y.oda",
+          "student_id": "17EH065"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2017-2020"
+    },
+    {
+      "member_id": "y.okakuji",
+      "name": "大角地 優季",
+      "file_identifier": "y.okakuji",
+      "student_ids": ["17EH067"],
+      "entry_year": 2017,
+      "active_years": [2017, 2018, 2019, 2020],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2020,
+          "title": "眼球運動による運転者の信頼推定",
+          "file_id": "2020_B_y.okakuji",
+          "student_id": "17EH067"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2017-2020"
+    },
+    {
+      "member_id": "y.yoshida",
+      "name": "吉田 悠虎",
+      "file_identifier": "y.yoshida",
+      "student_ids": ["17EH090", "21KMH22"],
+      "entry_year": 2017,
+      "active_years": [2017, 2018, 2019, 2020, 2021, 2022],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2020,
+          "title": "音声コミュニケーションにおける口調解析とシステムへの応用",
+          "file_id": "2020_B_y.yoshida",
+          "student_id": "17EH090"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2022,
+          "title": "個性模倣と自己学習を備えたマルチエージェントによる不確かなターゲット群の適応誘導システム",
+          "file_id": "2022_M_h.yoshida",
+          "student_id": "21KMH22"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2017-2022"
+    },
+    {
+      "member_id": "b.poitrimol",
+      "name": "Poitrimol Bastien",
+      "file_identifier": "b.poitrimol",
+      "student_ids": ["19KMH06"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020],
+      "degrees": [
+        {
+          "degree_type": "修士論文",
+          "year": 2020,
+          "title": "仮想空間におけるワイヤ駆動ハプティクスを用いたグラスピングインタフェース",
+          "file_id": "2020_M_b.poitrimol",
+          "student_id": "19KMH06"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2019-2020"
+    },
+    {
+      "member_id": "k.nakamura",
+      "name": "中村 叶弥",
+      "file_identifier": "k.nakamura",
+      "student_ids": ["19KMH07"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020],
+      "degrees": [
+        {
+          "degree_type": "修士論文",
+          "year": 2020,
+          "title": "作業パフォーマンス向上のための生体情報を用いたストレス評価",
+          "file_id": "2020_M_k.nakamura",
+          "student_id": "19KMH07"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2019-2020"
+    },
+    {
+      "member_id": "s.koizumi",
+      "name": "小泉 芹直",
+      "file_identifier": "s.koizumi",
+      "student_ids": ["19KMH05"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020],
+      "degrees": [
+        {
+          "degree_type": "修士論文",
+          "year": 2020,
+          "title": "バイマニュアルオペレーションのための自己規範支援システム",
+          "file_id": "2020_M_s.koizumi",
+          "student_id": "19KMH05"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2019-2020"
+    },
+    {
+      "member_id": "t.kosaka",
+      "name": "小坂 太一",
+      "file_identifier": "t.kosaka",
+      "student_ids": ["19KMH04"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020],
+      "degrees": [
+        {
+          "degree_type": "修士論文",
+          "year": 2020,
+          "title": "仮眠における体温制御による睡眠慣性抑制効果に関する研究",
+          "file_id": "2020_M_t.kosaka",
+          "student_id": "19KMH04"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2019-2020"
+    },
+    {
+      "member_id": "y.yamasaki",
+      "name": "山崎 友輔",
+      "file_identifier": "y.yamasaki",
+      "student_ids": ["19KMH03"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020],
+      "degrees": [
+        {
+          "degree_type": "修士論文",
+          "year": 2020,
+          "title": "サブリミナルキャリブレーションによる内部モデル修正支援",
+          "file_id": "2020_M_y.yamasaki",
+          "student_id": "19KMH03"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2019-2020"
+    },
+    {
+      "member_id": "c.xu",
+      "name": "徐 暢",
+      "file_identifier": "c.xu",
+      "student_ids": ["17EH602"],
+      "entry_year": 2017,
+      "active_years": [2017, 2018, 2019, 2020, 2021],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2021,
+          "title": "筋疲労を考慮したアダプティブパワーアシストスーツ",
+          "file_id": "2021_B_c.xu",
+          "student_id": "17EH602"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2017-2021"
+    },
+    {
+      "member_id": "d.yamazaki",
+      "name": "山崎 大輔",
+      "file_identifier": "d.yamazaki",
+      "student_ids": ["18EH604"],
+      "entry_year": 2018,
+      "active_years": [2018, 2019, 2020, 2021],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2021,
+          "title": "運動能力向上を目的とした主体感の制御",
+          "file_id": "2021_B_d.yamazaki",
+          "student_id": "18EH604"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2018-2021"
+    },
+    {
+      "member_id": "h.tagaya",
+      "name": "多賀谷 光",
+      "file_identifier": "h.tagaya",
+      "student_ids": ["18EH601", "22KMH26"],
+      "entry_year": 2018,
+      "active_years": [2018, 2019, 2020, 2021, 2022, 2023],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2021,
+          "title": "指先動作の力覚提示による熟達支援",
+          "file_id": "2021_B_h.tagaya",
+          "student_id": "18EH601"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2023,
+          "title": "指先動作の力覚提示による熟達支援",
+          "file_id": "2023_M_m.tagaya",
+          "student_id": "22KMH26"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2018-2023"
+    },
+    {
+      "member_id": "k.kobayashi_2018",
+      "name": "小林 虎太郎",
+      "file_identifier": "k.kobayashi",
+      "student_ids": ["18EH616", "22KMH25"],
+      "entry_year": 2018,
+      "active_years": [2018, 2019, 2020, 2021, 2022, 2023],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2021,
+          "title": "協調フローオペレーションによるチームワーク評価システム",
+          "file_id": "2021_B_k.kobayashi",
+          "student_id": "18EH616"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2023,
+          "title": "協調フローオペレーションによるチームワーク評価",
+          "file_id": "2023_M_k.kobayashi",
+          "student_id": "22KMH25"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2018-2023"
+    },
+    {
+      "member_id": "m.suga",
+      "name": "須賀 美晴",
+      "file_identifier": "m.suga",
+      "student_ids": ["18EH609"],
+      "entry_year": 2018,
+      "active_years": [2018, 2019, 2020, 2021],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2021,
+          "title": "温度による力覚生起現象の定量化",
+          "file_id": "2021_B_m.suga",
+          "student_id": "18EH609"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2018-2021"
+    },
+    {
+      "member_id": "s.watanabe",
+      "name": "渡邊 柊人",
+      "file_identifier": "s.watanabe",
+      "student_ids": ["18EH613", "22KMH27"],
+      "entry_year": 2018,
+      "active_years": [2018, 2019, 2020, 2021, 2022, 2023],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2021,
+          "title": "投射動作のためのKinectを用いた運動学習支援システム",
+          "file_id": "2021_B_s.watanabe",
+          "student_id": "18EH613"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2023,
+          "title": "投射動作のためのKinectを用いた運動学習支援システム",
+          "file_id": "2023_M_s.watanabe",
+          "student_id": "22KMH27"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2018-2023"
+    },
+    {
+      "member_id": "t.kassai",
+      "name": "葛西 大河",
+      "file_identifier": "t.kassai",
+      "student_ids": ["18EH602", "22KMH24"],
+      "entry_year": 2018,
+      "active_years": [2018, 2019, 2020, 2021, 2022, 2023],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2021,
+          "title": "機械学習による牧羊犬アルゴリズムの高度化",
+          "file_id": "2021_B_t.kassai",
+          "student_id": "18EH602"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2023,
+          "title": "機械学習による牧羊犬アルゴリズムの高度化",
+          "file_id": "2023_M_t.kassai",
+          "student_id": "22KMH24"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2018-2023"
+    },
+    {
+      "member_id": "t.shike",
+      "name": "四家 大輝",
+      "file_identifier": "t.shike",
+      "student_ids": ["18EH608"],
+      "entry_year": 2018,
+      "active_years": [2018, 2019, 2020, 2021],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2021,
+          "title": "感情状態推定のためのストレス定量計測システム",
+          "file_id": "2021_B_t.shike",
+          "student_id": "18EH608"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2018-2021"
+    },
+    {
+      "member_id": "t.yamamoto",
+      "name": "山本 隆人",
+      "file_identifier": "t.yamamoto",
+      "student_ids": ["18EH614"],
+      "entry_year": 2018,
+      "active_years": [2018, 2019, 2020, 2021],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2021,
+          "title": "ハプティクスを用いた協調搬送におけるCoaxial-UAVによる適応的力配分制御",
+          "file_id": "2021_B_t.yamamoto",
+          "student_id": "18EH614"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2018-2021"
+    },
+    {
+      "member_id": "y.kakutani",
+      "name": "角谷 友輝",
+      "file_identifier": "y.kakutani",
+      "student_ids": ["20KMH16"],
+      "entry_year": 2020,
+      "active_years": [2020, 2021],
+      "degrees": [
+        {
+          "degree_type": "修士論文",
+          "year": 2021,
+          "title": "運動学習における関節剛性学習支援デバイス",
+          "file_id": "2021_M_y.kakutani",
+          "student_id": "20KMH16"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2020-2021"
+    },
+    {
+      "member_id": "i.kato",
+      "name": "加藤 一沙",
+      "file_identifier": "i.kato",
+      "student_ids": ["19EH015", "23KMH30"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020, 2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2022,
+          "title": "個人適応を考慮したロボットによる操作支援システム",
+          "file_id": "2022_B_i.kato",
+          "student_id": "19EH015"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2024,
+          "title": "機械学習を用いた追従操作におけるサプライズの推定",
+          "file_id": "2024_M_i.kato",
+          "student_id": "23KMH30"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2019-2024"
+    },
+    {
+      "member_id": "k.ohya",
+      "name": "大矢 和磨",
+      "file_identifier": "k.ohya",
+      "student_ids": ["19EH020", "23KMH31"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020, 2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2022,
+          "title": "可変インピーダンス特性による個人差を考慮した支援システム",
+          "file_id": "2022_B_k.ohya",
+          "student_id": "19EH020"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2024,
+          "title": "個人差を考慮した可変インピーダンス支援システム",
+          "file_id": "2024_M_k.ohya",
+          "student_id": "23KMH31"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2019-2024"
+    },
+    {
+      "member_id": "k.sato",
+      "name": "佐藤 航成",
+      "file_identifier": "k.sato",
+      "student_ids": ["19EH026"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020, 2021, 2022],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2022,
+          "title": "マルチエージェント協調のための強化学習と模倣学習の融合手法",
+          "file_id": "2022_B_k.sato",
+          "student_id": "19EH026"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2019-2022"
+    },
+    {
+      "member_id": "m.nakamura_2019",
+      "name": "中村 美月",
+      "file_identifier": "m.nakamura",
+      "student_ids": ["19EH036", "23KMH33"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020, 2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2022,
+          "title": "他部位刺激による振動を用いた硬さ提示の向上",
+          "file_id": "2022_B_m.nakamura",
+          "student_id": "19EH036"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2024,
+          "title": "VRにおけるサブリミナル学習支援システム",
+          "file_id": "2024_M_m.nakamura",
+          "student_id": "23KMH33"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2019-2024"
+    },
+    {
+      "member_id": "n.ito",
+      "name": "伊藤 那月",
+      "file_identifier": "n.ito",
+      "student_ids": ["19EH006", "23KMH34"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020, 2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2022,
+          "title": "温度による力覚生起現象の個人差に関する研究",
+          "file_id": "2022_B_n.ito",
+          "student_id": "19EH006"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2024,
+          "title": "温度による力覚生起現象の個人差に関する研究",
+          "file_id": "2024_M_n.ito",
+          "student_id": "23KMH34"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2019-2024"
+    },
+    {
+      "member_id": "r.tanaka",
+      "name": "田中 龍介",
+      "file_identifier": "r.tanaka",
+      "student_ids": ["19EH031", "23KMH36"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020, 2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2022,
+          "title": "ドライビングシミュレータによる注意状態と視線挙動解析",
+          "file_id": "2022_B_r.tanaka",
+          "student_id": "19EH031"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2024,
+          "title": "ドライビングシミュレータによる注意状態と視線挙動解析",
+          "file_id": "2024_M_r.tanaka",
+          "student_id": "23KMH36"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2019-2024"
+    },
+    {
+      "member_id": "s.sanuka",
+      "name": "佐怒賀 慎吾",
+      "file_identifier": "s.sanuka",
+      "student_ids": ["19EH024"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020, 2021, 2022],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2022,
+          "title": "力覚フィードバックによる指先動作の熟達支援",
+          "file_id": "2022_B_s.sanuka",
+          "student_id": "19EH024"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2019-2022"
+    },
+    {
+      "member_id": "s.tsuchiya",
+      "name": "土谷 脩人",
+      "file_identifier": "s.tsuchiya",
+      "student_ids": ["19EH032", "23KMH37"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020, 2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2022,
+          "title": "個人操作特性のリアルタイム学習による適応的ロボット制御",
+          "file_id": "2022_B_s.tsuchiya",
+          "student_id": "19EH032"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2024,
+          "title": "個人操作特性のリアルタイム学習による適応的ロボット制御",
+          "file_id": "2024_M_s.tsuchiya",
+          "student_id": "23KMH37"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2019-2024"
+    },
+    {
+      "member_id": "t.bitoh",
+      "name": "尾藤 友樹",
+      "file_identifier": "t.bitoh",
+      "student_ids": ["19EH018"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020, 2021, 2022],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2022,
+          "title": "温度提示デバイスによる感情値を用いたストレス評価",
+          "file_id": "2022_B_t.bitoh",
+          "student_id": "19EH018"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2019-2022"
+    },
+    {
+      "member_id": "t.onogawa",
+      "name": "小野川 樹",
+      "file_identifier": "t.onogawa",
+      "student_ids": ["19EH019", "23KMH35"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020, 2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2022,
+          "title": "サーモグラフィを用いたSLAMシステムの開発",
+          "file_id": "2022_B_t.onogawa",
+          "student_id": "19EH019"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2024,
+          "title": "マルチモーダル生体信号を用いた運動意図推定システム",
+          "file_id": "2024_M_onogawa",
+          "student_id": "23KMH35"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2019-2024"
+    },
+    {
+      "member_id": "t.oriuchi",
+      "name": "織内 翼",
+      "file_identifier": "t.oriuchi",
+      "student_ids": ["19EH017"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020, 2021, 2022],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2022,
+          "title": "リアルタイム計測による生体信号を用いた認知負荷推定",
+          "file_id": "2022_B_t.oriuchi",
+          "student_id": "19EH017"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2019-2022"
+    },
+    {
+      "member_id": "y.noguchi",
+      "name": "野口 柚祐",
+      "file_identifier": "y.noguchi",
+      "student_ids": ["19EH038"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020, 2021, 2022],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2022,
+          "title": "円軌道追従操作における操作パフォーマンス向上に関する研究",
+          "file_id": "2022_B_y.noguchi",
+          "student_id": "19EH038"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2019-2022"
+    },
+    {
+      "member_id": "y.yamada",
+      "name": "山田 侑果",
+      "file_identifier": "y.yamada",
+      "student_ids": ["19EH043", "23KMH38"],
+      "entry_year": 2019,
+      "active_years": [2019, 2020, 2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2022,
+          "title": "個性模倣と自己学習を備えたマルチエージェントによる不確かなターゲット群の適応誘導システム",
+          "file_id": "2022_B_y.yamada",
+          "student_id": "19EH043"
+        },
+        {
+          "degree_type": "修士論文",
+          "year": 2024,
+          "title": "個性模倣と自己学習を備えたマルチエージェントによる不確かなターゲット群の適応誘導システム",
+          "file_id": "2024_M_y.yamada",
+          "student_id": "23KMH38"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2019-2024"
+    },
+    {
+      "member_id": "la.nicolas",
+      "name": "ニコラ ルイアンドレ",
+      "file_identifier": "la.nicolas",
+      "student_ids": ["23KMH32"],
+      "entry_year": 2023,
+      "active_years": [2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "修士論文",
+          "year": 2024,
+          "title": "マルチモーダル生体信号を用いた運動意図推定システム",
+          "file_id": "2024_M_la.nicolas",
+          "student_id": "23KMH32"
+        }
+      ],
+      "highest_degree": "修士論文",
+      "research_period": "2023-2024"
+    },
+    {
+      "member_id": "g.otsuka",
+      "name": "大塚 凱",
+      "file_identifier": "g.otsuka",
+      "student_ids": ["20EH018"],
+      "entry_year": 2020,
+      "active_years": [2020, 2021, 2022, 2023],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2023,
+          "title": "VDT作業時における眼球情報とストレスの関連性の調査",
+          "file_id": "2023_B_g.otsuka",
+          "student_id": "20EH018"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2020-2023"
+    },
+    {
+      "member_id": "h.kitaiwa",
+      "name": "北岩 隼人",
+      "file_identifier": "h.kitaiwa",
+      "student_ids": ["20EH015"],
+      "entry_year": 2020,
+      "active_years": [2020, 2021, 2022, 2023],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2023,
+          "title": "ボトルネックにおいてすれ違う群衆の誘導アルゴリズムの提案",
+          "file_id": "2023_B_h.kitaiwa",
+          "student_id": "20EH015"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2020-2023"
+    },
+    {
+      "member_id": "j.ryuu",
+      "name": "劉 樹鵬",
+      "file_identifier": "j.ryuu",
+      "student_ids": ["20EH048"],
+      "entry_year": 2020,
+      "active_years": [2020, 2021, 2022, 2023],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2023,
+          "title": "VDT作業時における眼球情報とストレスの関連性の調査",
+          "file_id": "2023_B_j.ryuu",
+          "student_id": "20EH048"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2020-2023"
+    },
+    {
+      "member_id": "k.sudo",
+      "name": "須藤 浩介",
+      "file_identifier": "k.sudo",
+      "student_ids": ["20EH029"],
+      "entry_year": 2020,
+      "active_years": [2020, 2021, 2022, 2023],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2023,
+          "title": "他部位刺激による振動を用いた硬さ提示の向上",
+          "file_id": "2023_B_k.sudo",
+          "student_id": "20EH029"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2020-2023"
+    },
+    {
+      "member_id": "ke.nakamura",
+      "name": "中村 圭佑",
+      "file_identifier": "ke.nakamura",
+      "student_ids": ["20EH035"],
+      "entry_year": 2020,
+      "active_years": [2020, 2021, 2022, 2023],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2023,
+          "title": "ボトルネックにおいてすれ違う群衆の誘導アルゴリズムの提案",
+          "file_id": "2023_B_ke.nakamura",
+          "student_id": "20EH035"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2020-2023"
+    },
+    {
+      "member_id": "r.uchida",
+      "name": "内田 凌太郎",
+      "file_identifier": "r.uchida",
+      "student_ids": ["20EH020"],
+      "entry_year": 2020,
+      "active_years": [2020, 2021, 2022, 2023],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2023,
+          "title": "VDT作業時における眼球情報とストレスの関連性の調査",
+          "file_id": "2023_B_r.uchida",
+          "student_id": "20EH020"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2020-2023"
+    },
+    {
+      "member_id": "r.yanase",
+      "name": "梁瀬 琉真",
+      "file_identifier": "r.yanase",
+      "student_ids": ["20EH046"],
+      "entry_year": 2020,
+      "active_years": [2020, 2021, 2022, 2023],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2023,
+          "title": "眼球運動による運転者の信頼推定",
+          "file_id": "2023_B_r.yanase",
+          "student_id": "20EH046"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2020-2023"
+    },
+    {
+      "member_id": "s.fujiwara",
+      "name": "藤原 志温",
+      "file_identifier": "s.fujiwara",
+      "student_ids": ["20EH041"],
+      "entry_year": 2020,
+      "active_years": [2020, 2021, 2022, 2023],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2023,
+          "title": "感情状態推定のためのストレス定量計測システム",
+          "file_id": "2023_B_s.fujiwara",
+          "student_id": "20EH041"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2020-2023"
+    },
+    {
+      "member_id": "a.noto",
+      "name": "能登 彩花",
+      "file_identifier": "a.noto",
+      "student_ids": ["21EH071"],
+      "entry_year": 2021,
+      "active_years": [2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2024,
+          "title": "VR酔いを軽減する視覚的注意分布を利用したレンダリング手法の提案",
+          "file_id": "2024_B_a.noto",
+          "student_id": "21EH071"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2021-2024"
+    },
+    {
+      "member_id": "d.nakajima",
+      "name": "中嶋 大智",
+      "file_identifier": "d.nakajima",
+      "student_ids": ["21EH033"],
+      "entry_year": 2021,
+      "active_years": [2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2024,
+          "title": "リアルタイムストレス指標を用いた遠隔操作環境における遅延補完システム",
+          "file_id": "2024_B_d.nakajima",
+          "student_id": "21EH033"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2021-2024"
+    },
+    {
+      "member_id": "h.nakamura",
+      "name": "中村 弘樹",
+      "file_identifier": "h.nakamura",
+      "student_ids": ["21EH036"],
+      "entry_year": 2021,
+      "active_years": [2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2024,
+          "title": "VR環境における力覚フィードバックを用いた重心動揺測定システム",
+          "file_id": "2024_B_h.nakamura",
+          "student_id": "21EH036"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2021-2024"
+    },
+    {
+      "member_id": "k.hayashi",
+      "name": "林 健輔",
+      "file_identifier": "k.hayashi",
+      "student_ids": ["21EH079"],
+      "entry_year": 2021,
+      "active_years": [2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2024,
+          "title": "個人差を考慮した可変インピーダンス支援システム",
+          "file_id": "2024_B_k.hayashi",
+          "student_id": "21EH079"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2021-2024"
+    },
+    {
+      "member_id": "m.kashiwagi",
+      "name": "柏木 水輝",
+      "file_identifier": "m.kashiwagi",
+      "student_ids": ["21EH010"],
+      "entry_year": 2021,
+      "active_years": [2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2024,
+          "title": "VR環境における力覚フィードバックを用いた重心動揺測定システム",
+          "file_id": "2024_B_m.kashiwagi",
+          "student_id": "21EH010"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2021-2024"
+    },
+    {
+      "member_id": "mi.nakamura",
+      "name": "中村 美月",
+      "file_identifier": "mi.nakamura",
+      "student_ids": ["21EH037"],
+      "entry_year": 2021,
+      "active_years": [2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2024,
+          "title": "VRにおけるサブリミナル学習支援システム",
+          "file_id": "2024_B_mi.nakamura",
+          "student_id": "21EH037"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2021-2024"
+    },
+    {
+      "member_id": "r.hiratsuka",
+      "name": "平塚 亮気",
+      "file_identifier": "r.hiratsuka",
+      "student_ids": ["21EH086"],
+      "entry_year": 2021,
+      "active_years": [2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2024,
+          "title": "群ロボットによる効率的な探索アルゴリズムの開発",
+          "file_id": "2024_B_r.hiratsuka",
+          "student_id": "21EH086"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2021-2024"
+    },
+    {
+      "member_id": "r.kato",
+      "name": "加藤 陸生",
+      "file_identifier": "r.kato",
+      "student_ids": ["21EH019"],
+      "entry_year": 2021,
+      "active_years": [2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2024,
+          "title": "マーカーを用いた群ロボットによる効率的な探索アルゴリズムの開発",
+          "file_id": "2024_B_r.kato",
+          "student_id": "21EH019"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2021-2024"
+    },
+    {
+      "member_id": "r.morishita",
+      "name": "森下 陸",
+      "file_identifier": "r.morishita",
+      "student_ids": ["21EH065"],
+      "entry_year": 2021,
+      "active_years": [2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2024,
+          "title": "群ロボットによる効率的な探索アルゴリズムの開発",
+          "file_id": "2024_B_r.morishita",
+          "student_id": "21EH065"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2021-2024"
+    },
+    {
+      "member_id": "s.imamura",
+      "name": "今村 心哉",
+      "file_identifier": "s.imamura",
+      "student_ids": ["21EH003"],
+      "entry_year": 2021,
+      "active_years": [2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2024,
+          "title": "群ロボットによる効率的な探索アルゴリズムの開発",
+          "file_id": "2024_B_s.imamura",
+          "student_id": "21EH003"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2021-2024"
+    },
+    {
+      "member_id": "s.tahara",
+      "name": "田原 駿",
+      "file_identifier": "s.tahara",
+      "student_ids": ["21EH049"],
+      "entry_year": 2021,
+      "active_years": [2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2024,
+          "title": "群ロボットによる効率的な探索アルゴリズムの開発",
+          "file_id": "2024_B_s.tahara",
+          "student_id": "21EH049"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2021-2024"
+    },
+    {
+      "member_id": "y.takahashi",
+      "name": "高橋 勇輝",
+      "file_identifier": "y.takahashi",
+      "student_ids": ["21EH050"],
+      "entry_year": 2021,
+      "active_years": [2021, 2022, 2023, 2024],
+      "degrees": [
+        {
+          "degree_type": "学士論文",
+          "year": 2024,
+          "title": "個人差を考慮した可変インピーダンス支援システム",
+          "file_id": "2024_B_y.takahashi",
+          "student_id": "21EH050"
+        }
+      ],
+      "highest_degree": "学士論文",
+      "research_period": "2021-2024"
+    }
+  ]
+}
