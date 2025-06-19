@@ -10,6 +10,18 @@
   },
   "members": [
     {
+      "member_id": "h.igarashi",
+      "name": "五十嵐 洋",
+      "file_identifier": "h.igarashi",
+      "student_ids": [],
+      "entry_year": 2010,
+      "active_years": [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+      "degrees": [],
+      "highest_degree": "教授",
+      "research_period": "2010-現在",
+      "category": "faculty"
+    },
+    {
       "member_id": "h.emori",
       "name": "江森 弘樹",
       "file_identifier": "h.emori",

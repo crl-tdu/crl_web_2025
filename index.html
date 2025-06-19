@@ -52,6 +52,7 @@
       <a href="#about" class="nav__link" role="menuitem">About</a>
       <a href="#stats" class="nav__link" role="menuitem">データ</a>
       <a href="#research" class="nav__link" role="menuitem">研究テーマ</a>
+      <a href="#members" class="nav__link" role="menuitem">メンバー</a>
       <a href="#publications" class="nav__link" role="menuitem">研究業績</a>
       <a href="#contact" class="nav__link" role="menuitem">Contact</a>
     </nav>
@@ -157,6 +158,34 @@
       <!-- Projects Grid -->
       <div class="projects__grid fade-in-up" id="portfolio-container">
         <!-- Cards will be injected by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Members Section -->
+  <section class="section members-section" id="members">
+    <div class="container">
+      <div class="projects__header fade-in-up">
+        <h2 class="projects__title">研究室メンバー</h2>
+        <p class="projects__subtitle">
+          指導教員と学生が一体となって研究に取り組む<br>
+          多様な専門性を持つメンバーが集う研究コミュニティ
+        </p>
+      </div>
+
+      <!-- Member Categories -->
+      <div class="members__categories fade-in-up">
+        <button class="member-filter-btn active" data-filter="*">全員</button>
+        <button class="member-filter-btn" data-filter="faculty">教員</button>
+        <button class="member-filter-btn" data-filter="phd">博士課程</button>
+        <button class="member-filter-btn" data-filter="master">修士課程</button>
+        <button class="member-filter-btn" data-filter="undergraduate">学部生</button>
+        <button class="member-filter-btn" data-filter="alumni">卒業生</button>
+      </div>
+
+      <!-- Members Grid -->
+      <div class="members__grid fade-in-up" id="members-container">
+        <!-- Member cards will be injected by JavaScript -->
       </div>
     </div>
   </section>
@@ -1266,6 +1295,186 @@ document.addEventListener('DOMContentLoaded', function() {
     displayPublications(filtered);
   }
 
+  // Members Section Functions
+  async function loadMembers() {
+    try {
+      const response = await fetch('data/members.json');
+      const data = await response.json();
+      
+      if (data && data.members) {
+        displayMembers(data.members);
+        initializeMembersFilters(data.members);
+      }
+    } catch (error) {
+      console.error('メンバーデータの読み込みエラー:', error);
+      document.getElementById('members-container').innerHTML = 
+        '<div class="glass" style="padding: 2rem; text-align: center; color: var(--text-light);">メンバーデータの読み込みに失敗しました</div>';
+    }
+  }
+
+  function displayMembers(members) {
+    const container = document.getElementById('members-container');
+    container.innerHTML = '';
+    
+    // Filter to show only recent members (within last 5 years)
+    const currentYear = new Date().getFullYear();
+    const recentMembers = members.filter(member => {
+      const lastActiveYear = member.active_years[member.active_years.length - 1];
+      return lastActiveYear >= currentYear - 5;
+    });
+    
+    // Sort by category priority and then by entry year
+    const categoryPriority = {
+      'faculty': 1,
+      'phd': 2,
+      'master': 3,
+      'undergraduate': 4,
+      'alumni': 5
+    };
+    
+    recentMembers.sort((a, b) => {
+      // First sort by category
+      const categoryDiff = (categoryPriority[getCategoryFromDegree(a)] || 6) - 
+                           (categoryPriority[getCategoryFromDegree(b)] || 6);
+      if (categoryDiff !== 0) return categoryDiff;
+      
+      // Then by entry year (newer first)
+      return b.entry_year - a.entry_year;
+    });
+    
+    recentMembers.forEach((member, index) => {
+      const card = createMemberCard(member, index);
+      container.appendChild(card);
+    });
+  }
+
+  function getCategoryFromDegree(member) {
+    // Check if member has explicit category
+    if (member.category) {
+      return member.category;
+    }
+    
+    // Check if member has graduated
+    const currentYear = new Date().getFullYear();
+    const lastActiveYear = member.active_years[member.active_years.length - 1];
+    
+    if (lastActiveYear < currentYear - 1) {
+      return 'alumni';
+    }
+    
+    // Determine current category based on highest degree
+    if (member.highest_degree === '修士論文') {
+      // If completed master's and still active, assume PhD
+      if (lastActiveYear >= currentYear - 1) {
+        return 'phd';
+      }
+      return 'alumni';
+    } else if (member.highest_degree === '学士論文') {
+      // If completed bachelor's and still active, check years
+      if (lastActiveYear >= currentYear - 1) {
+        const yearsSinceBachelor = currentYear - member.degrees[0].year;
+        if (yearsSinceBachelor >= 2) {
+          return 'master';
+        }
+        return 'undergraduate';
+      }
+      return 'alumni';
+    }
+    
+    return 'undergraduate';
+  }
+
+  function createMemberCard(member, index) {
+    const card = document.createElement('div');
+    const category = getCategoryFromDegree(member);
+    card.className = 'member-card fade-in-up';
+    card.setAttribute('data-category', category);
+    card.style.animationDelay = `${index * 0.05}s`;
+    
+    // Get initials for avatar
+    const initials = member.name.split(' ').map(part => part[0]).join('').slice(0, 2);
+    
+    // Get role text
+    const roleText = getRoleText(member, category);
+    
+    // Get latest research title
+    const latestDegree = member.degrees[member.degrees.length - 1];
+    const researchTitle = latestDegree ? latestDegree.title : '';
+    
+    card.innerHTML = `
+      <div class="member-card__avatar">
+        ${initials}
+      </div>
+      <h3 class="member-card__name">${member.name}</h3>
+      ${member.name_en ? `<p class="member-card__name-en">${member.name_en}</p>` : ''}
+      <p class="member-card__role">${roleText}</p>
+      ${researchTitle ? `<p class="member-card__research">${researchTitle}</p>` : ''}
+      <div class="member-card__period">
+        ${member.research_period}
+      </div>
+    `;
+    
+    return card;
+  }
+
+  function getRoleText(member, category) {
+    const currentYear = new Date().getFullYear();
+    const lastActiveYear = member.active_years[member.active_years.length - 1];
+    
+    if (category === 'faculty') {
+      return member.highest_degree || '教授';
+    } else if (category === 'alumni') {
+      const latestDegree = member.degrees[member.degrees.length - 1];
+      return `卒業生（${latestDegree.year}年${latestDegree.degree_type}）`;
+    } else if (category === 'phd') {
+      const yearsInPhD = currentYear - (member.degrees.find(d => d.degree_type === '修士論文')?.year || currentYear);
+      return `博士課程${yearsInPhD + 1}年`;
+    } else if (category === 'master') {
+      const yearsInMaster = currentYear - (member.degrees.find(d => d.degree_type === '学士論文')?.year || currentYear);
+      return `修士課程${Math.min(yearsInMaster + 1, 2)}年`;
+    } else if (category === 'undergraduate') {
+      return '学部4年';
+    }
+    
+    return '研究員';
+  }
+
+  function initializeMembersFilters(members) {
+    const filterBtns = document.querySelectorAll('.member-filter-btn');
+    
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const filter = this.getAttribute('data-filter');
+        
+        filterBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        filterMembers(members, filter);
+      });
+    });
+  }
+
+  function filterMembers(members, categoryFilter) {
+    let filtered = members;
+    
+    // Filter to recent members
+    const currentYear = new Date().getFullYear();
+    filtered = filtered.filter(member => {
+      const lastActiveYear = member.active_years[member.active_years.length - 1];
+      return lastActiveYear >= currentYear - 5;
+    });
+    
+    // Apply category filter
+    if (categoryFilter !== '*') {
+      filtered = filtered.filter(member => {
+        const category = getCategoryFromDegree(member);
+        return category === categoryFilter;
+      });
+    }
+    
+    displayMembers(filtered);
+  }
+
   // Initialize everything
   console.log('🎓 初期化開始 - 協調ロボティクス研究室');
   
@@ -1279,8 +1488,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
   loadPortfolio();
   loadPublications();
+  loadMembers();
   
-  console.log('🎓 協調ロボティクス研究室 - UDC準拠デザインシステム + モーダル機能 + 研究業績表示 初期化完了 🤖');
+  console.log('🎓 協調ロボティクス研究室 - UDC準拠デザインシステム + モーダル機能 + 研究業績表示 + メンバー表示 初期化完了 🤖');
 });
 </script>
 
