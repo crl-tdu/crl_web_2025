@@ -2,7 +2,8 @@
   "metadata": {
     "description": "研究キーワードデータベース",
     "created_date": "2025-06-18",
-    "total_keywords": 172,
+    "total_keywords": 307,
+    "total_occurrences": 603,
     "source": "project.json keywords field",
     "note": "研究プロジェクトで使用されているすべてのキーワードとその出現回数"
   },
@@ -10,380 +11,1956 @@
     "core": {
       "name": "核心研究領域",
       "keywords": [
-        {"keyword": "人間機械系", "count": 72},
-        {"keyword": "人間センシング", "count": 48},
-        {"keyword": "協調理論", "count": 32},
-        {"keyword": "チームワーク", "count": 11}
+        {
+          "keyword": "人間機械系",
+          "count": 72
+        },
+        {
+          "keyword": "人間センシング",
+          "count": 48
+        },
+        {
+          "keyword": "協調理論",
+          "count": 32
+        },
+        {
+          "keyword": "チームワーク",
+          "count": 11
+        }
       ]
     },
     "robotics": {
-      "name": "ロボティクス",
+      "name": "ロボティクス・エージェント",
       "keywords": [
-        {"keyword": "マルチエージェント", "count": 8},
-        {"keyword": "群ロボット", "count": 3},
-        {"keyword": "協調作業", "count": 3},
-        {"keyword": "探索アルゴリズム", "count": 3},
-        {"keyword": "誘導アルゴリズム", "count": 2},
-        {"keyword": "牧羊犬アルゴリズム", "count": 2},
-        {"keyword": "ボトルネック", "count": 2},
-        {"keyword": "群衆", "count": 2},
-        {"keyword": "移動ロボット", "count": 1},
-        {"keyword": "ロボット", "count": 1},
-        {"keyword": "巡回探索", "count": 1},
-        {"keyword": "経路計画", "count": 1},
-        {"keyword": "ペトリネット", "count": 1},
-        {"keyword": "マーカー", "count": 1}
+        {
+          "keyword": "マルチエージェント",
+          "count": 10
+        },
+        {
+          "keyword": "群ロボット",
+          "count": 3
+        },
+        {
+          "keyword": "ロボット",
+          "count": 2
+        },
+        {
+          "keyword": "群衆",
+          "count": 2
+        },
+        {
+          "keyword": "ロボットセラピー",
+          "count": 1
+        },
+        {
+          "keyword": "UAV",
+          "count": 1
+        },
+        {
+          "keyword": "群知能",
+          "count": 1
+        },
+        {
+          "keyword": "自律エージェント",
+          "count": 1
+        },
+        {
+          "keyword": "人間ロボット協調",
+          "count": 1
+        },
+        {
+          "keyword": "Coaxial-UAV",
+          "count": 1
+        },
+        {
+          "keyword": "移動ロボット",
+          "count": 1
+        }
       ]
     },
     "interface": {
       "name": "インタフェース・提示",
       "keywords": [
-        {"keyword": "力覚提示", "count": 6},
-        {"keyword": "力覚生起", "count": 3},
-        {"keyword": "力覚フィードバック", "count": 3},
-        {"keyword": "可変インピーダンス", "count": 3},
-        {"keyword": "触覚デバイス", "count": 2},
-        {"keyword": "振動刺激", "count": 2},
-        {"keyword": "振動", "count": 2},
-        {"keyword": "他部位刺激", "count": 2},
-        {"keyword": "硬さ提示", "count": 2},
-        {"keyword": "聴覚刺激", "count": 2},
-        {"keyword": "視覚フィードバック", "count": 1},
-        {"keyword": "視覚的注意分布", "count": 1},
-        {"keyword": "レンダリング手法", "count": 1},
-        {"keyword": "中心窩レンダリング", "count": 1},
-        {"keyword": "VR酔い", "count": 1},
-        {"keyword": "VR", "count": 1},
-        {"keyword": "仮想環境", "count": 1},
-        {"keyword": "ハプティクス", "count": 1},
-        {"keyword": "硬さ感覚", "count": 1},
-        {"keyword": "錯覚", "count": 1},
-        {"keyword": "触覚提示", "count": 1},
-        {"keyword": "仮想ペット", "count": 1}
+        {
+          "keyword": "VR",
+          "count": 3
+        },
+        {
+          "keyword": "仮想環境",
+          "count": 3
+        },
+        {
+          "keyword": "触覚インタフェース",
+          "count": 2
+        },
+        {
+          "keyword": "VR環境",
+          "count": 2
+        },
+        {
+          "keyword": "HMD",
+          "count": 1
+        },
+        {
+          "keyword": "仮想ペット",
+          "count": 1
+        },
+        {
+          "keyword": "Unity3D",
+          "count": 1
+        },
+        {
+          "keyword": "FOVE 0 HMD",
+          "count": 1
+        },
+        {
+          "keyword": "仮想物体操作",
+          "count": 1
+        },
+        {
+          "keyword": "仮想デバイス",
+          "count": 1
+        },
+        {
+          "keyword": "仮想空間",
+          "count": 1
+        },
+        {
+          "keyword": "適応型インタフェース",
+          "count": 1
+        },
+        {
+          "keyword": "VR酔い",
+          "count": 1
+        }
       ]
     },
     "support": {
       "name": "支援・学習",
       "keywords": [
-        {"keyword": "熟達支援", "count": 6},
-        {"keyword": "支援システム", "count": 4},
-        {"keyword": "学習支援", "count": 3},
-        {"keyword": "描画動作", "count": 2},
-        {"keyword": "相補教示", "count": 2},
-        {"keyword": "道具使用", "count": 1},
-        {"keyword": "筆記動作", "count": 1},
-        {"keyword": "把持動作", "count": 1},
-        {"keyword": "鍵盤楽器", "count": 1},
-        {"keyword": "ピアノ", "count": 1},
-        {"keyword": "ダイナミクス", "count": 1},
-        {"keyword": "リアルタイム指導", "count": 1},
-        {"keyword": "認知アシスト", "count": 1},
-        {"keyword": "マルチタスク", "count": 1},
-        {"keyword": "操作支援", "count": 1},
-        {"keyword": "ナビゲーション", "count": 1}
+        {
+          "keyword": "熟達支援",
+          "count": 6
+        },
+        {
+          "keyword": "運動学習",
+          "count": 5
+        },
+        {
+          "keyword": "機械学習",
+          "count": 4
+        },
+        {
+          "keyword": "支援システム",
+          "count": 4
+        },
+        {
+          "keyword": "自己学習",
+          "count": 4
+        },
+        {
+          "keyword": "学習支援",
+          "count": 3
+        },
+        {
+          "keyword": "相補教示",
+          "count": 2
+        },
+        {
+          "keyword": "音楽学習支援",
+          "count": 1
+        },
+        {
+          "keyword": "支援",
+          "count": 1
+        },
+        {
+          "keyword": "適応学習",
+          "count": 1
+        },
+        {
+          "keyword": "ステアリングアシスト",
+          "count": 1
+        },
+        {
+          "keyword": "自己規範支援",
+          "count": 1
+        },
+        {
+          "keyword": "パワーアシスト",
+          "count": 1
+        },
+        {
+          "keyword": "操作支援",
+          "count": 1
+        },
+        {
+          "keyword": "強化学習",
+          "count": 1
+        },
+        {
+          "keyword": "模倣学習",
+          "count": 1
+        },
+        {
+          "keyword": "個別化支援",
+          "count": 1
+        },
+        {
+          "keyword": "可変インピーダンス支援",
+          "count": 1
+        },
+        {
+          "keyword": "適応アシスト",
+          "count": 1
+        },
+        {
+          "keyword": "作業支援",
+          "count": 1
+        },
+        {
+          "keyword": "認知アシスト",
+          "count": 1
+        },
+        {
+          "keyword": "教示",
+          "count": 1
+        }
       ]
     },
     "sensing": {
       "name": "センシング・計測",
       "keywords": [
-        {"keyword": "生体信号", "count": 2},
-        {"keyword": "重心動揺", "count": 2},
-        {"keyword": "重畳センシング", "count": 2},
-        {"keyword": "視線挙動", "count": 2},
-        {"keyword": "眼球運動", "count": 2},
-        {"keyword": "眼球情報", "count": 2},
-        {"keyword": "定量計測", "count": 2},
-        {"keyword": "定量化", "count": 2},
-        {"keyword": "注意状態", "count": 2},
-        {"keyword": "温度", "count": 2},
-        {"keyword": "体温", "count": 1},
-        {"keyword": "心拍変動", "count": 1},
-        {"keyword": "心拍", "count": 1},
-        {"keyword": "虚偽心拍フィードバック", "count": 1},
-        {"keyword": "リアルタイムストレス指標", "count": 1},
-        {"keyword": "運動計測", "count": 1},
-        {"keyword": "追従計測", "count": 1},
-        {"keyword": "身体動作", "count": 1},
-        {"keyword": "筋活動", "count": 1},
-        {"keyword": "連合学習", "count": 1},
-        {"keyword": "音声解析", "count": 1},
-        {"keyword": "睡眠", "count": 1},
-        {"keyword": "痛み", "count": 1},
-        {"keyword": "痛み緩和バイアス", "count": 1},
-        {"keyword": "握り動作", "count": 1}
+        {
+          "keyword": "リアルタイム計測",
+          "count": 2
+        },
+        {
+          "keyword": "推定",
+          "count": 2
+        },
+        {
+          "keyword": "重畳センシング",
+          "count": 2
+        },
+        {
+          "keyword": "定量計測",
+          "count": 2
+        },
+        {
+          "keyword": "脈波センサ",
+          "count": 1
+        },
+        {
+          "keyword": "CFO推定",
+          "count": 1
+        },
+        {
+          "keyword": "推力計測",
+          "count": 1
+        },
+        {
+          "keyword": "注意推定",
+          "count": 1
+        },
+        {
+          "keyword": "サッケード検出",
+          "count": 1
+        },
+        {
+          "keyword": "ストレス推定",
+          "count": 1
+        },
+        {
+          "keyword": "ストレス計測",
+          "count": 1
+        },
+        {
+          "keyword": "IMUセンサ",
+          "count": 1
+        },
+        {
+          "keyword": "信頼推定",
+          "count": 1
+        },
+        {
+          "keyword": "ワイヤアレイセンサ",
+          "count": 1
+        }
       ]
     },
     "ai_ml": {
       "name": "AI・機械学習",
       "keywords": [
-        {"keyword": "機械学習", "count": 3},
-        {"keyword": "自己学習", "count": 4},
-        {"keyword": "個性模倣", "count": 5},
-        {"keyword": "多層化マッピング", "count": 2},
-        {"keyword": "推定", "count": 2},
-        {"keyword": "識別", "count": 1},
-        {"keyword": "強化学習", "count": 1},
-        {"keyword": "深層学習", "count": 1},
-        {"keyword": "パターン認識", "count": 1},
-        {"keyword": "予測", "count": 1},
-        {"keyword": "分類", "count": 1},
-        {"keyword": "最適化", "count": 1}
+        {
+          "keyword": "個性模倣",
+          "count": 6
+        },
+        {
+          "keyword": "ニューラルネットワーク",
+          "count": 2
+        },
+        {
+          "keyword": "予測",
+          "count": 2
+        },
+        {
+          "keyword": "予測制御",
+          "count": 1
+        }
       ]
     },
     "human_factors": {
       "name": "人間要因",
       "keywords": [
-        {"keyword": "個人差", "count": 5},
-        {"keyword": "ストレス", "count": 4},
-        {"keyword": "ストレス評価", "count": 3},
-        {"keyword": "感情状態", "count": 2},
-        {"keyword": "協調意識", "count": 2},
-        {"keyword": "ストレス抑制", "count": 1},
-        {"keyword": "ストレス軽減", "count": 1},
-        {"keyword": "信頼推定", "count": 1},
-        {"keyword": "習熟度", "count": 1},
-        {"keyword": "集中度", "count": 1},
-        {"keyword": "不器用さ", "count": 1},
-        {"keyword": "自己認知", "count": 1},
-        {"keyword": "作業パフォーマンス", "count": 1},
-        {"keyword": "パフォーマンス", "count": 1},
-        {"keyword": "疲労", "count": 1},
-        {"keyword": "快適性", "count": 1},
-        {"keyword": "主観評価", "count": 1}
+        {
+          "keyword": "個人差",
+          "count": 6
+        },
+        {
+          "keyword": "ストレス",
+          "count": 4
+        },
+        {
+          "keyword": "ストレス評価",
+          "count": 3
+        },
+        {
+          "keyword": "認知負荷",
+          "count": 2
+        },
+        {
+          "keyword": "感情状態",
+          "count": 2
+        },
+        {
+          "keyword": "個人適応化",
+          "count": 1
+        },
+        {
+          "keyword": "筋疲労",
+          "count": 1
+        },
+        {
+          "keyword": "個人適応",
+          "count": 1
+        },
+        {
+          "keyword": "感情値",
+          "count": 1
+        },
+        {
+          "keyword": "心理的効果",
+          "count": 1
+        },
+        {
+          "keyword": "ストレス抑制",
+          "count": 1
+        },
+        {
+          "keyword": "疲労評価",
+          "count": 1
+        },
+        {
+          "keyword": "ストレス解析",
+          "count": 1
+        },
+        {
+          "keyword": "視覚疲労軽減",
+          "count": 1
+        },
+        {
+          "keyword": "リアルタイムストレス指標",
+          "count": 1
+        },
+        {
+          "keyword": "ストレスモニタリング",
+          "count": 1
+        },
+        {
+          "keyword": "ストレス指標",
+          "count": 1
+        },
+        {
+          "keyword": "心理的影響",
+          "count": 1
+        },
+        {
+          "keyword": "自己認知",
+          "count": 1
+        }
       ]
     },
     "collaboration": {
       "name": "協調・協働",
       "keywords": [
-        {"keyword": "協調フロー", "count": 4},
-        {"keyword": "適応誘導", "count": 2},
-        {"keyword": "協働作業", "count": 1},
-        {"keyword": "リズム誘導", "count": 1},
-        {"keyword": "同期", "count": 1},
-        {"keyword": "協調行動", "count": 1},
-        {"keyword": "合意形成", "count": 1},
-        {"keyword": "役割分担", "count": 1},
-        {"keyword": "相互作用", "count": 1},
-        {"keyword": "力のインタラクション", "count": 1},
-        {"keyword": "人間モデル", "count": 1},
-        {"keyword": "遅延補完システム", "count": 1},
-        {"keyword": "遠隔操作環境", "count": 1}
-      ]
-    },
-    "evaluation": {
-      "name": "評価・分析",
-      "keywords": [
-        {"keyword": "評価", "count": 4},
-        {"keyword": "サブリミナル", "count": 3},
-        {"keyword": "評価手法", "count": 1},
-        {"keyword": "定性評価", "count": 1},
-        {"keyword": "定量評価", "count": 1},
-        {"keyword": "性能評価", "count": 1},
-        {"keyword": "実験評価", "count": 1},
-        {"keyword": "統計分析", "count": 1}
+        {
+          "keyword": "協調フロー",
+          "count": 4
+        },
+        {
+          "keyword": "協調作業",
+          "count": 3
+        },
+        {
+          "keyword": "協調ロボティクス",
+          "count": 2
+        },
+        {
+          "keyword": "協調意識",
+          "count": 2
+        },
+        {
+          "keyword": "チームワーク評価",
+          "count": 1
+        },
+        {
+          "keyword": "協調技能",
+          "count": 1
+        },
+        {
+          "keyword": "協調搬送",
+          "count": 1
+        },
+        {
+          "keyword": "同期現象",
+          "count": 1
+        },
+        {
+          "keyword": "協働作業",
+          "count": 1
+        },
+        {
+          "keyword": "協調探索",
+          "count": 1
+        },
+        {
+          "keyword": "心拍同期",
+          "count": 1
+        }
       ]
     },
     "control": {
       "name": "制御・システム",
       "keywords": [
-        {"keyword": "指先動作", "count": 4},
-        {"keyword": "セミアクティブ制御", "count": 1},
-        {"keyword": "適応制御", "count": 1},
-        {"keyword": "予測制御", "count": 1},
-        {"keyword": "フィードバック制御", "count": 1},
-        {"keyword": "システム", "count": 1},
-        {"keyword": "デバイス開発", "count": 1},
-        {"keyword": "エネルギー効率", "count": 1}
+        {
+          "keyword": "バイラテラル制御",
+          "count": 3
+        },
+        {
+          "keyword": "探索アルゴリズム",
+          "count": 3
+        },
+        {
+          "keyword": "インピーダンス制御",
+          "count": 2
+        },
+        {
+          "keyword": "PID制御",
+          "count": 2
+        },
+        {
+          "keyword": "牧羊犬アルゴリズム",
+          "count": 2
+        },
+        {
+          "keyword": "誘導アルゴリズム",
+          "count": 2
+        },
+        {
+          "keyword": "温度制御システム",
+          "count": 1
+        },
+        {
+          "keyword": "Arduino制御",
+          "count": 1
+        },
+        {
+          "keyword": "システム",
+          "count": 1
+        },
+        {
+          "keyword": "ケーブル駆動システム",
+          "count": 1
+        },
+        {
+          "keyword": "モータ制御",
+          "count": 1
+        },
+        {
+          "keyword": "真空システム",
+          "count": 1
+        },
+        {
+          "keyword": "ダイナミクス最適化",
+          "count": 1
+        },
+        {
+          "keyword": "適応制御",
+          "count": 1
+        },
+        {
+          "keyword": "分散制御",
+          "count": 1
+        },
+        {
+          "keyword": "自律システム",
+          "count": 1
+        },
+        {
+          "keyword": "姿勢制御",
+          "count": 1
+        },
+        {
+          "keyword": "体温制御",
+          "count": 1
+        },
+        {
+          "keyword": "評価システム",
+          "count": 1
+        },
+        {
+          "keyword": "システム開発",
+          "count": 1
+        },
+        {
+          "keyword": "人流最適化",
+          "count": 1
+        },
+        {
+          "keyword": "すれ違い制御",
+          "count": 1
+        },
+        {
+          "keyword": "握力制御",
+          "count": 1
+        },
+        {
+          "keyword": "遅延補完システム",
+          "count": 1
+        },
+        {
+          "keyword": "力制御",
+          "count": 1
+        },
+        {
+          "keyword": "バイオフィードバック",
+          "count": 1
+        },
+        {
+          "keyword": "虚偽心拍フィードバック",
+          "count": 1
+        },
+        {
+          "keyword": "省エネルギー制御",
+          "count": 1
+        },
+        {
+          "keyword": "最適化",
+          "count": 1
+        },
+        {
+          "keyword": "視覚フィードバック",
+          "count": 1
+        },
+        {
+          "keyword": "安定性制御",
+          "count": 1
+        }
       ]
     },
     "application": {
       "name": "応用・タスク",
       "keywords": [
-        {"keyword": "VDT作業", "count": 2},
-        {"keyword": "教育", "count": 1},
-        {"keyword": "訓練", "count": 1},
-        {"keyword": "リハビリテーション", "count": 1},
-        {"keyword": "医療", "count": 1},
-        {"keyword": "福祉", "count": 1},
-        {"keyword": "運転者", "count": 1},
-        {"keyword": "バッティング", "count": 1},
-        {"keyword": "野球", "count": 1},
-        {"keyword": "スポーツ", "count": 1}
+        {
+          "keyword": "作業パフォーマンス",
+          "count": 2
+        },
+        {
+          "keyword": "シーソータスク",
+          "count": 1
+        },
+        {
+          "keyword": "作業時",
+          "count": 1
+        },
+        {
+          "keyword": "運転行動",
+          "count": 1
+        },
+        {
+          "keyword": "運転者",
+          "count": 1
+        },
+        {
+          "keyword": "作業リズム",
+          "count": 1
+        },
+        {
+          "keyword": "VDT作業",
+          "count": 1
+        },
+        {
+          "keyword": "作業負荷",
+          "count": 1
+        },
+        {
+          "keyword": "スポーツ科学",
+          "count": 1
+        },
+        {
+          "keyword": "マルチタスク",
+          "count": 1
+        }
+      ]
+    },
+    "haptics": {
+      "name": "触覚・力覚",
+      "keywords": [
+        {
+          "keyword": "力覚提示",
+          "count": 8
+        },
+        {
+          "keyword": "力覚フィードバック",
+          "count": 5
+        },
+        {
+          "keyword": "力覚生起",
+          "count": 4
+        },
+        {
+          "keyword": "振動刺激",
+          "count": 3
+        },
+        {
+          "keyword": "ハプティクス",
+          "count": 2
+        },
+        {
+          "keyword": "触覚デバイス",
+          "count": 2
+        },
+        {
+          "keyword": "振動",
+          "count": 2
+        },
+        {
+          "keyword": "触覚提示",
+          "count": 1
+        },
+        {
+          "keyword": "触覚フィードバック",
+          "count": 1
+        },
+        {
+          "keyword": "身体振動",
+          "count": 1
+        },
+        {
+          "keyword": "触覚技術",
+          "count": 1
+        },
+        {
+          "keyword": "触覚刺激",
+          "count": 1
+        },
+        {
+          "keyword": "触覚錯覚",
+          "count": 1
+        },
+        {
+          "keyword": "振動触覚",
+          "count": 1
+        }
+      ]
+    },
+    "evaluation": {
+      "name": "評価・分析",
+      "keywords": [
+        {
+          "keyword": "評価",
+          "count": 4
+        },
+        {
+          "keyword": "定量化",
+          "count": 2
+        },
+        {
+          "keyword": "心拍変動解析",
+          "count": 1
+        },
+        {
+          "keyword": "リアルタイム解析",
+          "count": 1
+        },
+        {
+          "keyword": "視線動作解析",
+          "count": 1
+        },
+        {
+          "keyword": "定量評価",
+          "count": 1
+        },
+        {
+          "keyword": "スキル評価",
+          "count": 1
+        },
+        {
+          "keyword": "EMG解析",
+          "count": 1
+        },
+        {
+          "keyword": "筋力解析",
+          "count": 1
+        },
+        {
+          "keyword": "口調解析",
+          "count": 1
+        },
+        {
+          "keyword": "視線解析",
+          "count": 1
+        },
+        {
+          "keyword": "解析",
+          "count": 1
+        },
+        {
+          "keyword": "動作解析",
+          "count": 1
+        }
       ]
     }
   },
   "all_keywords": [
-    {"keyword": "人間機械系", "count": 72},
-    {"keyword": "人間センシング", "count": 48},
-    {"keyword": "協調理論", "count": 32},
-    {"keyword": "チームワーク", "count": 11},
-    {"keyword": "マルチエージェント", "count": 8},
-    {"keyword": "力覚提示", "count": 6},
-    {"keyword": "熟達支援", "count": 6},
-    {"keyword": "個性模倣", "count": 5},
-    {"keyword": "個人差", "count": 5},
-    {"keyword": "評価", "count": 4},
-    {"keyword": "自己学習", "count": 4},
-    {"keyword": "支援システム", "count": 4},
-    {"keyword": "指先動作", "count": 4},
-    {"keyword": "協調フロー", "count": 4},
-    {"keyword": "ストレス", "count": 4},
-    {"keyword": "力覚生起", "count": 3},
-    {"keyword": "力覚フィードバック", "count": 3},
-    {"keyword": "探索アルゴリズム", "count": 3},
-    {"keyword": "群ロボット", "count": 3},
-    {"keyword": "協調作業", "count": 3},
-    {"keyword": "機械学習", "count": 3},
-    {"keyword": "学習支援", "count": 3},
-    {"keyword": "可変インピーダンス", "count": 3},
-    {"keyword": "温度", "count": 3},
-    {"keyword": "ストレス評価", "count": 3},
-    {"keyword": "サブリミナル", "count": 3},
-    {"keyword": "誘導アルゴリズム", "count": 2},
-    {"keyword": "牧羊犬アルゴリズム", "count": 2},
-    {"keyword": "描画動作", "count": 2},
-    {"keyword": "適応誘導", "count": 2},
-    {"keyword": "定量計測", "count": 2},
-    {"keyword": "定量化", "count": 2},
-    {"keyword": "聴覚刺激", "count": 2},
-    {"keyword": "注意状態", "count": 2},
-    {"keyword": "多層化マッピング", "count": 2},
-    {"keyword": "他部位刺激", "count": 2},
-    {"keyword": "相補教示", "count": 2},
-    {"keyword": "生体信号", "count": 2},
-    {"keyword": "推定", "count": 2},
-    {"keyword": "振動刺激", "count": 2},
-    {"keyword": "振動", "count": 2},
-    {"keyword": "触覚デバイス", "count": 2},
-    {"keyword": "重心動揺", "count": 2},
-    {"keyword": "重畳センシング", "count": 2},
-    {"keyword": "視線挙動", "count": 2},
-    {"keyword": "硬さ提示", "count": 2},
-    {"keyword": "群衆", "count": 2},
-    {"keyword": "協調意識", "count": 2},
-    {"keyword": "眼球運動", "count": 2},
-    {"keyword": "感情状態", "count": 2},
-    {"keyword": "仮想環境", "count": 2},
-    {"keyword": "位置情報", "count": 2},
-    {"keyword": "ワイヤ駆動", "count": 2},
-    {"keyword": "ロボット", "count": 2},
-    {"keyword": "リアルタイム", "count": 2},
-    {"keyword": "ボトルネック", "count": 2},
-    {"keyword": "プラセボ効果", "count": 2},
-    {"keyword": "ドライビングシミュレータ", "count": 2},
-    {"keyword": "VR環境", "count": 2},
-    {"keyword": "VR", "count": 2},
-    {"keyword": "力分布", "count": 1},
-    {"keyword": "力のインタラクション", "count": 1},
-    {"keyword": "両手操作", "count": 1},
-    {"keyword": "欲求経路創発", "count": 1},
-    {"keyword": "予測", "count": 1},
-    {"keyword": "模倣学習", "count": 1},
-    {"keyword": "変化の見落とし", "count": 1},
-    {"keyword": "物理シミュレーション", "count": 1},
-    {"keyword": "評価システム", "count": 1},
-    {"keyword": "筆記動作", "count": 1},
-    {"keyword": "把持動作", "count": 1},
-    {"keyword": "認知負荷", "count": 1},
-    {"keyword": "内部モデル", "count": 1},
-    {"keyword": "道具使用", "count": 1},
-    {"keyword": "天井吸着", "count": 1},
-    {"keyword": "適応的誘導", "count": 1},
-    {"keyword": "適応型インタフェース", "count": 1},
-    {"keyword": "適応学習", "count": 1},
-    {"keyword": "定量評価", "count": 1},
-    {"keyword": "追従操作", "count": 1},
-    {"keyword": "中心窩レンダリング", "count": 1},
-    {"keyword": "遅延補完", "count": 1},
-    {"keyword": "対回転プロペラ", "count": 1},
-    {"keyword": "体温制御", "count": 1},
-    {"keyword": "体温", "count": 1},
-    {"keyword": "相関性", "count": 1},
-    {"keyword": "操作支援", "count": 1},
-    {"keyword": "操作パフォーマンス", "count": 1},
-    {"keyword": "生体情報", "count": 1},
-    {"keyword": "睡眠導入", "count": 1},
-    {"keyword": "睡眠慣性", "count": 1},
-    {"keyword": "人間モデル", "count": 1},
-    {"keyword": "身体動揺", "count": 1},
-    {"keyword": "身体振動", "count": 1},
-    {"keyword": "振動触覚", "count": 1},
-    {"keyword": "心拍変動", "count": 1},
-    {"keyword": "心拍同期", "count": 1},
-    {"keyword": "信頼推定", "count": 1},
-    {"keyword": "触覚提示", "count": 1},
-    {"keyword": "触覚技術", "count": 1},
-    {"keyword": "自己規範支援", "count": 1},
-    {"keyword": "視線情報", "count": 1},
-    {"keyword": "視覚的注意分布", "count": 1},
-    {"keyword": "支援", "count": 1},
-    {"keyword": "作業時", "count": 1},
-    {"keyword": "作業パフォーマンス", "count": 1},
-    {"keyword": "座位姿勢", "count": 1},
-    {"keyword": "骨導音", "count": 1},
-    {"keyword": "口調解析", "count": 1},
-    {"keyword": "個人適応化", "count": 1},
-    {"keyword": "個人適応", "count": 1},
-    {"keyword": "鍵盤楽器", "count": 1},
-    {"keyword": "筋疲労", "count": 1},
-    {"keyword": "筋電位", "count": 1},
-    {"keyword": "筋シナジー", "count": 1},
-    {"keyword": "矯正", "count": 1},
-    {"keyword": "強化学習", "count": 1},
-    {"keyword": "協働作業", "count": 1},
-    {"keyword": "機械操作", "count": 1},
-    {"keyword": "眼球情報", "count": 1},
-    {"keyword": "感情値", "count": 1},
-    {"keyword": "楽器演奏", "count": 1},
-    {"keyword": "解析", "count": 1},
-    {"keyword": "仮眠", "count": 1},
-    {"keyword": "仮想物体操作", "count": 1},
-    {"keyword": "仮想空間", "count": 1},
-    {"keyword": "仮想ペット", "count": 1},
-    {"keyword": "仮想デバイス", "count": 1},
-    {"keyword": "音声コミュニケーション", "count": 1},
-    {"keyword": "温度提示", "count": 1},
-    {"keyword": "遠隔操作", "count": 1},
-    {"keyword": "円軌道追従", "count": 1},
-    {"keyword": "運動錯覚", "count": 1},
-    {"keyword": "運動学習", "count": 1},
-    {"keyword": "運転者", "count": 1},
-    {"keyword": "運転行動", "count": 1},
-    {"keyword": "握力変化", "count": 1},
-    {"keyword": "ワイヤアレイセンサ", "count": 1},
-    {"keyword": "レンダリング手法", "count": 1},
-    {"keyword": "リラクゼーション", "count": 1},
-    {"keyword": "リズム誘導", "count": 1},
-    {"keyword": "リアルタイム計測", "count": 1},
-    {"keyword": "マーカー", "count": 1},
-    {"keyword": "パワーアシスト", "count": 1},
-    {"keyword": "ハプティクス", "count": 1},
-    {"keyword": "バイマニュアル", "count": 1},
-    {"keyword": "ネットワーク計画", "count": 1},
-    {"keyword": "デバイス開発", "count": 1},
-    {"keyword": "データ駆動型", "count": 1},
-    {"keyword": "ダイナミクス", "count": 1},
-    {"keyword": "ストレス抑制", "count": 1},
-    {"keyword": "ストレス指標", "count": 1},
-    {"keyword": "ストレス計測", "count": 1},
-    {"keyword": "ストレス解析", "count": 1},
-    {"keyword": "ステアリングアシスト", "count": 1},
-    {"keyword": "スーツ", "count": 1},
-    {"keyword": "シミュレーション", "count": 1},
-    {"keyword": "システム開発", "count": 1},
-    {"keyword": "システム", "count": 1},
-    {"keyword": "サブリミナルキャリブレーション", "count": 1},
-    {"keyword": "サプライズ", "count": 1},
-    {"keyword": "サーモグラフィ", "count": 1},
-    {"keyword": "グローブ", "count": 1},
-    {"keyword": "グラスピング", "count": 1},
-    {"keyword": "キャリブレーション", "count": 1},
-    {"keyword": "オペレーション", "count": 1},
-    {"keyword": "VR酔い", "count": 1},
-    {"keyword": "VDT作業", "count": 1},
-    {"keyword": "UAV", "count": 1},
-    {"keyword": "SLAM", "count": 1},
-    {"keyword": "IoT", "count": 1},
-    {"keyword": "Attention TriGrid", "count": 1}
+    {
+      "keyword": "人間機械系",
+      "count": 72
+    },
+    {
+      "keyword": "人間センシング",
+      "count": 48
+    },
+    {
+      "keyword": "協調理論",
+      "count": 32
+    },
+    {
+      "keyword": "チームワーク",
+      "count": 11
+    },
+    {
+      "keyword": "マルチエージェント",
+      "count": 10
+    },
+    {
+      "keyword": "力覚提示",
+      "count": 8
+    },
+    {
+      "keyword": "個性模倣",
+      "count": 6
+    },
+    {
+      "keyword": "熟達支援",
+      "count": 6
+    },
+    {
+      "keyword": "個人差",
+      "count": 6
+    },
+    {
+      "keyword": "力覚フィードバック",
+      "count": 5
+    },
+    {
+      "keyword": "運動学習",
+      "count": 5
+    },
+    {
+      "keyword": "ストレス",
+      "count": 4
+    },
+    {
+      "keyword": "機械学習",
+      "count": 4
+    },
+    {
+      "keyword": "評価",
+      "count": 4
+    },
+    {
+      "keyword": "協調フロー",
+      "count": 4
+    },
+    {
+      "keyword": "支援システム",
+      "count": 4
+    },
+    {
+      "keyword": "力覚生起",
+      "count": 4
+    },
+    {
+      "keyword": "指先動作",
+      "count": 4
+    },
+    {
+      "keyword": "自己学習",
+      "count": 4
+    },
+    {
+      "keyword": "生体信号",
+      "count": 3
+    },
+    {
+      "keyword": "学習支援",
+      "count": 3
+    },
+    {
+      "keyword": "バイラテラル制御",
+      "count": 3
+    },
+    {
+      "keyword": "VR",
+      "count": 3
+    },
+    {
+      "keyword": "協調作業",
+      "count": 3
+    },
+    {
+      "keyword": "振動刺激",
+      "count": 3
+    },
+    {
+      "keyword": "ストレス評価",
+      "count": 3
+    },
+    {
+      "keyword": "サブリミナル",
+      "count": 3
+    },
+    {
+      "keyword": "温度",
+      "count": 3
+    },
+    {
+      "keyword": "可変インピーダンス",
+      "count": 3
+    },
+    {
+      "keyword": "仮想環境",
+      "count": 3
+    },
+    {
+      "keyword": "重心動揺",
+      "count": 3
+    },
+    {
+      "keyword": "群ロボット",
+      "count": 3
+    },
+    {
+      "keyword": "探索アルゴリズム",
+      "count": 3
+    },
+    {
+      "keyword": "LF/HF比",
+      "count": 2
+    },
+    {
+      "keyword": "リアルタイム計測",
+      "count": 2
+    },
+    {
+      "keyword": "ハプティクス",
+      "count": 2
+    },
+    {
+      "keyword": "インピーダンス制御",
+      "count": 2
+    },
+    {
+      "keyword": "PID制御",
+      "count": 2
+    },
+    {
+      "keyword": "力のインタラクション",
+      "count": 2
+    },
+    {
+      "keyword": "ニューラルネットワーク",
+      "count": 2
+    },
+    {
+      "keyword": "協調ロボティクス",
+      "count": 2
+    },
+    {
+      "keyword": "ロボット",
+      "count": 2
+    },
+    {
+      "keyword": "触覚インタフェース",
+      "count": 2
+    },
+    {
+      "keyword": "描画動作",
+      "count": 2
+    },
+    {
+      "keyword": "相補教示",
+      "count": 2
+    },
+    {
+      "keyword": "認知負荷",
+      "count": 2
+    },
+    {
+      "keyword": "心拍変動",
+      "count": 2
+    },
+    {
+      "keyword": "協調意識",
+      "count": 2
+    },
+    {
+      "keyword": "定量化",
+      "count": 2
+    },
+    {
+      "keyword": "触覚デバイス",
+      "count": 2
+    },
+    {
+      "keyword": "ワイヤ駆動",
+      "count": 2
+    },
+    {
+      "keyword": "推定",
+      "count": 2
+    },
+    {
+      "keyword": "多層化マッピング",
+      "count": 2
+    },
+    {
+      "keyword": "位置情報",
+      "count": 2
+    },
+    {
+      "keyword": "重畳センシング",
+      "count": 2
+    },
+    {
+      "keyword": "眼球運動",
+      "count": 2
+    },
+    {
+      "keyword": "内部モデル",
+      "count": 2
+    },
+    {
+      "keyword": "機械操作",
+      "count": 2
+    },
+    {
+      "keyword": "作業パフォーマンス",
+      "count": 2
+    },
+    {
+      "keyword": "牧羊犬アルゴリズム",
+      "count": 2
+    },
+    {
+      "keyword": "感情状態",
+      "count": 2
+    },
+    {
+      "keyword": "定量計測",
+      "count": 2
+    },
+    {
+      "keyword": "適応誘導",
+      "count": 2
+    },
+    {
+      "keyword": "振動",
+      "count": 2
+    },
+    {
+      "keyword": "硬さ提示",
+      "count": 2
+    },
+    {
+      "keyword": "他部位刺激",
+      "count": 2
+    },
+    {
+      "keyword": "ドライビングシミュレータ",
+      "count": 2
+    },
+    {
+      "keyword": "注意状態",
+      "count": 2
+    },
+    {
+      "keyword": "視線挙動",
+      "count": 2
+    },
+    {
+      "keyword": "操作パフォーマンス",
+      "count": 2
+    },
+    {
+      "keyword": "ボトルネック",
+      "count": 2
+    },
+    {
+      "keyword": "誘導アルゴリズム",
+      "count": 2
+    },
+    {
+      "keyword": "群衆",
+      "count": 2
+    },
+    {
+      "keyword": "聴覚刺激",
+      "count": 2
+    },
+    {
+      "keyword": "リアルタイム",
+      "count": 2
+    },
+    {
+      "keyword": "予測",
+      "count": 2
+    },
+    {
+      "keyword": "矯正",
+      "count": 2
+    },
+    {
+      "keyword": "VR環境",
+      "count": 2
+    },
+    {
+      "keyword": "プラセボ効果",
+      "count": 2
+    },
+    {
+      "keyword": "体温",
+      "count": 1
+    },
+    {
+      "keyword": "デバイス開発",
+      "count": 1
+    },
+    {
+      "keyword": "心拍変動解析",
+      "count": 1
+    },
+    {
+      "keyword": "脈波センサ",
+      "count": 1
+    },
+    {
+      "keyword": "ペルチェ素子",
+      "count": 1
+    },
+    {
+      "keyword": "温度制御システム",
+      "count": 1
+    },
+    {
+      "keyword": "自律神経系",
+      "count": 1
+    },
+    {
+      "keyword": "Arduino制御",
+      "count": 1
+    },
+    {
+      "keyword": "ウェアラブルデバイス",
+      "count": 1
+    },
+    {
+      "keyword": "ダイナミクス",
+      "count": 1
+    },
+    {
+      "keyword": "鍵盤楽器",
+      "count": 1
+    },
+    {
+      "keyword": "システム",
+      "count": 1
+    },
+    {
+      "keyword": "鍵盤型アクチュエータ",
+      "count": 1
+    },
+    {
+      "keyword": "打鍵速度",
+      "count": 1
+    },
+    {
+      "keyword": "音楽学習支援",
+      "count": 1
+    },
+    {
+      "keyword": "人間モデル",
+      "count": 1
+    },
+    {
+      "keyword": "適応的誘導",
+      "count": 1
+    },
+    {
+      "keyword": "CFO推定",
+      "count": 1
+    },
+    {
+      "keyword": "チームワーク評価",
+      "count": 1
+    },
+    {
+      "keyword": "シーソータスク",
+      "count": 1
+    },
+    {
+      "keyword": "リアルタイム解析",
+      "count": 1
+    },
+    {
+      "keyword": "HMD",
+      "count": 1
+    },
+    {
+      "keyword": "触覚提示",
+      "count": 1
+    },
+    {
+      "keyword": "仮想ペット",
+      "count": 1
+    },
+    {
+      "keyword": "ケーブル駆動システム",
+      "count": 1
+    },
+    {
+      "keyword": "バーチャルリアリティ",
+      "count": 1
+    },
+    {
+      "keyword": "ロボットセラピー",
+      "count": 1
+    },
+    {
+      "keyword": "Unity3D",
+      "count": 1
+    },
+    {
+      "keyword": "モータ制御",
+      "count": 1
+    },
+    {
+      "keyword": "アニマルセラピー",
+      "count": 1
+    },
+    {
+      "keyword": "支援",
+      "count": 1
+    },
+    {
+      "keyword": "スキル伝達",
+      "count": 1
+    },
+    {
+      "keyword": "外乱オブザーバ",
+      "count": 1
+    },
+    {
+      "keyword": "反力オブザーバ",
+      "count": 1
+    },
+    {
+      "keyword": "天井吸着",
+      "count": 1
+    },
+    {
+      "keyword": "真空システム",
+      "count": 1
+    },
+    {
+      "keyword": "垂直離着陸",
+      "count": 1
+    },
+    {
+      "keyword": "対回転プロペラ",
+      "count": 1
+    },
+    {
+      "keyword": "航空ロボティクス",
+      "count": 1
+    },
+    {
+      "keyword": "ロードセル",
+      "count": 1
+    },
+    {
+      "keyword": "同軸ロータ",
+      "count": 1
+    },
+    {
+      "keyword": "推力計測",
+      "count": 1
+    },
+    {
+      "keyword": "UAV",
+      "count": 1
+    },
+    {
+      "keyword": "吸着力",
+      "count": 1
+    },
+    {
+      "keyword": "ダイヤフラムポンプ",
+      "count": 1
+    },
+    {
+      "keyword": "Attention Grid",
+      "count": 1
+    },
+    {
+      "keyword": "適応学習",
+      "count": 1
+    },
+    {
+      "keyword": "視覚的注意",
+      "count": 1
+    },
+    {
+      "keyword": "FOVE 0 HMD",
+      "count": 1
+    },
+    {
+      "keyword": "注意推定",
+      "count": 1
+    },
+    {
+      "keyword": "3D視線マッピング",
+      "count": 1
+    },
+    {
+      "keyword": "視線追跡",
+      "count": 1
+    },
+    {
+      "keyword": "視覚負荷",
+      "count": 1
+    },
+    {
+      "keyword": "サッケード検出",
+      "count": 1
+    },
+    {
+      "keyword": "Tobii Eye Tracker",
+      "count": 1
+    },
+    {
+      "keyword": "視線動作解析",
+      "count": 1
+    },
+    {
+      "keyword": "ストレス推定",
+      "count": 1
+    },
+    {
+      "keyword": "自己組織化",
+      "count": 1
+    },
+    {
+      "keyword": "定量評価",
+      "count": 1
+    },
+    {
+      "keyword": "環境適応",
+      "count": 1
+    },
+    {
+      "keyword": "Boidモデル",
+      "count": 1
+    },
+    {
+      "keyword": "群知能",
+      "count": 1
+    },
+    {
+      "keyword": "自律エージェント",
+      "count": 1
+    },
+    {
+      "keyword": "協調技能",
+      "count": 1
+    },
+    {
+      "keyword": "スキル評価",
+      "count": 1
+    },
+    {
+      "keyword": "人間ロボット協調",
+      "count": 1
+    },
+    {
+      "keyword": "EMG解析",
+      "count": 1
+    },
+    {
+      "keyword": "運動錯覚",
+      "count": 1
+    },
+    {
+      "keyword": "触覚フィードバック",
+      "count": 1
+    },
+    {
+      "keyword": "固有受容感覚",
+      "count": 1
+    },
+    {
+      "keyword": "筋力解析",
+      "count": 1
+    },
+    {
+      "keyword": "筋紡錘",
+      "count": 1
+    },
+    {
+      "keyword": "身体振動",
+      "count": 1
+    },
+    {
+      "keyword": "個人適応化",
+      "count": 1
+    },
+    {
+      "keyword": "仮想物体操作",
+      "count": 1
+    },
+    {
+      "keyword": "ユーザモデリング",
+      "count": 1
+    },
+    {
+      "keyword": "操作特性",
+      "count": 1
+    },
+    {
+      "keyword": "ダイナミクス最適化",
+      "count": 1
+    },
+    {
+      "keyword": "適応制御",
+      "count": 1
+    },
+    {
+      "keyword": "Coaxial-UAV",
+      "count": 1
+    },
+    {
+      "keyword": "分散制御",
+      "count": 1
+    },
+    {
+      "keyword": "自律システム",
+      "count": 1
+    },
+    {
+      "keyword": "STA Architecture",
+      "count": 1
+    },
+    {
+      "keyword": "ストレス計測",
+      "count": 1
+    },
+    {
+      "keyword": "協調搬送",
+      "count": 1
+    },
+    {
+      "keyword": "対向回転モータ",
+      "count": 1
+    },
+    {
+      "keyword": "作業時",
+      "count": 1
+    },
+    {
+      "keyword": "姿勢制御",
+      "count": 1
+    },
+    {
+      "keyword": "LSTM",
+      "count": 1
+    },
+    {
+      "keyword": "IoT",
+      "count": 1
+    },
+    {
+      "keyword": "マルチロータ",
+      "count": 1
+    },
+    {
+      "keyword": "IMUセンサ",
+      "count": 1
+    },
+    {
+      "keyword": "仮想デバイス",
+      "count": 1
+    },
+    {
+      "keyword": "両手操作",
+      "count": 1
+    },
+    {
+      "keyword": "視線情報",
+      "count": 1
+    },
+    {
+      "keyword": "運転行動",
+      "count": 1
+    },
+    {
+      "keyword": "握力変化",
+      "count": 1
+    },
+    {
+      "keyword": "ステアリングアシスト",
+      "count": 1
+    },
+    {
+      "keyword": "相関性",
+      "count": 1
+    },
+    {
+      "keyword": "運転者",
+      "count": 1
+    },
+    {
+      "keyword": "信頼推定",
+      "count": 1
+    },
+    {
+      "keyword": "音声コミュニケーション",
+      "count": 1
+    },
+    {
+      "keyword": "口調解析",
+      "count": 1
+    },
+    {
+      "keyword": "仮想空間",
+      "count": 1
+    },
+    {
+      "keyword": "グラスピング",
+      "count": 1
+    },
+    {
+      "keyword": "予測制御",
+      "count": 1
+    },
+    {
+      "keyword": "生体情報",
+      "count": 1
+    },
+    {
+      "keyword": "バイマニュアル",
+      "count": 1
+    },
+    {
+      "keyword": "オペレーション",
+      "count": 1
+    },
+    {
+      "keyword": "自己規範支援",
+      "count": 1
+    },
+    {
+      "keyword": "仮眠",
+      "count": 1
+    },
+    {
+      "keyword": "体温制御",
+      "count": 1
+    },
+    {
+      "keyword": "睡眠慣性",
+      "count": 1
+    },
+    {
+      "keyword": "キャリブレーション",
+      "count": 1
+    },
+    {
+      "keyword": "筋疲労",
+      "count": 1
+    },
+    {
+      "keyword": "パワーアシスト",
+      "count": 1
+    },
+    {
+      "keyword": "スーツ",
+      "count": 1
+    },
+    {
+      "keyword": "評価システム",
+      "count": 1
+    },
+    {
+      "keyword": "楽器演奏",
+      "count": 1
+    },
+    {
+      "keyword": "個人適応",
+      "count": 1
+    },
+    {
+      "keyword": "操作支援",
+      "count": 1
+    },
+    {
+      "keyword": "強化学習",
+      "count": 1
+    },
+    {
+      "keyword": "模倣学習",
+      "count": 1
+    },
+    {
+      "keyword": "温度提示",
+      "count": 1
+    },
+    {
+      "keyword": "感情値",
+      "count": 1
+    },
+    {
+      "keyword": "サーモグラフィ",
+      "count": 1
+    },
+    {
+      "keyword": "SLAM",
+      "count": 1
+    },
+    {
+      "keyword": "システム開発",
+      "count": 1
+    },
+    {
+      "keyword": "円軌道追従",
+      "count": 1
+    },
+    {
+      "keyword": "触覚技術",
+      "count": 1
+    },
+    {
+      "keyword": "物理シミュレーション",
+      "count": 1
+    },
+    {
+      "keyword": "データ駆動型",
+      "count": 1
+    },
+    {
+      "keyword": "睡眠導入",
+      "count": 1
+    },
+    {
+      "keyword": "リラクゼーション",
+      "count": 1
+    },
+    {
+      "keyword": "触覚刺激",
+      "count": 1
+    },
+    {
+      "keyword": "握り動作",
+      "count": 1
+    },
+    {
+      "keyword": "心理的効果",
+      "count": 1
+    },
+    {
+      "keyword": "痛み",
+      "count": 1
+    },
+    {
+      "keyword": "痛み緩和バイアス",
+      "count": 1
+    },
+    {
+      "keyword": "疼痛管理",
+      "count": 1
+    },
+    {
+      "keyword": "ストレス抑制",
+      "count": 1
+    },
+    {
+      "keyword": "同期現象",
+      "count": 1
+    },
+    {
+      "keyword": "リズム誘導",
+      "count": 1
+    },
+    {
+      "keyword": "作業リズム",
+      "count": 1
+    },
+    {
+      "keyword": "協働作業",
+      "count": 1
+    },
+    {
+      "keyword": "感覚増強",
+      "count": 1
+    },
+    {
+      "keyword": "触覚錯覚",
+      "count": 1
+    },
+    {
+      "keyword": "硬さ感覚",
+      "count": 1
+    },
+    {
+      "keyword": "人流最適化",
+      "count": 1
+    },
+    {
+      "keyword": "すれ違い制御",
+      "count": 1
+    },
+    {
+      "keyword": "VDT作業",
+      "count": 1
+    },
+    {
+      "keyword": "眼球情報",
+      "count": 1
+    },
+    {
+      "keyword": "疲労評価",
+      "count": 1
+    },
+    {
+      "keyword": "作業負荷",
+      "count": 1
+    },
+    {
+      "keyword": "視線解析",
+      "count": 1
+    },
+    {
+      "keyword": "筆記動作",
+      "count": 1
+    },
+    {
+      "keyword": "道具使用",
+      "count": 1
+    },
+    {
+      "keyword": "握力制御",
+      "count": 1
+    },
+    {
+      "keyword": "ストレス解析",
+      "count": 1
+    },
+    {
+      "keyword": "適応型インタフェース",
+      "count": 1
+    },
+    {
+      "keyword": "ネットワーク計画",
+      "count": 1
+    },
+    {
+      "keyword": "欲求経路創発",
+      "count": 1
+    },
+    {
+      "keyword": "シミュレーション",
+      "count": 1
+    },
+    {
+      "keyword": "振動触覚",
+      "count": 1
+    },
+    {
+      "keyword": "グローブ",
+      "count": 1
+    },
+    {
+      "keyword": "力分布",
+      "count": 1
+    },
+    {
+      "keyword": "把持動作",
+      "count": 1
+    },
+    {
+      "keyword": "変化の見落とし",
+      "count": 1
+    },
+    {
+      "keyword": "Attention TriGrid",
+      "count": 1
+    },
+    {
+      "keyword": "身体動揺",
+      "count": 1
+    },
+    {
+      "keyword": "骨導音",
+      "count": 1
+    },
+    {
+      "keyword": "座位姿勢",
+      "count": 1
+    },
+    {
+      "keyword": "解析",
+      "count": 1
+    },
+    {
+      "keyword": "ワイヤアレイセンサ",
+      "count": 1
+    },
+    {
+      "keyword": "中心窩レンダリング",
+      "count": 1
+    },
+    {
+      "keyword": "レンダリング手法",
+      "count": 1
+    },
+    {
+      "keyword": "VR酔い",
+      "count": 1
+    },
+    {
+      "keyword": "視覚的注意分布",
+      "count": 1
+    },
+    {
+      "keyword": "視覚疲労軽減",
+      "count": 1
+    },
+    {
+      "keyword": "遠隔操作環境",
+      "count": 1
+    },
+    {
+      "keyword": "遠隔操作",
+      "count": 1
+    },
+    {
+      "keyword": "遅延補完",
+      "count": 1
+    },
+    {
+      "keyword": "テレオペレーション",
+      "count": 1
+    },
+    {
+      "keyword": "リアルタイムストレス指標",
+      "count": 1
+    },
+    {
+      "keyword": "ストレスモニタリング",
+      "count": 1
+    },
+    {
+      "keyword": "ストレス指標",
+      "count": 1
+    },
+    {
+      "keyword": "遅延補完システム",
+      "count": 1
+    },
+    {
+      "keyword": "力制御",
+      "count": 1
+    },
+    {
+      "keyword": "個別化支援",
+      "count": 1
+    },
+    {
+      "keyword": "可変インピーダンス支援",
+      "count": 1
+    },
+    {
+      "keyword": "適応アシスト",
+      "count": 1
+    },
+    {
+      "keyword": "バイオフィードバック",
+      "count": 1
+    },
+    {
+      "keyword": "虚偽心拍フィードバック",
+      "count": 1
+    },
+    {
+      "keyword": "心理的影響",
+      "count": 1
+    },
+    {
+      "keyword": "パフォーマンス",
+      "count": 1
+    },
+    {
+      "keyword": "運動能力",
+      "count": 1
+    },
+    {
+      "keyword": "省エネルギー制御",
+      "count": 1
+    },
+    {
+      "keyword": "最適化",
+      "count": 1
+    },
+    {
+      "keyword": "エネルギー効率",
+      "count": 1
+    },
+    {
+      "keyword": "誘導",
+      "count": 1
+    },
+    {
+      "keyword": "不器用さ",
+      "count": 1
+    },
+    {
+      "keyword": "視覚フィードバック",
+      "count": 1
+    },
+    {
+      "keyword": "自己効力感",
+      "count": 1
+    },
+    {
+      "keyword": "自己認知",
+      "count": 1
+    },
+    {
+      "keyword": "マーカー",
+      "count": 1
+    },
+    {
+      "keyword": "フェロモン型通信",
+      "count": 1
+    },
+    {
+      "keyword": "協調探索",
+      "count": 1
+    },
+    {
+      "keyword": "野球",
+      "count": 1
+    },
+    {
+      "keyword": "動作解析",
+      "count": 1
+    },
+    {
+      "keyword": "スポーツ科学",
+      "count": 1
+    },
+    {
+      "keyword": "バッティング",
+      "count": 1
+    },
+    {
+      "keyword": "サブリミナルキャリブレーション",
+      "count": 1
+    },
+    {
+      "keyword": "注意配分",
+      "count": 1
+    },
+    {
+      "keyword": "作業支援",
+      "count": 1
+    },
+    {
+      "keyword": "認知アシスト",
+      "count": 1
+    },
+    {
+      "keyword": "マルチタスク",
+      "count": 1
+    },
+    {
+      "keyword": "筋電位",
+      "count": 1
+    },
+    {
+      "keyword": "筋シナジー",
+      "count": 1
+    },
+    {
+      "keyword": "スキル改善",
+      "count": 1
+    },
+    {
+      "keyword": "動作矯正",
+      "count": 1
+    },
+    {
+      "keyword": "教示",
+      "count": 1
+    },
+    {
+      "keyword": "自律移動",
+      "count": 1
+    },
+    {
+      "keyword": "心拍同期",
+      "count": 1
+    },
+    {
+      "keyword": "安定性制御",
+      "count": 1
+    },
+    {
+      "keyword": "巡回探索",
+      "count": 1
+    },
+    {
+      "keyword": "移動ロボット",
+      "count": 1
+    },
+    {
+      "keyword": "追従操作",
+      "count": 1
+    },
+    {
+      "keyword": "サプライズ",
+      "count": 1
+    }
   ]
 }
