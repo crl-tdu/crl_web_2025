@@ -1,10 +1,10 @@
 {
   "metadata": {
     "description": "研究室メンバーデータベース（人物管理）",
-    "created_date": "2025-06-18",
+    "created_date": "2025-07-25",
     "source": "proc/txt/thesis.json",
-    "total_members": 71,
-    "bachelor_only": 31,
+    "total_members": 69,
+    "bachelor_only": 29,
     "master_only": 8,
     "bachelor_to_master": 32
   },
@@ -826,7 +826,7 @@
       "member_id": "k.ohya",
       "name": "大矢 和磨",
       "file_identifier": "k.ohya",
-      "student_ids": ["19EH020", "22KMH28", "23KMH31"],
+      "student_ids": ["19EH020", "23KMH31"],
       "entry_year": 2019,
       "active_years": [2019, 2020, 2021, 2022, 2023, 2024],
       "degrees": [
@@ -836,13 +836,6 @@
           "title": "可変インピーダンス特性による個人差を考慮した支援システム",
           "file_id": "2022_B_k.ohya",
           "student_id": "19EH020"
-        },
-        {
-          "degree_type": "修士論文",
-          "year": 2023,
-          "title": "ストレス解析によるリアルタイム適応型インタフェースの設計",
-          "file_id": "2023_M_k.ohya",
-          "student_id": "22KMH28"
         },
         {
           "degree_type": "修士論文",
@@ -1138,17 +1131,10 @@
       "member_id": "la.nicolas",
       "name": "ニコラ ルイアンドレ",
       "file_identifier": "la.nicolas",
-      "student_ids": ["22KMH30", "23KMH32"],
-      "entry_year": 2023,
-      "active_years": [2023, 2024],
+      "student_ids": ["23KMH32"],
+      "entry_year": 2022,
+      "active_years": [2022, 2023, 2024],
       "degrees": [
-        {
-          "degree_type": "修士論文",
-          "year": 2023,
-          "title": "ネットワーク計画ツールとしての欲求経路創発シミュレーションマルチエージェントシステムの開発と評価",
-          "file_id": "2023_M_la.nicolas",
-          "student_id": "22KMH30"
-        },
         {
           "degree_type": "修士論文",
           "year": 2024,
@@ -1158,7 +1144,7 @@
         }
       ],
       "highest_degree": "修士論文",
-      "research_period": "2023-2024"
+      "research_period": "2022-2024"
     },
     {
       "member_id": "g.otsuka",
