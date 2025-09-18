@@ -3,6 +3,8 @@
 
 ### 学術雑誌
 
+ 1. Genki Sasaki and Hiroshi Igarashi: ''Exploring Remote Collaborative Tasks: The Impact of Avatar Representation on Dyadic Haptic Interactions in Shared Virtual Environments,'' IEEE Transactions on Visualization and Computer Graphics, vol. PP, no. 99, pp. 1–13, 2025. DOI: [10.1109/TVCG.2025.3580546](https://doi.org/10.1109/TVCG.2025.3580546)
+ 1. Keisuke Tozuka, Bastien Poitrimol, Genki Sasaki, Kota Kobayashi, and Hiroshi Igarashi: ''Integrating texture models through regression of vibration and texture characteristics,'' Robomech J 12, 25, 2025/6/12. DOI: [10.1186/s40648-025-00311-8](https://doi.org/10.1186/s40648-025-00311-8)
  1. Bastien Poitrimol, Hiroshi Igarashi: ''A Cable-Based Haptic Interface With a Reconfigurable Structure'', Journal of Mechanisms Robotics, Vol. 17, Issue 1, June 7, 2024. DOI: [10.1115/1.4065318](https://asmedigitalcollection.asme.org/mechanismsrobotics/article/17/1/010901/1199324/A-Cable-Based-Haptic-Interface-With-a)
  1. Keisuke Tozuka and Hiroshi Igarashi: ''A Simplified Texture Modeling Using a Physical and Perceptual Rule-Based Approach'', IEEE Access, Vol. 12, pp. 59868–59879, April 22, 2024. DOI: [10.1109/ACCESS.2024.3392272](https://doi.org/10.1109/ACCESS.2024.3392272)
  1. Bastien Poitrimol, Hiroshi Igarashi: ''Workspace of Cable-Based Haptic Device Using Linear Actuator'', Journal of Signal Processing, Vol. 24, No. 4, pp. 149–152, July 2020. DOI: [10.2299/jsp.24.149](https://doi.org/10.2299/jsp.24.149)
@@ -194,6 +196,23 @@
 ---
 ### 国内発表 (査読なし)
 
+1. 宮元大地、五十嵐洋，''浮腫測定デバイスを用いた力学的特性を考慮した浮腫判別手法の提案''，日本機械学会2025年度年次大会，J163-04，2025/09/09
+1. 梁瀬琉真、五十嵐洋，''指先への力提示を用いた筆記動作熟達システム構築に向けた把持力と筆記姿勢の関連性解明''，日本機械学会2025年度年次大会，J163p-14，2025/09/08
+1. 大塚凱、五十嵐洋，''入眠期に特化した連続的睡眠深度の推定''，日本機械学会2025年度年次大会，J163p-15，2025/09/08
+1. 戸塚圭亮、五十嵐洋，''プローブ先端形状と記録される触覚テクスチャ振動の関係''，日本機械学会ロボティクスメカトロニクス講演会2025，1A1-T09，2025/06/05
+1. 宮元大地、五十嵐洋，''多様な種別の判定に向けた浮腫測定デバイスの開発''，日本機械学会ロボティクスメカトロニクス講演会2025，1A1-G07，20250/6/05
+1. 柏木水輝、五十嵐洋，''エネルギー効率を考慮したマルチエージェントの誘導''，日本機械学会ロボティクスメカトロニクス講演会2025，1A1-K01，2025/06/05
+1. 大塚凱、五十嵐洋，''平衡感覚を刺激する振動の入眠促進効果の検討''，日本機械学会ロボティクスメカトロニクス講演会2025，1P1-F02，2025/06/05
+1. 梁瀬琉真、五十嵐洋，''指先への力覚提示による筆記動作熟達向けた把持力と筆記位置の関係''，日本機械学会ロボティクスメカトロニクス講演会2025，1P1-P10，2025/06/05
+1. 田原駿、五十嵐洋，''力覚提示による筋シナジー変化の調査''，日本機械学会ロボティクスメカトロニクス講演会2025，2A1-F09，2025/06/06
+1. 北岩隼人、五十嵐洋，''貝殻つなぎを用いた握り動作における握力の影響についての調査''，日本機械学会ロボティクスメカトロニクス講演会2025，2A1-D11，2025/06/06
+1. 中村弘樹、五十嵐洋，''摩擦の違いによる器用さの熟達支援に向けた調査''，日本機械学会ロボティクスメカトロニクス講演会2025，2A1-Q09，2025/06/06
+1. 平塚亮気、五十嵐洋，''可変ダイナミクスを導入した音程の視覚提示が歌唱音程制御に与える影響の調査''，日本機械学会ロボティクスメカトロニクス講演会2025，2A1-Q10，2025/06/06
+1. 森下陸、五十嵐洋，''プラセボ効果を活用した熟達支援システム''，日本機械学会ロボティクスメカトロニクス講演会2025，2P1-L07，2025/06/06
+1. 佐々木元気、五十嵐洋，''pHHI：ヒト同士の物理的な協調作業における協調作業パフォーマンス推定手法の提案''，日本機械学会ロボティクスメカトロニクス講演会2025，2P1-L12，2025/06/06
+1. 劉樹鵬、五十嵐洋，”ストレスを考慮した周期的な協働作業におけるアシストの提案''，日本機械学会ロボティクスメカトロニクス講演会2025，2P1-M05，2025/06/06
+1. 小林航大、五十嵐洋，''学習者再現のためのモデル作成における学習率調整手法''，日本機械学会ロボティクスメカトロニクス講演会2025，2P1-M06，2025/06/06
+1. 加藤陸生、五十嵐洋，”マルチエージェントシステムにおける探索精度分布を活用した協調探索''，日本機械学会ロボティクスメカトロニクス講演会2025，2P2-I05，2025/06/06
 1. 今村心哉, 五十嵐 洋: ''仮想環境におけるマルチタスクでの認知アシスト'', 日本機械学会 情報・知能・精密機器部門講演会（IIP2025）, IIP-I1-6, March 4, 2025.
 1. 梁瀬琉真, 五十嵐 洋: ''指先への力覚提示による筆記動作熟達に向けた把持力と筆運び、筆記姿勢の関係'', 日本機械学会 情報・知能・精密機器部門講演会（IIP2025）, IIP-E7-4, March 4, 2025.
 1. 戸塚圭亮, 五十嵐 洋: ''環境適応型振動提示の主観評価 ― ツール質量差が触覚体験に及ぼす影響'', 日本機械学会 情報・知能・精密機器部門講演会（IIP2025）, IIP-E7-5, March 4, 2025.

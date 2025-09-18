@@ -286,6 +286,61 @@
 <!-- JavaScript -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  // Shared placeholders for research images (cards + modal)
+  const DEFAULT_CARD_IMAGE = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM2MzY2RjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMEYwQzQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjEiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxNHB4IiBmaWxsPSIjRjhGQUZDIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+UkVTRUFSQ0ggSU1BR0U8L3RleHQ+PC9zdmc+';
+  const DEFAULT_MODAL_IMAGE = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDc1QzciLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNGRjY5MDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjEiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNHB4IiBmaWxsPSIjMDA3NUM3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+🔬 研究画像</dGV4dD48L3N2Zz4=';
+
+  function getProjectImageCandidates(project) {
+    const candidates = [];
+    const append = (value) => {
+      if (value && !candidates.includes(value)) {
+        candidates.push(value);
+      }
+    };
+
+    append(project.thumbnail);
+
+    if (project.student_id) {
+      append(`project/current/img/${project.student_id}.png`);
+      append(`proc/img/${project.student_id}.png`);
+    }
+
+    if (project.file_id) {
+      append(`project/graduate/img/${project.file_id}_thumbnail.png`);
+      append(`proc/img/${project.file_id}_thumbnail.png`);
+    }
+
+    append(project.image_path);
+
+    return candidates;
+  }
+
+  function applyProjectImage(element, project, fallbackSrc) {
+    if (!element) return;
+
+    const candidates = getProjectImageCandidates(project);
+    const fallback = fallbackSrc || DEFAULT_CARD_IMAGE;
+    let index = 0;
+
+    const tryNext = () => {
+      index += 1;
+      if (index < candidates.length) {
+        element.src = candidates[index];
+      } else {
+        element.onerror = null;
+        element.src = fallback;
+      }
+    };
+
+    if (candidates.length > 0) {
+      element.onerror = tryNext;
+      element.src = candidates[0];
+    } else {
+      element.onerror = null;
+      element.src = fallback;
+    }
+  }
+
   // Fresh Particle System with UDC Colors
   const canvas = document.getElementById('particle-canvas');
   const ctx = canvas.getContext('2d');
@@ -620,17 +675,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add click handler for modal
     card.addEventListener('click', () => openModal(project));
     
-    let imagePath = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM2MzY2RjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMEYwQzQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjEiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxNHB4IiBmaWxsPSIjRjhGQUZDIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+UkVTRUFSQ0ggSU1BR0U8L3RleHQ+PC9zdmc+';
-    
-    // Generate image path from file_id - use thumbnail image for card
-    if (project.file_id) {
-      imagePath = `proc/img/${project.file_id}_thumbnail.png`;
-    } else if (project.thumbnail) {
-      imagePath = project.thumbnail;
-    } else if (project.image_path) {
-      imagePath = project.image_path;
-    }
-    
     // 研究分野タグを優先的に表示（人間センシング、人間機械系、チームワーク、協調理論）
     const researchTags = ['人間センシング', '人間機械系', 'チームワーク', '協調理論'];
     let displayTags = [];
@@ -659,8 +703,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     card.innerHTML = `
       <div class="project-card__year-badge">${project.year || '2024'}</div>
-      <img src="${imagePath}" alt="${project.title}" class="project-card__image" 
-           onerror="this.src='${imagePath}'">
+      <img src="${DEFAULT_CARD_IMAGE}" alt="${project.title}" class="project-card__image">
       <div class="project-card__content">
         <div class="project-card__tags">
           ${tagElements}
@@ -671,6 +714,9 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     `;
     
+    const cardImage = card.querySelector('.project-card__image');
+    applyProjectImage(cardImage, project, DEFAULT_CARD_IMAGE);
+
     return card;
   }
 
@@ -1001,23 +1047,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set image - use thumbnail image for modal
     const modalImage = document.querySelector('.modal__image');
     if (modalImage) {
-      let imagePath;
-      if (project.file_id) {
-        imagePath = `proc/img/${project.file_id}_thumbnail.png`;
-      } else if (project.thumbnail) {
-        imagePath = project.thumbnail;
-      } else if (project.image_path) {
-        imagePath = project.image_path;
-      } else {
-        imagePath = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDc1QzciLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNGRjY5MDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjEiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNHB4IiBmaWxsPSIjMDA3NUM3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+🔬 研究画像</dGV4dD48L3N2Zz4=';
-      }
-      modalImage.src = imagePath;
       modalImage.alt = project.title || 'Research Image';
-      
-      // Add error handling for image loading
-      modalImage.onerror = function() {
-        this.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDc1QzciLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNGRjY5MDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjEiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNHB4IiBmaWxsPSIjMDA3NUM3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+🔬 研究画像</dGV4dD48L3N2Zz4=';
-      };
+      applyProjectImage(modalImage, project, DEFAULT_MODAL_IMAGE);
     }
     
     // Set tags
