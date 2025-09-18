@@ -1,11 +1,13 @@
 ---
-title: "修士論文 - onogawa (2024)"
+title: "仮想環境における変化の見落としを予測可能なAttentionTriGridの提案"
+english_title: "All data used in modeling"
 author: "onogawa"
 year: 2024
 degree: "修士論文"
 degree_code: "M"
 filename: "2024_M_onogawa.md"
 generated: "2025-06-12 17:36:44"
+---
 ---
 
 # 修士論文 - onogawa (2024)

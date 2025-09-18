@@ -1,11 +1,10 @@
 {
   "metadata": {
-    "description": "論文データベース（基準データセット）",
-    "created_date": "2025-06-18",
-    "source": "proc/txt/*.md",
-    "total_records": 97,
+    "description": "論文データベース（proc/txtベース）",
+    "generated_from": "proc/txt/*.md",
+    "total_records": 91,
     "bachelor_count": 59,
-    "master_count": 38
+    "master_count": 32
   },
   "theses": [
     {
@@ -15,7 +14,14 @@
       "student_id": "16EH013",
       "year": 2019,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "生体信号処理",
+        "ストレス評価",
+        "温度制御",
+        "脈波解析",
+        "ヒューマンインタフェース"
+      ]
     },
     {
       "file_id": "2019_B_h.nakanishi",
@@ -24,16 +30,30 @@
       "student_id": "16EH081",
       "year": 2019,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "ピアノ学習支援",
+        "触覚フィードバック",
+        "インピーダンス制御",
+        "ダイナミクス変化",
+        "キャリブレーション"
+      ]
     },
     {
       "file_id": "2019_B_k.kobayashi",
-      "title": "力のインタラクションを考慮した人間モデルによる適応的誘導",
+      "title": "力のインタラクションを考慮した人間モデルによるCFOの推定とチームワーク評価",
       "author": "小林 航大",
       "student_id": "15EH040",
       "year": 2019,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "チームワーク評価",
+        "CFO",
+        "力インタラクション",
+        "ニューラルネットワーク",
+        "協調作業モデル"
+      ]
     },
     {
       "file_id": "2019_B_k.tozuka",
@@ -42,7 +62,15 @@
       "student_id": "16EH077",
       "year": 2019,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "触覚提示",
+        "仮想ペットロボット",
+        "ケーブル駆動",
+        "ハプティック",
+        "CG",
+        "ロボットセラピー"
+      ]
     },
     {
       "file_id": "2019_B_n.takahashi",
@@ -51,97 +79,191 @@
       "student_id": "16EH064",
       "year": 2019,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "力覚提示",
+        "描画支援",
+        "バイラテラル制御",
+        "技能伝承",
+        "相補教示",
+        "ハプティック"
+      ]
     },
     {
       "file_id": "2019_B_r.maruyama",
-      "title": "Ceiling Adsorption UAV using Contra Rotating Propellers",
+      "title": "二重反転プロペラを用いた天井吸着ドローン",
       "author": "丸山 凌一",
       "student_id": "16EH104",
       "year": 2019,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Ceiling Adsorption UAV using Contra Rotating Propellers",
+      "keywords": [
+        "天井吸着ドローン",
+        "二重反転プロペラ",
+        "ダイヤフラムポンプ",
+        "インフラ点検",
+        "UAV"
+      ]
     },
     {
       "file_id": "2019_B_r.mukawa",
-      "title": "Multi-agent による個性模倣と適応学習システム",
+      "title": "協調性向上のためのAttentionGridによる注意推定",
       "author": "夢川 凌央",
       "student_id": "16EH102",
       "year": 2019,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "注意推定",
+        "視線計測",
+        "Attention Grid",
+        "人間機械協調",
+        "VR",
+        "周辺視野"
+      ]
     },
     {
       "file_id": "2019_B_r.ogasawara",
-      "title": "協調フローオペレーションによるチームワーク評価",
+      "title": "視覚負荷における視線動作を用いたストレス推定",
       "author": "小笠原 涼",
       "student_id": "16EH062",
       "year": 2019,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "ストレス推定",
+        "視線動作",
+        "視覚負荷",
+        "アイトラッキング",
+        "生体信号",
+        "心拍変動"
+      ]
     },
     {
       "file_id": "2019_B_y.sugano",
-      "title": "協調作業における協調意識の定量評価",
+      "title": "個性模倣によるリアルタイム環境適応アルゴリズム",
       "author": "菅野 遥平",
       "student_id": "16EH069",
       "year": 2019,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "環境適応アルゴリズム",
+        "個性模倣",
+        "多様性維持",
+        "群ロボット",
+        "社会性認知",
+        "対面通行"
+      ]
     },
     {
       "file_id": "2019_M_g.sasaki",
-      "title": "協調作業における協調意識の定量化",
+      "title": "協調技能を考慮した力覚フィードバックによる協調作業アシスト",
       "author": "佐々木 元気",
       "student_id": "18KMH09",
       "year": 2019,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "協調ロボティクス",
+        "力覚フィードバック",
+        "チームワーク",
+        "気づかい推定",
+        "協調技能",
+        "ヒューマンロボットインタラクション",
+        "協調作業支援",
+        "社会的スキル"
+      ]
     },
     {
       "file_id": "2019_M_r.joly",
-      "title": "ハプティクスを用いた協調搬送における適応的力配分制御",
-      "author": "Joly Raphaël",
-      "student_id": "18KMH08",
+      "title": "第1章MultiAgentPathPlanning",
+      "author": "r.joly",
+      "student_id": null,
       "year": 2019,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "マルチエージェント経路探索",
+        "蟻コロニー最適化",
+        "経路計画",
+        "ロボット間協調",
+        "アルゴリズム",
+        "分散システム",
+        "最適化"
+      ]
     },
     {
       "file_id": "2019_M_y.uchida",
-      "title": "身体振動による運動錯覚の定量評価および触覚デバイスへの応用",
+      "title": "触覚刺激による運動錯覚時の上腕運動特性評価",
       "author": "内田 優",
       "student_id": "18KMH12",
       "year": 2019,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "人間センシング",
+        "人間機械システム",
+        "体性感覚",
+        "筋電信号",
+        "運動制御",
+        "触覚技術",
+        "バイラテラル制御"
+      ]
     },
     {
       "file_id": "2019_M_z.meng",
-      "title": "個人適応化を考慮したワイヤ駆動触覚デバイスによる仮想物体操作",
+      "title": "個人操作特性を考慮した操作対象ダイナミクスの最適化",
       "author": "孟 子群",
       "student_id": "18KMH11",
       "year": 2019,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "人間機械システム",
+        "個人適応",
+        "ニューラルネットワーク",
+        "ダイナミクス最適化",
+        "操作支援",
+        "運転アシスト",
+        "追従制御",
+        "ヒューマンインタフェース"
+      ]
     },
     {
       "file_id": "2020_B_a.inoue",
-      "title": "IoTデバイスを用いた作業時ストレス計測システム",
+      "title": "複数のCoaxial-UAVによる協調搬送に向けた姿勢制御",
       "author": "井上 温",
       "student_id": "17EH005",
       "year": 2020,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "協調搬送",
+        "Coaxial-UAV",
+        "STA アーキテクチャ",
+        "姿勢制御",
+        "ニューラルネットワーク",
+        "分散システム"
+      ]
     },
     {
       "file_id": "2020_B_h.nishimura",
-      "title": "仮想デバイスモデルによる両手操作支援システム",
+      "title": "自動化した機械操作に対する人間の信頼推定",
       "author": "西村 晃",
       "student_id": "17EH088",
       "year": 2020,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "人間信頼推定",
+        "自動化システム",
+        "人機協調",
+        "PD制御",
+        "円軌道追従",
+        "信頼性評価"
+      ]
     },
     {
       "file_id": "2020_B_k.yoshida",
@@ -150,88 +272,170 @@
       "student_id": "17EH087",
       "year": 2020,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "視線追跡",
+        "運転行動",
+        "アイトラッキング",
+        "ドライビングシミュレータ",
+        "躍度解析"
+      ]
     },
     {
       "file_id": "2020_B_r.hikino",
-      "title": "握力変化を利用したステアリングアシストシステム",
+      "title": "握力を利用したステアリングアシスト機構",
       "author": "引野 諒平",
       "student_id": "17EH095",
       "year": 2020,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "握力センシング",
+        "ステアリングアシスト",
+        "圧力センサ",
+        "FFB制御",
+        "車両安定性"
+      ]
     },
     {
       "file_id": "2020_B_y.baba",
-      "title": "多層化マッピングによる位置情報重畳センシング",
+      "title": "口調から言葉の尺度を推定する会話システム",
       "author": "馬場 柚貴",
       "student_id": "17EH092",
       "year": 2020,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "音声認識",
+        "LSTM",
+        "音声特徴量",
+        "メル対数スペクトル",
+        "意図推定"
+      ]
     },
     {
       "file_id": "2020_B_y.oda",
-      "title": "眼球運動とストレス評価に関する相関性の調査",
+      "title": "眼球運動測定によるリアルタイムストレス評価",
       "author": "小田 侑暉",
       "student_id": "17EH065",
       "year": 2020,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "眼球運動",
+        "ストレス評価",
+        "瞳孔径",
+        "視線躍度",
+        "自律神経活性度"
+      ]
     },
     {
       "file_id": "2020_B_y.okakuji",
-      "title": "眼球運動による運転者の信頼推定",
+      "title": "ウェアラブルデバイスSLAM",
       "author": "大角地 優季",
       "student_id": "17EH067",
       "year": 2020,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "SLAM",
+        "ウェアラブルデバイス",
+        "LiDAR",
+        "サーモグラフィ",
+        "センサフュージョン"
+      ]
     },
     {
       "file_id": "2020_B_y.yoshida",
-      "title": "音声コミュニケーションにおける口調解析とシステムへの応用",
+      "title": "仮眠中の体温変化が及ぼすその後の作業効率の変化",
       "author": "吉田 悠虎",
       "student_id": "17EH090",
       "year": 2020,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "仮眠",
+        "体温制御",
+        "睡眠深度",
+        "作業効率",
+        "心拍変動解析"
+      ]
     },
     {
       "file_id": "2020_M_b.poitrimol",
-      "title": "仮想空間におけるワイヤ駆動ハプティクスを用いたグラスピングインタフェース",
+      "title": "第1章Hapticinterfaces",
       "author": "Poitrimol Bastien",
       "student_id": "19KMH06",
       "year": 2020,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "バーチャルリアリティ",
+        "力覚インタフェース",
+        "ワイヤ駆動",
+        "把持インタフェース",
+        "ハプティクス",
+        "ケーブル駆動並列ロボット",
+        "VRインタラクション",
+        "マルチモーダルインタフェース"
+      ]
     },
     {
       "file_id": "2020_M_k.nakamura",
-      "title": "作業パフォーマンス向上のための生体情報を用いたストレス評価",
+      "title": "ストレス応答と操作パフォーマンスの相関性検討",
       "author": "中村 叶弥",
       "student_id": "19KMH07",
       "year": 2020,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "ストレス推定",
+        "生体信号処理",
+        "操作パフォーマンス",
+        "人間センシング",
+        "IoTヘルスケア",
+        "認知負荷",
+        "バイタルモニタリング",
+        "ヒューマンアシスト"
+      ]
     },
     {
       "file_id": "2020_M_s.koizumi",
-      "title": "バイマニュアルオペレーションのための自己規範支援システム",
+      "title": "両手操作における自己規範操作支援",
       "author": "小泉 芹直",
       "student_id": "19KMH05",
       "year": 2020,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "両手操作",
+        "自己規範支援",
+        "バイマニュアル制御",
+        "クロストーク",
+        "個人操作モデル",
+        "ニューラルネットワーク",
+        "運動学習支援",
+        "ダイナミクス最適化"
+      ]
     },
     {
       "file_id": "2020_M_t.kosaka",
-      "title": "仮眠における体温制御による睡眠慣性抑制効果に関する研究",
+      "title": "重畳情報分離のための回転複合センサによる多層化マッピング",
       "author": "小坂 太一",
       "student_id": "19KMH04",
       "year": 2020,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "センサフュージョン",
+        "多層マッピング",
+        "重畳情報分離",
+        "回転複合センサ",
+        "環境認識",
+        "ロボットセンシング",
+        "空間マッピング",
+        "SLAM"
+      ]
     },
     {
       "file_id": "2020_M_y.yamasaki",
@@ -240,7 +444,17 @@
       "student_id": "19KMH03",
       "year": 2020,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "サブリミナルキャリブレーション",
+        "内部モデル",
+        "運動学習",
+        "機械操作支援",
+        "知覚運動制御",
+        "ヒューマンマシンインタフェース",
+        "熟達支援",
+        "力覚フィードバック"
+      ]
     },
     {
       "file_id": "2021_B_c.xu",
@@ -249,79 +463,145 @@
       "student_id": "17EH602",
       "year": 2021,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "パワーアシストスーツ",
+        "筋疲労",
+        "筋電信号",
+        "ウェーブレットパケットエントロピー",
+        "リハビリテーション"
+      ]
     },
     {
       "file_id": "2021_B_d.yamazaki",
       "title": "運動能力向上を目的とした主体感の制御",
-      "author": "山崎 大輔",
-      "student_id": "18EH604",
+      "author": "d.yamazaki",
+      "student_id": null,
       "year": 2021,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "運動主体感",
+        "ニューラルネットワーク",
+        "順モデル",
+        "運動制御",
+        "身体感覚"
+      ]
     },
     {
       "file_id": "2021_B_h.tagaya",
-      "title": "指先動作の力覚提示による熟達支援",
+      "title": "特徴量検出による投射動作の運動熟達支援",
       "author": "多賀谷 光",
       "student_id": "18EH601",
       "year": 2021,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "運動熟達支援",
+        "骨格検出",
+        "Kinect",
+        "筋電気刺激",
+        "動作解析"
+      ]
     },
     {
       "file_id": "2021_B_k.kobayashi",
-      "title": "協調フローオペレーションによるチームワーク評価システム",
+      "title": "未知ターゲットを適応的に誘導するマルチエージェントの設計",
       "author": "小林 虎太郎",
       "student_id": "18EH616",
       "year": 2021,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "マルチエージェントシステム",
+        "牧羊犬アルゴリズム",
+        "Boidsモデル",
+        "適応的誘導",
+        "個性模倣"
+      ]
     },
     {
       "file_id": "2021_B_m.suga",
-      "title": "温度による力覚生起現象の定量化",
+      "title": "感性値を用いたHumanAdaptiveAirUnitの開発",
       "author": "須賀 美晴",
       "student_id": "18EH609",
       "year": 2021,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "感性アナライザ",
+        "エアーユニット",
+        "脳波解析",
+        "マッサージシステム",
+        "血流改善"
+      ]
     },
     {
       "file_id": "2021_B_s.watanabe",
-      "title": "投射動作のためのKinectを用いた運動学習支援システム",
-      "author": "渡邊 柊人",
-      "student_id": "18EH613",
+      "title": "ヒトロボット間における場のリズムの同期と制御",
+      "author": "s.watanabe",
+      "student_id": null,
       "year": 2021,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "結合振動子モデル",
+        "蔵本モデル",
+        "リズム同期",
+        "場のリズム",
+        "人ロボット協調"
+      ]
     },
     {
       "file_id": "2021_B_t.kassai",
-      "title": "機械学習による牧羊犬アルゴリズムの高度化",
+      "title": "機械操作における自己主体感の評価",
       "author": "葛西 大河",
       "student_id": "18EH602",
       "year": 2021,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "自己主体感",
+        "ヒューマン・マシン・インタフェース",
+        "操作支援システム",
+        "ニューラルネットワーク",
+        "人間中心自動化"
+      ]
     },
     {
       "file_id": "2021_B_t.shike",
-      "title": "感情状態推定のためのストレス定量計測システム",
+      "title": "快・不快を用いた温度提示による覚醒状態の促進",
       "author": "四家 大輝",
       "student_id": "18EH608",
       "year": 2021,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "覚醒状態",
+        "温度提示",
+        "生体信号",
+        "自律神経解析",
+        "温熱感覚",
+        "ドライビングタスク"
+      ]
     },
     {
       "file_id": "2021_B_t.yamamoto",
-      "title": "ハプティクスを用いた協調搬送におけるCoaxial-UAVによる適応的力配分制御",
-      "author": "山本 隆人",
-      "student_id": "18EH614",
+      "title": "長・短期記憶ネットワークによる筋電位の時系列予測",
+      "author": "t.yamamoto",
+      "student_id": null,
       "year": 2021,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "機械学習",
+        "ニューラルネットワーク",
+        "筋電位",
+        "EMG",
+        "時系列予測",
+        "LSTM",
+        "生体信号"
+      ]
     },
     {
       "file_id": "2021_M_h.nakanishi",
@@ -330,241 +610,442 @@
       "student_id": "20KMH19",
       "year": 2021,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "楽器演奏支援",
+        "熟達支援システム",
+        "サブリミナルキャリブレーション",
+        "段階モデル",
+        "音楽教育",
+        "ダイナミクス修正",
+        "触覚フィードバック",
+        "聴覚フィードバック"
+      ]
     },
     {
       "file_id": "2021_M_h.sugano",
-      "title": "個性模倣と自己学習を備えたマルチエージェントによる不確かなターゲット群の適応誘導システム",
+      "title": "個性模倣と多様性維持による環境に合わせた動作設計手法",
       "author": "菅野 遥平",
       "student_id": "20KMH20",
       "year": 2021,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "群知能",
+        "個性模倣",
+        "多様性維持",
+        "環境適応",
+        "カオス制御",
+        "群ロボット",
+        "分散制御",
+        "協調アルゴリズム"
+      ]
     },
     {
       "file_id": "2021_M_k.kobayashi",
-      "title": "協調フローオペレーションによるチームワーク評価",
+      "title": "Target",
       "author": "小林 航大",
       "student_id": "20KMH18",
       "year": 2021,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "チームワーク評価",
+        "協調作業解析",
+        "CFO推定",
+        "人間モデル",
+        "力インタラクション",
+        "機械学習",
+        "DTW解析",
+        "ヒューマンロボットインタラクション"
+      ]
     },
     {
       "file_id": "2021_M_k.tozuka",
-      "title": "マルチエージェントによる不確かなターゲット群の適応誘導システム",
+      "title": "VR技術の更なる発展に向けて：汎用的な触覚モデリング",
       "author": "戸塚 圭亮",
       "student_id": "20KMH21",
       "year": 2021,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "触覚フィードバック",
+        "パラメトリックイコライザ",
+        "振動合成",
+        "VR技術",
+        "物理特性モデリング"
+      ]
     },
     {
       "file_id": "2021_M_n.takahashi",
-      "title": "描画動作のための力覚提示デバイスによる相補教示支援",
+      "title": "第1章緒論本章では，本研究の背景と目的について述べる．",
       "author": "高橋 奈央",
       "student_id": "20KMH15",
       "year": 2021,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "ハプティクス",
+        "バイラテラル制御",
+        "技能伝承",
+        "描画支援",
+        "力覚提示"
+      ]
     },
     {
       "file_id": "2021_M_y.kakutani",
-      "title": "運動学習における関節剛性学習支援デバイス",
-      "author": "角谷 友輝",
-      "student_id": "20KMH16",
+      "title": "熟達過程中の関節剛性変化を考慮した制御熟達支援に向けたデバイス設計",
+      "author": "y.kakutani",
+      "student_id": null,
       "year": 2021,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "関節剛性",
+        "運動技能熟達",
+        "筋電図",
+        "神経筋電気刺激",
+        "生体計測"
+      ]
     },
     {
       "file_id": "2022_B_i.kato",
-      "title": "個人適応を考慮したロボットによる操作支援システム",
+      "title": "温度に着目した適度なストレス誘導デバイスの開発",
       "author": "加藤 一沙",
       "student_id": "19EH015",
       "year": 2022,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "ストレス制御",
+        "心拍変動解析",
+        "ペルチェ素子",
+        "VDT作業",
+        "パフォーマンス向上"
+      ]
     },
     {
       "file_id": "2022_B_k.ohya",
-      "title": "可変インピーダンス特性による個人差を考慮した支援システム",
+      "title": "呼吸手法の変化による自律神経機能活性度への影響",
       "author": "大矢 和磨",
       "student_id": "19EH020",
       "year": 2022,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "呼吸法",
+        "自律神経活性度",
+        "心拍変動解析",
+        "ストレス低減",
+        "ECG計測"
+      ]
     },
     {
       "file_id": "2022_B_k.sato",
-      "title": "マルチエージェント協調のための強化学習と模倣学習の融合手法",
+      "title": "マルチロボットシステムによる協調作業及び人間介入がシステムに及ぼす影響",
       "author": "佐藤 航成",
       "student_id": "19EH026",
       "year": 2022,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "マルチロボットシステム",
+        "強化学習",
+        "模倣学習",
+        "協調作業",
+        "牧羊犬問題"
+      ]
     },
     {
       "file_id": "2022_B_m.nakamura",
-      "title": "他部位刺激による振動を用いた硬さ提示の向上",
+      "title": "把持物体への衝撃位置を再現可能な小型の触覚デバイス",
       "author": "中村 美月",
       "student_id": "19EH036",
       "year": 2022,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "触覚デバイス",
+        "VR",
+        "力覚提示",
+        "衝撃再現",
+        "モータ制御"
+      ]
     },
     {
       "file_id": "2022_B_n.ito",
-      "title": "温度による力覚生起現象の個人差に関する研究",
+      "title": "仮想環境における振動グローブを用いた力分布の偏り表現",
       "author": "伊藤 那月",
       "student_id": "19EH006",
       "year": 2022,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "振動グローブ",
+        "仮想環境",
+        "触覚提示",
+        "力分布",
+        "把持動作"
+      ]
     },
     {
       "file_id": "2022_B_r.tanaka",
-      "title": "ドライビングシミュレータによる注意状態と視線挙動解析",
+      "title": "聴覚刺激を用いた重心動揺の評価",
       "author": "田中 龍介",
       "student_id": "19EH031",
       "year": 2022,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "重心動揺",
+        "聴覚刺激",
+        "バランス能力",
+        "音響定位",
+        "姿勢制御"
+      ]
     },
     {
       "file_id": "2022_B_s.sanuka",
-      "title": "力覚フィードバックによる指先動作の熟達支援",
+      "title": "視覚刺激による疑似触力覚効果の評価",
       "author": "佐怒賀 慎吾",
       "student_id": "19EH024",
       "year": 2022,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "疑似触力覚",
+        "視覚刺激",
+        "ライトタッチ効果",
+        "重心動揺",
+        "仮想現実"
+      ]
     },
     {
       "file_id": "2022_B_s.tsuchiya",
-      "title": "個人操作特性のリアルタイム学習による適応的ロボット制御",
-      "author": "土谷 脩人",
-      "student_id": "19EH032",
+      "title": "温度変化による力覚生起現象の知覚調査",
+      "author": "s.tsuchiya",
+      "student_id": null,
       "year": 2022,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "温度変化",
+        "力覚生起現象",
+        "触覚錯覚",
+        "皮膚温度刺激",
+        "感覚知覚"
+      ]
     },
     {
       "file_id": "2022_B_t.bitoh",
-      "title": "温度提示デバイスによる感情値を用いたストレス評価",
+      "title": "脳波を用いた温度変化による心理的ストレスの低減",
       "author": "尾藤 友樹",
       "student_id": "19EH018",
       "year": 2022,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "脳波",
+        "温度刺激",
+        "心理的ストレス",
+        "感性アナライザ",
+        "ストレス低減"
+      ]
     },
     {
       "file_id": "2022_B_t.onogawa",
-      "title": "サーモグラフィを用いたSLAMシステムの開発",
+      "title": "気づかれない行動のための眼球運動に伴う三次元注意分布推定",
       "author": "小野川 樹",
       "student_id": "19EH019",
       "year": 2022,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "眼球運動",
+        "注意分布推定",
+        "アイトラッキング",
+        "ロボット行動",
+        "社会ロボティクス"
+      ]
     },
     {
       "file_id": "2022_B_t.oriuchi",
-      "title": "リアルタイム計測による生体信号を用いた認知負荷推定",
+      "title": "視線分析による注意推定から必要なアシストを選別するシステム",
       "author": "織内 翼",
       "student_id": "19EH017",
       "year": 2022,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "視線分析",
+        "注意推定",
+        "遠隔操縦",
+        "アシスト選別",
+        "ロボティクス"
+      ]
     },
     {
       "file_id": "2022_B_y.noguchi",
-      "title": "円軌道追従操作における操作パフォーマンス向上に関する研究",
+      "title": "電気刺激を用いた眠気低減システム",
       "author": "野口 柚祐",
       "student_id": "19EH038",
       "year": 2022,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "電気刺激",
+        "眠気低減",
+        "覚醒維持",
+        "交通安全",
+        "生体信号"
+      ]
     },
     {
       "file_id": "2022_B_y.yamada",
-      "title": "個性模倣と自己学習を備えたマルチエージェントによる不確かなターゲット群の適応誘導システム",
+      "title": "座位姿勢の解析および矯正に向けたワイヤアレイセンサの開発",
       "author": "山田 侑果",
       "student_id": "19EH043",
       "year": 2022,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "座位姿勢",
+        "ワイヤアレイセンサ",
+        "姿勢矯正",
+        "圧力測定",
+        "せん断力"
+      ]
     },
     {
       "file_id": "2022_M_a.inoue",
-      "title": "個人操作特性のリアルタイム学習による適応的ロボット制御",
-      "author": "井上 温",
-      "student_id": "21KMH23",
+      "title": "「空気を読める」アーキテクチャに基づく可変アドミッタンスによる操作支援",
+      "author": "a.inoue",
+      "student_id": null,
       "year": 2022,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "STA アーキテクチャ",
+        "可変アドミッタンス制御",
+        "ヒューマンセンシング",
+        "ヒューマンモデリング",
+        "協調制御",
+        "機械操作支援",
+        "Human Adaptive Mechatronics",
+        "心拍変動解析"
+      ]
     },
     {
       "file_id": "2022_M_a.nishimura",
-      "title": "触覚技術を用いた物理シミュレーションのためのデータ駆動型触覚モデリング",
+      "title": "アシストシステムに対する個人差を考慮した依存度の推定手法の提案",
       "author": "西村 晃",
       "student_id": "21KMH24",
       "year": 2022,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "人間機械協調",
+        "依存度推定",
+        "アシストシステム",
+        "制御工学",
+        "個人適応"
+      ]
     },
     {
       "file_id": "2022_M_h.yoshida",
-      "title": "個性模倣と自己学習を備えたマルチエージェントによる不確かなターゲット群の適応誘導システム",
+      "title": "熱刺激を用いた覚醒補助がもたらす睡眠慣性抑制効果の検証",
       "author": "吉田 悠虎",
       "student_id": "21KMH22",
       "year": 2022,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "睡眠慣性",
+        "熱刺激",
+        "覚醒補助",
+        "心拍変動解析",
+        "自律神経活動",
+        "仮眠",
+        "生体センシング",
+        "睡眠工学"
+      ]
     },
     {
       "file_id": "2022_M_y.baba",
-      "title": "多層化マッピングによる位置情報重畳センシング",
+      "title": "個々の聞き手の解釈に基づく話者の表現のモデルへの検討",
       "author": "馬場 柚貴",
       "student_id": "21KMH21",
       "year": 2022,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "コミュニケーション",
+        "音声解析",
+        "意図推定",
+        "パラ言語情報",
+        "人間機械インタラクション"
+      ]
     },
     {
       "file_id": "2023_B_g.otsuka",
-      "title": "VDT作業時における眼球情報とストレスの関連性の調査",
+      "title": "振動刺激における睡眠導入の補助",
       "author": "大塚 凱",
       "student_id": "20EH018",
       "year": 2023,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Sleep Onset Aids in Vibration Stimulation",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "生体工学",
+        "ロボティクス"
+      ]
     },
     {
       "file_id": "2023_B_h.kitaiwa",
-      "title": "ボトルネックにおいてすれ違う群衆の誘導アルゴリズムの提案",
+      "title": "握り動作における痛み緩和バイアスの調査",
       "author": "北岩 隼人",
       "student_id": "20EH015",
       "year": 2023,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Investigation of pain relief bias in grasping movements",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "ロボティクス"
+      ]
     },
     {
       "file_id": "2023_B_j.ryuu",
-      "title": "VDT作業時における眼球情報とストレスの関連性の調査",
+      "title": "聴覚刺激を用いたリズム誘導による協働作業におけるストレス増加の抑制の実現",
       "author": "劉 樹鵬",
       "student_id": "20EH048",
       "year": 2023,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Rhythm Guide Using Auditory Stimuli to Reduce Increased Stress in Collaborative Works",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "機械学習",
+        "ロボティクス"
+      ]
     },
     {
       "file_id": "2023_B_k.sudo",
-      "title": "他部位刺激による振動を用いた硬さ提示の向上",
+      "title": "他部位刺激による硬さ感覚の向上",
       "author": "須藤 浩介",
       "student_id": "20EH029",
       "year": 2023,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Enhancement of Hardness Sensation Using Stimulation of the Other Part of the Body",
+      "keywords": [
+        "システム制御",
+        "ヒューマンインタフェース"
+      ]
     },
     {
       "file_id": "2023_B_ke.nakamura",
@@ -573,7 +1054,13 @@
       "student_id": "20EH035",
       "year": 2023,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Algorithm for Guiding passing Crowds at Bottlenecks",
+      "keywords": [
+        "システム制御",
+        "機械学習",
+        "ロボティクス"
+      ]
     },
     {
       "file_id": "2023_B_r.uchida",
@@ -582,106 +1069,115 @@
       "student_id": "20EH020",
       "year": 2023,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Investigation of the relationship between eyeball information and stress during VDT work",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "機械学習",
+        "生体工学",
+        "ロボティクス"
+      ]
     },
     {
       "file_id": "2023_B_r.yanase",
-      "title": "眼球運動による運転者の信頼推定",
+      "title": "力覚提示による道具使用時の指先動作の熟達支援",
       "author": "梁瀬 琉真",
       "student_id": "20EH046",
       "year": 2023,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Proficiency Support for Fingertip Movements When Using Tools by Force Display",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "ヒューマンインタフェース",
+        "ロボティクス"
+      ]
     },
     {
       "file_id": "2023_B_s.fujiwara",
-      "title": "感情状態推定のためのストレス定量計測システム",
+      "title": "温度変化による力覚生起現象の定量化",
       "author": "藤原 志温",
       "student_id": "20EH041",
       "year": 2023,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "力覚生起現象",
+        "温度提示",
+        "ペルチェ素子",
+        "触覚技術",
+        "定量評価",
+        "リニアアクチュエータ"
+      ]
     },
     {
       "file_id": "2023_M_k.kobayashi",
-      "title": "協調フローオペレーションによるチームワーク評価",
+      "title": "個性模倣と自己学習を備えたマルチエージェントによる不確かなターゲット群の適応誘導システム",
       "author": "小林 虎太郎",
       "student_id": "22KMH25",
       "year": 2023,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "マルチエージェント",
+        "個性模倣",
+        "自己学習",
+        "適応誘導",
+        "ターゲット追跡",
+        "不確実性",
+        "ロボティクス"
+      ]
     },
     {
       "file_id": "2023_M_m.tagaya",
-      "title": "指先動作の力覚提示による熟達支援",
+      "title": "特徴量検出による投射動作の運動熟達支援",
       "author": "多賀谷 光",
       "student_id": "22KMH26",
       "year": 2023,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "運動学習",
+        "投射動作",
+        "特徴量検出",
+        "バイオメカニクス",
+        "運動解析",
+        "スポーツ科学",
+        "モーションキャプチャ",
+        "フォースフィードバック"
+      ]
     },
     {
       "file_id": "2023_M_s.watanabe",
-      "title": "投射動作のためのKinectを用いた運動学習支援システム",
-      "author": "渡邊 柊人",
-      "student_id": "22KMH27",
+      "title": "個々の引き込まれやすさを利用した場の同期リズムの制御",
+      "author": "s.watanabe",
+      "student_id": null,
       "year": 2023,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "同期現象",
+        "リズム制御",
+        "引き込み現象",
+        "場の理論",
+        "振動システム",
+        "協調制御",
+        "非線形ダイナミクス"
+      ]
     },
     {
       "file_id": "2023_M_t.kassai",
-      "title": "機械学習による牧羊犬アルゴリズムの高度化",
+      "title": "操作支援下における自己主体感の評価",
       "author": "葛西 大河",
       "student_id": "22KMH24",
       "year": 2023,
       "degree_type": "修士論文",
-      "degree_code": "M"
-    },
-    {
-      "file_id": "2023_M_k.ohya",
-      "title": "ストレス解析によるリアルタイム適応型インタフェースの設計",
-      "author": "大矢 和磨",
-      "student_id": "22KMH28",
-      "year": 2023,
-      "degree_type": "修士論文",
-      "degree_code": "M"
-    },
-    {
-      "file_id": "2023_M_n.ito",
-      "title": "仮想環境での振動触覚グローブを用いた力分布の提示が把持動作に及ぼす影響",
-      "author": "伊藤 那月",
-      "student_id": "22KMH31",
-      "year": 2023,
-      "degree_type": "修士論文",
-      "degree_code": "M"
-    },
-    {
-      "file_id": "2023_M_onogawa",
-      "title": "仮想環境における変化の見落としを予測可能なAttention TriGridの提案",
-      "author": "小野川 樹",
-      "student_id": "22KMH32",
-      "year": 2023,
-      "degree_type": "修士論文",
-      "degree_code": "M"
-    },
-    {
-      "file_id": "2023_M_r.tanaka",
-      "title": "聴覚刺激の提示を伴う身体動揺評価 - 骨導音での実験と検討",
-      "author": "田中 龍介",
-      "student_id": "22KMH33",
-      "year": 2023,
-      "degree_type": "修士論文",
-      "degree_code": "M"
-    },
-    {
-      "file_id": "2023_M_y.yamada",
-      "title": "座位姿勢の解析および矯正に向けたワイヤアレイセンサの開発",
-      "author": "山田 侑果",
-      "student_id": "22KMH34",
-      "year": 2023,
-      "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "[要抽出]"
+      ]
     },
     {
       "file_id": "2024_B_a.noto",
@@ -690,7 +1186,15 @@
       "student_id": "21EH071",
       "year": 2024,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Proposal of Rendering Method Using Visual Attention Distribution to Reduce VR Sickness",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "機械学習",
+        "ヒューマンインタフェース",
+        "画像処理"
+      ]
     },
     {
       "file_id": "2024_B_d.nakajima",
@@ -699,52 +1203,87 @@
       "student_id": "21EH033",
       "year": 2024,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Delay Completion System in Teleoperation Environment Using Real-time Stress Indicators",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "機械学習",
+        "画像処理",
+        "生体工学"
+      ]
     },
     {
       "file_id": "2024_B_h.nakamura",
-      "title": "VR環境における力覚フィードバックを用いた重心動揺測定システム",
+      "title": "個人差を考慮した可変インピーダンス支援",
       "author": "中村 弘樹",
       "student_id": "21EH036",
       "year": 2024,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Manipulation Assistance using Personalized Resistance Force",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "ロボティクス"
+      ]
     },
     {
       "file_id": "2024_B_k.hayashi",
-      "title": "個人差を考慮した可変インピーダンス支援システム",
+      "title": "虚偽心拍フィードバックを用いたパフォーマンスの向上",
       "author": "林 健輔",
       "student_id": "21EH079",
       "year": 2024,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "To Improve Performance with False Heartbeat",
+      "keywords": [
+        "センシング",
+        "システム制御"
+      ]
     },
     {
       "file_id": "2024_B_m.kashiwagi",
-      "title": "VR環境における力覚フィードバックを用いた重心動揺測定システム",
+      "title": "エネルギー効率を考慮したマルチエージェントの誘導",
       "author": "柏木 水輝",
       "student_id": "21EH010",
       "year": 2024,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Energy-Efficient Multi-Agent Induction",
+      "keywords": [
+        "システム制御",
+        "ロボティクス"
+      ]
     },
     {
       "file_id": "2024_B_mi.nakamura",
-      "title": "VRにおけるサブリミナル学習支援システム",
+      "title": "不器用さの自己認知が視覚フィードバックによる作業パフォーマンス変化に与える影響の調査",
       "author": "中村 美月",
       "student_id": "21EH037",
       "year": 2024,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Investigating the Impact of Self-Perception of Clumsiness on Changes in Work Performance with Visual Feedback",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "機械学習"
+      ]
     },
     {
       "file_id": "2024_B_r.hiratsuka",
-      "title": "群ロボットによる効率的な探索アルゴリズムの開発",
+      "title": "視覚フィードバックを用いた音程コントロールの熟達支援",
       "author": "平塚 亮気",
       "student_id": "21EH086",
       "year": 2024,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "機械学習"
+      ]
     },
     {
       "file_id": "2024_B_r.kato",
@@ -753,43 +1292,78 @@
       "student_id": "21EH019",
       "year": 2024,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Development of An Efficient Exploration Algorithm Using Marker-based Swarm Robotics",
+      "keywords": [
+        "システム制御",
+        "機械学習",
+        "ロボティクス"
+      ]
     },
     {
       "file_id": "2024_B_r.morishita",
-      "title": "群ロボットによる効率的な探索アルゴリズムの開発",
+      "title": "プラセボ効果を活用した熟達支援システム",
       "author": "森下 陸",
       "student_id": "21EH065",
       "year": 2024,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Mastery Support System Using the Placebo Effect",
+      "keywords": [
+        "システム制御",
+        "生体工学",
+        "ロボティクス"
+      ]
     },
     {
       "file_id": "2024_B_s.imamura",
-      "title": "群ロボットによる効率的な探索アルゴリズムの開発",
+      "title": "仮想環境におけるマルチタスクでの認知アシスト",
       "author": "今村 心哉",
       "student_id": "21EH003",
       "year": 2024,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Cognitive Assistance in Multitasking in Virtual Environments",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "機械学習",
+        "ヒューマンインタフェース",
+        "画像処理"
+      ]
     },
     {
       "file_id": "2024_B_s.tahara",
-      "title": "群ロボットによる効率的な探索アルゴリズムの開発",
+      "title": "外的要因に対する筋シナジー変化の調査",
       "author": "田原 駿",
       "student_id": "21EH049",
       "year": 2024,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Investigation of Muscle Synergy Changes in Response to External Factors",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "ヒューマンインタフェース",
+        "音声処理",
+        "ロボティクス"
+      ]
     },
     {
       "file_id": "2024_B_y.takahashi",
-      "title": "個人差を考慮した可変インピーダンス支援システム",
+      "title": "疑似的な心拍同期が協調作業に及ぼす影響調査",
       "author": "高橋 勇輝",
       "student_id": "21EH050",
       "year": 2024,
       "degree_type": "学士論文",
-      "degree_code": "B"
+      "degree_code": "B",
+      "title_en": "Investigation of the Effect of Pseudo Heart Rate Synchronization on Cooperative Work",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "ヒューマンインタフェース",
+        "生体工学"
+      ]
     },
     {
       "file_id": "2024_M_i.kato",
@@ -798,79 +1372,135 @@
       "student_id": "23KMH30",
       "year": 2024,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "システム制御",
+        "機械学習",
+        "ヒューマンインタフェース"
+      ]
     },
     {
       "file_id": "2024_M_k.ohya",
-      "title": "個人差を考慮した可変インピーダンス支援システム",
+      "title": "ストレス解析によるリアルタイム適応型インタフェースの設計",
       "author": "大矢 和磨",
       "student_id": "23KMH31",
       "year": 2024,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "ヒューマンインタフェース",
+        "生体工学",
+        "ロボティクス"
+      ]
     },
     {
       "file_id": "2024_M_la.nicolas",
-      "title": "マルチモーダル生体信号を用いた運動意図推定システム",
-      "author": "ニコラ ルイアンドレ",
-      "student_id": "23KMH32",
+      "title": "Principlesandbehavioralgorithms",
+      "author": "la.nicolas",
+      "student_id": null,
       "year": 2024,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "システム開発",
+        "工学研究"
+      ]
     },
     {
       "file_id": "2024_M_m.nakamura",
-      "title": "VRにおけるサブリミナル学習支援システム",
+      "title": "VR空間のサブリミナルな物理パラメータ変化による投球コントロール熟達支援",
       "author": "中村 美月",
       "student_id": "23KMH33",
       "year": 2024,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "ロボティクス"
+      ]
     },
     {
       "file_id": "2024_M_n.ito",
-      "title": "温度による力覚生起現象の個人差に関する研究",
+      "title": "仮想環境での振動触覚グローブを用いた力分布の提示が把持動作に及ぼす影響調査",
       "author": "伊藤 那月",
       "student_id": "23KMH34",
       "year": 2024,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "機械学習",
+        "ロボティクス"
+      ]
     },
     {
       "file_id": "2024_M_onogawa",
-      "title": "マルチモーダル生体信号を用いた運動意図推定システム",
-      "author": "小野川 樹",
-      "student_id": "23KMH35",
+      "title": "仮想環境における変化の見落としを予測可能なAttentionTriGridの提案",
+      "author": "onogawa",
+      "student_id": null,
       "year": 2024,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "機械学習",
+        "ヒューマンインタフェース",
+        "画像処理"
+      ]
     },
     {
       "file_id": "2024_M_r.tanaka",
-      "title": "ドライビングシミュレータによる注意状態と視線挙動解析",
+      "title": "聴覚刺激の提示を伴う身体動揺評価骨導音での実験と検討",
       "author": "田中 龍介",
       "student_id": "23KMH36",
       "year": 2024,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "機械学習",
+        "画像処理",
+        "音声処理"
+      ]
     },
     {
       "file_id": "2024_M_s.tsuchiya",
-      "title": "個人操作特性のリアルタイム学習による適応的ロボット制御",
-      "author": "土谷 脩人",
-      "student_id": "23KMH37",
+      "title": "接触部への複合的な触覚提示装置の開発と粗さ知覚に与える影響の調査",
+      "author": "s.tsuchiya",
+      "student_id": null,
       "year": 2024,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "触覚技術",
+        "複合的触覚提示",
+        "粗さ知覚",
+        "触覚受容器",
+        "振動提示",
+        "温度提示",
+        "マルチモーダル"
+      ]
     },
     {
       "file_id": "2024_M_y.yamada",
-      "title": "個性模倣と自己学習を備えたマルチエージェントによる不確かなターゲット群の適応誘導システム",
+      "title": "座位姿勢の解析および矯正に向けたワイヤアレイセンサの開発",
       "author": "山田 侑果",
       "student_id": "23KMH38",
       "year": 2024,
       "degree_type": "修士論文",
-      "degree_code": "M"
+      "degree_code": "M",
+      "keywords": [
+        "センシング",
+        "システム制御",
+        "ヒューマンインタフェース",
+        "ロボティクス"
+      ]
     }
   ]
 }

@@ -1041,11 +1041,23 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (project.file_id) {
         // Try to load abstract from file
         try {
-          const abstResponse = await fetch(`project/abst/${project.file_id}_abst.md`);
-          if (abstResponse.ok) {
-            const abstContent = await abstResponse.text();
-            abstractContainer.textContent = abstContent.replace(/^---[\s\S]*?---\s*/, '').trim() || '研究の概要情報が利用できません。';
-          } else {
+          const abstractCandidates = [
+            `project/current/abst/${project.file_id}_abst.md`,
+            `project/graduate/abst/${project.file_id}_abst.md`
+          ];
+
+          let abstractLoaded = false;
+          for (const abstractPath of abstractCandidates) {
+            const abstResponse = await fetch(abstractPath);
+            if (abstResponse.ok) {
+              const abstContent = await abstResponse.text();
+              abstractContainer.textContent = abstContent.replace(/^---[\s\S]*?---\s*/, '').trim() || '研究の概要情報が利用できません。';
+              abstractLoaded = true;
+              break;
+            }
+          }
+
+          if (!abstractLoaded) {
             abstractContainer.textContent = `${project.title}の研究プロジェクトです。`;
           }
         } catch (error) {
@@ -1064,15 +1076,26 @@ document.addEventListener('DOMContentLoaded', function() {
       
       if (project.file_id) {
         try {
-          const detailPath = `project/detail/${project.file_id}_detail.md`;
-          console.log('Loading detail file:', detailPath);
-          const response = await fetch(detailPath);
-          if (response.ok) {
-            const markdownContent = await response.text();
-            const htmlContent = parseMarkdownToHTML(markdownContent);
-            detailsContainer.innerHTML = htmlContent;
-          } else {
-            console.error('Failed to load detail file:', response.status, response.statusText);
+          const detailCandidates = [
+            `project/graduate/detail/${project.file_id}_detail.md`,
+            `project/current/detail/${project.file_id}_detail.md`
+          ];
+
+          let detailLoaded = false;
+          for (const detailPath of detailCandidates) {
+            console.log('Loading detail file:', detailPath);
+            const response = await fetch(detailPath);
+            if (response.ok) {
+              const markdownContent = await response.text();
+              const htmlContent = parseMarkdownToHTML(markdownContent);
+              detailsContainer.innerHTML = htmlContent;
+              detailLoaded = true;
+              break;
+            }
+          }
+
+          if (!detailLoaded) {
+            console.error('Failed to load detail files for', project.file_id);
             detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細情報の読み込みに失敗しました。</div>';
           }
         } catch (error) {
