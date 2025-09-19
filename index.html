@@ -1366,6 +1366,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+  function getLastActiveYear(member) {
+    if (member.active_years && member.active_years.length > 0) {
+      return member.active_years[member.active_years.length - 1];
+    }
+    const degreeYears = (member.degrees || [])
+      .map(degree => degree.year)
+      .filter(year => typeof year === 'number');
+    return degreeYears.length > 0 ? Math.max(...degreeYears) : 0;
+  }
+
   function displayMembers(members) {
     const container = document.getElementById('members-container');
     container.innerHTML = '';
@@ -1373,7 +1383,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Filter to show only recent members (within last 5 years)
     const currentYear = new Date().getFullYear();
     const recentMembers = members.filter(member => {
-      const lastActiveYear = member.active_years[member.active_years.length - 1];
+      const lastActiveYear = getLastActiveYear(member);
       return lastActiveYear >= currentYear - 5;
     });
     
@@ -1388,11 +1398,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     recentMembers.sort((a, b) => {
       // First sort by category
-      const categoryDiff = (categoryPriority[getCategoryFromDegree(a)] || 6) - 
-                           (categoryPriority[getCategoryFromDegree(b)] || 6);
+      const categoryDiff = (categoryPriority[getMemberCategory(a)] || 6) - 
+                           (categoryPriority[getMemberCategory(b)] || 6);
       if (categoryDiff !== 0) return categoryDiff;
       
-      // Then by entry year (newer first)
+      // Then by program year (higher year first)
+      const statusPriority = getStatusPriority(a) - getStatusPriority(b);
+      if (statusPriority !== 0) return statusPriority;
+
+      // Finally by entry year (newer first)
       return b.entry_year - a.entry_year;
     });
     
@@ -1402,45 +1416,61 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  function getCategoryFromDegree(member) {
-    // Check if member has explicit category
+  function getMemberCategory(member) {
     if (member.category) {
       return member.category;
     }
-    
-    // Check if member has graduated
-    const currentYear = new Date().getFullYear();
-    const lastActiveYear = member.active_years[member.active_years.length - 1];
-    
-    if (lastActiveYear < currentYear - 1) {
+
+    const tag = (member.status_tag || '').trim();
+    if (tag.includes('卒業')) {
       return 'alumni';
     }
-    
-    // Determine current category based on highest degree
-    if (member.highest_degree === '修士論文') {
-      // If completed master's and still active, assume PhD
-      if (lastActiveYear >= currentYear - 1) {
-        return 'phd';
-      }
-      return 'alumni';
-    } else if (member.highest_degree === '学士論文') {
-      // If completed bachelor's and still active, check years
-      if (lastActiveYear >= currentYear - 1) {
-        const yearsSinceBachelor = currentYear - member.degrees[0].year;
-        if (yearsSinceBachelor >= 2) {
-          return 'master';
-        }
-        return 'undergraduate';
-      }
-      return 'alumni';
+    if (tag.startsWith('博士')) {
+      return 'phd';
     }
-    
-    return 'undergraduate';
+    if (tag.startsWith('修士')) {
+      return 'master';
+    }
+    if (tag.startsWith('学部')) {
+      return 'undergraduate';
+    }
+
+    return 'researcher';
+  }
+
+  function getStatusPriority(member) {
+    const category = getMemberCategory(member);
+    const tag = (member.status_tag || '').trim();
+
+    const extractGrade = (regex) => {
+      const match = tag.match(regex);
+      if (match && match[1]) {
+        return parseInt(match[1], 10);
+      }
+      return null;
+    };
+
+    if (category === 'phd') {
+      const grade = extractGrade(/博士(\d)年生/);
+      return grade !== null ? -grade : 0;
+    }
+
+    if (category === 'master') {
+      const grade = extractGrade(/修士(\d)年生/);
+      return grade !== null ? -grade : 0;
+    }
+
+    if (category === 'undergraduate') {
+      const grade = extractGrade(/学部(\d)年生/);
+      return grade !== null ? -grade : 0;
+    }
+
+    return 0;
   }
 
   function createMemberCard(member, index) {
     const card = document.createElement('div');
-    const category = getCategoryFromDegree(member);
+    const category = getMemberCategory(member);
     card.className = 'member-card fade-in-up';
     card.setAttribute('data-category', category);
     card.style.animationDelay = `${index * 0.05}s`;
@@ -1452,8 +1482,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const roleText = getRoleText(member, category);
     
     // Get latest research title
-    const latestDegree = member.degrees[member.degrees.length - 1];
-    const researchTitle = latestDegree ? latestDegree.title : '';
+    const researchLinks = getMemberResearchLinks(member);
     
     card.innerHTML = `
       <div class="member-card__avatar">
@@ -1462,35 +1491,142 @@ document.addEventListener('DOMContentLoaded', function() {
       <h3 class="member-card__name">${member.name}</h3>
       ${member.name_en ? `<p class="member-card__name-en">${member.name_en}</p>` : ''}
       <p class="member-card__role">${roleText}</p>
-      ${researchTitle ? `<p class="member-card__research">${researchTitle}</p>` : ''}
+      ${researchLinks.map(link => `
+        <div class="member-card__project">
+          <span class="member-card__project-label">${formatDegreeLabel(link.degree_type, link.year)}</span>
+          <a class="member-card__research" href="#" data-project-id="${link.file_id}">${link.title}</a>
+        </div>
+      `).join('')}
       <div class="member-card__period">
         ${member.research_period}
       </div>
     `;
     
+    // Attach modal open handlers
+    const researchAnchors = card.querySelectorAll('.member-card__research');
+    researchAnchors.forEach(anchor => {
+      anchor.addEventListener('click', event => {
+        event.preventDefault();
+        const projectId = anchor.getAttribute('data-project-id');
+        const project = (window.projectsData || []).find(p => p.file_id === projectId);
+        if (project) {
+          openModal(project);
+        } else {
+          console.warn('Project not found for member:', projectId);
+        }
+      });
+    });
+
     return card;
   }
 
-  function getRoleText(member, category) {
-    const currentYear = new Date().getFullYear();
-    const lastActiveYear = member.active_years[member.active_years.length - 1];
-    
-    if (category === 'faculty') {
-      return member.highest_degree || '教授';
-    } else if (category === 'alumni') {
-      const latestDegree = member.degrees[member.degrees.length - 1];
-      return `卒業生（${latestDegree.year}年${latestDegree.degree_type}）`;
-    } else if (category === 'phd') {
-      const yearsInPhD = currentYear - (member.degrees.find(d => d.degree_type === '修士論文')?.year || currentYear);
-      return `博士課程${yearsInPhD + 1}年`;
-    } else if (category === 'master') {
-      const yearsInMaster = currentYear - (member.degrees.find(d => d.degree_type === '学士論文')?.year || currentYear);
-      return `修士課程${Math.min(yearsInMaster + 1, 2)}年`;
-    } else if (category === 'undergraduate') {
-      return '学部4年';
+  function getMemberResearchLinks(member) {
+    const degrees = member.degrees || [];
+    if (degrees.length === 0) {
+      return [];
     }
-    
-    return '研究員';
+
+  const isEnrolled = Boolean(member.enrollment);
+  if (!isEnrolled) {
+    const latest = degrees[degrees.length - 1];
+    if (latest && latest.file_id && latest.title) {
+      return [{
+        file_id: latest.file_id,
+        title: latest.title,
+        degree_type: latest.degree_type || '',
+        year: latest.year
+      }];
+    }
+    return [];
+  }
+
+  const mainProjects = [];
+  const fallback = [];
+
+  degrees.forEach(degree => {
+    if (degree && degree.file_id && degree.title) {
+      const entry = {
+        file_id: degree.file_id,
+        title: degree.title,
+        degree_type: degree.degree_type || '',
+        year: degree.year
+      };
+
+      if (degree.degree_type && degree.degree_type.includes('在学中')) {
+        mainProjects.push(entry);
+      } else {
+        fallback.push(entry);
+      }
+    }
+  });
+
+  const sortedMain = mainProjects.sort((a, b) => (b.year || 0) - (a.year || 0));
+    if (sortedMain.length >= 2) {
+      return sortedMain.slice(0, 2);
+    }
+
+    const selected = [...sortedMain];
+  const sortedFallback = fallback.sort((a, b) => (b.year || 0) - (a.year || 0));
+  for (const degree of sortedFallback) {
+    if (selected.length >= 2) break;
+    selected.push(degree);
+  }
+
+  return selected;
+}
+
+  function formatDegreeLabel(degreeType, year) {
+    if (!degreeType) {
+      return year ? `${year}年` : '';
+    }
+
+    const normalized = degreeType.replace(/[\s　]+/g, '').replace('（', '(').replace('）', ')');
+
+    if (normalized.includes('博士課程(在学中)')) {
+      return year ? `博士課程（${year}年〜）` : '博士課程（在学中）';
+    }
+    if (normalized.includes('修士課程(在学中)')) {
+      return year ? `修士課程（${year}年〜）` : '修士課程（在学中）';
+    }
+    if (normalized.includes('学士課程(在学中)')) {
+      return year ? `学部課程（${year}年〜）` : '学部課程（在学中）';
+    }
+    if (normalized.includes('博士論文')) {
+      return year ? `博士論文（${year}年）` : '博士論文';
+    }
+    if (normalized.includes('修士論文')) {
+      return year ? `修士論文（${year}年）` : '修士論文';
+    }
+    if (normalized.includes('学士論文')) {
+      return year ? `学士論文（${year}年）` : '学士論文';
+    }
+
+    return degreeType;
+  }
+
+  function getRoleText(member, category) {
+    const tag = (member.status_tag || '').trim();
+
+    if (tag) {
+      if (tag.includes('卒業')) {
+        const latestDegree = member.degrees?.[member.degrees.length - 1];
+        if (latestDegree?.year && latestDegree?.degree_type) {
+          return `${tag}（${latestDegree.year}年${latestDegree.degree_type}）`;
+        }
+      }
+      return tag;
+    }
+
+    if (category === 'alumni') {
+      const latestDegree = member.degrees?.[member.degrees.length - 1];
+      if (latestDegree?.year && latestDegree?.degree_type) {
+        return `卒業生（${latestDegree.year}年${latestDegree.degree_type}）`;
+      }
+      return '卒業生';
+    }
+
+    // Fallback forメンバー分類が不明な場合
+    return member.highest_degree || '研究員';
   }
 
   function initializeMembersFilters(members) {
@@ -1514,14 +1650,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Filter to recent members
     const currentYear = new Date().getFullYear();
     filtered = filtered.filter(member => {
-      const lastActiveYear = member.active_years[member.active_years.length - 1];
+      const lastActiveYear = getLastActiveYear(member);
       return lastActiveYear >= currentYear - 5;
     });
     
     // Apply category filter
     if (categoryFilter !== '*') {
       filtered = filtered.filter(member => {
-        const category = getCategoryFromDegree(member);
+        const category = getMemberCategory(member);
         return category === categoryFilter;
       });
     }

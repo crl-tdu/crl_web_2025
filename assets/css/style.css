@@ -952,6 +952,42 @@ a:hover::after {
   letter-spacing: 0.05em;
 }
 
+.member-card__project {
+  margin-top: var(--space-lg);
+  text-align: left;
+}
+
+.member-card__project-label {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.member-card__research {
+  display: block;
+  margin-top: var(--space-xs);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.member-card__research:hover {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+.member-card__period {
+  margin-top: var(--space-lg);
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 .member-card__info {
   font-size: var(--text-sm);
   color: var(--text-secondary);
