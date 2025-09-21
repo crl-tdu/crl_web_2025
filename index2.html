@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>協調ロボティクス研究室 | 次世代デザイン試作</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header__inner" role="navigation" aria-label="メインナビゲーション">
+      <a class="brand" href="#">
+        <img src="assets/images/crl_logo_wb.png" alt="協調ロボティクス研究室ロゴ">
+        <span>CRL Lab</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-controls="globalNav" aria-expanded="false">
+        メニュー
+      </button>
+      <nav id="globalNav">
+        <a href="#about">ラボについて</a>
+        <a href="#research">研究ポートフォリオ</a>
+        <a href="#publications">研究業績</a>
+        <a href="#activities">活動報告</a>
+        <a href="#members">メンバー</a>
+        <a href="#contact">アクセス</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <span class="hero__badge">Cooperative Robotics Laboratory</span>
+        <h1 class="hero__title" id="hero-title">人と機械が協調する未来を切り拓く</h1>
+        <p class="hero__subtitle">
+          協調ロボティクス研究室（CRL）は、ヒューマンセンシング・ハプティクス・共創インタフェースを軸に、協調作業を支える知能と身体性の研究を推進しています。
+          本ページは新デザイン検討のための試作版です。
+        </p>
+        <div class="hero__actions">
+          <a class="btn-primary" href="#research">研究プロジェクトを見る</a>
+          <a class="btn-secondary" href="#contact">お問い合わせ</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__eyebrow">Mission</span>
+          <h2 class="section__title" id="about-title">人とロボットの協調を科学する</h2>
+          <p class="section__description">
+            私たちは協調タスクにおける「気づかい」の定量化や、触覚・力覚インタフェースによる熟達支援など、人間中心のシステムデザインを探求し、社会に寄り添う技術革新を目指しています。
+          </p>
+        </div>
+        <div class="grid grid--columns-3">
+          <article class="card">
+            <span class="card__badge">01 理解</span>
+            <h3 class="card__title">人間の協調行動を計測・分析</h3>
+            <p class="card__body">多点センシングや生体信号解析を用いて、チームワークに潜む「気づかい」「信頼」「緊張」を可視化します。</p>
+          </article>
+          <article class="card">
+            <span class="card__badge">02 支援</span>
+            <h3 class="card__title">触覚・力覚インタフェース</h3>
+            <p class="card__body">視覚だけに頼らない熟達支援。触覚提示やハプティクスデバイスで内在感覚を引き出すアプローチを研究しています。</p>
+          </article>
+          <article class="card">
+            <span class="card__badge">03 共創</span>
+            <h3 class="card__title">人と機械が共に学ぶ仕組み</h3>
+            <p class="card__body">協調エージェント、適応アルゴリズム、動的チーム編成など、共生社会の基盤になる技術を創出します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research" aria-labelledby="research-title">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__eyebrow">Projects</span>
+          <h2 class="section__title" id="research-title">研究プロジェクト・ポートフォリオ</h2>
+          <p class="section__description">
+            協調ロボティクス研究室が取り組むプロジェクトを、主要テーマとキーワードで横断的に探せます。タグボタンやキーワード検索で絞り込み、興味のある研究を深掘りしてください。
+          </p>
+        </div>
+
+        <div class="filter-bar" role="search">
+          <div class="filter-bar__group">
+            <span class="filter-bar__title">主要タグ</span>
+            <div class="filter-bar__actions" aria-label="研究カテゴリフィルター">
+              <button type="button" class="filter-chip" data-tag="*" aria-pressed="true">すべて</button>
+              <button type="button" class="filter-chip" data-tag="人間機械系">人間機械系</button>
+              <button type="button" class="filter-chip" data-tag="人間センシング">人間センシング</button>
+              <button type="button" class="filter-chip" data-tag="チームワーク">チームワーク</button>
+              <button type="button" class="filter-chip" data-tag="協調理論">協調理論</button>
+            </div>
+          </div>
+          <div class="filter-bar__search">
+            <label for="projectSearch" class="visually-hidden">研究キーワード検索</label>
+            <input id="projectSearch" type="search" placeholder="キーワード・タイトル・著者で検索">
+          </div>
+        </div>
+
+        <div class="portfolio-controls portfolio-controls--top" id="portfolioControlsTop" data-position="top" aria-hidden="true">
+          <button type="button" class="btn-secondary" id="portfolioToggleTop" data-portfolio-toggle aria-expanded="false" aria-controls="portfolioGrid">表示を閉じる</button>
+        </div>
+        <div class="portfolio-grid" id="portfolioGrid" aria-live="polite" aria-busy="true"></div>
+        <div class="portfolio-controls" id="portfolioControls" data-position="bottom" aria-hidden="true">
+          <button type="button" class="btn-secondary" id="portfolioToggle" data-portfolio-toggle aria-expanded="false" aria-controls="portfolioGrid">残りを表示</button>
+        </div>
+
+        <!-- ポートフォリオ固定折りたたみボタン -->
+        <div class="portfolio-fab" id="portfolioFab" aria-hidden="true">
+          <button type="button" class="portfolio-fab__button" data-portfolio-toggle aria-label="ポートフォリオを折りたたむ">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M15 12L10 7L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="portfolio-fab__text">折りたたみ</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publications" aria-labelledby="publications-title">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__eyebrow">Publications</span>
+          <h2 class="section__title" id="publications-title">研究業績</h2>
+          <p class="section__description">
+            学会発表・論文・受賞などの実績をカテゴリ別に整理しています。検索やカテゴリフィルターを活用し、目的の業績を素早く探すことができます。
+          </p>
+        </div>
+
+        <div class="filter-bar" role="search">
+          <div class="filter-bar__group">
+            <span class="filter-bar__title">カテゴリ</span>
+            <div class="filter-bar__actions" aria-label="業績カテゴリフィルター">
+              <button type="button" class="filter-chip" data-pub-category="all" aria-pressed="true">すべて</button>
+              <button type="button" class="filter-chip" data-pub-category="journal">学術誌</button>
+              <button type="button" class="filter-chip" data-pub-category="conference">国際会議</button>
+              <button type="button" class="filter-chip" data-pub-category="domestic_peer">国内発表（査読あり）</button>
+              <button type="button" class="filter-chip" data-pub-category="domestic">国内発表</button>
+              <button type="button" class="filter-chip" data-pub-category="award">受賞</button>
+              <button type="button" class="filter-chip" data-pub-category="lecture">講演</button>
+              <button type="button" class="filter-chip" data-pub-category="book">著書・解説</button>
+              <button type="button" class="filter-chip" data-pub-category="other">その他</button>
+            </div>
+          </div>
+          <div class="filter-bar__search">
+            <label for="publicationSearch" class="visually-hidden">業績検索</label>
+            <input id="publicationSearch" type="search" placeholder="タイトル・著者・会議名で検索">
+          </div>
+        </div>
+
+        <div class="publication-controls publication-controls--top" id="publicationControlsTop" data-position="top" aria-hidden="true">
+          <button type="button" class="btn-secondary" id="publicationToggleTop" data-publication-toggle aria-expanded="false" aria-controls="publicationList">表示を閉じる</button>
+        </div>
+        <div class="publication-list" id="publicationList" aria-live="polite" aria-busy="true"></div>
+        <div class="publication-controls" id="publicationControls" data-position="bottom" aria-hidden="true">
+          <button type="button" class="btn-secondary" id="publicationToggle" data-publication-toggle aria-expanded="false" aria-controls="publicationList">残りを表示</button>
+        </div>
+
+        <!-- 研究業績固定折りたたみボタン -->
+        <div class="publication-fab" id="publicationFab" aria-hidden="true">
+          <button type="button" class="publication-fab__button" data-publication-toggle aria-label="研究業績を折りたたむ">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M15 12L10 7L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="publication-fab__text">折りたたみ</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="activities" aria-labelledby="activities-title">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__eyebrow">Activities</span>
+          <h2 class="section__title" id="activities-title">活動報告・参加イベント</h2>
+          <p class="section__description">
+            学会参加、展示会出展、研究成果発表など、研究室の活動をピックアップして紹介します。詳細は元記事へのリンクからご覧いただけます。</p>
+        </div>
+
+        <div class="activity-controls activity-controls--top" id="activityControlsTop" data-position="top" aria-hidden="true">
+          <button type="button" class="btn-secondary" id="activityToggleTop" data-activity-toggle aria-expanded="false" aria-controls="activityList">表示を閉じる</button>
+        </div>
+        <div class="activity-list" id="activityList" aria-live="polite" aria-busy="true"></div>
+        <div class="activity-controls" id="activityControls" data-position="bottom" aria-hidden="true">
+          <div class="activity-controls__info" id="activityInfo" aria-live="polite"></div>
+          <button type="button" class="btn-secondary" id="activityToggle" data-activity-toggle aria-expanded="false" aria-controls="activityList">残りを表示</button>
+        </div>
+
+        <!-- 固定折りたたみボタン -->
+        <div class="activity-fab" id="activityFab" aria-hidden="true">
+          <button type="button" class="activity-fab__button" data-activity-toggle aria-label="活動報告を折りたたむ">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M15 12L10 7L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="activity-fab__text">折りたたみ</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="members" aria-labelledby="members-title">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__eyebrow">People</span>
+          <h2 class="section__title" id="members-title">多領域の専門家が連携するチーム</h2>
+          <p class="section__description">触覚デザイン、ヒューマンセンシング、協調制御など異なる専門性を持つ研究者が集まり、相互にフィードバックしながらプロジェクトを推進しています。</p>
+        </div>
+        <div class="members-filter-bar" role="search">
+          <div class="filter-bar__group">
+            <span class="filter-bar__title">所属</span>
+            <div class="members-flex" aria-label="メンバーカテゴリフィルター">
+              <button type="button" class="filter-chip" data-member-category="all" aria-pressed="true">すべて</button>
+              <button type="button" class="filter-chip" data-member-category="faculty">教員</button>
+              <button type="button" class="filter-chip" data-member-category="phd">博士課程</button>
+              <button type="button" class="filter-chip" data-member-category="master">修士課程</button>
+              <button type="button" class="filter-chip" data-member-category="undergraduate">学部</button>
+              <button type="button" class="filter-chip" data-member-category="alumni">卒業生</button>
+            </div>
+          </div>
+          <div class="filter-bar__search" style="flex:1 1 220px;">
+            <label for="memberSearch" class="visually-hidden">メンバー検索</label>
+            <input id="memberSearch" type="search" placeholder="氏名・研究テーマで検索">
+          </div>
+        </div>
+
+        <div class="member-controls member-controls--top" id="memberControlsTop" data-position="top" aria-hidden="true">
+          <button type="button" class="btn-secondary" id="memberToggleTop" data-member-toggle aria-expanded="false" aria-controls="membersGrid">表示を閉じる</button>
+        </div>
+        <div class="grid grid--columns-3" id="membersGrid" aria-live="polite" aria-busy="true"></div>
+        <div class="member-controls" id="memberControls" data-position="bottom" aria-hidden="true">
+          <button type="button" class="btn-secondary" id="memberToggle" data-member-toggle aria-expanded="false" aria-controls="membersGrid">残りを表示</button>
+        </div>
+
+        <!-- メンバー固定折りたたみボタン -->
+        <div class="member-fab" id="memberFab" aria-hidden="true">
+          <button type="button" class="member-fab__button" data-member-toggle aria-label="メンバーを折りたたむ">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M15 12L10 7L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="member-fab__text">折りたたみ</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__eyebrow">Join Us</span>
+          <h2 class="section__title" id="contact-title">見学・共同研究のご相談</h2>
+          <p class="section__description">
+            新規プロジェクトや共同研究に関するご相談、研究室見学のご希望は以下のリンクからお願いいたします。フォームは既存サイトの問い合わせページへ遷移します。
+          </p>
+        </div>
+        <div class="hero__actions">
+          <a class="btn-primary" href="mailto:igarashi@dendai.ac.jp">メールで問い合わせる</a>
+          <a class="btn-secondary" href="https://www.crl.epi.dendai.ac.jp/" target="_blank" rel="noopener noreferrer">公式サイトを見る</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="activity-modal" class="activity-modal" aria-hidden="true">
+      <div class="activity-modal__overlay" data-activity-modal-close></div>
+      <div class="activity-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="activity-modal-title">
+        <button type="button" class="activity-modal__close" aria-label="閉じる" data-activity-modal-close>&times;</button>
+        <div class="activity-modal__media">
+          <img id="activity-modal-image" src="" alt="" loading="lazy">
+        </div>
+        <div class="activity-modal__header">
+          <h3 id="activity-modal-title"></h3>
+          <div id="activity-modal-meta" class="activity-modal__meta"></div>
+        </div>
+        <div id="activity-modal-tags" class="activity-modal__tags"></div>
+        <div id="activity-modal-body" class="activity-modal__body"></div>
+        <div class="activity-modal__footer">
+          <button type="button" id="activity-modal-close-secondary" class="activity-modal__close-secondary" data-activity-modal-close>閉じる</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/images/crl_logo_wb.png" alt="協調ロボティクス研究室ロゴ">
+          <div>
+            <div>協調ロボティクス研究室</div>
+            <div style="font-size: 0.85rem; opacity: 0.8;">Cooperative Robotics Laboratory</div>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <a href="#about">ラボについて</a>
+          <a href="#research">研究ポートフォリオ</a>
+          <a href="#publications">研究業績</a>
+          <a href="#activities">活動報告</a>
+          <a href="#members">メンバー</a>
+          <a href="#contact">アクセス</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        © 2025 Cooperative Robotics Laboratory. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const MAIN_TAGS = ['人間機械系', '人間センシング', 'チームワーク', '協調理論'];
+    const PLACEHOLDER_THUMBNAIL = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0B3D91" stop-opacity="0.75"/><stop offset="100%" stop-color="#F5A623" stop-opacity="0.55"/></linearGradient></defs><rect width="400" height="300" fill="#F7F9FC"/><rect x="12" y="12" width="376" height="276" rx="24" fill="url(#g)"/><text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, 'Noto Sans JP', sans-serif" font-size="28" font-weight="600" fill="#ffffff" opacity="0.85">CRL PORTFOLIO</text></svg>`);
+
+    const portfolioState = {
+      projects: [],
+      currentTag: '*',
+      searchTerm: '',
+      isExpanded: false,
+      visibleCount: 0,
+      resizeTimer: null,
+      controlsInitialized: false
+    };
+
+    const memberState = {
+      members: [],
+      currentCategory: 'all',
+      searchTerm: '',
+      isExpanded: false,
+      visibleCount: 6,
+      controlsInitialized: false,
+      filtersInitialized: false
+    };
+
+    const publicationState = {
+      publications: [],
+      currentCategory: 'all',
+      searchTerm: '',
+      isExpanded: false,
+      visibleCount: 0,
+      resizeTimer: null,
+      controlsInitialized: false
+    };
+
+    const activityState = {
+      activities: [],
+      isExpanded: false,
+      visibleCount: 4,
+      controlsInitialized: false,
+      listenersInitialized: false,
+      modal: null,
+      activeTrigger: null,
+      body: null,
+      meta: null,
+      title: null,
+      image: null,
+      tags: null,
+      source: null,
+      keydownHandler: null
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initialiseNavigation();
+      loadProjects();
+      loadPublications();
+      loadActivities();
+      loadMembers();
+    });
+
+    function initialiseNavigation() {
+      const navToggle = document.getElementById('navToggle');
+      const globalNav = document.getElementById('globalNav');
+
+      if (!navToggle || !globalNav) return;
+
+      navToggle.addEventListener('click', () => {
+        const isOpen = globalNav.classList.toggle('is-open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+
+    async function loadProjects() {
+      const grid = document.getElementById('portfolioGrid');
+      if (!grid) return;
+
+      try {
+        const response = await fetch('data/project.json');
+        const data = await response.json();
+        const projects = Array.isArray(data) ? data : data.projects || [];
+
+        portfolioState.projects = projects.map(enrichProject);
+        renderProjectFilters();
+        setupPortfolioControls();
+        applyProjectFilters();
+        grid.setAttribute('aria-busy', 'false');
+      } catch (error) {
+        console.error('研究データの読み込みに失敗しました', error);
+        grid.innerHTML = '<p>研究データを読み込めませんでした。</p>';
+        grid.setAttribute('aria-busy', 'false');
+      }
+    }
+
+    function enrichProject(project) {
+      const keywords = Array.isArray(project.keywords) ? project.keywords : [];
+      const mainTags = MAIN_TAGS.filter(tag => keywords.includes(tag));
+      const mainTag = mainTags[0] || 'その他';
+      const searchSource = [
+        project.title,
+        project.author,
+        project.abstract,
+        project.degree_type,
+        project.degree_code,
+        project.year,
+        keywords.join(' ')
+      ].filter(Boolean).join(' ').toLowerCase();
+
+      return {
+        ...project,
+        _mainTag: mainTag,
+        _mainTags: mainTags,
+        _keywords: keywords,
+        _search: searchSource
+      };
+    }
+
+    function renderProjectFilters() {
+      const chips = document.querySelectorAll('[data-tag]');
+      const searchInput = document.getElementById('projectSearch');
+
+      chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          const tag = chip.dataset.tag || '*';
+          portfolioState.currentTag = tag;
+          portfolioState.isExpanded = false;
+          chips.forEach(btn => btn.setAttribute('aria-pressed', btn === chip ? 'true' : 'false'));
+          applyProjectFilters();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (event) => {
+          portfolioState.searchTerm = event.target.value.trim().toLowerCase();
+          portfolioState.isExpanded = false;
+          applyProjectFilters();
+        });
+      }
+    }
+
+    function applyProjectFilters() {
+      const grid = document.getElementById('portfolioGrid');
+      if (!grid) return;
+
+      const { currentTag, searchTerm, projects } = portfolioState;
+      let filtered = [...projects];
+
+      if (currentTag && currentTag !== '*') {
+        filtered = filtered.filter(project => {
+          if (project._mainTag === currentTag) return true;
+          return project._mainTags && project._mainTags.includes(currentTag);
+        });
+      }
+
+      if (searchTerm) {
+        filtered = filtered.filter(project => project._search.includes(searchTerm));
+      }
+
+      renderProjectCards(filtered);
+    }
+
+    function renderProjectCards(projects) {
+      const grid = document.getElementById('portfolioGrid');
+      if (!grid) return;
+
+      if (!projects.length) {
+        grid.innerHTML = '<p>条件に合致するプロジェクトが見つかりませんでした。</p>';
+        updatePortfolioControls(0, 0);
+        return;
+      }
+
+      if (!portfolioState.isExpanded) {
+        updatePortfolioVisibleCount();
+      }
+
+      const total = projects.length;
+      const visibleLimit = portfolioState.isExpanded
+        ? total
+        : Math.min(portfolioState.visibleCount || Math.min(total, 6), total);
+
+      const cards = projects.slice(0, visibleLimit).map(project => createProjectCard(project)).join('');
+      grid.innerHTML = cards;
+
+      updatePortfolioControls(total, visibleLimit);
+    }
+
+    function setupPortfolioControls() {
+      if (portfolioState.controlsInitialized) return;
+
+      const toggleButtons = document.querySelectorAll('[data-portfolio-toggle]');
+      if (!toggleButtons.length) return;
+
+      toggleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          portfolioState.isExpanded = !portfolioState.isExpanded;
+          if (!portfolioState.isExpanded) {
+            updatePortfolioVisibleCount();
+          }
+          applyProjectFilters();
+        });
+      });
+
+      window.addEventListener('resize', () => {
+        if (portfolioState.isExpanded) return;
+        if (portfolioState.resizeTimer) {
+          window.clearTimeout(portfolioState.resizeTimer);
+        }
+        portfolioState.resizeTimer = window.setTimeout(() => {
+          const changed = updatePortfolioVisibleCount();
+          if (changed) {
+            applyProjectFilters();
+          }
+          portfolioState.resizeTimer = null;
+        }, 150);
+      });
+
+      portfolioState.controlsInitialized = true;
+    }
+
+    function updatePortfolioVisibleCount() {
+      const grid = document.getElementById('portfolioGrid');
+      if (!grid) return false;
+
+      const columnCount = getPortfolioColumnCount(grid);
+      const totalProjects = portfolioState.projects.length;
+
+      let limit;
+      if (columnCount >= 4) {
+        limit = 8;
+      } else if (columnCount >= 3) {
+        limit = 6;
+      } else if (columnCount >= 2) {
+        limit = 4;
+      } else {
+        limit = totalProjects ? Math.min(totalProjects, 2) : 2;
+      }
+
+      limit = Math.max(1, limit);
+
+      if (portfolioState.visibleCount === limit) {
+        return false;
+      }
+
+      portfolioState.visibleCount = limit;
+      return true;
+    }
+
+    function getPortfolioColumnCount(grid) {
+      const styles = window.getComputedStyle(grid);
+      const templateColumns = styles.getPropertyValue('grid-template-columns');
+
+      if (templateColumns && !templateColumns.includes('repeat')) {
+        const explicit = templateColumns.split(' ').filter(token => token.trim()).length;
+        if (explicit) return explicit;
+      }
+
+      const gapValue = parseFloat(styles.getPropertyValue('column-gap') || styles.getPropertyValue('grid-column-gap')) || 0;
+      const gridWidth = grid.clientWidth;
+      if (!gridWidth) return 1;
+
+      const approximate = Math.floor((gridWidth + gapValue) / (280 + gapValue));
+      return Math.max(1, approximate);
+    }
+
+    function updatePortfolioControls(total, visible) {
+      const controls = document.querySelectorAll('.portfolio-controls');
+      const toggles = document.querySelectorAll('[data-portfolio-toggle]');
+      const fab = document.getElementById('portfolioFab');
+
+      if (!controls.length || !toggles.length) return;
+
+      // FABの表示制御
+      if (fab) {
+        const shouldShowFab = portfolioState.isExpanded && total > portfolioState.visibleCount;
+        fab.setAttribute('aria-hidden', shouldShowFab ? 'false' : 'true');
+      }
+
+      if (!total) {
+        controls.forEach(control => {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        });
+        toggles.forEach(toggle => {
+          if (!toggle.closest('.portfolio-fab')) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = '残りを表示';
+          }
+        });
+        return;
+      }
+
+      if (!portfolioState.isExpanded && total <= visible) {
+        controls.forEach(control => {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        });
+        toggles.forEach(toggle => {
+          if (!toggle.closest('.portfolio-fab')) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = '残りを表示';
+          }
+        });
+        return;
+      }
+
+      const showTop = portfolioState.isExpanded;
+      const showBottom = !portfolioState.isExpanded && total > visible;
+
+      controls.forEach(control => {
+        const position = control.dataset.position || 'bottom';
+        const shouldShow = position === 'top' ? showTop : showBottom;
+        if (shouldShow) {
+          control.classList.add('is-visible');
+          control.setAttribute('aria-hidden', 'false');
+        } else {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        }
+      });
+
+      const remaining = Math.max(total - visible, 0);
+      toggles.forEach(toggle => {
+        if (!toggle.closest('.portfolio-fab')) {
+          toggle.textContent = portfolioState.isExpanded ? '表示を閉じる' : `残り${remaining}件を表示`;
+          toggle.setAttribute('aria-expanded', String(portfolioState.isExpanded));
+        }
+      });
+    }
+
+    function createProjectCard(project) {
+      const metaItems = [
+        project.author ? `${project.author}` : null,
+        project.year ? `${project.year}年度` : null,
+        project.degree_type || null
+      ].filter(Boolean).join(' / ');
+
+      const keywords = project._keywords.filter(kw => !MAIN_TAGS.includes(kw));
+      const keywordTags = keywords.slice(0, 4).map(keyword => `<span class="tag tag--keyword">${keyword}</span>`).join('');
+      const abstract = truncateText(project.abstract || '研究概要は準備中です。', 140);
+
+      const thumbnail = getProjectThumbnail(project);
+
+      return `
+        <article class="card portfolio-card" data-main-tag="${project._mainTag}">
+          <div class="portfolio-card__figure">
+            <img src="${thumbnail}" alt="${project.title || '研究サムネイル'}" loading="lazy" onerror="this.onerror=null;this.src='${PLACEHOLDER_THUMBNAIL}';">
+          </div>
+          <div class="portfolio-card__header">
+            <span class="tag tag--main">${project._mainTag}</span>
+            <h3 class="portfolio-card__title">${project.title || 'タイトル未設定'}</h3>
+            ${metaItems ? `<div class="portfolio-card__meta">${metaItems}</div>` : ''}
+          </div>
+          <div class="portfolio-card__body">${abstract}</div>
+          <div class="tag-list">
+            ${keywordTags}
+          </div>
+        </article>
+      `;
+    }
+
+    function truncateText(text, length) {
+      if (!text) return '';
+      const clean = text.replace(/\s+/g, ' ').trim();
+      if (clean.length <= length) return clean;
+      return `${clean.slice(0, length)}…`;
+    }
+
+    async function loadMembers() {
+      const grid = document.getElementById('membersGrid');
+      if (!grid) return;
+
+      try {
+        const response = await fetch('data/members.json');
+        const data = await response.json();
+        const members = data.members || data || [];
+
+        memberState.members = members.map(enrichMember);
+        setupMemberFilters();
+        setupMemberControls();
+        applyMemberFilters();
+        grid.setAttribute('aria-busy', 'false');
+      } catch (error) {
+        console.error('メンバーデータの読み込みに失敗しました', error);
+        grid.innerHTML = '<p>メンバーデータを読み込めませんでした。</p>';
+        grid.setAttribute('aria-busy', 'false');
+      }
+    }
+
+    function enrichMember(member) {
+      const initials = member.name
+        ? member.name.replace(/\s+/g, '').slice(0, 2)
+        : 'CR';
+
+      const degrees = Array.isArray(member.degrees) ? member.degrees : [];
+      const latestDegree = degrees[degrees.length - 1] || {};
+
+      return {
+        ...member,
+        _initials: initials,
+        _degrees: degrees,
+        _latestDegree: latestDegree,
+        _researchLinks: getMemberResearchLinks(member),
+        _search: buildMemberSearchText(member, degrees)
+      };
+    }
+
+    function getMemberGradeScore(member) {
+      const tag = (member.status_tag || '').trim();
+      const numberMatch = tag.match(/(博士|修士|学部)(\d)年生/);
+      if (numberMatch) {
+        const [, type, year] = numberMatch;
+        const base = { '博士': 100, '修士': 50, '学部': 10 }[type] || 0;
+        return base + parseInt(year, 10);
+      }
+      if (tag.includes('卒業')) return 0;
+      return 1;
+    }
+
+    function buildMemberSearchText(member, degrees) {
+      const degreeText = degrees.map(d => `${d.title || ''} ${d.degree_type || ''}`).join(' ');
+      const raw = [
+        member.name,
+        member.name_en,
+        member.status_tag,
+        member.highest_degree,
+        member.research_period,
+        degreeText
+      ].filter(Boolean).join(' ').toLowerCase();
+      return raw.replace(/\s+/g, ' ').trim();
+    }
+
+    function setupMemberFilters() {
+      if (memberState.filtersInitialized) return;
+
+      const buttons = document.querySelectorAll('[data-member-category]');
+      const searchInput = document.getElementById('memberSearch');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const category = button.dataset.memberCategory || 'all';
+          memberState.currentCategory = category;
+          buttons.forEach(btn => btn.setAttribute('aria-pressed', btn === button ? 'true' : 'false'));
+          applyMemberFilters();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', event => {
+          memberState.searchTerm = event.target.value.trim().toLowerCase();
+          applyMemberFilters();
+        });
+      }
+
+      memberState.filtersInitialized = true;
+    }
+
+    function applyMemberFilters() {
+      const grid = document.getElementById('membersGrid');
+      if (!grid) return;
+
+      let filtered = [...memberState.members];
+
+      if (memberState.currentCategory && memberState.currentCategory !== 'all') {
+        filtered = filtered.filter(member => getMemberCategory(member) === memberState.currentCategory);
+      }
+
+      if (memberState.searchTerm) {
+        filtered = filtered.filter(member => member._search.includes(memberState.searchTerm));
+      }
+
+      renderMembers(filtered);
+    }
+
+    function getMemberCategory(member) {
+      if (!member) return 'alumni';
+
+      if (member.category) return member.category;
+
+      const tag = (member.status_tag || '').replace(/\s+/g, '');
+
+      if (member.is_faculty || /教授|准教授|講師|助教/.test(tag)) {
+        return 'faculty';
+      }
+      if (/博士/.test(tag)) {
+        return /卒/.test(tag) ? 'alumni' : 'phd';
+      }
+      if (/修士/.test(tag)) {
+        return /卒/.test(tag) ? 'alumni' : 'master';
+      }
+      if (/学部/.test(tag)) {
+        return /卒/.test(tag) ? 'alumni' : 'undergraduate';
+      }
+
+      if (member.affiliation && /faculty/i.test(member.affiliation)) {
+        return 'faculty';
+      }
+
+      if (member.research_period && member.research_period.includes('在学中')) {
+        return 'researcher';
+      }
+
+      return 'alumni';
+    }
+
+    function setupMemberControls() {
+      if (memberState.controlsInitialized) return;
+
+      const toggleButtons = document.querySelectorAll('[data-member-toggle]');
+      if (!toggleButtons.length) return;
+
+      toggleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          memberState.isExpanded = !memberState.isExpanded;
+          applyMemberFilters();
+        });
+      });
+
+      memberState.controlsInitialized = true;
+    }
+
+    function renderMembers(members) {
+      const grid = document.getElementById('membersGrid');
+      if (!grid) return;
+
+      if (!members.length) {
+        grid.innerHTML = '<p>表示できるメンバーが見つかりませんでした。</p>';
+        updateMemberControls(0, 0);
+        grid.setAttribute('aria-busy', 'false');
+        return;
+      }
+
+      const categoryOrder = { faculty: 0, phd: 1, master: 2, undergraduate: 3, alumni: 4, researcher: 5 };
+      const sorted = [...members].sort((a, b) => {
+        const categoryDiff = (categoryOrder[getMemberCategory(a)] || 99) - (categoryOrder[getMemberCategory(b)] || 99);
+        if (categoryDiff !== 0) return categoryDiff;
+        const statusDiff = getMemberGradeScore(b) - getMemberGradeScore(a);
+        if (statusDiff !== 0) return statusDiff;
+        return (b.entry_year || 0) - (a.entry_year || 0);
+      });
+
+      const total = sorted.length;
+      const visibleLimit = memberState.isExpanded ? total : Math.min(memberState.visibleCount, total);
+      const visibleMembers = sorted.slice(0, visibleLimit);
+
+      grid.innerHTML = visibleMembers.map(member => createMemberCard(member)).join('');
+      updateMemberControls(total, visibleLimit);
+      grid.setAttribute('aria-busy', 'false');
+    }
+
+    function updateMemberControls(total, visible) {
+      const controls = document.querySelectorAll('.member-controls');
+      const toggles = document.querySelectorAll('[data-member-toggle]');
+      const fab = document.getElementById('memberFab');
+
+      if (!controls.length || !toggles.length) return;
+
+      // FABの表示制御
+      if (fab) {
+        const shouldShowFab = memberState.isExpanded && total > memberState.visibleCount;
+        fab.setAttribute('aria-hidden', shouldShowFab ? 'false' : 'true');
+      }
+
+      if (!total || total <= memberState.visibleCount) {
+        controls.forEach(control => {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        });
+        toggles.forEach(toggle => {
+          if (!toggle.closest('.member-fab')) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = '残りを表示';
+          }
+        });
+        return;
+      }
+
+      const showTop = memberState.isExpanded;
+      const showBottom = !memberState.isExpanded && total > visible;
+
+      controls.forEach(control => {
+        const position = control.dataset.position || 'bottom';
+        const shouldShow = position === 'top' ? showTop : showBottom;
+        if (shouldShow) {
+          control.classList.add('is-visible');
+          control.setAttribute('aria-hidden', 'false');
+        } else {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        }
+      });
+
+      const remaining = Math.max(total - visible, 0);
+      toggles.forEach(toggle => {
+        if (!toggle.closest('.member-fab')) {
+          toggle.textContent = memberState.isExpanded ? '表示を閉じる' : `残り${remaining}件を表示`;
+          toggle.setAttribute('aria-expanded', String(memberState.isExpanded));
+        }
+      });
+    }
+
+    function createMemberCard(member) {
+      const researchHtml = member._researchLinks.map(link => `
+        <div class="member-card__project">
+          <span class="member-card__project-label">${formatDegreeLabel(link.degree_type, link.year)}</span>
+          <span class="member-card__research">${link.title}</span>
+        </div>
+      `).join('');
+
+      const latestField = member._latestDegree && member._latestDegree.title
+        ? truncateText(member._latestDegree.title, 120)
+        : '研究テーマ: 未設定';
+
+      return `
+        <article class="card member-card" data-category="${getMemberCategory(member)}">
+          <h3 class="member-card__name">${member.name}</h3>
+          ${member.name_en ? `<p class="member-card__name-en">${member.name_en}</p>` : ''}
+          <p class="member-card__role">${member.status_tag || '研究員'}</p>
+          <p class="member-card__info">${latestField}</p>
+          ${researchHtml}
+          <div class="member-card__period">${member.research_period || ''}</div>
+        </article>
+      `;
+    }
+
+    function getMemberResearchLinks(member) {
+      const degrees = Array.isArray(member.degrees) ? member.degrees : [];
+      const result = degrees
+        .filter(degree => degree.file_id && degree.title)
+        .map(degree => ({
+          file_id: degree.file_id,
+          title: degree.title,
+          degree_type: degree.degree_type || '',
+          year: degree.year
+        }))
+        .reverse();
+      return result.slice(0, 2);
+    }
+
+    function formatDegreeLabel(degreeType, year) {
+      if (!degreeType) {
+        return year ? `${year}年` : '研究成果';
+      }
+
+      const normalized = degreeType.replace(/\s+/g, '').replace('（', '(').replace('）', ')');
+
+      if (normalized.includes('博士課程(在学中)')) {
+        return year ? `博士課程（${year}年〜）` : '博士課程（在学中）';
+      }
+      if (normalized.includes('修士課程(在学中)')) {
+        return year ? `修士課程（${year}年〜）` : '修士課程（在学中）';
+      }
+      if (normalized.includes('学士課程(在学中)')) {
+        return year ? `学部課程（${year}年〜）` : '学部課程（在学中）';
+      }
+      if (normalized.includes('博士論文')) {
+        return year ? `博士論文（${year}年）` : '博士論文';
+      }
+      if (normalized.includes('修士論文')) {
+        return year ? `修士論文（${year}年）` : '修士論文';
+      }
+      if (normalized.includes('学士論文')) {
+        return year ? `学士論文（${year}年）` : '学士論文';
+      }
+
+      return degreeType;
+    }
+
+    function getProjectThumbnail(project) {
+      const candidates = [];
+      if (project.thumbnail) candidates.push(project.thumbnail);
+      if (project.image_path) candidates.push(project.image_path);
+      if (project.file_id) {
+        candidates.push(`project/graduate/img/${project.file_id}_thumbnail.png`);
+        if (project.student_id) {
+          candidates.push(`project/current/img/${project.student_id}.png`);
+        }
+        candidates.push(`proc/img/${project.file_id}_thumbnail.png`);
+      }
+      if (!candidates.length) {
+        return PLACEHOLDER_THUMBNAIL;
+      }
+      return candidates[0];
+    }
+
+    async function loadPublications() {
+      const list = document.getElementById('publicationList');
+      if (!list) return;
+
+      try {
+        const response = await fetch('data/publish.json');
+        const data = await response.json();
+        const publications = Array.isArray(data) ? data : data.publications || [];
+
+        publicationState.publications = publications.map(enrichPublication);
+        setupPublicationFilters();
+        setupPublicationControls();
+        applyPublicationFilters();
+        list.setAttribute('aria-busy', 'false');
+      } catch (error) {
+        console.error('業績データの読み込みに失敗しました', error);
+        list.innerHTML = '<p>業績データを読み込めませんでした。</p>';
+        list.setAttribute('aria-busy', 'false');
+      }
+    }
+
+    function enrichPublication(publication) {
+      const searchSource = [
+        publication.title,
+        Array.isArray(publication.authors) ? publication.authors.join(' ') : publication.authors,
+        publication.section,
+        publication.text,
+        publication.category,
+        publication.year
+      ].filter(Boolean).join(' ').toLowerCase();
+
+      return {
+        ...publication,
+        _category: (publication.category || 'other').toLowerCase(),
+        _search: searchSource
+      };
+    }
+
+    function setupPublicationFilters() {
+      const buttons = document.querySelectorAll('[data-pub-category]');
+      const searchInput = document.getElementById('publicationSearch');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const category = button.dataset.pubCategory || 'all';
+          publicationState.currentCategory = category;
+          publicationState.isExpanded = false;
+          buttons.forEach(btn => btn.setAttribute('aria-pressed', btn === button ? 'true' : 'false'));
+          applyPublicationFilters();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', event => {
+          publicationState.searchTerm = event.target.value.trim().toLowerCase();
+          publicationState.isExpanded = false;
+          applyPublicationFilters();
+        });
+      }
+    }
+
+    function setupPublicationControls() {
+      if (publicationState.controlsInitialized) return;
+
+      const toggleButtons = document.querySelectorAll('[data-publication-toggle]');
+      if (!toggleButtons.length) return;
+
+      toggleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          publicationState.isExpanded = !publicationState.isExpanded;
+          if (!publicationState.isExpanded) {
+            updatePublicationVisibleCount();
+          }
+          applyPublicationFilters();
+        });
+      });
+
+      window.addEventListener('resize', () => {
+        if (publicationState.isExpanded) return;
+        if (publicationState.resizeTimer) {
+          window.clearTimeout(publicationState.resizeTimer);
+        }
+        publicationState.resizeTimer = window.setTimeout(() => {
+          const changed = updatePublicationVisibleCount();
+          if (changed) {
+            applyPublicationFilters();
+          }
+          publicationState.resizeTimer = null;
+        }, 150);
+      });
+
+      publicationState.controlsInitialized = true;
+    }
+
+    function updatePublicationVisibleCount() {
+      const list = document.getElementById('publicationList');
+      if (!list) return false;
+
+      const columnCount = getPublicationColumnCount(list);
+      const totalPublications = publicationState.publications.length;
+
+      let limit;
+      if (columnCount >= 4) {
+        limit = 8;
+      } else if (columnCount >= 3) {
+        limit = 6;
+      } else if (columnCount >= 2) {
+        limit = 4;
+      } else {
+        limit = totalPublications ? Math.min(totalPublications, 2) : 2;
+      }
+
+      limit = Math.max(1, limit);
+
+      if (publicationState.visibleCount === limit) {
+        return false;
+      }
+
+      publicationState.visibleCount = limit;
+      return true;
+    }
+
+    function getPublicationColumnCount(list) {
+      const styles = window.getComputedStyle(list);
+      const templateColumns = styles.getPropertyValue('grid-template-columns');
+
+      if (templateColumns && !templateColumns.includes('repeat')) {
+        const explicit = templateColumns.split(' ').filter(token => token.trim()).length;
+        if (explicit) return explicit;
+      }
+
+      const gapValue = parseFloat(styles.getPropertyValue('column-gap') || styles.getPropertyValue('grid-column-gap')) || 0;
+      const listWidth = list.clientWidth;
+      if (!listWidth) return 1;
+
+      const approximate = Math.floor((listWidth + gapValue) / (260 + gapValue));
+      return Math.max(1, approximate);
+    }
+
+    function updatePublicationControls(total, visible) {
+      const controls = document.querySelectorAll('.publication-controls');
+      const toggles = document.querySelectorAll('[data-publication-toggle]');
+      const fab = document.getElementById('publicationFab');
+
+      if (!controls.length || !toggles.length) return;
+
+      // FABの表示制御
+      if (fab) {
+        const shouldShowFab = publicationState.isExpanded && total > publicationState.visibleCount;
+        fab.setAttribute('aria-hidden', shouldShowFab ? 'false' : 'true');
+      }
+
+      if (!total) {
+        controls.forEach(control => {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        });
+        toggles.forEach(toggle => {
+          if (!toggle.closest('.publication-fab')) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = '残りを表示';
+          }
+        });
+        return;
+      }
+
+      if (!publicationState.isExpanded && total <= visible) {
+        controls.forEach(control => {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        });
+        toggles.forEach(toggle => {
+          if (!toggle.closest('.publication-fab')) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = '残りを表示';
+          }
+        });
+        return;
+      }
+
+      const showTop = publicationState.isExpanded;
+      const showBottom = !publicationState.isExpanded && total > visible;
+
+      controls.forEach(control => {
+        const position = control.dataset.position || 'bottom';
+        const shouldShow = position === 'top' ? showTop : showBottom;
+        if (shouldShow) {
+          control.classList.add('is-visible');
+          control.setAttribute('aria-hidden', 'false');
+        } else {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        }
+      });
+
+      const remaining = Math.max(total - visible, 0);
+      toggles.forEach(toggle => {
+        if (!toggle.closest('.publication-fab')) {
+          toggle.textContent = publicationState.isExpanded ? '表示を閉じる' : `残り${remaining}件を表示`;
+          toggle.setAttribute('aria-expanded', String(publicationState.isExpanded));
+        }
+      });
+    }
+
+    function applyPublicationFilters() {
+      const list = document.getElementById('publicationList');
+      if (!list) return;
+
+      const { publications, currentCategory, searchTerm } = publicationState;
+      let filtered = [...publications];
+
+      if (currentCategory !== 'all') {
+        filtered = filtered.filter(pub => pub._category === currentCategory);
+      }
+
+      if (searchTerm) {
+        filtered = filtered.filter(pub => pub._search.includes(searchTerm));
+      }
+
+      renderPublications(filtered);
+    }
+
+    function renderPublications(publications) {
+      const list = document.getElementById('publicationList');
+      if (!list) return;
+
+      if (!publications.length) {
+        list.innerHTML = '<p>条件に合致する研究業績が見つかりませんでした。</p>';
+        updatePublicationControls(0, 0);
+        return;
+      }
+
+      if (!publicationState.isExpanded) {
+        updatePublicationVisibleCount();
+      }
+
+      const total = publications.length;
+      const visibleLimit = publicationState.isExpanded
+        ? total
+        : Math.min(publicationState.visibleCount || Math.min(total, 6), total);
+
+      const items = publications
+        .slice(0, visibleLimit)
+        .map(publication => createPublicationCard(publication))
+        .join('');
+
+      list.innerHTML = items;
+      updatePublicationControls(total, visibleLimit);
+    }
+
+    function createPublicationCard(publication) {
+      const category = publication._category || 'other';
+      const categoryLabel = getPublicationCategoryLabel(category);
+      const citation = publication.text ? escapeHtml(publication.text) : '';
+      const title = publication.title ? escapeHtml(publication.title) : '';
+
+      const linkContent = publication.link
+        ? `<a class="publication-item__external" href="${publication.link}" target="_blank" rel="noopener noreferrer" aria-label="${title || '外部リンク'}">外部リンク</a>`
+        : '';
+
+      return `
+        <article class="publication-item" data-category="${category}">
+          <span class="publication-item__year">${publication.year || '年不明'}</span>
+          <span class="publication-item__category publication-item__category--${category}">${categoryLabel}</span>
+          <span class="publication-item__citation">${citation || title}</span>
+          ${linkContent}
+        </article>
+      `;
+    }
+
+
+    function getPublicationCategoryLabel(category) {
+      const labels = {
+        journal: '📄 学術雑誌',
+        conference: '🌍 国際会議',
+        domestic_peer: '🔍 国内査読',
+        domestic: '🇯🇵 国内学会',
+        lecture: '🎤 講演',
+        award: '🏆 受賞',
+        book: '📚 著書・解説',
+        other: '📋 その他'
+      };
+      return labels[category] || labels.other;
+    }
+
+    async function loadActivities() {
+      const list = document.getElementById('activityList');
+      if (!list) return;
+
+      try {
+        const response = await fetch('data/activity.json');
+        const data = await response.json();
+        const activities = Array.isArray(data) ? data : data.activities || [];
+
+        activityState.activities = activities
+          .map(enrichActivity)
+          .sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+
+        setupActivityControls();
+        renderActivities();
+        initializeActivityInteractions();
+        list.setAttribute('aria-busy', 'false');
+      } catch (error) {
+        console.error('活動報告データの読み込みに失敗しました', error);
+        list.innerHTML = '<p>活動報告データを読み込めませんでした。</p>';
+        list.setAttribute('aria-busy', 'false');
+      }
+    }
+
+    function enrichActivity(activity) {
+      const tags = Array.isArray(activity.tags) ? activity.tags : [];
+      const timestamp = activity.date ? Date.parse(activity.date) : NaN;
+      return {
+        ...activity,
+        tags,
+        timestamp: Number.isNaN(timestamp) ? null : timestamp,
+        formattedDate: activity.date ? formatActivityDate(activity.date) : '',
+        summary: activity.summary || '',
+        note_path: activity.note_path || '',
+        image_path: activity.image_path || 'activity/img/activity-placeholder.svg'
+      };
+    }
+
+    function formatActivityDate(dateString) {
+      if (!dateString) return '';
+      const date = new Date(dateString);
+      if (Number.isNaN(date.getTime())) {
+        return dateString;
+      }
+      const year = date.getFullYear();
+      const month = date.getMonth() + 1;
+      const day = date.getDate();
+      return `${year}年${month}月${day}日`;
+    }
+
+
+    function escapeHtml(value) {
+      return String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/"/g, '&quot;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    }
+
+    function decodeHtml(value) {
+      return String(value || '')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/&amp;/g, '&');
+    }
+
+    function setupActivityControls() {
+      if (activityState.controlsInitialized) return;
+
+      const toggleButtons = document.querySelectorAll('[data-activity-toggle]');
+      if (!toggleButtons.length) return;
+
+      toggleButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+          const wasExpanded = activityState.isExpanded;
+          activityState.isExpanded = !activityState.isExpanded;
+
+          // スムーズスクロール機能
+          if (!wasExpanded) {
+            // 展開時：現在位置を保持
+            activityState.scrollPosition = window.pageYOffset;
+          } else {
+            // 折りたたみ時：活動報告セクションの先頭にスクロール
+            const activitiesSection = document.getElementById('activities');
+            if (activitiesSection) {
+              activitiesSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest'
+              });
+            }
+          }
+
+          renderActivities();
+        });
+      });
+
+      activityState.controlsInitialized = true;
+    }
+
+    function renderActivities() {
+      const list = document.getElementById('activityList');
+      if (!list) return;
+
+      const activities = activityState.activities;
+      if (!activities.length) {
+        list.innerHTML = '<p>活動報告がまだ登録されていません。</p>';
+        updateActivityControls(0, 0);
+        return;
+      }
+
+      const total = activities.length;
+      const visibleLimit = activityState.isExpanded ? total : Math.min(activityState.visibleCount, total);
+      const visibleActivities = activities.slice(0, visibleLimit);
+
+      list.innerHTML = visibleActivities.map(activity => `
+        <article class="activity-item">
+          <div class="activity-item__media">
+            <img src="${activity.image_path}" alt="${escapeHtml(activity.title)}" class="activity-item__image" loading="lazy">
+          </div>
+          <div class="activity-item__content">
+            <h3 class="activity-item__title">${escapeHtml(activity.title)}</h3>
+            <div class="activity-item__meta">
+              ${activity.formattedDate ? `<span>${activity.formattedDate}</span>` : ''}
+              ${activity.location ? `<span>${activity.location}</span>` : ''}
+            </div>
+            <p class="activity-item__summary">${escapeHtml(activity.summary)}</p>
+            <div class="activity-item__footer">
+              ${activity.tags.length ? `<div class="activity-item__tags">${activity.tags.map(tag => `<span class="activity-tag">#${escapeHtml(tag)}</span>`).join('')}</div>` : ''}
+              ${activity.note_path ? `<a class="link-arrow" href="${activity.note_path}" target="_blank" rel="noopener noreferrer" data-activity-note="${escapeHtml(activity.note_path)}" data-activity-title="${escapeHtml(activity.title)}" data-activity-image="${escapeHtml(activity.image_path)}" data-activity-tags="${escapeHtml(activity.tags.join('|'))}" data-activity-date="${escapeHtml(activity.formattedDate)}" data-activity-location="${escapeHtml(activity.location || '')}">記事を読む</a>` : ''}
+            </div>
+          </div>
+        </article>
+      `).join('');
+
+      updateActivityControls(total, visibleLimit);
+    }
+
+    function updateActivityControls(total, visible) {
+      const controls = document.querySelectorAll('.activity-controls');
+      const toggles = document.querySelectorAll('[data-activity-toggle]');
+      const fab = document.getElementById('activityFab');
+
+      if (!controls.length || !toggles.length) return;
+
+      // FABの表示制御
+      if (fab) {
+        if (activityState.isExpanded && total > activityState.visibleCount) {
+          fab.setAttribute('aria-hidden', 'false');
+        } else {
+          fab.setAttribute('aria-hidden', 'true');
+        }
+      }
+
+      if (!total || total <= activityState.visibleCount) {
+        controls.forEach(control => {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        });
+        toggles.forEach(toggle => {
+          if (!toggle.closest('.activity-fab')) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = '残りを表示';
+          }
+        });
+        return;
+      }
+
+      const showTop = activityState.isExpanded;
+      const showBottom = !activityState.isExpanded && total > visible;
+
+      controls.forEach(control => {
+        const position = control.dataset.position || 'bottom';
+        const shouldShow = position === 'top' ? showTop : showBottom;
+        if (shouldShow) {
+          control.classList.add('is-visible');
+          control.setAttribute('aria-hidden', 'false');
+        } else {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        }
+      });
+
+      const remaining = Math.max(total - visible, 0);
+      toggles.forEach(toggle => {
+        if (!toggle.closest('.activity-fab')) {
+          toggle.textContent = activityState.isExpanded ? '表示を閉じる' : `残り${remaining}件を表示`;
+          toggle.setAttribute('aria-expanded', String(activityState.isExpanded));
+        }
+      });
+
+      // 状態情報の更新
+      const infoElement = document.getElementById('activityInfo');
+      if (infoElement && total > activityState.visibleCount) {
+        if (!activityState.isExpanded) {
+          infoElement.textContent = `${visible}件 / 全${total}件の活動報告を表示中`;
+        } else {
+          infoElement.textContent = `全${total}件の活動報告を表示中`;
+        }
+      }
+    }
+
+    function initializeActivityInteractions() {
+      if (activityState.listenersInitialized) return;
+      const list = document.getElementById('activityList');
+      const modal = document.getElementById('activity-modal');
+      if (!list || !modal) return;
+
+      activityState.modal = modal;
+      activityState.body = modal.querySelector('#activity-modal-body');
+      activityState.meta = modal.querySelector('#activity-modal-meta');
+      activityState.title = modal.querySelector('#activity-modal-title');
+      activityState.image = modal.querySelector('#activity-modal-image');
+      activityState.tags = modal.querySelector('#activity-modal-tags');
+
+      list.addEventListener('click', handleActivityTriggerClick);
+
+      const closeTargets = modal.querySelectorAll('[data-activity-modal-close]');
+      closeTargets.forEach(element => {
+        element.addEventListener('click', () => closeActivityModal());
+      });
+
+      const overlay = modal.querySelector('.activity-modal__overlay');
+      if (overlay) {
+        overlay.addEventListener('click', () => closeActivityModal());
+      }
+
+      activityState.listenersInitialized = true;
+    }
+
+    async function handleActivityTriggerClick(event) {
+      const trigger = event.target.closest('[data-activity-note]');
+      if (!trigger) return;
+      event.preventDefault();
+      activityState.activeTrigger = trigger;
+      const getAttr = name => decodeHtml(trigger.getAttribute(name));
+      await openActivityModal({
+        notePath: getAttr('data-activity-note'),
+        title: getAttr('data-activity-title'),
+        imagePath: getAttr('data-activity-image'),
+        tags: getAttr('data-activity-tags'),
+        date: getAttr('data-activity-date'),
+        location: getAttr('data-activity-location'),
+      });
+    }
+
+    async function openActivityModal({ notePath, title, imagePath, tags, date, location }) {
+      const modal = activityState.modal;
+      if (!modal) return;
+
+      if (activityState.title) {
+        activityState.title.textContent = title || '活動レポート';
+      }
+
+      if (activityState.meta) {
+        const fragments = [];
+        if (date) fragments.push(date);
+        if (location) fragments.push(location);
+        activityState.meta.textContent = fragments.join(' / ');
+      }
+
+      if (activityState.image) {
+        activityState.image.src = imagePath || 'activity/img/activity-placeholder.svg';
+        activityState.image.alt = title || '活動イメージ';
+      }
+
+      if (activityState.tags) {
+        const tagMarkup = (tags || '')
+          .split('|')
+          .filter(Boolean)
+          .map(tag => `<span class="activity-tag">#${escapeHtml(tag)}</span>`)
+          .join(' ');
+        activityState.tags.innerHTML = tagMarkup;
+        activityState.tags.style.display = tagMarkup ? 'flex' : 'none';
+      }
+
+
+      if (activityState.body) {
+        activityState.body.scrollTop = 0;
+        if (!notePath) {
+          activityState.body.innerHTML = '<p>この活動の詳細ノートはまだ登録されていません。</p>';
+        } else {
+          activityState.body.innerHTML = '<p>読み込み中...</p>';
+          try {
+            const response = await fetch(notePath);
+            const markdown = await response.text();
+            const { content } = parseActivityNote(markdown);
+            activityState.body.innerHTML = content || '<p>本文が見つかりませんでした。</p>';
+          } catch (error) {
+            console.error('活動ノートの読み込みに失敗しました', error);
+            activityState.body.innerHTML = '<p>活動ノートを読み込めませんでした。</p>';
+          }
+        }
+      }
+
+      modal.setAttribute('aria-hidden', 'false');
+      modal.classList.add('is-open');
+      document.body.classList.add('modal-open');
+
+      const keydownHandler = event => {
+        if (event.key === 'Escape') {
+          closeActivityModal();
+        }
+      };
+      document.addEventListener('keydown', keydownHandler);
+      activityState.keydownHandler = keydownHandler;
+
+      const focusable = modal.querySelector('.activity-modal__close');
+      if (focusable) {
+        focusable.focus({ preventScroll: true });
+      }
+    }
+
+    function closeActivityModal() {
+      const modal = activityState.modal;
+      if (!modal) return;
+
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+
+      if (activityState.body) {
+        activityState.body.innerHTML = '';
+      }
+
+      if (activityState.keydownHandler) {
+        document.removeEventListener('keydown', activityState.keydownHandler);
+        activityState.keydownHandler = null;
+      }
+
+      if (activityState.activeTrigger) {
+        activityState.activeTrigger.focus({ preventScroll: true });
+        activityState.activeTrigger = null;
+      }
+    }
+
+
+    function parseActivityNote(markdown) {
+      const normalized = (markdown || '').replace(/\r?\n/g, '\n');
+      const match = normalized.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+      const body = match ? match[2].trim() : normalized.trim();
+
+      const lines = body.split('\n');
+      const htmlParts = [];
+      let paragraphBuffer = [];
+      let listBuffer = null;
+
+      const flushParagraph = () => {
+        if (!paragraphBuffer.length) return;
+        const paragraphText = paragraphBuffer.join(' ').trim();
+        if (paragraphText) {
+          htmlParts.push(`<p>${renderInline(paragraphText)}</p>`);
+        }
+        paragraphBuffer = [];
+      };
+
+      const flushList = () => {
+        if (!listBuffer || !listBuffer.items.length) {
+          listBuffer = null;
+          return;
+        }
+        const tag = listBuffer.type === 'ol' ? 'ol' : 'ul';
+        const itemsHtml = listBuffer.items
+          .map(item => `<li>${renderInline(item.trim())}</li>`)
+          .join('');
+        htmlParts.push(`<${tag}>${itemsHtml}</${tag}>`);
+        listBuffer = null;
+      };
+
+      lines.forEach(rawLine => {
+        const trimmed = rawLine.trim();
+
+        if (!trimmed) {
+          flushParagraph();
+          flushList();
+          return;
+        }
+
+        const headingMatch = rawLine.match(/^(#{1,4})\s+(.*)$/);
+        if (headingMatch) {
+          flushParagraph();
+          flushList();
+          const level = Math.min(headingMatch[1].length, 4);
+          htmlParts.push(`<h${level}>${renderInline(headingMatch[2].trim())}</h${level}>`);
+          return;
+        }
+
+        const imageMatch = trimmed.match(/^!\[(.*?)\]\((.*?)(?:\s+"(.*?)")?\)$/);
+        if (imageMatch) {
+          flushParagraph();
+          flushList();
+          const alt = imageMatch[1] || '';
+          const rawSrc = imageMatch[2] || '';
+          const resolvedSrc = resolveActivityAssetPath(rawSrc);
+          const caption = imageMatch[3] || alt;
+          const figure = `
+            <figure class="activity-note__figure">
+              <img src="${escapeHtml(resolvedSrc)}" alt="${escapeHtml(alt)}" loading="lazy">
+              ${caption ? `<figcaption>${escapeHtml(caption)}</figcaption>` : ''}
+            </figure>
+          `.trim();
+          htmlParts.push(figure);
+          return;
+        }
+
+        const orderedMatch = rawLine.match(/^\s*\d+\.\s+(.*)$/);
+        if (orderedMatch) {
+          flushParagraph();
+          if (!listBuffer || listBuffer.type !== 'ol') {
+            flushList();
+            listBuffer = { type: 'ol', items: [] };
+          }
+          listBuffer.items.push(orderedMatch[1]);
+          return;
+        }
+
+        const unorderedMatch = rawLine.match(/^\s*[-*+]\s+(.*)$/);
+        if (unorderedMatch) {
+          flushParagraph();
+          if (!listBuffer || listBuffer.type !== 'ul') {
+            flushList();
+            listBuffer = { type: 'ul', items: [] };
+          }
+          listBuffer.items.push(unorderedMatch[1]);
+          return;
+        }
+
+        paragraphBuffer.push(rawLine.trim());
+      });
+
+      flushParagraph();
+      flushList();
+
+      return { content: htmlParts.join('\n') };
+
+      function resolveActivityAssetPath(path) {
+        const trimmed = (path || '').trim();
+        if (!trimmed) return '';
+        if (/^(?:https?:|data:|\/)/i.test(trimmed)) {
+          return trimmed;
+        }
+        if (trimmed.startsWith('../img/')) {
+          return `activity/img/${trimmed.substring('../img/'.length)}`;
+        }
+        if (trimmed.startsWith('./img/')) {
+          return `activity/img/${trimmed.substring('./img/'.length)}`;
+        }
+        if (trimmed.startsWith('img/')) {
+          return `activity/img/${trimmed.substring('img/'.length)}`;
+        }
+        return trimmed;
+      }
+
+      function renderInline(text) {
+        if (!text) return '';
+        let result = escapeHtml(text);
+
+        result = result.replace(/\*\*(.+?)\*\*/g, (_, content) => `<strong>${content}</strong>`);
+        result = result.replace(/\*(.+?)\*/g, (_, content) => `<em>${content}</em>`);
+        result = result.replace(/`(.+?)`/g, (_, content) => `<code>${content}</code>`);
+        result = result.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, url) => {
+          const safeUrl = escapeHtml(url);
+          return `<a href="${safeUrl}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+        });
+
+        return result;
+      }
+    }
+  </script>
+</body>
+</html>

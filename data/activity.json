@@ -1,0 +1,544 @@
+{
+  "activities": [
+    {
+      "id": "jsme-annual-2025",
+      "title": "日本機械学会 2025年度年次大会 に参加",
+      "date": "2025-09-17",
+      "year": 2025,
+      "location": "北海道大学",
+      "summary": "北海道大学で開催された日本機械学会 2025年度 年次大会（JSME）で3件の研究発表を行いました。",
+      "note_path": "activity/notes/jsme-annual-2025.md",
+      "image_path": "activity/img/jsme25_01.jpg",
+      "tags": [
+        "conference",
+        "jsme",
+        "presentations"
+      ],
+      "presentation_count": 3
+    },
+    {
+      "id": "robomech-2025-yamagata",
+      "title": "日本機械学会 ロボティクス・メカトロニクス部門 ロボティクス・メカトロニクス 講演会 2025 in Yamagata に参加",
+      "date": "2025-08-02",
+      "year": 2025,
+      "location": "山形県",
+      "summary": "山形県で開催されたロボティクス・メカトロニクス講演会2025に参加し、14件の研究発表を行いました。",
+      "note_path": "activity/notes/robomech-2025-yamagata.md",
+      "image_path": "activity/img/robomech25_01.jpg",
+      "tags": [
+        "conference",
+        "jsme",
+        "robomech"
+      ],
+      "presentation_count": 14
+    },
+    {
+      "id": "iip-2025",
+      "title": "日本機械学会 情報・知能・精密機器部門講演会（IIP2025）に参加",
+      "date": "2025-04-17",
+      "year": 2025,
+      "location": "山口大学 常盤キャンパス",
+      "summary": "山口大学 常盤キャンパスで開催された IIP2025 に参加し、4件の研究発表を行いました。",
+      "note_path": "activity/notes/iip-2025.md",
+      "image_path": "activity/img/iip25_01.jpg",
+      "tags": [
+        "conference",
+        "iip",
+        "jsme"
+      ],
+      "presentation_count": 4
+    },
+    {
+      "id": "samcon-2025",
+      "title": "SAMCON2025に参加",
+      "date": "2025-04-17",
+      "year": 2025,
+      "location": "島根県",
+      "summary": "島根県で開催された SAMCON2025 に参加し、5件の研究発表を行いました。",
+      "note_path": "activity/notes/samcon-2025.md",
+      "image_path": "activity/img/samcon25_01.jpg",
+      "tags": [
+        "conference",
+        "samcon"
+      ],
+      "presentation_count": 5
+    },
+    {
+      "id": "sice-si-2024",
+      "title": "SICE SI2024に参加",
+      "date": "2025-02-01",
+      "year": 2025,
+      "location": "アイーナ いわて県民情報交流センター",
+      "summary": "第25回計測自動制御学会システムインテグレーション部門講演会（SI2024）で3件の研究発表を行いました。",
+      "note_path": "activity/notes/sice-si-2024.md",
+      "image_path": "activity/img/sice24_01.jpg",
+      "tags": [
+        "conference",
+        "sice",
+        "system-integration"
+      ],
+      "presentation_count": 3
+    },
+    {
+      "id": "iecon-2024",
+      "title": "IEEE IECON 2024 (50th Annual Conference) に参加",
+      "date": "2024-11-06",
+      "year": 2024,
+      "location": "Chicago, USA",
+      "summary": "アメリカ・シカゴで開催されたIEEE IECON 2024に参加し、2件の研究発表を行いました。",
+      "note_path": "activity/notes/iecon-2024.md",
+      "image_path": "activity/img/iecon24_01.jpg",
+      "tags": [
+        "conference",
+        "ieee",
+        "international",
+        "industrial-electronics"
+      ],
+      "presentation_count": 2
+    },
+    {
+      "id": "vr-psychology-2024",
+      "title": "日本バーチャルリアリティ学会VR心理学研究委員会に参加",
+      "date": "2024-11-20",
+      "year": 2024,
+      "location": "VR心理学研究委員会",
+      "summary": "VR心理学研究委員会（SIG-VRPSY）にて口頭発表を行いました。",
+      "note_path": "activity/notes/vr-psychology-2024.md",
+      "image_path": "activity/img/vrpsy24_01.jpg",
+      "tags": [
+        "workshop",
+        "virtual-reality"
+      ]
+    },
+    {
+      "id": "ceatec-2024",
+      "title": "CEATEC2024 協調ロボティクス研究室が出展",
+      "date": "2024-10-11",
+      "year": 2024,
+      "location": "幕張メッセ",
+      "summary": "CEATEC2024に出展し、「空気を読める賢さ」をテーマに研究成果を紹介しました。",
+      "note_path": "activity/notes/ceatec-2024.md",
+      "image_path": "activity/img/ceatec24_01.jpg",
+      "tags": [
+        "exhibition",
+        "ceatec",
+        "public-outreach"
+      ]
+    },
+    {
+      "id": "vr-conference-2024",
+      "title": "第29回日本バーチャルリアリティ学会に参加",
+      "date": "2024-09-17",
+      "year": 2024,
+      "location": "日本バーチャルリアリティ学会",
+      "summary": "第29回日本バーチャルリアリティ学会にてポスター発表を行いました。",
+      "note_path": "activity/notes/vr-conference-2024.md",
+      "image_path": "activity/img/vrc24_01.jpg",
+      "tags": [
+        "conference",
+        "virtual-reality"
+      ]
+    },
+    {
+      "id": "ies2024",
+      "title": "2024年電気学会、電子・情報・システム部門大会に参加",
+      "date": "2024-09-17",
+      "year": 2024,
+      "location": "電気学会 電子・情報・システム部門大会",
+      "summary": "電気学会 電子・情報・システム部門大会にてポスター発表を行いました。",
+      "note_path": "activity/notes/ies2024.md",
+      "image_path": "activity/img/ies24_01.jpg",
+      "tags": [
+        "conference",
+        "iee-japan"
+      ]
+    },
+    {
+      "id": "samcon-2024",
+      "title": "SAMCON 2024 (10th IEEJ International Workshop) に参加",
+      "date": "2024-03-02",
+      "year": 2024,
+      "location": "埼玉県",
+      "summary": "埼玉県で開催されたSAMCON 2024に参加し、1件の研究発表を行いました。",
+      "note_path": "activity/notes/samcon-2024.md",
+      "image_path": "activity/img/samcon24_01.jpg",
+      "tags": [
+        "conference",
+        "ieej",
+        "international",
+        "samcon"
+      ],
+      "presentation_count": 1
+    },
+    {
+      "id": "robomech-2024-utsunomiya",
+      "title": "日本機械学会 ロボティクス・メカトロニクス講演会2024 in Utsunomiyaに参加",
+      "date": "2024-06-04",
+      "year": 2024,
+      "location": "栃木県 宇都宮市",
+      "summary": "ロボティクス・メカトロニクス講演会2024 in Utsunomiyaでポスター発表を行いました。",
+      "note_path": "activity/notes/robomech-2024-utsunomiya.md",
+      "image_path": "activity/img/robomech24_01.jpg",
+      "tags": [
+        "conference",
+        "jsme",
+        "robomech"
+      ]
+    },
+    {
+      "id": "sice-si-2023",
+      "title": "SICE SI2023に参加",
+      "date": "2023-12-14",
+      "year": 2023,
+      "location": "第24回計測自動制御学会システムインテグレーション部門講演会",
+      "summary": "第24回計測自動制御学会システムインテグレーション部門講演会（SI2023）で研究発表を行いました。",
+      "note_path": "activity/notes/sice-si-2023.md",
+      "image_path": "activity/img/sice23_01.jpg",
+      "tags": [
+        "conference",
+        "sice",
+        "system-integration"
+      ]
+    },
+    {
+      "id": "ieee-robio-2023",
+      "title": "IEEE ROBIO 2023 in Samui, Thailandに参加",
+      "date": "2023-12-04",
+      "year": 2023,
+      "location": "サムイ島, タイ",
+      "summary": "タイのサムイ島で開催されたIEEE ROBIO 2023に参加し研究発表を行いました。",
+      "note_path": "activity/notes/ieee-robio-2023.md",
+      "image_path": "activity/img/robio23_01.jpg",
+      "tags": [
+        "conference",
+        "ieee",
+        "international",
+        "robotics"
+      ]
+    },
+    {
+      "id": "cablecon-2023",
+      "title": "CableCon2023に参加",
+      "date": "2023-09-20",
+      "year": 2023,
+      "location": "ケーブル技術ショー",
+      "summary": "CableCon2023に参加し、ケーブル関連技術の研究発表を行いました。",
+      "note_path": "activity/notes/cablecon-2023.md",
+      "image_path": "activity/img/cablecon23_01.jpg",
+      "tags": [
+        "conference",
+        "cable",
+        "technology"
+      ]
+    },
+    {
+      "id": "world-haptic-2023",
+      "title": "World Haptic Conference 2023に参加",
+      "date": "2023-07-10",
+      "year": 2023,
+      "location": "デルフト工科大学, オランダ",
+      "summary": "オランダのデルフト工科大学で開催されたWorld Haptic Conference 2023に参加し研究発表を行いました。",
+      "note_path": "activity/notes/world-haptic-2023.md",
+      "image_path": "activity/img/whaptic23_01.jpg",
+      "tags": [
+        "conference",
+        "haptic",
+        "international"
+      ]
+    },
+    {
+      "id": "robomech-2023-nagoya",
+      "title": "日本機械学会 ロボティクス・メカトロニクス講演会2023 in Nagoyaに参加",
+      "date": "2023-06-28",
+      "year": 2023,
+      "location": "愛知県 名古屋市",
+      "summary": "名古屋で開催されたロボティクス・メカトロニクス講演会2023に参加し研究発表を行いました。",
+      "note_path": "activity/notes/robomech-2023-nagoya.md",
+      "image_path": "activity/img/robomech23_01.jpg",
+      "tags": [
+        "conference",
+        "jsme",
+        "robomech"
+      ]
+    },
+    {
+      "id": "lab-ob-meeting-2023",
+      "title": "協調ロボティクス研究室 OB会2023",
+      "date": "2023-03-25",
+      "year": 2023,
+      "location": "東京都",
+      "summary": "協調ロボティクス研究室のOB会を開催し、卒業生と現役学生の交流を深めました。",
+      "note_path": "activity/notes/lab-ob-meeting-2023.md",
+      "image_path": "activity/img/labob23_01.jpg",
+      "tags": [
+        "meeting",
+        "alumni",
+        "networking"
+      ]
+    },
+    {
+      "id": "alumni-feature-2023",
+      "title": "卒業生の出縄さんがtalentbookの特集記事に掲載",
+      "date": "2023-02-15",
+      "year": 2023,
+      "location": "オンライン",
+      "summary": "協調ロボティクス研究室の卒業生である出縄さんがtalentbookの特集記事に掲載されました。",
+      "note_path": "activity/notes/alumni-feature-2023.md",
+      "image_path": "activity/img/alumni23_01.jpg",
+      "tags": [
+        "alumni",
+        "media",
+        "feature"
+      ]
+    },
+    {
+      "id": "research-activity-2023",
+      "title": "研究活動報告 2023",
+      "date": "2023-01-31",
+      "year": 2023,
+      "location": "協調ロボティクス研究室",
+      "summary": "2023年の研究活動の年間報告です。",
+      "note_path": "activity/notes/research-activity-2023.md",
+      "image_path": "activity/img/research23_01.jpg",
+      "tags": [
+        "research",
+        "report",
+        "annual"
+      ]
+    },
+    {
+      "id": "iecon-2022",
+      "title": "IEEE IECON 2022 (48th Annual Conference) に参加",
+      "date": "2022-10-20",
+      "year": 2022,
+      "location": "Brussels, Belgium",
+      "summary": "ベルギー・ブリュッセルで開催されたIEEE IECON 2022に参加し、1件の研究発表を行いました。",
+      "note_path": "activity/notes/iecon-2022.md",
+      "image_path": "activity/img/iecon22_01.jpg",
+      "tags": [
+        "conference",
+        "ieee",
+        "international",
+        "industrial-electronics"
+      ],
+      "presentation_count": 1
+    },
+    {
+      "id": "mipe-2022",
+      "title": "MIPE 2022 (JSME-IIP/ASME-ISPS Joint International Conference) に参加",
+      "date": "2022-08-31",
+      "year": 2022,
+      "location": "名古屋",
+      "summary": "名古屋で開催されたMIPE 2022に参加し、9件の研究発表を行いました。",
+      "note_path": "activity/notes/mipe-2022.md",
+      "image_path": "activity/img/mipe22_01.jpg",
+      "tags": [
+        "conference",
+        "jsme",
+        "asme",
+        "international",
+        "micromechatronics"
+      ],
+      "presentation_count": 9
+    },
+    {
+      "id": "samcon-2022",
+      "title": "SAMCON 2022 (8th IEEJ International Workshop) に参加",
+      "date": "2022-03-08",
+      "year": 2022,
+      "location": "埼玉県",
+      "summary": "埼玉県で開催されたSAMCON 2022に参加し、1件の研究発表を行いました。",
+      "note_path": "activity/notes/samcon-2022.md",
+      "image_path": "activity/img/samcon22_01.jpg",
+      "tags": [
+        "conference",
+        "ieej",
+        "international",
+        "samcon"
+      ],
+      "presentation_count": 1
+    },
+    {
+      "id": "sice-si-2022",
+      "title": "SICE SI2022に参加",
+      "date": "2022-12-14",
+      "year": 2022,
+      "location": "第23回計測自動制御学会システムインテグレーション部門講演会",
+      "summary": "第23回計測自動制御学会システムインテグレーション部門講演会（SI2022）で研究発表を行いました。",
+      "note_path": "activity/notes/sice-si-2022.md",
+      "image_path": "activity/img/sice22_01.svg",
+      "tags": [
+        "conference",
+        "sice",
+        "system-integration"
+      ]
+    },
+    {
+      "id": "ieej-eis-2021",
+      "title": "2021年電気学会 電子・情報・システム部門大会に参加",
+      "date": "2021-09-15",
+      "year": 2021,
+      "location": "電気学会 電子・情報・システム部門大会",
+      "summary": "電気学会 電子・情報・システム部門大会にて研究発表を行いました。",
+      "note_path": "activity/notes/ieej-eis-2021.md",
+      "image_path": "activity/img/ieejies21_01.svg",
+      "tags": [
+        "conference",
+        "iee-japan"
+      ]
+    },
+    {
+      "id": "robomech-2021-osaka",
+      "title": "日本機械学会 ロボティクス・メカトロニクス講演会2021 in Osaka に参加",
+      "date": "2021-06-06",
+      "year": 2021,
+      "location": "大阪",
+      "summary": "大阪で開催されたロボティクス・メカトロニクス講演会2021に参加し研究発表を行いました。",
+      "note_path": "activity/notes/robomech-2021-osaka.md",
+      "image_path": "activity/img/robomech21_01.svg",
+      "tags": [
+        "conference",
+        "jsme",
+        "robomech"
+      ]
+    },
+    {
+      "id": "vr-conference-2020",
+      "title": "第25回日本バーチャルリアリティ学会大会に参加（オンライン開催）",
+      "date": "2020-09-16",
+      "year": 2020,
+      "location": "日本バーチャルリアリティ学会（オンライン）",
+      "summary": "第25回日本バーチャルリアリティ学会大会にオンラインで参加し研究発表を行いました。",
+      "note_path": "activity/notes/vr-conference-2020.md",
+      "image_path": "activity/img/vrc20_01.jpg",
+      "tags": [
+        "conference",
+        "virtual-reality",
+        "online"
+      ]
+    },
+    {
+      "id": "jsme-annual-2020",
+      "title": "日本機械学会 2020年度年次大会に参加（オンライン開催）",
+      "date": "2020-09-13",
+      "year": 2020,
+      "location": "名古屋工業大学（オンライン開催）",
+      "summary": "名古屋工業大学で予定されていた日本機械学会 2020年度年次大会にオンラインで参加し研究発表を行いました。",
+      "note_path": "activity/notes/jsme-annual-2020.md",
+      "image_path": "activity/img/jsme20_01.jpg",
+      "tags": [
+        "conference",
+        "jsme",
+        "annual",
+        "online"
+      ]
+    },
+    {
+      "id": "ieej-eis-2020",
+      "title": "2020年電気学会 電子・情報・システム部門大会に参加（オンライン開催）",
+      "date": "2020-09-09",
+      "year": 2020,
+      "location": "電気学会 電子・情報・システム部門大会（オンライン）",
+      "summary": "電気学会 電子・情報・システム部門大会にオンラインで参加し研究発表を行いました。",
+      "note_path": "activity/notes/ieej-eis-2020.md",
+      "image_path": "activity/img/ieejies20_01.jpg",
+      "tags": [
+        "conference",
+        "iee-japan",
+        "online"
+      ]
+    },
+    {
+      "id": "sice-si-2020",
+      "title": "SICE SI2020に参加（オンライン開催）",
+      "date": "2020-12-16",
+      "year": 2020,
+      "location": "第21回計測自動制御学会システムインテグレーション部門講演会（オンライン）",
+      "summary": "第21回計測自動制御学会システムインテグレーション部門講演会（SI2020）にオンラインで参加し研究発表を行いました。",
+      "note_path": "activity/notes/sice-si-2020.md",
+      "image_path": "activity/img/sice20_01.jpg",
+      "tags": [
+        "conference",
+        "sice",
+        "system-integration",
+        "online"
+      ]
+    },
+    {
+      "id": "robomech-2020-kanazawa",
+      "title": "日本機械学会 ロボティクス・メカトロニクス講演会2020 in Kanazawa（オンライン開催）",
+      "date": "2020-05-28",
+      "year": 2020,
+      "location": "金沢（オンライン開催）",
+      "summary": "金沢で予定されていたロボティクス・メカトロニクス講演会2020がオンライン開催となり、研究発表を行いました。",
+      "note_path": "activity/notes/robomech-2020-kanazawa.md",
+      "image_path": "activity/img/robomech20_01.jpg",
+      "tags": [
+        "conference",
+        "jsme",
+        "robomech",
+        "online"
+      ]
+    },
+    {
+      "id": "sice-si-2019",
+      "title": "SICE SI2019に参加",
+      "date": "2019-12-11",
+      "year": 2019,
+      "location": "第20回計測自動制御学会システムインテグレーション部門講演会",
+      "summary": "第20回計測自動制御学会システムインテグレーション部門講演会（SI2019）で研究発表を行いました。",
+      "note_path": "activity/notes/sice-si-2019.md",
+      "image_path": "activity/img/sice19_01.jpg",
+      "tags": [
+        "conference",
+        "sice",
+        "system-integration"
+      ]
+    },
+    {
+      "id": "jsme-annual-2019",
+      "title": "日本機械学会 2019年度年次大会に参加",
+      "date": "2019-09-08",
+      "year": 2019,
+      "location": "秋田大学",
+      "summary": "秋田大学で開催された日本機械学会 2019年度年次大会で研究発表を行いました。",
+      "note_path": "activity/notes/jsme-annual-2019.md",
+      "image_path": "activity/img/jsme19_01.jpg",
+      "tags": [
+        "conference",
+        "jsme",
+        "annual"
+      ]
+    },
+    {
+      "id": "haptic-symposium-2019",
+      "title": "日本バーチャルリアリティ学会 ハプティクス研究委員会に参加",
+      "date": "2019-08-23",
+      "year": 2019,
+      "location": "ハプティクス研究委員会",
+      "summary": "日本バーチャルリアリティ学会ハプティクス研究委員会にて研究発表を行いました。",
+      "note_path": "activity/notes/haptic-symposium-2019.md",
+      "image_path": "activity/img/haptic19_01.jpg",
+      "tags": [
+        "workshop",
+        "haptic",
+        "virtual-reality"
+      ]
+    },
+    {
+      "id": "robomech-2019-hiroshima",
+      "title": "日本機械学会 ロボティクス・メカトロニクス講演会2019 in Hiroshimaに参加",
+      "date": "2019-06-05",
+      "year": 2019,
+      "location": "広島国際会議場",
+      "summary": "広島国際会議場で開催されたロボティクス・メカトロニクス講演会2019に参加し研究発表を行いました。",
+      "note_path": "activity/notes/robomech-2019-hiroshima.md",
+      "image_path": "activity/img/robomech19_01.jpg",
+      "tags": [
+        "conference",
+        "jsme",
+        "robomech"
+      ]
+    }
+  ]
+}
