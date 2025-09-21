@@ -177,6 +177,10 @@ nav a:focus {
     gap: var(--space-xs);
     padding: var(--space-sm);
     z-index: 1001;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity var(--transition-base), transform var(--transition-base);
   }
 
   nav a {
@@ -193,6 +197,9 @@ nav a:focus {
 
   nav.is-open {
     display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 }
 
