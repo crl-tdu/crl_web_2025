@@ -134,14 +134,20 @@ nav a:focus {
 }
 
 @media (max-width: 768px) {
+  header {
+    background: var(--brand-blue);
+    border-bottom: none;
+  }
+
   .header__inner {
     padding: var(--space-sm);
+    position: relative;
   }
 
   .brand {
-    padding: var(--space-xs) var(--space-sm);
-    background: rgba(11, 61, 145, 0.92);
-    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
   }
 
   .brand span {
@@ -150,9 +156,43 @@ nav a:focus {
 
   .nav-toggle {
     display: inline-flex;
-    background: rgba(11, 61, 145, 0.15);
-    border-color: var(--brand-blue);
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #ffffff;
+  }
+
+  nav {
+    position: absolute;
+    top: calc(100% + var(--space-xs));
+    left: var(--space-sm);
+    right: var(--space-sm);
+    background: var(--surface-white);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(11, 61, 145, 0.12);
+    box-shadow: 0 16px 32px rgba(11, 61, 145, 0.18);
+    display: none;
+    flex-direction: column;
+    gap: var(--space-xs);
+    padding: var(--space-sm);
+    z-index: 1001;
+  }
+
+  nav a {
+    color: var(--text-primary);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+  }
+
+  nav a:hover,
+  nav a:focus {
+    background: rgba(11, 61, 145, 0.08);
     color: var(--brand-blue);
+  }
+
+  nav.is-open {
+    display: flex;
   }
 }
 
