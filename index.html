@@ -3,1686 +3,1751 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>協調ロボティクス研究室 | 東京電機大学</title>
-  <meta name="description" content="東京電機大学 協調ロボティクス研究室 - 人工知能・ロボティクス・ヒューマンインタフェース研究で未来を創造">
-  <meta name="keywords" content="協調ロボティクス,人工知能,AI,ロボット,ヒューマンインタフェース,東京電機大学,研究室,機械学習,センシング">
-  <meta name="author" content="協調ロボティクス研究室">
-  <meta name="robots" content="index, follow">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://crl.dendai.ac.jp/">
-  <meta property="og:title" content="協調ロボティクス研究室 | 東京電機大学">
-  <meta property="og:description" content="人と機械が協力しあう未来を創造。AI・ロボティクス・ヒューマンインタフェースの最先端研究で社会課題を解決します。">
-  <meta property="og:image" content="https://crl.dendai.ac.jp/assets/images/crl_og_image.jpg">
-  <meta property="og:site_name" content="協調ロボティクス研究室">
-  <meta property="og:locale" content="ja_JP">
-  
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://crl.dendai.ac.jp/">
-  <meta property="twitter:title" content="協調ロボティクス研究室 | 東京電機大学">
-  <meta property="twitter:description" content="人と機械が協力しあう未来を創造。AI・ロボティクス・ヒューマンインタフェースの最先端研究で社会課題を解決します。">
-  <meta property="twitter:image" content="https://crl.dendai.ac.jp/assets/images/crl_og_image.jpg">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-  
+  <title>協調ロボティクス研究室 | 次世代デザイン試作</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<!-- Interactive Particle Canvas -->
-<canvas id="particle-canvas"></canvas>
-
-<!-- Header -->
-<header class="header">
-  <div class="header__container">
-    <div class="header__logo">
-      <img src="assets/images/crl_logo_wb.png" alt="CRL Logo" class="header__logo-image">
-      <span class="header__logo-text">協調ロボティクス研究室</span>
+  <header>
+    <div class="header__inner" role="navigation" aria-label="メインナビゲーション">
+      <a class="brand" href="#">
+        <img src="assets/images/crl_logo_wb.png" alt="協調ロボティクス研究室ロゴ">
+        <span>CRL Lab</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-controls="globalNav" aria-expanded="false">
+        メニュー
+      </button>
+      <nav id="globalNav">
+        <a href="#about">ラボについて</a>
+        <a href="#research">研究ポートフォリオ</a>
+        <a href="#publications">研究業績</a>
+        <a href="#activities">活動報告</a>
+        <a href="#members">メンバー</a>
+        <a href="#contact">アクセス</a>
+      </nav>
     </div>
-    <nav class="nav" id="nav" role="navigation" aria-label="メインナビゲーション">
-      <a href="#about" class="nav__link" role="menuitem">About</a>
-      <a href="#stats" class="nav__link" role="menuitem">データ</a>
-      <a href="#research" class="nav__link" role="menuitem">研究テーマ</a>
-      <a href="#members" class="nav__link" role="menuitem">メンバー</a>
-      <a href="#publications" class="nav__link" role="menuitem">研究業績</a>
-      <a href="#contact" class="nav__link" role="menuitem">Contact</a>
-    </nav>
-    <button class="nav__toggle" id="nav-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
-      <span aria-hidden="true">☰</span>
-    </button>
-  </div>
-</header>
+  </header>
 
-<main role="main">
-  <!-- Hero Section -->
-  <section class="section section--hero" id="hero" aria-labelledby="hero-title">
-    <div class="container">
-      <div class="hero fade-in-up">
-        <h1 class="hero__title" id="hero-title">
-          協調ロボティクス研究室
-        </h1>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <span class="hero__badge">Cooperative Robotics Laboratory</span>
+        <h1 class="hero__title" id="hero-title">人と機械が協調する未来を切り拓く</h1>
         <p class="hero__subtitle">
-          人と機械が協力しあう未来を創造<br>
-          AI・ロボティクス・ヒューマンインタフェースの最先端研究<br>
-          <strong>夢のある技術で社会課題を解決</strong>
+          協調ロボティクス研究室（CRL）は、ヒューマンセンシング・ハプティクス・共創インタフェースを軸に、協調作業を支える知能と身体性の研究を推進しています。
+          本ページは新デザイン検討のための試作版です。
         </p>
-        <a href="#research" class="hero__cta" role="button" aria-describedby="hero-title">
-          研究内容を見る
-        </a>
+        <div class="hero__actions">
+          <a class="btn-primary" href="#research">研究プロジェクトを見る</a>
+          <a class="btn-secondary" href="#contact">お問い合わせ</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Section -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="projects__header fade-in-up">
-        <h2 class="projects__title">About Our Lab</h2>
-        <p class="projects__subtitle">
-          東京電機大学 工学部 電子システム工学科<br>
-          人工知能、ヒューマンインタフェース、ロボティクスの融合研究
-        </p>
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__eyebrow">Mission</span>
+          <h2 class="section__title" id="about-title">人とロボットの協調を科学する</h2>
+          <p class="section__description">
+            私たちは協調タスクにおける「気づかい」の定量化や、触覚・力覚インタフェースによる熟達支援など、人間中心のシステムデザインを探求し、社会に寄り添う技術革新を目指しています。
+          </p>
+        </div>
+        <div class="grid grid--columns-3">
+          <article class="card">
+            <span class="card__badge">01 理解</span>
+            <h3 class="card__title">人間の協調行動を計測・分析</h3>
+            <p class="card__body">多点センシングや生体信号解析を用いて、チームワークに潜む「気づかい」「信頼」「緊張」を可視化します。</p>
+          </article>
+          <article class="card">
+            <span class="card__badge">02 支援</span>
+            <h3 class="card__title">触覚・力覚インタフェース</h3>
+            <p class="card__body">視覚だけに頼らない熟達支援。触覚提示やハプティクスデバイスで内在感覚を引き出すアプローチを研究しています。</p>
+          </article>
+          <article class="card">
+            <span class="card__badge">03 共創</span>
+            <h3 class="card__title">人と機械が共に学ぶ仕組み</h3>
+            <p class="card__body">協調エージェント、適応アルゴリズム、動的チーム編成など、共生社会の基盤になる技術を創出します。</p>
+          </article>
+        </div>
       </div>
-      
-      <div class="glass" style="padding: 3rem; border-radius: 20px; margin: 2rem auto; max-width: 900px;">
-        <p style="font-size: 1.1rem; line-height: 1.8; text-align: center;">
-          <strong>協調ロボティクス研究室</strong>では、「協調」をキーワードに、人間と機械が自然に協力しあえる未来の実現を目指しています。<br><br>
-          🤖 <strong>人工知能</strong>：人間のように考える賢いシステム<br>
-          🎯 <strong>ヒューマンインタフェース</strong>：人と機械の自然な対話<br>
-          🔧 <strong>ロボティクス</strong>：人を支援する協調ロボット<br><br>
-          高校生の皆さんにとって身近な技術から、大学院レベルの高度な研究まで、
-          幅広いテーマで「夢のある研究」に取り組んでいます。
-        </p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Statistics Section -->
-  <section class="section stats-section" id="stats" aria-labelledby="stats-title">
-    <div class="container">
-      <div class="projects__header fade-in-up">
-        <h2 class="projects__title" id="stats-title">研究分野データ</h2>
-        <p class="projects__subtitle">
-          主要研究分野別のプロジェクト数<br>
-          人間センシング・人間機械系・チームワーク・協調理論の4つの核心領域
-        </p>
+    <section class="section" id="research" aria-labelledby="research-title">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__eyebrow">Projects</span>
+          <h2 class="section__title" id="research-title">研究プロジェクト・ポートフォリオ</h2>
+          <p class="section__description">
+            協調ロボティクス研究室が取り組むプロジェクトを、主要テーマとキーワードで横断的に探せます。タグボタンやキーワード検索で絞り込み、興味のある研究を深掘りしてください。
+          </p>
+        </div>
+
+        <div class="filter-bar" role="search">
+          <div class="filter-bar__group">
+            <span class="filter-bar__title">主要タグ</span>
+            <div class="filter-bar__actions" aria-label="研究カテゴリフィルター">
+              <button type="button" class="filter-chip" data-tag="*" aria-pressed="true">すべて</button>
+              <button type="button" class="filter-chip" data-tag="人間機械系">人間機械系</button>
+              <button type="button" class="filter-chip" data-tag="人間センシング">人間センシング</button>
+              <button type="button" class="filter-chip" data-tag="チームワーク">チームワーク</button>
+              <button type="button" class="filter-chip" data-tag="協調理論">協調理論</button>
+            </div>
+          </div>
+          <div class="filter-bar__search">
+            <label for="projectSearch" class="visually-hidden">研究キーワード検索</label>
+            <input id="projectSearch" type="search" placeholder="キーワード・タイトル・著者で検索">
+          </div>
+        </div>
+
+        <div class="portfolio-controls portfolio-controls--top" id="portfolioControlsTop" data-position="top" aria-hidden="true">
+          <button type="button" class="btn-secondary" id="portfolioToggleTop" data-portfolio-toggle aria-expanded="false" aria-controls="portfolioGrid">表示を閉じる</button>
+        </div>
+        <div class="portfolio-grid" id="portfolioGrid" aria-live="polite" aria-busy="true"></div>
+        <div class="portfolio-controls" id="portfolioControls" data-position="bottom" aria-hidden="true">
+          <button type="button" class="btn-secondary" id="portfolioToggle" data-portfolio-toggle aria-expanded="false" aria-controls="portfolioGrid">残りを表示</button>
+        </div>
+
+        <!-- ポートフォリオ固定折りたたみボタン -->
+        <div class="portfolio-fab" id="portfolioFab" aria-hidden="true">
+          <button type="button" class="portfolio-fab__button" data-portfolio-toggle aria-label="ポートフォリオを折りたたむ">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M15 12L10 7L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="portfolio-fab__text">折りたたみ</span>
+          </button>
+        </div>
       </div>
-      
-      <div class="stats__container fade-in-up">
-        <div class="stats" role="region" aria-label="研究分野統計" id="research-stats">
-          <!-- 研究分野統計は動的に生成されます -->
+    </section>
+
+    <section class="section" id="publications" aria-labelledby="publications-title">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__eyebrow">Publications</span>
+          <h2 class="section__title" id="publications-title">研究業績</h2>
+          <p class="section__description">
+            学会発表・論文・受賞などの実績をカテゴリ別に整理しています。検索やカテゴリフィルターを活用し、目的の業績を素早く探すことができます。
+          </p>
+        </div>
+
+        <div class="filter-bar" role="search">
+          <div class="filter-bar__group">
+            <span class="filter-bar__title">カテゴリ</span>
+            <div class="filter-bar__actions" aria-label="業績カテゴリフィルター">
+              <button type="button" class="filter-chip" data-pub-category="all" aria-pressed="true">すべて</button>
+              <button type="button" class="filter-chip" data-pub-category="journal">学術誌</button>
+              <button type="button" class="filter-chip" data-pub-category="conference">国際会議</button>
+              <button type="button" class="filter-chip" data-pub-category="domestic_peer">国内発表（査読あり）</button>
+              <button type="button" class="filter-chip" data-pub-category="domestic">国内発表</button>
+              <button type="button" class="filter-chip" data-pub-category="award">受賞</button>
+              <button type="button" class="filter-chip" data-pub-category="lecture">講演</button>
+              <button type="button" class="filter-chip" data-pub-category="book">著書・解説</button>
+              <button type="button" class="filter-chip" data-pub-category="other">その他</button>
+            </div>
+          </div>
+          <div class="filter-bar__search">
+            <label for="publicationSearch" class="visually-hidden">業績検索</label>
+            <input id="publicationSearch" type="search" placeholder="タイトル・著者・会議名で検索">
+          </div>
+        </div>
+
+        <div class="publication-controls publication-controls--top" id="publicationControlsTop" data-position="top" aria-hidden="true">
+          <button type="button" class="btn-secondary" id="publicationToggleTop" data-publication-toggle aria-expanded="false" aria-controls="publicationList">表示を閉じる</button>
+        </div>
+        <div class="publication-list" id="publicationList" aria-live="polite" aria-busy="true"></div>
+        <div class="publication-controls" id="publicationControls" data-position="bottom" aria-hidden="true">
+          <button type="button" class="btn-secondary" id="publicationToggle" data-publication-toggle aria-expanded="false" aria-controls="publicationList">残りを表示</button>
+        </div>
+
+        <!-- 研究業績固定折りたたみボタン -->
+        <div class="publication-fab" id="publicationFab" aria-hidden="true">
+          <button type="button" class="publication-fab__button" data-publication-toggle aria-label="研究業績を折りたたむ">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M15 12L10 7L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="publication-fab__text">折りたたみ</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="activities" aria-labelledby="activities-title">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__eyebrow">Activities</span>
+          <h2 class="section__title" id="activities-title">活動報告・参加イベント</h2>
+          <p class="section__description">
+            学会参加、展示会出展、研究成果発表など、研究室の活動をピックアップして紹介します。詳細は元記事へのリンクからご覧いただけます。</p>
+        </div>
+
+        <div class="activity-controls activity-controls--top" id="activityControlsTop" data-position="top" aria-hidden="true">
+          <button type="button" class="btn-secondary" id="activityToggleTop" data-activity-toggle aria-expanded="false" aria-controls="activityList">表示を閉じる</button>
+        </div>
+        <div class="activity-list" id="activityList" aria-live="polite" aria-busy="true"></div>
+        <div class="activity-controls" id="activityControls" data-position="bottom" aria-hidden="true">
+          <div class="activity-controls__info" id="activityInfo" aria-live="polite"></div>
+          <button type="button" class="btn-secondary" id="activityToggle" data-activity-toggle aria-expanded="false" aria-controls="activityList">残りを表示</button>
+        </div>
+
+        <!-- 固定折りたたみボタン -->
+        <div class="activity-fab" id="activityFab" aria-hidden="true">
+          <button type="button" class="activity-fab__button" data-activity-toggle aria-label="活動報告を折りたたむ">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M15 12L10 7L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="activity-fab__text">折りたたみ</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="members" aria-labelledby="members-title">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__eyebrow">People</span>
+          <h2 class="section__title" id="members-title">多領域の専門家が連携するチーム</h2>
+          <p class="section__description">触覚デザイン、ヒューマンセンシング、協調制御など異なる専門性を持つ研究者が集まり、相互にフィードバックしながらプロジェクトを推進しています。</p>
+        </div>
+        <div class="members-filter-bar" role="search">
+          <div class="filter-bar__group">
+            <span class="filter-bar__title">所属</span>
+            <div class="members-flex" aria-label="メンバーカテゴリフィルター">
+              <button type="button" class="filter-chip" data-member-category="all" aria-pressed="true">すべて</button>
+              <button type="button" class="filter-chip" data-member-category="faculty">教員</button>
+              <button type="button" class="filter-chip" data-member-category="phd">博士課程</button>
+              <button type="button" class="filter-chip" data-member-category="master">修士課程</button>
+              <button type="button" class="filter-chip" data-member-category="undergraduate">学部</button>
+              <button type="button" class="filter-chip" data-member-category="alumni">卒業生</button>
+            </div>
+          </div>
+          <div class="filter-bar__search" style="flex:1 1 220px;">
+            <label for="memberSearch" class="visually-hidden">メンバー検索</label>
+            <input id="memberSearch" type="search" placeholder="氏名・研究テーマで検索">
+          </div>
+        </div>
+
+        <div class="member-controls member-controls--top" id="memberControlsTop" data-position="top" aria-hidden="true">
+          <button type="button" class="btn-secondary" id="memberToggleTop" data-member-toggle aria-expanded="false" aria-controls="membersGrid">表示を閉じる</button>
+        </div>
+        <div class="grid grid--columns-3" id="membersGrid" aria-live="polite" aria-busy="true"></div>
+        <div class="member-controls" id="memberControls" data-position="bottom" aria-hidden="true">
+          <button type="button" class="btn-secondary" id="memberToggle" data-member-toggle aria-expanded="false" aria-controls="membersGrid">残りを表示</button>
+        </div>
+
+        <!-- メンバー固定折りたたみボタン -->
+        <div class="member-fab" id="memberFab" aria-hidden="true">
+          <button type="button" class="member-fab__button" data-member-toggle aria-label="メンバーを折りたたむ">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M15 12L10 7L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="member-fab__text">折りたたみ</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__eyebrow">Join Us</span>
+          <h2 class="section__title" id="contact-title">見学・共同研究のご相談</h2>
+          <p class="section__description">
+            新規プロジェクトや共同研究に関するご相談、研究室見学のご希望は以下のリンクからお願いいたします。フォームは既存サイトの問い合わせページへ遷移します。
+          </p>
+        </div>
+        <div class="hero__actions">
+          <a class="btn-primary" href="mailto:igarashi@dendai.ac.jp">メールで問い合わせる</a>
+          <a class="btn-secondary" href="https://www.crl.epi.dendai.ac.jp/" target="_blank" rel="noopener noreferrer">公式サイトを見る</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="activity-modal" class="activity-modal" aria-hidden="true">
+      <div class="activity-modal__overlay" data-activity-modal-close></div>
+      <div class="activity-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="activity-modal-title">
+        <button type="button" class="activity-modal__close" aria-label="閉じる" data-activity-modal-close>&times;</button>
+        <div class="activity-modal__media">
+          <img id="activity-modal-image" src="" alt="" loading="lazy">
+        </div>
+        <div class="activity-modal__header">
+          <h3 id="activity-modal-title"></h3>
+          <div id="activity-modal-meta" class="activity-modal__meta"></div>
+        </div>
+        <div id="activity-modal-tags" class="activity-modal__tags"></div>
+        <div id="activity-modal-body" class="activity-modal__body"></div>
+        <div class="activity-modal__footer">
+          <button type="button" id="activity-modal-close-secondary" class="activity-modal__close-secondary" data-activity-modal-close>閉じる</button>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Projects Section -->
-  <section class="section projects-section" id="research">
-    <div class="container">
-      <div class="projects__header fade-in-up">
-        <h2 class="projects__title">研究プロジェクト</h2>
-        <p class="projects__subtitle">
-          学部生から大学院生まで取り組む多彩な研究テーマ<br>
-          AI・ロボティクス・ヒューマンインタフェースの最前線
-        </p>
-      </div>
+  </main>
 
-      <!-- Search System -->
-      <div class="search__input-wrapper fade-in-up">
-        <label for="search-box" class="sr-only">研究テーマを検索</label>
-        <span class="search__icon" aria-hidden="true">🔍</span>
-        <input type="text" id="search-box" class="search__input" placeholder="研究テーマを検索... (AI, ロボット, センシング)" aria-label="研究テーマを検索" role="searchbox" autocomplete="off">
-        <div id="search-suggestions" class="search__suggestions"></div>
-      </div>
-
-      <!-- Filter System -->
-      <div class="projects__filters fade-in-up" id="portfolio-filters">
-        <button class="filter-btn active" data-filter="*">すべて</button>
-        <button class="filter-btn" data-filter="sensing">人間センシング</button>
-        <button class="filter-btn" data-filter="hms">人間機械系</button>
-        <button class="filter-btn" data-filter="teamwork">チームワーク</button>
-        <button class="filter-btn" data-filter="theory">協調理論</button>
-        <button class="filter-btn" data-filter="B">学士論文</button>
-        <button class="filter-btn" data-filter="M">修士論文</button>
-      </div>
-
-      <!-- Projects Grid -->
-      <div class="projects__grid fade-in-up" id="portfolio-container">
-        <!-- Cards will be injected by JavaScript -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Members Section -->
-  <section class="section members-section" id="members">
-    <div class="container">
-      <div class="projects__header fade-in-up">
-        <h2 class="projects__title">研究室メンバー</h2>
-        <p class="projects__subtitle">
-          指導教員と学生が一体となって研究に取り組む<br>
-          多様な専門性を持つメンバーが集う研究コミュニティ
-        </p>
-      </div>
-
-      <!-- Member Categories -->
-      <div class="members__categories fade-in-up">
-        <button class="member-filter-btn active" data-filter="*">全員</button>
-        <button class="member-filter-btn" data-filter="faculty">教員</button>
-        <button class="member-filter-btn" data-filter="phd">博士課程</button>
-        <button class="member-filter-btn" data-filter="master">修士課程</button>
-        <button class="member-filter-btn" data-filter="undergraduate">学部生</button>
-        <button class="member-filter-btn" data-filter="alumni">卒業生</button>
-      </div>
-
-      <!-- Members Grid -->
-      <div class="members__grid fade-in-up" id="members-container">
-        <!-- Member cards will be injected by JavaScript -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Publications Section -->
-  <section class="section publications-section" id="publications">
-    <div class="container">
-      <div class="projects__header fade-in-up">
-        <h2 class="projects__title">研究業績</h2>
-        <p class="projects__subtitle">
-          学術雑誌論文・受賞・講演・国際会議発表の実績<br>
-          協調ロボティクス分野での研究成果
-        </p>
-      </div>
-
-      <!-- Publications Search and Filter -->
-      <div class="publications__controls fade-in-up">
-        <div class="search__input-wrapper">
-          <span class="search__icon">🔍</span>
-          <input type="text" id="publications-search" class="search__input" placeholder="論文タイトル、著者名で検索...">
+  <footer>
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/images/crl_logo_wb.png" alt="協調ロボティクス研究室ロゴ">
+          <div>
+            <div>協調ロボティクス研究室</div>
+            <div style="font-size: 0.85rem; opacity: 0.8;">Cooperative Robotics Laboratory</div>
+          </div>
         </div>
-        
-        <div class="publications__filters" id="publications-filters">
-          <button class="filter-btn active" data-filter="*">すべて</button>
-          <button class="filter-btn" data-filter="journal">論文</button>
-          <button class="filter-btn" data-filter="award">受賞</button>
-          <button class="filter-btn" data-filter="lecture">講演</button>
-          <button class="filter-btn" data-filter="conference">国際会議</button>
-          <button class="filter-btn" data-filter="domestic">国内学会</button>
+        <div class="footer__nav">
+          <a href="#about">ラボについて</a>
+          <a href="#research">研究ポートフォリオ</a>
+          <a href="#publications">研究業績</a>
+          <a href="#activities">活動報告</a>
+          <a href="#members">メンバー</a>
+          <a href="#contact">アクセス</a>
         </div>
       </div>
-
-      <!-- Publications List -->
-      <div class="publications__list fade-in-up" id="publications-container">
-        <div class="glass" style="padding: 2rem; text-align: center; color: var(--text-secondary);">
-          研究業績データを読み込み中...
-        </div>
+      <div class="footer__bottom">
+        © 2025 Cooperative Robotics Laboratory. All rights reserved.
       </div>
     </div>
-  </section>
-</main>
+  </footer>
 
-<!-- Research Detail Modal -->
-<div id="research-modal" class="modal" style="display: none;">
-  <div class="modal__overlay">
-    <div class="modal__container">
-      <div class="modal__header">
-        <h3 class="modal__title"></h3>
-        <button class="modal__close" aria-label="モーダルを閉じる">&times;</button>
-      </div>
-      <div class="modal__content">
-        <div class="modal__image-section">
-          <img src="" alt="" class="modal__image">
-          <div class="modal__year-badge"></div>
-        </div>
-        <div class="modal__info">
-          <div class="modal__author"></div>
-          <div class="modal__tags"></div>
-          <div class="modal__abstract"></div>
-          <div class="modal__details"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  <script>
+    const MAIN_TAGS = ['人間機械系', '人間センシング', 'チームワーク', '協調理論'];
+    const PLACEHOLDER_THUMBNAIL = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0B3D91" stop-opacity="0.75"/><stop offset="100%" stop-color="#F5A623" stop-opacity="0.55"/></linearGradient></defs><rect width="400" height="300" fill="#F7F9FC"/><rect x="12" y="12" width="376" height="276" rx="24" fill="url(#g)"/><text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, 'Noto Sans JP', sans-serif" font-size="28" font-weight="600" fill="#ffffff" opacity="0.85">CRL PORTFOLIO</text></svg>`);
 
-<!-- Footer -->
-<footer class="footer" id="contact">
-  <div class="container">
-    <div class="footer__content">
-      <div class="footer__section">
-        <h3>協調ロボティクス研究室</h3>
-        <p>東京電機大学 工学部 電子システム工学科</p>
-        <p>人と機械が協力する未来を創造</p>
-        <p>高校生・大学生・大学院生歓迎</p>
-      </div>
-      <div class="footer__section">
-        <h3>研究分野</h3>
-        <p>🤖 人工知能 (AI)</p>
-        <p>🎯 ヒューマンインタフェース</p>
-        <p>🔧 ロボティクス</p>
-        <p>🧠 認知科学</p>
-        <p>📊 生体信号処理</p>
-      </div>
-      <div class="footer__section">
-        <h3>アクセス・お問い合わせ</h3>
-        <p>〒120-8551 東京都足立区千住旭町5番</p>
-        <p>東京電機大学 千住キャンパス</p>
-        <p><a href="mailto:example@dendai.ac.jp">研究室見学・相談はこちら</a></p>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <p>&copy; 2024 協調ロボティクス研究室 - 東京電機大学. All Rights Reserved.</p>
-    </div>
-  </div>
-</footer>
-
-<!-- JavaScript -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Shared placeholders for research images (cards + modal)
-  const DEFAULT_CARD_IMAGE = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM2MzY2RjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMEYwQzQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjEiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxNHB4IiBmaWxsPSIjRjhGQUZDIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+UkVTRUFSQ0ggSU1BR0U8L3RleHQ+PC9zdmc+';
-  const DEFAULT_MODAL_IMAGE = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDc1QzciLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNGRjY5MDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjEiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNHB4IiBmaWxsPSIjMDA3NUM3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+🔬 研究画像</dGV4dD48L3N2Zz4=';
-
-  function getProjectImageCandidates(project) {
-    const candidates = [];
-    const append = (value) => {
-      if (value && !candidates.includes(value)) {
-        candidates.push(value);
-      }
+    const portfolioState = {
+      projects: [],
+      currentTag: '*',
+      searchTerm: '',
+      isExpanded: false,
+      visibleCount: 0,
+      resizeTimer: null,
+      controlsInitialized: false
     };
 
-    append(project.thumbnail);
-
-    if (project.student_id) {
-      append(`project/current/img/${project.student_id}.png`);
-      append(`proc/img/${project.student_id}.png`);
-    }
-
-    if (project.file_id) {
-      append(`project/graduate/img/${project.file_id}_thumbnail.png`);
-      append(`proc/img/${project.file_id}_thumbnail.png`);
-    }
-
-    append(project.image_path);
-
-    return candidates;
-  }
-
-  function applyProjectImage(element, project, fallbackSrc) {
-    if (!element) return;
-
-    const candidates = getProjectImageCandidates(project);
-    const fallback = fallbackSrc || DEFAULT_CARD_IMAGE;
-    let index = 0;
-
-    const tryNext = () => {
-      index += 1;
-      if (index < candidates.length) {
-        element.src = candidates[index];
-      } else {
-        element.onerror = null;
-        element.src = fallback;
-      }
+    const memberState = {
+      members: [],
+      currentCategory: 'all',
+      searchTerm: '',
+      isExpanded: false,
+      visibleCount: 6,
+      controlsInitialized: false,
+      filtersInitialized: false
     };
 
-    if (candidates.length > 0) {
-      element.onerror = tryNext;
-      element.src = candidates[0];
-    } else {
-      element.onerror = null;
-      element.src = fallback;
-    }
-  }
-
-  // Fresh Particle System with UDC Colors
-  const canvas = document.getElementById('particle-canvas');
-  const ctx = canvas.getContext('2d');
-  let particles = [];
-  let mouseX = 0;
-  let mouseY = 0;
-
-  function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  }
-
-  function createParticle(x, y) {
-    return {
-      x: x || Math.random() * canvas.width,
-      y: y || Math.random() * canvas.height,
-      vx: (Math.random() - 0.5) * 0.3,
-      vy: (Math.random() - 0.5) * 0.3,
-      life: 1,
-      decay: Math.random() * 0.008 + 0.003,
-      size: Math.random() * 1.5 + 0.5,
-      color: Math.random() > 0.5 ? '#0075C7' : '#FF6900'
+    const publicationState = {
+      publications: [],
+      currentCategory: 'all',
+      searchTerm: '',
+      isExpanded: false,
+      visibleCount: 0,
+      resizeTimer: null,
+      controlsInitialized: false
     };
-  }
 
-  function updateParticles() {
-    for (let i = particles.length - 1; i >= 0; i--) {
-      const p = particles[i];
-      
-      // Update position
-      p.x += p.vx;
-      p.y += p.vy;
-      
-      // Mouse interaction (gentler)
-      const dx = mouseX - p.x;
-      const dy = mouseY - p.y;
-      const distance = Math.sqrt(dx * dx + dy * dy);
-      
-      if (distance < 80) {
-        const force = (80 - distance) / 80;
-        p.vx += dx * force * 0.0005;
-        p.vy += dy * force * 0.0005;
-      }
-      
-      // Update life
-      p.life -= p.decay;
-      
-      // Remove dead particles
-      if (p.life <= 0) {
-        particles.splice(i, 1);
-      }
-    }
-    
-    // Handled in optimized version below
-  }
+    const activityState = {
+      activities: [],
+      isExpanded: false,
+      visibleCount: 4,
+      controlsInitialized: false,
+      listenersInitialized: false,
+      modal: null,
+      activeTrigger: null,
+      body: null,
+      meta: null,
+      title: null,
+      image: null,
+      tags: null,
+      source: null,
+      keydownHandler: null
+    };
 
-  function drawParticles() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
-    particles.forEach(p => {
-      ctx.save();
-      ctx.globalAlpha = p.life * 0.6;
-      ctx.fillStyle = p.color;
-      ctx.shadowBlur = 8;
-      ctx.shadowColor = p.color;
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.restore();
+    document.addEventListener('DOMContentLoaded', () => {
+      initialiseNavigation();
+      loadProjects();
+      loadPublications();
+      loadActivities();
+      loadMembers();
     });
-    
-    // Draw gentle connections
-    particles.forEach((p1, i) => {
-      particles.slice(i + 1).forEach(p2 => {
-        const dx = p1.x - p2.x;
-        const dy = p1.y - p2.y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-        
-        if (distance < 80) {
-          ctx.save();
-          ctx.globalAlpha = (1 - distance / 80) * 0.2;
-          ctx.strokeStyle = '#0075C7';
-          ctx.lineWidth = 0.3;
-          ctx.beginPath();
-          ctx.moveTo(p1.x, p1.y);
-          ctx.lineTo(p2.x, p2.y);
-          ctx.stroke();
-          ctx.restore();
-        }
+
+    function initialiseNavigation() {
+      const navToggle = document.getElementById('navToggle');
+      const globalNav = document.getElementById('globalNav');
+
+      if (!navToggle || !globalNav) return;
+
+      navToggle.addEventListener('click', () => {
+        const isOpen = globalNav.classList.toggle('is-open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
       });
-    });
-  }
-
-  // Performance optimization
-  let isAnimating = true;
-  let lastTime = 0;
-  const targetFPS = 60;
-  const frameInterval = 1000 / targetFPS;
-
-  function animate(currentTime) {
-    if (!isAnimating) return;
-    
-    if (currentTime - lastTime >= frameInterval) {
-      updateParticles();
-      drawParticles();
-      lastTime = currentTime;
     }
-    
-    requestAnimationFrame(animate);
-  }
 
-  // Pause animation when page is not visible
-  document.addEventListener('visibilitychange', () => {
-    isAnimating = !document.hidden;
-    if (isAnimating) {
-      lastTime = performance.now();
-      animate(lastTime);
-    }
-  });
+    async function loadProjects() {
+      const grid = document.getElementById('portfolioGrid');
+      if (!grid) return;
 
-  // Reduce particle count on mobile for performance
-  const isMobile = window.innerWidth <= 768;
-  const particleCount = isMobile ? 12 : 20;
-  const maxParticles = isMobile ? 15 : 25;
-
-  // Initialize particles
-  resizeCanvas();
-  for (let i = 0; i < particleCount; i++) {
-    particles.push(createParticle());
-  }
-
-  // Throttled mouse movement for better performance
-  let mouseMoveTimeout;
-  window.addEventListener('resize', resizeCanvas);
-  window.addEventListener('mousemove', (e) => {
-    clearTimeout(mouseMoveTimeout);
-    mouseMoveTimeout = setTimeout(() => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-    }, 16); // ~60fps throttling
-  });
-
-  // Update max particles for performance
-  function updateParticles() {
-    for (let i = particles.length - 1; i >= 0; i--) {
-      const p = particles[i];
-      
-      // Update position
-      p.x += p.vx;
-      p.y += p.vy;
-      
-      // Boundary collision with damping
-      if (p.x < 0 || p.x > canvas.width) {
-        p.vx *= -0.8;
-        p.x = Math.max(0, Math.min(canvas.width, p.x));
-      }
-      if (p.y < 0 || p.y > canvas.height) {
-        p.vy *= -0.8;
-        p.y = Math.max(0, Math.min(canvas.height, p.y));
-      }
-      
-      // Mouse interaction (only if mouse moved recently)
-      if (mouseX !== null && mouseY !== null) {
-        const dx = mouseX - p.x;
-        const dy = mouseY - p.y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-        
-        if (distance < 120) {
-          const force = (120 - distance) / 120;
-          p.vx += dx * force * 0.0005;
-          p.vy += dy * force * 0.0005;
-        }
-      }
-      
-      // Update life
-      p.life -= p.decay;
-      
-      // Remove dead particles
-      if (p.life <= 0) {
-        particles.splice(i, 1);
-      }
-    }
-    
-    // Add new particles (fewer for performance)
-    if (particles.length < maxParticles) {
-      particles.push(createParticle());
-    }
-  }
-
-  animate(performance.now());
-
-  // Mobile Navigation Toggle
-  const navToggle = document.getElementById('nav-toggle');
-  const nav = document.getElementById('nav');
-  
-  navToggle.addEventListener('click', function() {
-    const isActive = nav.classList.contains('nav--active');
-    nav.classList.toggle('nav--active');
-    navToggle.setAttribute('aria-expanded', !isActive);
-    navToggle.setAttribute('aria-label', !isActive ? 'メニューを閉じる' : 'メニューを開く');
-  });
-
-  // Smooth Scrolling
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-        nav.classList.remove('nav--active');
-      }
-    });
-  });
-
-  // Intersection Observer for animations
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.animation = 'fade-in-up 0.8s ease-out forwards';
-      }
-    });
-  }, observerOptions);
-
-  document.querySelectorAll('.fade-in-up').forEach(el => {
-    observer.observe(el);
-  });
-
-  // Load Portfolio Data
-  async function loadPortfolio() {
-    try {
-      console.log('Loading portfolio data...');
-      
-      let response;
       try {
-        response = await fetch('data/project.json');
-        if (!response.ok) throw new Error('Project data not found');
-      } catch (e) {
-        console.log('Fallback to project.json in root');
-        response = await fetch('project.json');
+        const response = await fetch('data/project.json');
+        const data = await response.json();
+        const projects = Array.isArray(data) ? data : data.projects || [];
+
+        portfolioState.projects = projects.map(enrichProject);
+        renderProjectFilters();
+        setupPortfolioControls();
+        applyProjectFilters();
+        grid.setAttribute('aria-busy', 'false');
+      } catch (error) {
+        console.error('研究データの読み込みに失敗しました', error);
+        grid.innerHTML = '<p>研究データを読み込めませんでした。</p>';
+        grid.setAttribute('aria-busy', 'false');
       }
-      
-      const data = await response.json();
-      console.log('Loaded data:', data);
-      
-      const container = document.getElementById('portfolio-container');
-      const projects = Array.isArray(data) ? data : data.projects || [];
-      
-      if (projects.length === 0) {
-        container.innerHTML = '<div class="glass" style="padding: 2rem; text-align: center; color: var(--text-secondary);">研究プロジェクトデータを読み込み中...</div>';
+    }
+
+    function enrichProject(project) {
+      const keywords = Array.isArray(project.keywords) ? project.keywords : [];
+      const mainTags = MAIN_TAGS.filter(tag => keywords.includes(tag));
+      const mainTag = mainTags[0] || 'その他';
+      const searchSource = [
+        project.title,
+        project.author,
+        project.abstract,
+        project.degree_type,
+        project.degree_code,
+        project.year,
+        keywords.join(' ')
+      ].filter(Boolean).join(' ').toLowerCase();
+
+      return {
+        ...project,
+        _mainTag: mainTag,
+        _mainTags: mainTags,
+        _keywords: keywords,
+        _search: searchSource
+      };
+    }
+
+    function renderProjectFilters() {
+      const chips = document.querySelectorAll('[data-tag]');
+      const searchInput = document.getElementById('projectSearch');
+
+      chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          const tag = chip.dataset.tag || '*';
+          portfolioState.currentTag = tag;
+          portfolioState.isExpanded = false;
+          chips.forEach(btn => btn.setAttribute('aria-pressed', btn === chip ? 'true' : 'false'));
+          applyProjectFilters();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (event) => {
+          portfolioState.searchTerm = event.target.value.trim().toLowerCase();
+          portfolioState.isExpanded = false;
+          applyProjectFilters();
+        });
+      }
+    }
+
+    function applyProjectFilters() {
+      const grid = document.getElementById('portfolioGrid');
+      if (!grid) return;
+
+      const { currentTag, searchTerm, projects } = portfolioState;
+      let filtered = [...projects];
+
+      if (currentTag && currentTag !== '*') {
+        filtered = filtered.filter(project => {
+          if (project._mainTag === currentTag) return true;
+          return project._mainTags && project._mainTags.includes(currentTag);
+        });
+      }
+
+      if (searchTerm) {
+        filtered = filtered.filter(project => project._search.includes(searchTerm));
+      }
+
+      renderProjectCards(filtered);
+    }
+
+    function renderProjectCards(projects) {
+      const grid = document.getElementById('portfolioGrid');
+      if (!grid) return;
+
+      if (!projects.length) {
+        grid.innerHTML = '<p>条件に合致するプロジェクトが見つかりませんでした。</p>';
+        updatePortfolioControls(0, 0);
         return;
       }
 
-      // プロジェクトデータをグローバル変数に保存
-      window.projectsData = projects;
-
-      projects.forEach((project, index) => {
-        const card = createProjectCard(project, index);
-        container.appendChild(card);
-      });
-
-      // 研究分野統計を生成・表示
-      generateResearchStats(projects);
-
-      initializeFilters();
-      console.log(`Loaded ${projects.length} projects`);
-      
-    } catch (error) {
-      console.error('Error loading portfolio:', error);
-      document.getElementById('portfolio-container').innerHTML = 
-        '<div class="glass" style="padding: 2rem; text-align: center; color: var(--text-light);">プロジェクトデータの読み込みに失敗しました</div>';
-    }
-  }
-
-  // 研究分野統計を生成・表示する関数
-  function generateResearchStats(projects) {
-    const researchFields = {
-      '人間センシング': 0,
-      '人間機械系': 0,
-      'チームワーク': 0,
-      '協調理論': 0
-    };
-
-    // 各プロジェクトのキーワードをカウント
-    projects.forEach(project => {
-      if (project.keywords) {
-        project.keywords.forEach(keyword => {
-          if (researchFields.hasOwnProperty(keyword)) {
-            researchFields[keyword]++;
-          }
-        });
+      if (!portfolioState.isExpanded) {
+        updatePortfolioVisibleCount();
       }
-    });
 
-    // 統計データを表示
-    const statsContainer = document.getElementById('research-stats');
-    if (statsContainer) {
-      statsContainer.innerHTML = '';
-      
-      Object.entries(researchFields).forEach(([field, count], index) => {
-        const statsItem = document.createElement('div');
-        statsItem.className = 'stats__item pulse';
-        statsItem.innerHTML = `
-          <span class="stats__number" data-count="${count}" aria-label="${count}件の${field}研究">${count}</span>
-          <span class="stats__label">${field}</span>
-        `;
-        statsContainer.appendChild(statsItem);
-      });
+      const total = projects.length;
+      const visibleLimit = portfolioState.isExpanded
+        ? total
+        : Math.min(portfolioState.visibleCount || Math.min(total, 6), total);
 
-      // カウンターアニメーションを再実行
-      setTimeout(() => {
-        animateCounters();
-      }, 500);
+      const cards = projects.slice(0, visibleLimit).map(project => createProjectCard(project)).join('');
+      grid.innerHTML = cards;
+
+      updatePortfolioControls(total, visibleLimit);
     }
-  }
 
-  function createProjectCard(project, index) {
-    const card = document.createElement('div');
-    card.className = 'project-card';
-    card.setAttribute('data-category', project.degree_code || project.category || 'other');
-    card.setAttribute('data-index', index); // インデックスを追加
-    card.setAttribute('data-keywords', (project.keywords || []).join(' '));
-    card.style.animationDelay = `${index * 0.1}s`;
-    
-    // Add click handler for modal
-    card.addEventListener('click', () => openModal(project));
-    
-    // 研究分野タグを優先的に表示（人間センシング、人間機械系、チームワーク、協調理論）
-    const researchTags = ['人間センシング', '人間機械系', 'チームワーク', '協調理論'];
-    let displayTags = [];
-    
-    if (project.keywords) {
-      // まず研究分野タグを抽出
-      const foundResearchTags = project.keywords.filter(tag => researchTags.includes(tag));
-      displayTags = [...foundResearchTags];
-      
-      // 研究分野タグが不足している場合、他のキーワードで補完
-      if (displayTags.length < 2) {
-        const otherTags = project.keywords.filter(tag => !researchTags.includes(tag));
-        displayTags = [...displayTags, ...otherTags].slice(0, 2);
-      }
-    } else {
-      displayTags = project.tags ? project.tags.slice(0, 2) : [project.degree_type || 'research'];
-    }
-    
-    const tagElements = displayTags.map(tag => 
-      `<span class="project-card__tag">${tag}</span>`
-    ).join('');
-    
-    // Clean markdown syntax from abstract content
-    let cleanAbstract = project.abstract || project.overview || project.description || `${project.title}の研究プロジェクトです。`;
-    cleanAbstract = cleanAbstract.replace(/\*\*(.+?)\*\*/g, '$1'); // Remove ** markdown
-    
-    card.innerHTML = `
-      <div class="project-card__year-badge">${project.year || '2024'}</div>
-      <img src="${DEFAULT_CARD_IMAGE}" alt="${project.title}" class="project-card__image">
-      <div class="project-card__content">
-        <div class="project-card__tags">
-          ${tagElements}
-        </div>
-        <h3 class="project-card__title">${project.title || 'Untitled Project'}</h3>
-        <div class="project-card__author">${project.author || 'Anonymous'} (${project.year || '2024'}年度 ${project.degree_type || '論文'})</div>
-        <p class="project-card__abstract">${cleanAbstract}</p>
-      </div>
-    `;
-    
-    const cardImage = card.querySelector('.project-card__image');
-    applyProjectImage(cardImage, project, DEFAULT_CARD_IMAGE);
+    function setupPortfolioControls() {
+      if (portfolioState.controlsInitialized) return;
 
-    return card;
-  }
+      const toggleButtons = document.querySelectorAll('[data-portfolio-toggle]');
+      if (!toggleButtons.length) return;
 
-  function initializeFilters() {
-    const filterBtns = document.querySelectorAll('#portfolio-filters .filter-btn');
-    const portfolioItems = document.querySelectorAll('.project-card');
-
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', function() {
-        const filter = this.getAttribute('data-filter');
-        
-        // Update active button
-        filterBtns.forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-        
-        portfolioItems.forEach(item => {
-          let shouldShow = false;
-          
-          if (filter === '*') {
-            shouldShow = true;
-          } else if (filter === 'B' || filter === 'M') {
-            // Filter by degree type
-            const category = item.getAttribute('data-category');
-            shouldShow = category === filter;
-          } else {
-            // Filter by keywords - プロジェクトデータから直接キーワードを確認
-            // カードのindex属性からプロジェクトデータを取得
-            const cardIndex = parseInt(item.getAttribute('data-index'));
-            if (!isNaN(cardIndex) && window.projectsData && window.projectsData[cardIndex]) {
-              const project = window.projectsData[cardIndex];
-              const keywords = project.keywords || [];
-              
-              if ((filter === 'sensing' && keywords.includes('人間センシング')) ||
-                  (filter === 'hms' && keywords.includes('人間機械系')) ||
-                  (filter === 'teamwork' && keywords.includes('チームワーク')) ||
-                  (filter === 'theory' && keywords.includes('協調理論'))) {
-                shouldShow = true;
-              }
-            }
+      toggleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          portfolioState.isExpanded = !portfolioState.isExpanded;
+          if (!portfolioState.isExpanded) {
+            updatePortfolioVisibleCount();
           }
-          
-          if (shouldShow) {
-            item.style.display = 'block';
-            item.style.transform = 'scale(1)';
-            item.style.opacity = '1';
-          } else {
-            item.style.transform = 'scale(0.8)';
-            item.style.opacity = '0';
-            setTimeout(() => {
-              if (item.style.opacity === '0') {
-                item.style.display = 'none';
-              }
-            }, 300);
-          }
+          applyProjectFilters();
         });
       });
-    });
-  }
 
-  // Search Functionality with Autocomplete
-  const searchBox = document.getElementById('search-box');
-  const suggestionsBox = document.getElementById('search-suggestions');
-  let keywordsData = [];
-  let selectedSuggestionIndex = -1;
-  
-  // Load keywords data
-  async function loadKeywords() {
-    try {
-      const response = await fetch('data/keywords.json');
-      const data = await response.json();
-      keywordsData = data.all_keywords || [];
-    } catch (error) {
-      console.error('Error loading keywords:', error);
-    }
-  }
-  
-  // Initialize keywords
-  loadKeywords();
-  
-  function showSuggestions(searchTerm) {
-    if (!searchTerm || searchTerm.length < 1) {
-      suggestionsBox.style.display = 'none';
-      return;
-    }
-    
-    const normalizedSearch = searchTerm.toLowerCase();
-    let suggestions;
-    
-    if (normalizedSearch.includes('*')) {
-      // Convert wildcard pattern to regex for suggestions
-      const escapedPattern = normalizedSearch
-        .replace(/[.+?^${}()|[\]\\]/g, '\\$&')
-        .replace(/\*/g, '.*');
-      const searchPattern = new RegExp(escapedPattern);
-      
-      suggestions = keywordsData
-        .filter(item => searchPattern.test(item.keyword.toLowerCase()))
-        .slice(0, 8);
-    } else {
-      suggestions = keywordsData
-        .filter(item => item.keyword.toLowerCase().includes(normalizedSearch))
-        .slice(0, 8);
-    }
-    
-    if (suggestions.length === 0) {
-      suggestionsBox.style.display = 'none';
-      return;
-    }
-    
-    suggestionsBox.innerHTML = suggestions.map((item, index) => `
-      <div class="search__suggestion-item" data-index="${index}" data-keyword="${item.keyword}">
-        <span class="suggestion-keyword">${highlightMatch(item.keyword, searchTerm)}</span>
-        <span class="suggestion-count">${item.count}件</span>
-      </div>
-    `).join('');
-    
-    suggestionsBox.style.display = 'block';
-    selectedSuggestionIndex = -1;
-  }
-  
-  function highlightMatch(text, searchTerm) {
-    if (searchTerm.includes('*')) {
-      // For wildcard patterns, highlight the matched parts
-      const escapedPattern = searchTerm
-        .replace(/[.+?^${}()|[\]\\]/g, '\\$&')
-        .replace(/\*/g, '(.*)');
-      const regex = new RegExp(escapedPattern, 'gi');
-      return text.replace(regex, (match) => `<strong>${match}</strong>`);
-    } else {
-      const regex = new RegExp(`(${searchTerm})`, 'gi');
-      return text.replace(regex, '<strong>$1</strong>');
-    }
-  }
-  
-  function hideSuggestions() {
-    setTimeout(() => {
-      suggestionsBox.style.display = 'none';
-      selectedSuggestionIndex = -1;
-    }, 200);
-  }
-  
-  function selectSuggestion(index) {
-    const items = suggestionsBox.querySelectorAll('.search__suggestion-item');
-    items.forEach((item, i) => {
-      if (i === index) {
-        item.classList.add('selected');
-      } else {
-        item.classList.remove('selected');
-      }
-    });
-  }
-  
-  function performSearch(searchTerm) {
-    const portfolioItems = document.querySelectorAll('.project-card');
-    
-    // If search term is empty, show all
-    if (searchTerm === '') {
-      portfolioItems.forEach(item => {
-        item.style.display = 'block';
-        item.style.opacity = '1';
-        item.style.transform = 'scale(1)';
+      window.addEventListener('resize', () => {
+        if (portfolioState.isExpanded) return;
+        if (portfolioState.resizeTimer) {
+          window.clearTimeout(portfolioState.resizeTimer);
+        }
+        portfolioState.resizeTimer = window.setTimeout(() => {
+          const changed = updatePortfolioVisibleCount();
+          if (changed) {
+            applyProjectFilters();
+          }
+          portfolioState.resizeTimer = null;
+        }, 150);
       });
-      return;
+
+      portfolioState.controlsInitialized = true;
     }
-    
-    // Convert wildcard pattern to regex
-    const normalizedSearch = searchTerm.toLowerCase();
-    let searchPattern;
-    
-    if (normalizedSearch.includes('*')) {
-      // Escape special regex characters except *
-      const escapedPattern = normalizedSearch
-        .replace(/[.+?^${}()|[\]\\]/g, '\\$&')
-        .replace(/\*/g, '.*');
-      searchPattern = new RegExp(escapedPattern);
-    }
-    
-    portfolioItems.forEach(item => {
-      const title = item.querySelector('.project-card__title').textContent.toLowerCase();
-      const abstract = item.querySelector('.project-card__abstract').textContent.toLowerCase();
-      const author = item.querySelector('.project-card__author').textContent.toLowerCase();
-      const keywords = item.dataset.keywords ? item.dataset.keywords.toLowerCase() : '';
-      
-      let matches = false;
-      
-      if (searchPattern) {
-        // Use regex pattern matching
-        matches = searchPattern.test(title) || 
-                  searchPattern.test(abstract) || 
-                  searchPattern.test(author) ||
-                  searchPattern.test(keywords);
+
+    function updatePortfolioVisibleCount() {
+      const grid = document.getElementById('portfolioGrid');
+      if (!grid) return false;
+
+      const columnCount = getPortfolioColumnCount(grid);
+      const totalProjects = portfolioState.projects.length;
+
+      let limit;
+      if (columnCount >= 4) {
+        limit = 8;
+      } else if (columnCount >= 3) {
+        limit = 6;
+      } else if (columnCount >= 2) {
+        limit = 4;
       } else {
-        // Use simple includes
-        matches = title.includes(normalizedSearch) || 
-                  abstract.includes(normalizedSearch) || 
-                  author.includes(normalizedSearch) ||
-                  keywords.includes(normalizedSearch);
+        limit = totalProjects ? Math.min(totalProjects, 2) : 2;
       }
-      
-      if (matches) {
-        item.style.display = 'block';
-        item.style.opacity = '1';
-        item.style.transform = 'scale(1)';
-      } else {
-        item.style.opacity = '0';
-        item.style.transform = 'scale(0.8)';
-        setTimeout(() => {
-          if (item.style.opacity === '0') {
-            item.style.display = 'none';
+
+      limit = Math.max(1, limit);
+
+      if (portfolioState.visibleCount === limit) {
+        return false;
+      }
+
+      portfolioState.visibleCount = limit;
+      return true;
+    }
+
+    function getPortfolioColumnCount(grid) {
+      const styles = window.getComputedStyle(grid);
+      const templateColumns = styles.getPropertyValue('grid-template-columns');
+
+      if (templateColumns && !templateColumns.includes('repeat')) {
+        const explicit = templateColumns.split(' ').filter(token => token.trim()).length;
+        if (explicit) return explicit;
+      }
+
+      const gapValue = parseFloat(styles.getPropertyValue('column-gap') || styles.getPropertyValue('grid-column-gap')) || 0;
+      const gridWidth = grid.clientWidth;
+      if (!gridWidth) return 1;
+
+      const approximate = Math.floor((gridWidth + gapValue) / (280 + gapValue));
+      return Math.max(1, approximate);
+    }
+
+    function updatePortfolioControls(total, visible) {
+      const controls = document.querySelectorAll('.portfolio-controls');
+      const toggles = document.querySelectorAll('[data-portfolio-toggle]');
+      const fab = document.getElementById('portfolioFab');
+
+      if (!controls.length || !toggles.length) return;
+
+      // FABの表示制御
+      if (fab) {
+        const shouldShowFab = portfolioState.isExpanded && total > portfolioState.visibleCount;
+        fab.setAttribute('aria-hidden', shouldShowFab ? 'false' : 'true');
+      }
+
+      if (!total) {
+        controls.forEach(control => {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        });
+        toggles.forEach(toggle => {
+          if (!toggle.closest('.portfolio-fab')) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = '残りを表示';
           }
-        }, 300);
-      }
-    });
-  }
-  
-  if (searchBox) {
-    searchBox.addEventListener('input', function() {
-      const searchTerm = this.value;
-      showSuggestions(searchTerm);
-      performSearch(searchTerm);
-    });
-    
-    searchBox.addEventListener('focus', function() {
-      if (this.value) {
-        showSuggestions(this.value);
-      }
-    });
-    
-    searchBox.addEventListener('blur', function() {
-      hideSuggestions();
-    });
-    
-    // Keyboard navigation
-    searchBox.addEventListener('keydown', function(e) {
-      const items = suggestionsBox.querySelectorAll('.search__suggestion-item');
-      
-      if (e.key === 'ArrowDown') {
-        e.preventDefault();
-        selectedSuggestionIndex = Math.min(selectedSuggestionIndex + 1, items.length - 1);
-        selectSuggestion(selectedSuggestionIndex);
-      } else if (e.key === 'ArrowUp') {
-        e.preventDefault();
-        selectedSuggestionIndex = Math.max(selectedSuggestionIndex - 1, -1);
-        selectSuggestion(selectedSuggestionIndex);
-      } else if (e.key === 'Enter' && selectedSuggestionIndex >= 0) {
-        e.preventDefault();
-        const selectedItem = items[selectedSuggestionIndex];
-        if (selectedItem) {
-          searchBox.value = selectedItem.dataset.keyword;
-          performSearch(selectedItem.dataset.keyword);
-          hideSuggestions();
-        }
-      }
-    });
-  }
-  
-  // Click on suggestion
-  if (suggestionsBox) {
-    suggestionsBox.addEventListener('click', function(e) {
-      const item = e.target.closest('.search__suggestion-item');
-      if (item) {
-        searchBox.value = item.dataset.keyword;
-        performSearch(item.dataset.keyword);
-        hideSuggestions();
-      }
-    });
-  }
-
-  // Counter Animation
-  function animateCounters() {
-    const counters = document.querySelectorAll('.stats__number');
-    
-    counters.forEach(counter => {
-      const target = parseInt(counter.getAttribute('data-count'));
-      const duration = 2000;
-      const increment = target / (duration / 16);
-      let current = 0;
-      
-      const timer = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-          current = target;
-          clearInterval(timer);
-        }
-        counter.textContent = Math.floor(current);
-      }, 16);
-    });
-  }
-
-  // Trigger counter animation when stats section is visible
-  const statsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        animateCounters();
-        statsObserver.unobserve(entry.target);
-      }
-    });
-  });
-
-  const statsSection = document.querySelector('.stats-section');
-  if (statsSection) {
-    statsObserver.observe(statsSection);
-  }
-
-  // Modal functionality
-  const modal = document.getElementById('research-modal');
-  const modalClose = document.querySelector('.modal__close');
-  const modalOverlay = document.querySelector('.modal__overlay');
-
-  async function openModal(project) {
-    console.log('Opening modal for project:', project);
-    
-    // Check if modal exists
-    if (!modal) {
-      console.error('Modal element not found');
-      return;
-    }
-    
-    // Populate modal content
-    const titleElement = document.querySelector('.modal__title');
-    const authorElement = document.querySelector('.modal__author');
-    const yearBadgeElement = document.querySelector('.modal__year-badge');
-    
-    if (titleElement) titleElement.textContent = project.title || 'Untitled Project';
-    if (authorElement) authorElement.textContent = `研究者: ${project.author || 'Anonymous'}`;
-    if (yearBadgeElement) yearBadgeElement.textContent = project.year || '2024';
-    
-    // Set image - use thumbnail image for modal
-    const modalImage = document.querySelector('.modal__image');
-    if (modalImage) {
-      modalImage.alt = project.title || 'Research Image';
-      applyProjectImage(modalImage, project, DEFAULT_MODAL_IMAGE);
-    }
-    
-    // Set tags
-    const tagsContainer = document.querySelector('.modal__tags');
-    if (tagsContainer) {
-      tagsContainer.innerHTML = '';
-      const tags = project.keywords || project.tags || [project.degree_type || 'research'];
-      tags.slice(0, 5).forEach(tag => {
-        const tagElement = document.createElement('span');
-        tagElement.className = 'modal__tag';
-        tagElement.textContent = tag.toUpperCase();
-        tagsContainer.appendChild(tagElement);
-      });
-    }
-    
-    // Set abstract - try to load from abst file
-    const abstractContainer = document.querySelector('.modal__abstract');
-    if (abstractContainer) {
-      if (project.abstract) {
-        abstractContainer.textContent = project.abstract;
-      } else if (project.file_id) {
-        // Try to load abstract from file
-        try {
-          const abstractCandidates = [
-            `project/current/abst/${project.file_id}_abst.md`,
-            `project/graduate/abst/${project.file_id}_abst.md`
-          ];
-
-          let abstractLoaded = false;
-          for (const abstractPath of abstractCandidates) {
-            const abstResponse = await fetch(abstractPath);
-            if (abstResponse.ok) {
-              const abstContent = await abstResponse.text();
-              abstractContainer.textContent = abstContent.replace(/^---[\s\S]*?---\s*/, '').trim() || '研究の概要情報が利用できません。';
-              abstractLoaded = true;
-              break;
-            }
-          }
-
-          if (!abstractLoaded) {
-            abstractContainer.textContent = `${project.title}の研究プロジェクトです。`;
-          }
-        } catch (error) {
-          console.error('Error loading abstract:', error);
-          abstractContainer.textContent = `${project.title}の研究プロジェクトです。`;
-        }
-      } else {
-        abstractContainer.textContent = '研究の概要情報が利用できません。';
-      }
-    }
-    
-    // Load and display detailed content from _detail.md
-    const detailsContainer = document.querySelector('.modal__details');
-    if (detailsContainer) {
-      detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細情報を読み込み中...</div>';
-      
-      if (project.file_id) {
-        try {
-          const detailCandidates = [
-            `project/graduate/detail/${project.file_id}_detail.md`,
-            `project/current/detail/${project.file_id}_detail.md`
-          ];
-
-          let detailLoaded = false;
-          for (const detailPath of detailCandidates) {
-            console.log('Loading detail file:', detailPath);
-            const response = await fetch(detailPath);
-            if (response.ok) {
-              const markdownContent = await response.text();
-              const htmlContent = parseMarkdownToHTML(markdownContent);
-              detailsContainer.innerHTML = htmlContent;
-              detailLoaded = true;
-              break;
-            }
-          }
-
-          if (!detailLoaded) {
-            console.error('Failed to load detail files for', project.file_id);
-            detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細情報の読み込みに失敗しました。</div>';
-          }
-        } catch (error) {
-          console.error('Error loading detail file:', error);
-          detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細情報が利用できません。</div>';
-        }
-      } else {
-        detailsContainer.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-light);">詳細ファイルが見つかりません。</div>';
-      }
-    }
-    
-    // Show modal
-    modal.style.display = 'block';
-    setTimeout(() => {
-      modal.classList.add('active');
-    }, 10);
-    
-    // Prevent body scroll
-    document.body.style.overflow = 'hidden';
-  }
-
-  // Simple Markdown to HTML parser for detail content
-  function parseMarkdownToHTML(markdown) {
-    let html = markdown;
-    
-    // Parse headers
-    html = html.replace(/^### (.+)$/gm, '<h4>$1</h4>');
-    html = html.replace(/^## (.+)$/gm, '<h3>$1</h3>');
-    html = html.replace(/^# (.+)$/gm, '<h2>$1</h2>');
-    
-    // Parse bold text
-    html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-    
-    // Parse line breaks and paragraphs
-    html = html.replace(/\n\n/g, '</p><p>');
-    html = html.replace(/\n/g, '<br>');
-    html = '<p>' + html + '</p>';
-    
-    // Clean up empty paragraphs
-    html = html.replace(/<p><\/p>/g, '');
-    html = html.replace(/<p><br>/g, '<p>');
-    html = html.replace(/<br><\/p>/g, '</p>');
-    
-    // Parse horizontal rules
-    html = html.replace(/---/g, '<hr>');
-    
-    // Handle research paper citations
-    html = html.replace(/- (.+):/g, '<div class="citation"><strong>$1:</strong>');
-    html = html.replace(/pp\. ([\d-]+)/g, 'pp. $1</div>');
-    
-    return html;
-  }
-
-  function closeModal() {
-    modal.classList.remove('active');
-    setTimeout(() => {
-      modal.style.display = 'none';
-      document.body.style.overflow = '';
-    }, 300);
-  }
-
-  // Modal event listeners
-  if (modalClose) {
-    modalClose.addEventListener('click', closeModal);
-  }
-  if (modalOverlay) {
-    modalOverlay.addEventListener('click', (e) => {
-      if (e.target === modalOverlay) {
-        closeModal();
-      }
-    });
-  }
-
-  // ESC key to close modal
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
-      closeModal();
-    }
-  });
-
-  // Touch swipe to close on mobile
-  if (modalOverlay) {
-    let startY = 0;
-    modalOverlay.addEventListener('touchstart', (e) => {
-      startY = e.touches[0].clientY;
-    });
-
-    modalOverlay.addEventListener('touchmove', (e) => {
-      if (window.innerWidth <= 768) { // Mobile only
-        const currentY = e.touches[0].clientY;
-        const diffY = currentY - startY;
-        
-        if (diffY > 100) { // Swipe down threshold
-          closeModal();
-        }
-      }
-    });
-  }
-
-  // Publications functionality
-  async function loadPublications() {
-    try {
-      console.log('Loading publications data...');
-      
-      const response = await fetch('data/publish.json');
-      const data = await response.json();
-      console.log('Loaded publications:', data);
-      
-      const container = document.getElementById('publications-container');
-      const publications = data.publications || [];
-      
-      if (publications.length === 0) {
-        container.innerHTML = '<div class="glass" style="padding: 2rem; text-align: center; color: var(--text-secondary);">研究業績データが見つかりません</div>';
+        });
         return;
       }
 
-      // 表示
-      displayPublications(publications);
-      initializePublicationsFilters(publications);
-      
-      console.log(`Loaded ${publications.length} publications`);
-      
-    } catch (error) {
-      console.error('Error loading publications:', error);
-      document.getElementById('publications-container').innerHTML = 
-        '<div class="glass" style="padding: 2rem; text-align: center; color: var(--text-light);">研究業績データの読み込みに失敗しました</div>';
-    }
-  }
-
-  function displayPublications(publications) {
-    const container = document.getElementById('publications-container');
-    container.innerHTML = '';
-    
-    publications.forEach((pub, index) => {
-      const item = createPublicationItem(pub, index);
-      container.appendChild(item);
-    });
-  }
-
-  function createPublicationItem(pub, index) {
-    const item = document.createElement('div');
-    item.className = 'publication-item fade-in-up';
-    item.setAttribute('data-category', pub.category);
-    item.style.animationDelay = `${index * 0.05}s`;
-    
-    const categoryText = getCategoryText(pub.category);
-    const authorsText = pub.authors.length > 0 ? pub.authors.join(', ') : '著者情報なし';
-    
-    item.innerHTML = `
-      <div class="publication-item__header">
-        <span class="publication-item__category publication-item__category--${pub.category}">
-          ${categoryText}
-        </span>
-        <span class="publication-item__year">${pub.year || '年不明'}</span>
-      </div>
-      ${pub.title ? `<h3 class="publication-item__title">${pub.title}</h3>` : ''}
-      <div class="publication-item__authors">${authorsText}</div>
-      <div class="publication-item__text">${pub.text}</div>
-      ${pub.link ? `<a href="${pub.link}" target="_blank" rel="noopener" class="publication-item__link">詳細を見る</a>` : ''}
-    `;
-    
-    return item;
-  }
-
-  function getCategoryText(category) {
-    const categoryMap = {
-      'journal': '📄 学術雑誌',
-      'award': '🏆 受賞',
-      'lecture': '🎤 講演',
-      'conference': '🌍 国際会議',
-      'domestic': '🇯🇵 国内学会',
-      'other': '📋 その他'
-    };
-    return categoryMap[category] || '📋 その他';
-  }
-
-  function initializePublicationsFilters(publications) {
-    const filterBtns = document.querySelectorAll('#publications-filters .filter-btn');
-    const searchBox = document.getElementById('publications-search');
-
-    // フィルターボタン
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', function() {
-        const filter = this.getAttribute('data-filter');
-        
-        filterBtns.forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-        
-        filterPublications(publications, filter, searchBox.value);
-      });
-    });
-
-    // 検索機能
-    if (searchBox) {
-      searchBox.addEventListener('input', function() {
-        const searchTerm = this.value.toLowerCase();
-        const activeFilter = document.querySelector('#publications-filters .filter-btn.active').getAttribute('data-filter');
-        
-        filterPublications(publications, activeFilter, searchTerm);
-      });
-    }
-  }
-
-  function filterPublications(publications, categoryFilter, searchTerm) {
-    let filtered = publications;
-    
-    // カテゴリフィルター
-    if (categoryFilter !== '*') {
-      filtered = filtered.filter(pub => pub.category === categoryFilter);
-    }
-    
-    // 検索フィルター
-    if (searchTerm) {
-      filtered = filtered.filter(pub => {
-        const searchableText = `${pub.title} ${pub.authors.join(' ')} ${pub.text}`.toLowerCase();
-        return searchableText.includes(searchTerm);
-      });
-    }
-    
-    displayPublications(filtered);
-  }
-
-  // Members Section Functions
-  async function loadMembers() {
-    try {
-      const response = await fetch('data/members.json');
-      const data = await response.json();
-      
-      if (data && data.members) {
-        displayMembers(data.members);
-        initializeMembersFilters(data.members);
+      if (!portfolioState.isExpanded && total <= visible) {
+        controls.forEach(control => {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        });
+        toggles.forEach(toggle => {
+          if (!toggle.closest('.portfolio-fab')) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = '残りを表示';
+          }
+        });
+        return;
       }
-    } catch (error) {
-      console.error('メンバーデータの読み込みエラー:', error);
-      document.getElementById('members-container').innerHTML = 
-        '<div class="glass" style="padding: 2rem; text-align: center; color: var(--text-light);">メンバーデータの読み込みに失敗しました</div>';
-    }
-  }
 
-  function getLastActiveYear(member) {
-    if (member.active_years && member.active_years.length > 0) {
-      return member.active_years[member.active_years.length - 1];
-    }
-    const degreeYears = (member.degrees || [])
-      .map(degree => degree.year)
-      .filter(year => typeof year === 'number');
-    return degreeYears.length > 0 ? Math.max(...degreeYears) : 0;
-  }
+      const showTop = portfolioState.isExpanded;
+      const showBottom = !portfolioState.isExpanded && total > visible;
 
-  function displayMembers(members) {
-    const container = document.getElementById('members-container');
-    container.innerHTML = '';
-    
-    // Filter to show only recent members (within last 5 years)
-    const currentYear = new Date().getFullYear();
-    const recentMembers = members.filter(member => {
-      const lastActiveYear = getLastActiveYear(member);
-      return lastActiveYear >= currentYear - 5;
-    });
-    
-    // Sort by category priority and then by entry year
-    const categoryPriority = {
-      'faculty': 1,
-      'phd': 2,
-      'master': 3,
-      'undergraduate': 4,
-      'alumni': 5
-    };
-    
-    recentMembers.sort((a, b) => {
-      // First sort by category
-      const categoryDiff = (categoryPriority[getMemberCategory(a)] || 6) - 
-                           (categoryPriority[getMemberCategory(b)] || 6);
-      if (categoryDiff !== 0) return categoryDiff;
-      
-      // Then by program year (higher year first)
-      const statusPriority = getStatusPriority(a) - getStatusPriority(b);
-      if (statusPriority !== 0) return statusPriority;
+      controls.forEach(control => {
+        const position = control.dataset.position || 'bottom';
+        const shouldShow = position === 'top' ? showTop : showBottom;
+        if (shouldShow) {
+          control.classList.add('is-visible');
+          control.setAttribute('aria-hidden', 'false');
+        } else {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        }
+      });
 
-      // Finally by entry year (newer first)
-      return b.entry_year - a.entry_year;
-    });
-    
-    recentMembers.forEach((member, index) => {
-      const card = createMemberCard(member, index);
-      container.appendChild(card);
-    });
-  }
-
-  function getMemberCategory(member) {
-    if (member.category) {
-      return member.category;
+      const remaining = Math.max(total - visible, 0);
+      toggles.forEach(toggle => {
+        if (!toggle.closest('.portfolio-fab')) {
+          toggle.textContent = portfolioState.isExpanded ? '表示を閉じる' : `残り${remaining}件を表示`;
+          toggle.setAttribute('aria-expanded', String(portfolioState.isExpanded));
+        }
+      });
     }
 
-    const tag = (member.status_tag || '').trim();
-    if (tag.includes('卒業')) {
+    function createProjectCard(project) {
+      const metaItems = [
+        project.author ? `${project.author}` : null,
+        project.year ? `${project.year}年度` : null,
+        project.degree_type || null
+      ].filter(Boolean).join(' / ');
+
+      const keywords = project._keywords.filter(kw => !MAIN_TAGS.includes(kw));
+      const keywordTags = keywords.slice(0, 4).map(keyword => `<span class="tag tag--keyword">${keyword}</span>`).join('');
+      const abstract = truncateText(project.abstract || '研究概要は準備中です。', 140);
+
+      const thumbnail = getProjectThumbnail(project);
+
+      return `
+        <article class="card portfolio-card" data-main-tag="${project._mainTag}">
+          <div class="portfolio-card__figure">
+            <img src="${thumbnail}" alt="${project.title || '研究サムネイル'}" loading="lazy" onerror="this.onerror=null;this.src='${PLACEHOLDER_THUMBNAIL}';">
+          </div>
+          <div class="portfolio-card__header">
+            <span class="tag tag--main">${project._mainTag}</span>
+            <h3 class="portfolio-card__title">${project.title || 'タイトル未設定'}</h3>
+            ${metaItems ? `<div class="portfolio-card__meta">${metaItems}</div>` : ''}
+          </div>
+          <div class="portfolio-card__body">${abstract}</div>
+          <div class="tag-list">
+            ${keywordTags}
+          </div>
+        </article>
+      `;
+    }
+
+    function truncateText(text, length) {
+      if (!text) return '';
+      const clean = text.replace(/\s+/g, ' ').trim();
+      if (clean.length <= length) return clean;
+      return `${clean.slice(0, length)}…`;
+    }
+
+    async function loadMembers() {
+      const grid = document.getElementById('membersGrid');
+      if (!grid) return;
+
+      try {
+        const response = await fetch('data/members.json');
+        const data = await response.json();
+        const members = data.members || data || [];
+
+        memberState.members = members.map(enrichMember);
+        setupMemberFilters();
+        setupMemberControls();
+        applyMemberFilters();
+        grid.setAttribute('aria-busy', 'false');
+      } catch (error) {
+        console.error('メンバーデータの読み込みに失敗しました', error);
+        grid.innerHTML = '<p>メンバーデータを読み込めませんでした。</p>';
+        grid.setAttribute('aria-busy', 'false');
+      }
+    }
+
+    function enrichMember(member) {
+      const initials = member.name
+        ? member.name.replace(/\s+/g, '').slice(0, 2)
+        : 'CR';
+
+      const degrees = Array.isArray(member.degrees) ? member.degrees : [];
+      const latestDegree = degrees[degrees.length - 1] || {};
+
+      return {
+        ...member,
+        _initials: initials,
+        _degrees: degrees,
+        _latestDegree: latestDegree,
+        _researchLinks: getMemberResearchLinks(member),
+        _search: buildMemberSearchText(member, degrees)
+      };
+    }
+
+    function getMemberGradeScore(member) {
+      const tag = (member.status_tag || '').trim();
+      const numberMatch = tag.match(/(博士|修士|学部)(\d)年生/);
+      if (numberMatch) {
+        const [, type, year] = numberMatch;
+        const base = { '博士': 100, '修士': 50, '学部': 10 }[type] || 0;
+        return base + parseInt(year, 10);
+      }
+      if (tag.includes('卒業')) return 0;
+      return 1;
+    }
+
+    function buildMemberSearchText(member, degrees) {
+      const degreeText = degrees.map(d => `${d.title || ''} ${d.degree_type || ''}`).join(' ');
+      const raw = [
+        member.name,
+        member.name_en,
+        member.status_tag,
+        member.highest_degree,
+        member.research_period,
+        degreeText
+      ].filter(Boolean).join(' ').toLowerCase();
+      return raw.replace(/\s+/g, ' ').trim();
+    }
+
+    function setupMemberFilters() {
+      if (memberState.filtersInitialized) return;
+
+      const buttons = document.querySelectorAll('[data-member-category]');
+      const searchInput = document.getElementById('memberSearch');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const category = button.dataset.memberCategory || 'all';
+          memberState.currentCategory = category;
+          buttons.forEach(btn => btn.setAttribute('aria-pressed', btn === button ? 'true' : 'false'));
+          applyMemberFilters();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', event => {
+          memberState.searchTerm = event.target.value.trim().toLowerCase();
+          applyMemberFilters();
+        });
+      }
+
+      memberState.filtersInitialized = true;
+    }
+
+    function applyMemberFilters() {
+      const grid = document.getElementById('membersGrid');
+      if (!grid) return;
+
+      let filtered = [...memberState.members];
+
+      if (memberState.currentCategory && memberState.currentCategory !== 'all') {
+        filtered = filtered.filter(member => getMemberCategory(member) === memberState.currentCategory);
+      }
+
+      if (memberState.searchTerm) {
+        filtered = filtered.filter(member => member._search.includes(memberState.searchTerm));
+      }
+
+      renderMembers(filtered);
+    }
+
+    function getMemberCategory(member) {
+      if (!member) return 'alumni';
+
+      if (member.category) return member.category;
+
+      const tag = (member.status_tag || '').replace(/\s+/g, '');
+
+      if (member.is_faculty || /教授|准教授|講師|助教/.test(tag)) {
+        return 'faculty';
+      }
+      if (/博士/.test(tag)) {
+        return /卒/.test(tag) ? 'alumni' : 'phd';
+      }
+      if (/修士/.test(tag)) {
+        return /卒/.test(tag) ? 'alumni' : 'master';
+      }
+      if (/学部/.test(tag)) {
+        return /卒/.test(tag) ? 'alumni' : 'undergraduate';
+      }
+
+      if (member.affiliation && /faculty/i.test(member.affiliation)) {
+        return 'faculty';
+      }
+
+      if (member.research_period && member.research_period.includes('在学中')) {
+        return 'researcher';
+      }
+
       return 'alumni';
     }
-    if (tag.startsWith('博士')) {
-      return 'phd';
-    }
-    if (tag.startsWith('修士')) {
-      return 'master';
-    }
-    if (tag.startsWith('学部')) {
-      return 'undergraduate';
+
+    function setupMemberControls() {
+      if (memberState.controlsInitialized) return;
+
+      const toggleButtons = document.querySelectorAll('[data-member-toggle]');
+      if (!toggleButtons.length) return;
+
+      toggleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          memberState.isExpanded = !memberState.isExpanded;
+          applyMemberFilters();
+        });
+      });
+
+      memberState.controlsInitialized = true;
     }
 
-    return 'researcher';
-  }
+    function renderMembers(members) {
+      const grid = document.getElementById('membersGrid');
+      if (!grid) return;
 
-  function getStatusPriority(member) {
-    const category = getMemberCategory(member);
-    const tag = (member.status_tag || '').trim();
-
-    const extractGrade = (regex) => {
-      const match = tag.match(regex);
-      if (match && match[1]) {
-        return parseInt(match[1], 10);
+      if (!members.length) {
+        grid.innerHTML = '<p>表示できるメンバーが見つかりませんでした。</p>';
+        updateMemberControls(0, 0);
+        grid.setAttribute('aria-busy', 'false');
+        return;
       }
-      return null;
-    };
 
-    if (category === 'phd') {
-      const grade = extractGrade(/博士(\d)年生/);
-      return grade !== null ? -grade : 0;
+      const categoryOrder = { faculty: 0, phd: 1, master: 2, undergraduate: 3, alumni: 4, researcher: 5 };
+      const sorted = [...members].sort((a, b) => {
+        const categoryDiff = (categoryOrder[getMemberCategory(a)] || 99) - (categoryOrder[getMemberCategory(b)] || 99);
+        if (categoryDiff !== 0) return categoryDiff;
+        const statusDiff = getMemberGradeScore(b) - getMemberGradeScore(a);
+        if (statusDiff !== 0) return statusDiff;
+        return (b.entry_year || 0) - (a.entry_year || 0);
+      });
+
+      const total = sorted.length;
+      const visibleLimit = memberState.isExpanded ? total : Math.min(memberState.visibleCount, total);
+      const visibleMembers = sorted.slice(0, visibleLimit);
+
+      grid.innerHTML = visibleMembers.map(member => createMemberCard(member)).join('');
+      updateMemberControls(total, visibleLimit);
+      grid.setAttribute('aria-busy', 'false');
     }
 
-    if (category === 'master') {
-      const grade = extractGrade(/修士(\d)年生/);
-      return grade !== null ? -grade : 0;
+    function updateMemberControls(total, visible) {
+      const controls = document.querySelectorAll('.member-controls');
+      const toggles = document.querySelectorAll('[data-member-toggle]');
+      const fab = document.getElementById('memberFab');
+
+      if (!controls.length || !toggles.length) return;
+
+      // FABの表示制御
+      if (fab) {
+        const shouldShowFab = memberState.isExpanded && total > memberState.visibleCount;
+        fab.setAttribute('aria-hidden', shouldShowFab ? 'false' : 'true');
+      }
+
+      if (!total || total <= memberState.visibleCount) {
+        controls.forEach(control => {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        });
+        toggles.forEach(toggle => {
+          if (!toggle.closest('.member-fab')) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = '残りを表示';
+          }
+        });
+        return;
+      }
+
+      const showTop = memberState.isExpanded;
+      const showBottom = !memberState.isExpanded && total > visible;
+
+      controls.forEach(control => {
+        const position = control.dataset.position || 'bottom';
+        const shouldShow = position === 'top' ? showTop : showBottom;
+        if (shouldShow) {
+          control.classList.add('is-visible');
+          control.setAttribute('aria-hidden', 'false');
+        } else {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        }
+      });
+
+      const remaining = Math.max(total - visible, 0);
+      toggles.forEach(toggle => {
+        if (!toggle.closest('.member-fab')) {
+          toggle.textContent = memberState.isExpanded ? '表示を閉じる' : `残り${remaining}件を表示`;
+          toggle.setAttribute('aria-expanded', String(memberState.isExpanded));
+        }
+      });
     }
 
-    if (category === 'undergraduate') {
-      const grade = extractGrade(/学部(\d)年生/);
-      return grade !== null ? -grade : 0;
-    }
-
-    return 0;
-  }
-
-  function createMemberCard(member, index) {
-    const card = document.createElement('div');
-    const category = getMemberCategory(member);
-    card.className = 'member-card fade-in-up';
-    card.setAttribute('data-category', category);
-    card.style.animationDelay = `${index * 0.05}s`;
-    
-    // Get initials for avatar
-    const initials = member.name.split(' ').map(part => part[0]).join('').slice(0, 2);
-    
-    // Get role text
-    const roleText = getRoleText(member, category);
-    
-    // Get latest research title
-    const researchLinks = getMemberResearchLinks(member);
-    
-    card.innerHTML = `
-      <div class="member-card__avatar">
-        ${initials}
-      </div>
-      <h3 class="member-card__name">${member.name}</h3>
-      ${member.name_en ? `<p class="member-card__name-en">${member.name_en}</p>` : ''}
-      <p class="member-card__role">${roleText}</p>
-      ${researchLinks.map(link => `
+    function createMemberCard(member) {
+      const researchHtml = member._researchLinks.map(link => `
         <div class="member-card__project">
           <span class="member-card__project-label">${formatDegreeLabel(link.degree_type, link.year)}</span>
-          <a class="member-card__research" href="#" data-project-id="${link.file_id}">${link.title}</a>
+          <span class="member-card__research">${link.title}</span>
         </div>
-      `).join('')}
-      <div class="member-card__period">
-        ${member.research_period}
-      </div>
-    `;
-    
-    // Attach modal open handlers
-    const researchAnchors = card.querySelectorAll('.member-card__research');
-    researchAnchors.forEach(anchor => {
-      anchor.addEventListener('click', event => {
-        event.preventDefault();
-        const projectId = anchor.getAttribute('data-project-id');
-        const project = (window.projectsData || []).find(p => p.file_id === projectId);
-        if (project) {
-          openModal(project);
+      `).join('');
+
+      const latestField = member._latestDegree && member._latestDegree.title
+        ? truncateText(member._latestDegree.title, 120)
+        : '研究テーマ: 未設定';
+
+      return `
+        <article class="card member-card" data-category="${getMemberCategory(member)}">
+          <h3 class="member-card__name">${member.name}</h3>
+          ${member.name_en ? `<p class="member-card__name-en">${member.name_en}</p>` : ''}
+          <p class="member-card__role">${member.status_tag || '研究員'}</p>
+          <p class="member-card__info">${latestField}</p>
+          ${researchHtml}
+          <div class="member-card__period">${member.research_period || ''}</div>
+        </article>
+      `;
+    }
+
+    function getMemberResearchLinks(member) {
+      const degrees = Array.isArray(member.degrees) ? member.degrees : [];
+      const result = degrees
+        .filter(degree => degree.file_id && degree.title)
+        .map(degree => ({
+          file_id: degree.file_id,
+          title: degree.title,
+          degree_type: degree.degree_type || '',
+          year: degree.year
+        }))
+        .reverse();
+      return result.slice(0, 2);
+    }
+
+    function formatDegreeLabel(degreeType, year) {
+      if (!degreeType) {
+        return year ? `${year}年` : '研究成果';
+      }
+
+      const normalized = degreeType.replace(/\s+/g, '').replace('（', '(').replace('）', ')');
+
+      if (normalized.includes('博士課程(在学中)')) {
+        return year ? `博士課程（${year}年〜）` : '博士課程（在学中）';
+      }
+      if (normalized.includes('修士課程(在学中)')) {
+        return year ? `修士課程（${year}年〜）` : '修士課程（在学中）';
+      }
+      if (normalized.includes('学士課程(在学中)')) {
+        return year ? `学部課程（${year}年〜）` : '学部課程（在学中）';
+      }
+      if (normalized.includes('博士論文')) {
+        return year ? `博士論文（${year}年）` : '博士論文';
+      }
+      if (normalized.includes('修士論文')) {
+        return year ? `修士論文（${year}年）` : '修士論文';
+      }
+      if (normalized.includes('学士論文')) {
+        return year ? `学士論文（${year}年）` : '学士論文';
+      }
+
+      return degreeType;
+    }
+
+    function getProjectThumbnail(project) {
+      const candidates = [];
+      if (project.thumbnail) candidates.push(project.thumbnail);
+      if (project.image_path) candidates.push(project.image_path);
+      if (project.file_id) {
+        candidates.push(`project/graduate/img/${project.file_id}_thumbnail.png`);
+        if (project.student_id) {
+          candidates.push(`project/current/img/${project.student_id}.png`);
+        }
+        candidates.push(`proc/img/${project.file_id}_thumbnail.png`);
+      }
+      if (!candidates.length) {
+        return PLACEHOLDER_THUMBNAIL;
+      }
+      return candidates[0];
+    }
+
+    async function loadPublications() {
+      const list = document.getElementById('publicationList');
+      if (!list) return;
+
+      try {
+        const response = await fetch('data/publish.json');
+        const data = await response.json();
+        const publications = Array.isArray(data) ? data : data.publications || [];
+
+        publicationState.publications = publications.map(enrichPublication);
+        setupPublicationFilters();
+        setupPublicationControls();
+        applyPublicationFilters();
+        list.setAttribute('aria-busy', 'false');
+      } catch (error) {
+        console.error('業績データの読み込みに失敗しました', error);
+        list.innerHTML = '<p>業績データを読み込めませんでした。</p>';
+        list.setAttribute('aria-busy', 'false');
+      }
+    }
+
+    function enrichPublication(publication) {
+      const searchSource = [
+        publication.title,
+        Array.isArray(publication.authors) ? publication.authors.join(' ') : publication.authors,
+        publication.section,
+        publication.text,
+        publication.category,
+        publication.year
+      ].filter(Boolean).join(' ').toLowerCase();
+
+      return {
+        ...publication,
+        _category: (publication.category || 'other').toLowerCase(),
+        _search: searchSource
+      };
+    }
+
+    function setupPublicationFilters() {
+      const buttons = document.querySelectorAll('[data-pub-category]');
+      const searchInput = document.getElementById('publicationSearch');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const category = button.dataset.pubCategory || 'all';
+          publicationState.currentCategory = category;
+          publicationState.isExpanded = false;
+          buttons.forEach(btn => btn.setAttribute('aria-pressed', btn === button ? 'true' : 'false'));
+          applyPublicationFilters();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', event => {
+          publicationState.searchTerm = event.target.value.trim().toLowerCase();
+          publicationState.isExpanded = false;
+          applyPublicationFilters();
+        });
+      }
+    }
+
+    function setupPublicationControls() {
+      if (publicationState.controlsInitialized) return;
+
+      const toggleButtons = document.querySelectorAll('[data-publication-toggle]');
+      if (!toggleButtons.length) return;
+
+      toggleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          publicationState.isExpanded = !publicationState.isExpanded;
+          if (!publicationState.isExpanded) {
+            updatePublicationVisibleCount();
+          }
+          applyPublicationFilters();
+        });
+      });
+
+      window.addEventListener('resize', () => {
+        if (publicationState.isExpanded) return;
+        if (publicationState.resizeTimer) {
+          window.clearTimeout(publicationState.resizeTimer);
+        }
+        publicationState.resizeTimer = window.setTimeout(() => {
+          const changed = updatePublicationVisibleCount();
+          if (changed) {
+            applyPublicationFilters();
+          }
+          publicationState.resizeTimer = null;
+        }, 150);
+      });
+
+      publicationState.controlsInitialized = true;
+    }
+
+    function updatePublicationVisibleCount() {
+      const list = document.getElementById('publicationList');
+      if (!list) return false;
+
+      const columnCount = getPublicationColumnCount(list);
+      const totalPublications = publicationState.publications.length;
+
+      let limit;
+      if (columnCount >= 4) {
+        limit = 8;
+      } else if (columnCount >= 3) {
+        limit = 6;
+      } else if (columnCount >= 2) {
+        limit = 4;
+      } else {
+        limit = totalPublications ? Math.min(totalPublications, 2) : 2;
+      }
+
+      limit = Math.max(1, limit);
+
+      if (publicationState.visibleCount === limit) {
+        return false;
+      }
+
+      publicationState.visibleCount = limit;
+      return true;
+    }
+
+    function getPublicationColumnCount(list) {
+      const styles = window.getComputedStyle(list);
+      const templateColumns = styles.getPropertyValue('grid-template-columns');
+
+      if (templateColumns && !templateColumns.includes('repeat')) {
+        const explicit = templateColumns.split(' ').filter(token => token.trim()).length;
+        if (explicit) return explicit;
+      }
+
+      const gapValue = parseFloat(styles.getPropertyValue('column-gap') || styles.getPropertyValue('grid-column-gap')) || 0;
+      const listWidth = list.clientWidth;
+      if (!listWidth) return 1;
+
+      const approximate = Math.floor((listWidth + gapValue) / (260 + gapValue));
+      return Math.max(1, approximate);
+    }
+
+    function updatePublicationControls(total, visible) {
+      const controls = document.querySelectorAll('.publication-controls');
+      const toggles = document.querySelectorAll('[data-publication-toggle]');
+      const fab = document.getElementById('publicationFab');
+
+      if (!controls.length || !toggles.length) return;
+
+      // FABの表示制御
+      if (fab) {
+        const shouldShowFab = publicationState.isExpanded && total > publicationState.visibleCount;
+        fab.setAttribute('aria-hidden', shouldShowFab ? 'false' : 'true');
+      }
+
+      if (!total) {
+        controls.forEach(control => {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        });
+        toggles.forEach(toggle => {
+          if (!toggle.closest('.publication-fab')) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = '残りを表示';
+          }
+        });
+        return;
+      }
+
+      if (!publicationState.isExpanded && total <= visible) {
+        controls.forEach(control => {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        });
+        toggles.forEach(toggle => {
+          if (!toggle.closest('.publication-fab')) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = '残りを表示';
+          }
+        });
+        return;
+      }
+
+      const showTop = publicationState.isExpanded;
+      const showBottom = !publicationState.isExpanded && total > visible;
+
+      controls.forEach(control => {
+        const position = control.dataset.position || 'bottom';
+        const shouldShow = position === 'top' ? showTop : showBottom;
+        if (shouldShow) {
+          control.classList.add('is-visible');
+          control.setAttribute('aria-hidden', 'false');
         } else {
-          console.warn('Project not found for member:', projectId);
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
         }
       });
-    });
 
-    return card;
-  }
-
-  function getMemberResearchLinks(member) {
-    const degrees = member.degrees || [];
-    if (degrees.length === 0) {
-      return [];
+      const remaining = Math.max(total - visible, 0);
+      toggles.forEach(toggle => {
+        if (!toggle.closest('.publication-fab')) {
+          toggle.textContent = publicationState.isExpanded ? '表示を閉じる' : `残り${remaining}件を表示`;
+          toggle.setAttribute('aria-expanded', String(publicationState.isExpanded));
+        }
+      });
     }
 
-  const isEnrolled = Boolean(member.enrollment);
-  if (!isEnrolled) {
-    const latest = degrees[degrees.length - 1];
-    if (latest && latest.file_id && latest.title) {
-      return [{
-        file_id: latest.file_id,
-        title: latest.title,
-        degree_type: latest.degree_type || '',
-        year: latest.year
-      }];
+    function applyPublicationFilters() {
+      const list = document.getElementById('publicationList');
+      if (!list) return;
+
+      const { publications, currentCategory, searchTerm } = publicationState;
+      let filtered = [...publications];
+
+      if (currentCategory !== 'all') {
+        filtered = filtered.filter(pub => pub._category === currentCategory);
+      }
+
+      if (searchTerm) {
+        filtered = filtered.filter(pub => pub._search.includes(searchTerm));
+      }
+
+      renderPublications(filtered);
     }
-    return [];
-  }
 
-  const mainProjects = [];
-  const fallback = [];
+    function renderPublications(publications) {
+      const list = document.getElementById('publicationList');
+      if (!list) return;
 
-  degrees.forEach(degree => {
-    if (degree && degree.file_id && degree.title) {
-      const entry = {
-        file_id: degree.file_id,
-        title: degree.title,
-        degree_type: degree.degree_type || '',
-        year: degree.year
+      if (!publications.length) {
+        list.innerHTML = '<p>条件に合致する研究業績が見つかりませんでした。</p>';
+        updatePublicationControls(0, 0);
+        return;
+      }
+
+      if (!publicationState.isExpanded) {
+        updatePublicationVisibleCount();
+      }
+
+      const total = publications.length;
+      const visibleLimit = publicationState.isExpanded
+        ? total
+        : Math.min(publicationState.visibleCount || Math.min(total, 6), total);
+
+      const items = publications
+        .slice(0, visibleLimit)
+        .map(publication => createPublicationCard(publication))
+        .join('');
+
+      list.innerHTML = items;
+      updatePublicationControls(total, visibleLimit);
+    }
+
+    function createPublicationCard(publication) {
+      const category = publication._category || 'other';
+      const categoryLabel = getPublicationCategoryLabel(category);
+      const citation = publication.text ? escapeHtml(publication.text) : '';
+      const title = publication.title ? escapeHtml(publication.title) : '';
+
+      const linkContent = publication.link
+        ? `<a class="publication-item__external" href="${publication.link}" target="_blank" rel="noopener noreferrer" aria-label="${title || '外部リンク'}">外部リンク</a>`
+        : '';
+
+      return `
+        <article class="publication-item" data-category="${category}">
+          <span class="publication-item__year">${publication.year || '年不明'}</span>
+          <span class="publication-item__category publication-item__category--${category}">${categoryLabel}</span>
+          <span class="publication-item__citation">${citation || title}</span>
+          ${linkContent}
+        </article>
+      `;
+    }
+
+
+    function getPublicationCategoryLabel(category) {
+      const labels = {
+        journal: '📄 学術雑誌',
+        conference: '🌍 国際会議',
+        domestic_peer: '🔍 国内査読',
+        domestic: '🇯🇵 国内学会',
+        lecture: '🎤 講演',
+        award: '🏆 受賞',
+        book: '📚 著書・解説',
+        other: '📋 その他'
+      };
+      return labels[category] || labels.other;
+    }
+
+    async function loadActivities() {
+      const list = document.getElementById('activityList');
+      if (!list) return;
+
+      try {
+        const response = await fetch('data/activity.json');
+        const data = await response.json();
+        const activities = Array.isArray(data) ? data : data.activities || [];
+
+        activityState.activities = activities
+          .map(enrichActivity)
+          .sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+
+        setupActivityControls();
+        renderActivities();
+        initializeActivityInteractions();
+        list.setAttribute('aria-busy', 'false');
+      } catch (error) {
+        console.error('活動報告データの読み込みに失敗しました', error);
+        list.innerHTML = '<p>活動報告データを読み込めませんでした。</p>';
+        list.setAttribute('aria-busy', 'false');
+      }
+    }
+
+    function enrichActivity(activity) {
+      const tags = Array.isArray(activity.tags) ? activity.tags : [];
+      const timestamp = activity.date ? Date.parse(activity.date) : NaN;
+      return {
+        ...activity,
+        tags,
+        timestamp: Number.isNaN(timestamp) ? null : timestamp,
+        formattedDate: activity.date ? formatActivityDate(activity.date) : '',
+        summary: activity.summary || '',
+        note_path: activity.note_path || '',
+        image_path: activity.image_path || 'activity/img/activity-placeholder.svg'
+      };
+    }
+
+    function formatActivityDate(dateString) {
+      if (!dateString) return '';
+      const date = new Date(dateString);
+      if (Number.isNaN(date.getTime())) {
+        return dateString;
+      }
+      const year = date.getFullYear();
+      const month = date.getMonth() + 1;
+      const day = date.getDate();
+      return `${year}年${month}月${day}日`;
+    }
+
+
+    function escapeHtml(value) {
+      return String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/"/g, '&quot;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    }
+
+    function decodeHtml(value) {
+      return String(value || '')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/&amp;/g, '&');
+    }
+
+    function setupActivityControls() {
+      if (activityState.controlsInitialized) return;
+
+      const toggleButtons = document.querySelectorAll('[data-activity-toggle]');
+      if (!toggleButtons.length) return;
+
+      toggleButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+          const wasExpanded = activityState.isExpanded;
+          activityState.isExpanded = !activityState.isExpanded;
+
+          // スムーズスクロール機能
+          if (!wasExpanded) {
+            // 展開時：現在位置を保持
+            activityState.scrollPosition = window.pageYOffset;
+          } else {
+            // 折りたたみ時：活動報告セクションの先頭にスクロール
+            const activitiesSection = document.getElementById('activities');
+            if (activitiesSection) {
+              activitiesSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest'
+              });
+            }
+          }
+
+          renderActivities();
+        });
+      });
+
+      activityState.controlsInitialized = true;
+    }
+
+    function renderActivities() {
+      const list = document.getElementById('activityList');
+      if (!list) return;
+
+      const activities = activityState.activities;
+      if (!activities.length) {
+        list.innerHTML = '<p>活動報告がまだ登録されていません。</p>';
+        updateActivityControls(0, 0);
+        return;
+      }
+
+      const total = activities.length;
+      const visibleLimit = activityState.isExpanded ? total : Math.min(activityState.visibleCount, total);
+      const visibleActivities = activities.slice(0, visibleLimit);
+
+      list.innerHTML = visibleActivities.map(activity => `
+        <article class="activity-item">
+          <div class="activity-item__media">
+            <img src="${activity.image_path}" alt="${escapeHtml(activity.title)}" class="activity-item__image" loading="lazy">
+          </div>
+          <div class="activity-item__content">
+            <h3 class="activity-item__title">${escapeHtml(activity.title)}</h3>
+            <div class="activity-item__meta">
+              ${activity.formattedDate ? `<span>${activity.formattedDate}</span>` : ''}
+              ${activity.location ? `<span>${activity.location}</span>` : ''}
+            </div>
+            <p class="activity-item__summary">${escapeHtml(activity.summary)}</p>
+            <div class="activity-item__footer">
+              ${activity.tags.length ? `<div class="activity-item__tags">${activity.tags.map(tag => `<span class="activity-tag">#${escapeHtml(tag)}</span>`).join('')}</div>` : ''}
+              ${activity.note_path ? `<a class="link-arrow" href="${activity.note_path}" target="_blank" rel="noopener noreferrer" data-activity-note="${escapeHtml(activity.note_path)}" data-activity-title="${escapeHtml(activity.title)}" data-activity-image="${escapeHtml(activity.image_path)}" data-activity-tags="${escapeHtml(activity.tags.join('|'))}" data-activity-date="${escapeHtml(activity.formattedDate)}" data-activity-location="${escapeHtml(activity.location || '')}">記事を読む</a>` : ''}
+            </div>
+          </div>
+        </article>
+      `).join('');
+
+      updateActivityControls(total, visibleLimit);
+    }
+
+    function updateActivityControls(total, visible) {
+      const controls = document.querySelectorAll('.activity-controls');
+      const toggles = document.querySelectorAll('[data-activity-toggle]');
+      const fab = document.getElementById('activityFab');
+
+      if (!controls.length || !toggles.length) return;
+
+      // FABの表示制御
+      if (fab) {
+        if (activityState.isExpanded && total > activityState.visibleCount) {
+          fab.setAttribute('aria-hidden', 'false');
+        } else {
+          fab.setAttribute('aria-hidden', 'true');
+        }
+      }
+
+      if (!total || total <= activityState.visibleCount) {
+        controls.forEach(control => {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        });
+        toggles.forEach(toggle => {
+          if (!toggle.closest('.activity-fab')) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = '残りを表示';
+          }
+        });
+        return;
+      }
+
+      const showTop = activityState.isExpanded;
+      const showBottom = !activityState.isExpanded && total > visible;
+
+      controls.forEach(control => {
+        const position = control.dataset.position || 'bottom';
+        const shouldShow = position === 'top' ? showTop : showBottom;
+        if (shouldShow) {
+          control.classList.add('is-visible');
+          control.setAttribute('aria-hidden', 'false');
+        } else {
+          control.classList.remove('is-visible');
+          control.setAttribute('aria-hidden', 'true');
+        }
+      });
+
+      const remaining = Math.max(total - visible, 0);
+      toggles.forEach(toggle => {
+        if (!toggle.closest('.activity-fab')) {
+          toggle.textContent = activityState.isExpanded ? '表示を閉じる' : `残り${remaining}件を表示`;
+          toggle.setAttribute('aria-expanded', String(activityState.isExpanded));
+        }
+      });
+
+      // 状態情報の更新
+      const infoElement = document.getElementById('activityInfo');
+      if (infoElement && total > activityState.visibleCount) {
+        if (!activityState.isExpanded) {
+          infoElement.textContent = `${visible}件 / 全${total}件の活動報告を表示中`;
+        } else {
+          infoElement.textContent = `全${total}件の活動報告を表示中`;
+        }
+      }
+    }
+
+    function initializeActivityInteractions() {
+      if (activityState.listenersInitialized) return;
+      const list = document.getElementById('activityList');
+      const modal = document.getElementById('activity-modal');
+      if (!list || !modal) return;
+
+      activityState.modal = modal;
+      activityState.body = modal.querySelector('#activity-modal-body');
+      activityState.meta = modal.querySelector('#activity-modal-meta');
+      activityState.title = modal.querySelector('#activity-modal-title');
+      activityState.image = modal.querySelector('#activity-modal-image');
+      activityState.tags = modal.querySelector('#activity-modal-tags');
+
+      list.addEventListener('click', handleActivityTriggerClick);
+
+      const closeTargets = modal.querySelectorAll('[data-activity-modal-close]');
+      closeTargets.forEach(element => {
+        element.addEventListener('click', () => closeActivityModal());
+      });
+
+      const overlay = modal.querySelector('.activity-modal__overlay');
+      if (overlay) {
+        overlay.addEventListener('click', () => closeActivityModal());
+      }
+
+      activityState.listenersInitialized = true;
+    }
+
+    async function handleActivityTriggerClick(event) {
+      const trigger = event.target.closest('[data-activity-note]');
+      if (!trigger) return;
+      event.preventDefault();
+      activityState.activeTrigger = trigger;
+      const getAttr = name => decodeHtml(trigger.getAttribute(name));
+      await openActivityModal({
+        notePath: getAttr('data-activity-note'),
+        title: getAttr('data-activity-title'),
+        imagePath: getAttr('data-activity-image'),
+        tags: getAttr('data-activity-tags'),
+        date: getAttr('data-activity-date'),
+        location: getAttr('data-activity-location'),
+      });
+    }
+
+    async function openActivityModal({ notePath, title, imagePath, tags, date, location }) {
+      const modal = activityState.modal;
+      if (!modal) return;
+
+      if (activityState.title) {
+        activityState.title.textContent = title || '活動レポート';
+      }
+
+      if (activityState.meta) {
+        const fragments = [];
+        if (date) fragments.push(date);
+        if (location) fragments.push(location);
+        activityState.meta.textContent = fragments.join(' / ');
+      }
+
+      if (activityState.image) {
+        activityState.image.src = imagePath || 'activity/img/activity-placeholder.svg';
+        activityState.image.alt = title || '活動イメージ';
+      }
+
+      if (activityState.tags) {
+        const tagMarkup = (tags || '')
+          .split('|')
+          .filter(Boolean)
+          .map(tag => `<span class="activity-tag">#${escapeHtml(tag)}</span>`)
+          .join(' ');
+        activityState.tags.innerHTML = tagMarkup;
+        activityState.tags.style.display = tagMarkup ? 'flex' : 'none';
+      }
+
+
+      if (activityState.body) {
+        activityState.body.scrollTop = 0;
+        if (!notePath) {
+          activityState.body.innerHTML = '<p>この活動の詳細ノートはまだ登録されていません。</p>';
+        } else {
+          activityState.body.innerHTML = '<p>読み込み中...</p>';
+          try {
+            const response = await fetch(notePath);
+            const markdown = await response.text();
+            const { content } = parseActivityNote(markdown);
+            activityState.body.innerHTML = content || '<p>本文が見つかりませんでした。</p>';
+          } catch (error) {
+            console.error('活動ノートの読み込みに失敗しました', error);
+            activityState.body.innerHTML = '<p>活動ノートを読み込めませんでした。</p>';
+          }
+        }
+      }
+
+      modal.setAttribute('aria-hidden', 'false');
+      modal.classList.add('is-open');
+      document.body.classList.add('modal-open');
+
+      const keydownHandler = event => {
+        if (event.key === 'Escape') {
+          closeActivityModal();
+        }
+      };
+      document.addEventListener('keydown', keydownHandler);
+      activityState.keydownHandler = keydownHandler;
+
+      const focusable = modal.querySelector('.activity-modal__close');
+      if (focusable) {
+        focusable.focus({ preventScroll: true });
+      }
+    }
+
+    function closeActivityModal() {
+      const modal = activityState.modal;
+      if (!modal) return;
+
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+
+      if (activityState.body) {
+        activityState.body.innerHTML = '';
+      }
+
+      if (activityState.keydownHandler) {
+        document.removeEventListener('keydown', activityState.keydownHandler);
+        activityState.keydownHandler = null;
+      }
+
+      if (activityState.activeTrigger) {
+        activityState.activeTrigger.focus({ preventScroll: true });
+        activityState.activeTrigger = null;
+      }
+    }
+
+
+    function parseActivityNote(markdown) {
+      const normalized = (markdown || '').replace(/\r?\n/g, '\n');
+      const match = normalized.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+      const body = match ? match[2].trim() : normalized.trim();
+
+      const lines = body.split('\n');
+      const htmlParts = [];
+      let paragraphBuffer = [];
+      let listBuffer = null;
+
+      const flushParagraph = () => {
+        if (!paragraphBuffer.length) return;
+        const paragraphText = paragraphBuffer.join(' ').trim();
+        if (paragraphText) {
+          htmlParts.push(`<p>${renderInline(paragraphText)}</p>`);
+        }
+        paragraphBuffer = [];
       };
 
-      if (degree.degree_type && degree.degree_type.includes('在学中')) {
-        mainProjects.push(entry);
-      } else {
-        fallback.push(entry);
-      }
-    }
-  });
-
-  const sortedMain = mainProjects.sort((a, b) => (b.year || 0) - (a.year || 0));
-    if (sortedMain.length >= 2) {
-      return sortedMain.slice(0, 2);
-    }
-
-    const selected = [...sortedMain];
-  const sortedFallback = fallback.sort((a, b) => (b.year || 0) - (a.year || 0));
-  for (const degree of sortedFallback) {
-    if (selected.length >= 2) break;
-    selected.push(degree);
-  }
-
-  return selected;
-}
-
-  function formatDegreeLabel(degreeType, year) {
-    if (!degreeType) {
-      return year ? `${year}年` : '';
-    }
-
-    const normalized = degreeType.replace(/[\s　]+/g, '').replace('（', '(').replace('）', ')');
-
-    if (normalized.includes('博士課程(在学中)')) {
-      return year ? `博士課程（${year}年〜）` : '博士課程（在学中）';
-    }
-    if (normalized.includes('修士課程(在学中)')) {
-      return year ? `修士課程（${year}年〜）` : '修士課程（在学中）';
-    }
-    if (normalized.includes('学士課程(在学中)')) {
-      return year ? `学部課程（${year}年〜）` : '学部課程（在学中）';
-    }
-    if (normalized.includes('博士論文')) {
-      return year ? `博士論文（${year}年）` : '博士論文';
-    }
-    if (normalized.includes('修士論文')) {
-      return year ? `修士論文（${year}年）` : '修士論文';
-    }
-    if (normalized.includes('学士論文')) {
-      return year ? `学士論文（${year}年）` : '学士論文';
-    }
-
-    return degreeType;
-  }
-
-  function getRoleText(member, category) {
-    const tag = (member.status_tag || '').trim();
-
-    if (tag) {
-      if (tag.includes('卒業')) {
-        const latestDegree = member.degrees?.[member.degrees.length - 1];
-        if (latestDegree?.year && latestDegree?.degree_type) {
-          return `${tag}（${latestDegree.year}年${latestDegree.degree_type}）`;
+      const flushList = () => {
+        if (!listBuffer || !listBuffer.items.length) {
+          listBuffer = null;
+          return;
         }
-      }
-      return tag;
-    }
+        const tag = listBuffer.type === 'ol' ? 'ol' : 'ul';
+        const itemsHtml = listBuffer.items
+          .map(item => `<li>${renderInline(item.trim())}</li>`)
+          .join('');
+        htmlParts.push(`<${tag}>${itemsHtml}</${tag}>`);
+        listBuffer = null;
+      };
 
-    if (category === 'alumni') {
-      const latestDegree = member.degrees?.[member.degrees.length - 1];
-      if (latestDegree?.year && latestDegree?.degree_type) {
-        return `卒業生（${latestDegree.year}年${latestDegree.degree_type}）`;
-      }
-      return '卒業生';
-    }
+      lines.forEach(rawLine => {
+        const trimmed = rawLine.trim();
 
-    // Fallback forメンバー分類が不明な場合
-    return member.highest_degree || '研究員';
-  }
+        if (!trimmed) {
+          flushParagraph();
+          flushList();
+          return;
+        }
 
-  function initializeMembersFilters(members) {
-    const filterBtns = document.querySelectorAll('.member-filter-btn');
-    
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', function() {
-        const filter = this.getAttribute('data-filter');
-        
-        filterBtns.forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-        
-        filterMembers(members, filter);
+        const headingMatch = rawLine.match(/^(#{1,4})\s+(.*)$/);
+        if (headingMatch) {
+          flushParagraph();
+          flushList();
+          const level = Math.min(headingMatch[1].length, 4);
+          htmlParts.push(`<h${level}>${renderInline(headingMatch[2].trim())}</h${level}>`);
+          return;
+        }
+
+        const imageMatch = trimmed.match(/^!\[(.*?)\]\((.*?)(?:\s+"(.*?)")?\)$/);
+        if (imageMatch) {
+          flushParagraph();
+          flushList();
+          const alt = imageMatch[1] || '';
+          const rawSrc = imageMatch[2] || '';
+          const resolvedSrc = resolveActivityAssetPath(rawSrc);
+          const caption = imageMatch[3] || alt;
+          const figure = `
+            <figure class="activity-note__figure">
+              <img src="${escapeHtml(resolvedSrc)}" alt="${escapeHtml(alt)}" loading="lazy">
+              ${caption ? `<figcaption>${escapeHtml(caption)}</figcaption>` : ''}
+            </figure>
+          `.trim();
+          htmlParts.push(figure);
+          return;
+        }
+
+        const orderedMatch = rawLine.match(/^\s*\d+\.\s+(.*)$/);
+        if (orderedMatch) {
+          flushParagraph();
+          if (!listBuffer || listBuffer.type !== 'ol') {
+            flushList();
+            listBuffer = { type: 'ol', items: [] };
+          }
+          listBuffer.items.push(orderedMatch[1]);
+          return;
+        }
+
+        const unorderedMatch = rawLine.match(/^\s*[-*+]\s+(.*)$/);
+        if (unorderedMatch) {
+          flushParagraph();
+          if (!listBuffer || listBuffer.type !== 'ul') {
+            flushList();
+            listBuffer = { type: 'ul', items: [] };
+          }
+          listBuffer.items.push(unorderedMatch[1]);
+          return;
+        }
+
+        paragraphBuffer.push(rawLine.trim());
       });
-    });
-  }
 
-  function filterMembers(members, categoryFilter) {
-    let filtered = members;
-    
-    // Filter to recent members
-    const currentYear = new Date().getFullYear();
-    filtered = filtered.filter(member => {
-      const lastActiveYear = getLastActiveYear(member);
-      return lastActiveYear >= currentYear - 5;
-    });
-    
-    // Apply category filter
-    if (categoryFilter !== '*') {
-      filtered = filtered.filter(member => {
-        const category = getMemberCategory(member);
-        return category === categoryFilter;
-      });
+      flushParagraph();
+      flushList();
+
+      return { content: htmlParts.join('\n') };
+
+      function resolveActivityAssetPath(path) {
+        const trimmed = (path || '').trim();
+        if (!trimmed) return '';
+        if (/^(?:https?:|data:|\/)/i.test(trimmed)) {
+          return trimmed;
+        }
+        if (trimmed.startsWith('../img/')) {
+          return `activity/img/${trimmed.substring('../img/'.length)}`;
+        }
+        if (trimmed.startsWith('./img/')) {
+          return `activity/img/${trimmed.substring('./img/'.length)}`;
+        }
+        if (trimmed.startsWith('img/')) {
+          return `activity/img/${trimmed.substring('img/'.length)}`;
+        }
+        return trimmed;
+      }
+
+      function renderInline(text) {
+        if (!text) return '';
+        let result = escapeHtml(text);
+
+        result = result.replace(/\*\*(.+?)\*\*/g, (_, content) => `<strong>${content}</strong>`);
+        result = result.replace(/\*(.+?)\*/g, (_, content) => `<em>${content}</em>`);
+        result = result.replace(/`(.+?)`/g, (_, content) => `<code>${content}</code>`);
+        result = result.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, url) => {
+          const safeUrl = escapeHtml(url);
+          return `<a href="${safeUrl}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+        });
+
+        return result;
+      }
     }
-    
-    displayMembers(filtered);
-  }
-
-  // Initialize everything
-  console.log('🎓 初期化開始 - 協調ロボティクス研究室');
-  
-  // Check if modal exists
-  const modalElement = document.getElementById('research-modal');
-  if (modalElement) {
-    console.log('✅ Modal element found');
-  } else {
-    console.error('❌ Modal element NOT found');
-  }
-  
-  loadPortfolio();
-  loadPublications();
-  loadMembers();
-  
-  console.log('🎓 協調ロボティクス研究室 - UDC準拠デザインシステム + モーダル機能 + 研究業績表示 + メンバー表示 初期化完了 🤖');
-});
-</script>
-
+  </script>
 </body>
 </html>
