@@ -1,0 +1,163 @@
+---
+record_type: "keyword_record"
+keyword: "人間機械系"
+count: 72
+categories:
+  -
+    category_id: "core"
+    category_name: "核心研究領域"
+research_ids:
+  - "2019_B_h.emori"
+  - "2019_B_h.nakanishi"
+  - "2019_B_k.kobayashi"
+  - "2019_B_k.tozuka"
+  - "2019_B_n.takahashi"
+  - "2019_B_r.maruyama"
+  - "2019_B_r.mukawa"
+  - "2019_M_y.uchida"
+  - "2019_M_z.meng"
+  - "2020_B_a.inoue"
+  - "2020_B_h.nishimura"
+  - "2020_B_k.yoshida"
+  - "2020_B_r.hikino"
+  - "2020_B_y.oda"
+  - "2020_M_b.poitrimol"
+  - "2020_M_k.nakamura"
+  - "2020_M_s.koizumi"
+  - "2020_M_t.kosaka"
+  - "2020_M_y.yamasaki"
+  - "2021_B_c.xu"
+  - "2021_B_h.tagaya"
+  - "2021_B_m.suga"
+  - "2021_B_t.kassai"
+  - "2021_B_t.shike"
+  - "2021_M_h.nakanishi"
+  - "2021_M_h.sugano"
+  - "2021_M_k.tozuka"
+  - "2021_M_n.takahashi"
+  - "2022_B_i.kato"
+  - "2022_B_k.ohya"
+  - "2022_B_n.ito"
+  - "2022_B_r.tanaka"
+  - "2022_B_s.sanuka"
+  - "2022_B_t.bitoh"
+  - "2022_B_t.onogawa"
+  - "2022_B_t.oriuchi"
+  - "2022_B_y.noguchi"
+  - "2022_B_y.yamada"
+  - "2022_M_a.nishimura"
+  - "2022_M_h.yoshida"
+  - "2023_B_g.otsuka"
+  - "2023_B_h.kitaiwa"
+  - "2023_B_j.ryuu"
+  - "2023_B_ke.nakamura"
+  - "2023_B_r.uchida"
+  - "2023_B_r.yanase"
+  - "2023_B_s.fujiwara"
+  - "2023_M_k.ohya"
+  - "2023_M_la.nicolas"
+  - "2023_M_m.tagaya"
+  - "2023_M_n.ito"
+  - "2023_M_onogawa"
+  - "2023_M_r.tanaka"
+  - "2023_M_t.kassai"
+  - "2023_M_y.yamada"
+  - "2024_B_a.noto"
+  - "2024_B_d.nakajima"
+  - "2024_B_h.nakamura"
+  - "2024_B_k.hayashi"
+  - "2024_B_m.kashiwagi"
+  - "2024_B_mi.nakamura"
+  - "2024_B_r.hiratsuka"
+  - "2024_B_r.kato"
+  - "2024_B_r.morishita"
+  - "2024_B_s.imamura"
+  - "2024_B_s.tahara"
+  - "2024_M_i.kato"
+  - "2024_M_k.ohya"
+  - "2024_M_m.nakamura"
+  - "2024_M_n.ito"
+  - "2024_M_r.tanaka"
+  - "2024_M_y.yamada"
+---
+
+# 人間機械系
+
+- Keyword: 人間機械系
+- Count: 72
+- Categories: 核心研究領域
+
+## Related Research
+
+- [`2019_B_h.emori`](../../research/records/2019_B_h.emori/index.md): 生体信号と体温の相関性を用いたストレス軽減デバイスの開発
+- [`2019_B_h.nakanishi`](../../research/records/2019_B_h.nakanishi/index.md): ダイナミクス変化による鍵盤楽器学習支援システムの提案
+- [`2019_B_k.kobayashi`](../../research/records/2019_B_k.kobayashi/index.md): 力のインタラクションを考慮した人間モデルによるCFOの推定とチームワーク評価
+- [`2019_B_k.tozuka`](../../research/records/2019_B_k.tozuka/index.md): 触覚提示を利用した仮想ペットロボット
+- [`2019_B_n.takahashi`](../../research/records/2019_B_n.takahashi/index.md): 描画動作のための力覚提示デバイスによる相補教示支援
+- [`2019_B_r.maruyama`](../../research/records/2019_B_r.maruyama/index.md): 二重反転プロペラを用いた天井吸着ドローン
+- [`2019_B_r.mukawa`](../../research/records/2019_B_r.mukawa/index.md): 協調性向上のためのAttention Gridによる注意推定
+- [`2019_M_y.uchida`](../../research/records/2019_M_y.uchida/index.md): 触覚刺激による運動錯覚時の上腕運動特性評価
+- [`2019_M_z.meng`](../../research/records/2019_M_z.meng/index.md): 個人操作特性を考慮した操作対象ダイナミクスの最適化
+- [`2020_B_a.inoue`](../../research/records/2020_B_a.inoue/index.md): 複数のCoaxial-UAVによる協調搬送に向けた姿勢制御
+- [`2020_B_h.nishimura`](../../research/records/2020_B_h.nishimura/index.md): 自動化した機械操作に対する人間の信頼推定
+- [`2020_B_k.yoshida`](../../research/records/2020_B_k.yoshida/index.md): 視線情報を用いた運転行動の推定
+- [`2020_B_r.hikino`](../../research/records/2020_B_r.hikino/index.md): 握力を利用したステアリングアシスト機構
+- [`2020_B_y.oda`](../../research/records/2020_B_y.oda/index.md): 眼球運動測定によるリアルタイムストレス評価
+- [`2020_M_b.poitrimol`](../../research/records/2020_M_b.poitrimol/index.md): Grasping Interface for Virtual Reality Using Wire-Driven Positioning Interface
+- [`2020_M_k.nakamura`](../../research/records/2020_M_k.nakamura/index.md): ストレス応答と操作パフォーマンスの相関性検討
+- [`2020_M_s.koizumi`](../../research/records/2020_M_s.koizumi/index.md): 両手操作における自己規範操作支援
+- [`2020_M_t.kosaka`](../../research/records/2020_M_t.kosaka/index.md): 重畳情報分離のための回転複合センサによる多層化マッピング
+- [`2020_M_y.yamasaki`](../../research/records/2020_M_y.yamasaki/index.md): サブリミナルキャリブレーションによる内部モデル修正支援
+- [`2021_B_c.xu`](../../research/records/2021_B_c.xu/index.md): 筋疲労を考慮したアダプティブパワーアシストスーツ
+- [`2021_B_h.tagaya`](../../research/records/2021_B_h.tagaya/index.md): 特徴量検出による投射動作の運動熟達支援
+- [`2021_B_m.suga`](../../research/records/2021_B_m.suga/index.md): 感性値を用いた Human Adaptive Air Unit の開発
+- [`2021_B_t.kassai`](../../research/records/2021_B_t.kassai/index.md): 機械操作における自己主体感の評価
+- [`2021_B_t.shike`](../../research/records/2021_B_t.shike/index.md): 快・不快を用いた温度提示による覚醒状態の促進
+- [`2021_M_h.nakanishi`](../../research/records/2021_M_h.nakanishi/index.md): 早期楽器演奏熟達支援システム
+- [`2021_M_h.sugano`](../../research/records/2021_M_h.sugano/index.md): 個性模倣と多様性維持による環境に合わせた動作設計手法
+- [`2021_M_k.tozuka`](../../research/records/2021_M_k.tozuka/index.md): VR技術の更なる発展に向けて：汎用的な触覚モデリング
+- [`2021_M_n.takahashi`](../../research/records/2021_M_n.takahashi/index.md): 描画動作のための力覚提示デバイスによる相補教示支援
+- [`2022_B_i.kato`](../../research/records/2022_B_i.kato/index.md): 温度に着目した適度なストレス誘導デバイスの開発
+- [`2022_B_k.ohya`](../../research/records/2022_B_k.ohya/index.md): 呼吸手法の変化による自律神経機能活性度への影響
+- [`2022_B_n.ito`](../../research/records/2022_B_n.ito/index.md): 仮想環境における振動グローブを用いた力分布の偏り表現
+- [`2022_B_r.tanaka`](../../research/records/2022_B_r.tanaka/index.md): 聴覚刺激を用いた重心動揺の評価
+- [`2022_B_s.sanuka`](../../research/records/2022_B_s.sanuka/index.md): 視覚刺激による疑似触力覚効果の評価
+- [`2022_B_t.bitoh`](../../research/records/2022_B_t.bitoh/index.md): 脳波を用いた温度変化による心理的ストレスの低減
+- [`2022_B_t.onogawa`](../../research/records/2022_B_t.onogawa/index.md): 気づかれない行動のための眼球運動に伴う三次元注意分布推定
+- [`2022_B_t.oriuchi`](../../research/records/2022_B_t.oriuchi/index.md): 視線分析による注意推定から必要なアシストを選別するシステム
+- [`2022_B_y.noguchi`](../../research/records/2022_B_y.noguchi/index.md): 電気刺激を用いた眠気低減システム
+- [`2022_B_y.yamada`](../../research/records/2022_B_y.yamada/index.md): 座位姿勢の解析および矯正に向けたワイヤアレイセンサの開発
+- [`2022_M_a.nishimura`](../../research/records/2022_M_a.nishimura/index.md): アシストシステムに対する個人差を考慮した依存度の推定手法の提案
+- [`2022_M_h.yoshida`](../../research/records/2022_M_h.yoshida/index.md): 熱刺激を用いた覚醒補助がもたらす睡眠慣性抑制効果の検証
+- [`2023_B_g.otsuka`](../../research/records/2023_B_g.otsuka/index.md): 振動刺激における睡眠導入の補助
+- [`2023_B_h.kitaiwa`](../../research/records/2023_B_h.kitaiwa/index.md): 握り動作における痛み緩和バイアスの調査
+- [`2023_B_j.ryuu`](../../research/records/2023_B_j.ryuu/index.md): 聴覚刺激を用いたリズム誘導による協働作業におけるストレス増加の抑制の実現
+- [`2023_B_ke.nakamura`](../../research/records/2023_B_ke.nakamura/index.md): ボトルネックにおいてすれ違う群衆の誘導アルゴリズムの提案
+- [`2023_B_r.uchida`](../../research/records/2023_B_r.uchida/index.md): VDT作業時における眼球情報とストレスの関連性の調査
+- [`2023_B_r.yanase`](../../research/records/2023_B_r.yanase/index.md): 力覚提示による道具使用時の指先動作の熟達支援
+- [`2023_B_s.fujiwara`](../../research/records/2023_B_s.fujiwara/index.md): 温度変化による力覚生起現象の定量化
+- [`2023_M_k.ohya`](../../research/records/2023_M_k.ohya/index.md): ストレス解析によるリアルタイム適応型インタフェースの設計
+- [`2023_M_la.nicolas`](../../research/records/2023_M_la.nicolas/index.md): ネットワーク計画ツールとしての欲求経路創発シミュレーションマルチエージェントシステムの開発と評価
+- [`2023_M_m.tagaya`](../../research/records/2023_M_m.tagaya/index.md): 特徴量検出による投射動作の運動熟達支援
+- [`2023_M_n.ito`](../../research/records/2023_M_n.ito/index.md): 仮想環境での振動触覚グローブを用いた力分布の提示が把持動作に及ぼす影響調査
+- [`2023_M_onogawa`](../../research/records/2023_M_onogawa/index.md): 仮想環境における変化の見落としを予測可能なAttention TriGridの提案
+- [`2023_M_r.tanaka`](../../research/records/2023_M_r.tanaka/index.md): 聴覚刺激の提示を伴う身体動揺評価 - 骨導音での実験と検討
+- [`2023_M_t.kassai`](../../research/records/2023_M_t.kassai/index.md): 操作支援下における自己主体感の評価
+- [`2023_M_y.yamada`](../../research/records/2023_M_y.yamada/index.md): 座位姿勢の解析および矯正に向けたワイヤアレイセンサの開発
+- [`2024_B_a.noto`](../../research/records/2024_B_a.noto/index.md): VR酔いを軽減する視覚的注意分布を利用したレンダリング手法の提案
+- [`2024_B_d.nakajima`](../../research/records/2024_B_d.nakajima/index.md): リアルタイムストレス指標を用いた遠隔操作環境における遅延補完システム
+- [`2024_B_h.nakamura`](../../research/records/2024_B_h.nakamura/index.md): 個人差を考慮した可変インピーダンス支援
+- [`2024_B_k.hayashi`](../../research/records/2024_B_k.hayashi/index.md): 虚偽心拍フィードバックを用いたパフォーマンスの向上
+- [`2024_B_m.kashiwagi`](../../research/records/2024_B_m.kashiwagi/index.md): エネルギー効率を考慮したマルチエージェントの誘導
+- [`2024_B_mi.nakamura`](../../research/records/2024_B_mi.nakamura/index.md): 不器用さの自己認知が視覚フィードバックによる作業パフォーマンス変化に与える影響の調査
+- [`2024_B_r.hiratsuka`](../../research/records/2024_B_r.hiratsuka/index.md): 力覚フィードバックを用いたVR空間での重心動揺測定
+- [`2024_B_r.kato`](../../research/records/2024_B_r.kato/index.md): マーカーを用いた群ロボットによる効率的な探索アルゴリズムの開発
+- [`2024_B_r.morishita`](../../research/records/2024_B_r.morishita/index.md): オペレータの操作特性を活用したロボットアームの予測制御
+- [`2024_B_s.imamura`](../../research/records/2024_B_s.imamura/index.md): 仮想環境におけるマルチタスクでの認知アシスト
+- [`2024_B_s.tahara`](../../research/records/2024_B_s.tahara/index.md): 触覚フィードバックを用いた遠隔操作システムの操作性向上
+- [`2024_M_i.kato`](../../research/records/2024_M_i.kato/index.md): 機械学習を用いた追従操作におけるサプライズの推定
+- [`2024_M_k.ohya`](../../research/records/2024_M_k.ohya/index.md): ストレス解析によるリアルタイム適応型インタフェースの設計
+- [`2024_M_m.nakamura`](../../research/records/2024_M_m.nakamura/index.md): VR空間のサブリミナルな物理パラメータ変化による投球コントロール熟達支援
+- [`2024_M_n.ito`](../../research/records/2024_M_n.ito/index.md): 仮想環境での振動触覚グローブを用いた力分布の提示が把持動作に及ぼす影響調査
+- [`2024_M_r.tanaka`](../../research/records/2024_M_r.tanaka/index.md): 聴覚刺激の提示を伴う身体動揺評価
+- [`2024_M_y.yamada`](../../research/records/2024_M_y.yamada/index.md): 座位姿勢の解析および矯正に向けたワイヤアレイ

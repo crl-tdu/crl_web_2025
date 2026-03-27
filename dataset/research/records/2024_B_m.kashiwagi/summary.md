@@ -1,0 +1,41 @@
+---
+record_type: "research_summary"
+research_id: "2024_B_m.kashiwagi"
+title: "エネルギー効率を考慮したマルチエージェントの誘導"
+title_en: "Energy-Efficient Multi-Agent Induction"
+member_id: "m.kashiwagi"
+member_name: "柏木 水輝"
+student_id: "21EH010"
+year: 2024
+degree_type: "学士論文"
+degree_code: "B"
+keywords:
+  - "省エネルギー制御"
+  - "最適化"
+  - "エネルギー効率"
+  - "重心動揺"
+  - "誘導"
+  - "人間センシング"
+  - "力覚フィードバック"
+  - "VR環境"
+  - "人間機械系"
+  - "マルチエージェント"
+display_tags:
+  - "人間センシング"
+  - "人間機械系"
+  - "省エネルギー制御"
+thumbnail_path: "proc/img/2024_B_m.kashiwagi_thumbnail.png"
+symbolic_image_paths:
+  - "proc/img/2024_B_m.kashiwagi_overview.png"
+  - "proc/img/2024_B_m.kashiwagi_result.png"
+source_paths:
+  abstract_markdown: "project/abst/2024_B_m.kashiwagi_abst.md"
+  detail_markdown: "project/detail/2024_B_m.kashiwagi_detail.md"
+  preferred_detail_markdown: "project/detail/2024_B_m.kashiwagi_detail.md"
+  fulltext_markdown: "proc/txt/2024_B_m.kashiwagi.md"
+  pdf: "pdfs/2024_B_m.kashiwagi.pdf"
+---
+
+# エネルギー効率を考慮したマルチエージェントの誘導
+
+近年、マルチエージェントシステムが注目されています。その手法のひとつとして、牧羊犬の動きから着想を得たシープドッグシステムというアルゴリズムがあります。このアルゴリズムはロボットによる目標物の誘導、回収や森林火災の燃焼防止などに用いることが期待されています。しかし、実用化するにはロボットのエネルギーを考慮する必要があります。本研究では、シープドッグシステムにおいて誘導タスクを行い、追跡エージェントであるdogのエネルギーを考慮することで、省エネルギーかつ高い誘導効率の両立が可能なアルゴリズムの設計を目的としました。

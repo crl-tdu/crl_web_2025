@@ -1,0 +1,3275 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-27T05:52:49.851482+00:00",
+    "source_project_json": "data/project.json",
+    "legacy_root_detected": false,
+    "legacy_detail_count": 52,
+    "generic_detail_count": 31,
+    "project_count": 86
+  },
+  "projects": [
+    {
+      "file_id": "2024_B_d.nakajima",
+      "title": "リアルタイムストレス指標を用いた遠隔操作環境における遅延補完システム",
+      "title_en": "Delay Completion System in Teleoperation Environment Using Real-time Stress Indicators",
+      "author": "中嶋 大智",
+      "student_id": "21EH033",
+      "year": 2024,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "遠隔操作環境",
+        "遠隔操作",
+        "遅延補完",
+        "テレオペレーション",
+        "リアルタイムストレス指標",
+        "ストレスモニタリング",
+        "人間センシング",
+        "ストレス指標",
+        "リアルタイム",
+        "人間機械系",
+        "遅延補完システム"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "遠隔操作において通信遅延は操作性と作業効率を大きく阻害する要因である。従来の遅延補完技術は固定的なアルゴリズムに依存しており、操作者の心理状態を考慮していない。本研究では操作者のリアルタイムストレス指標を活用した適応的遅延補完システムを提案した。心拍変動や皮膚電位などの生体信号からストレス状態を推定し、ストレスレベルに応じて予測制御やフィードバック強度を動的に調整する機構を構築した。",
+      "card_summary": "操作者のストレス状態に適応する遠隔操作遅延補完技術",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "遠隔操作環境"
+      ],
+      "abstract_path": "project/abst/2024_B_d.nakajima_abst.md",
+      "detail_path": "project/detail/2024_B_d.nakajima_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_B_d.nakajima_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_B_d.nakajima_overview.png",
+      "gallery_images": [
+        "proc/img/2024_B_d.nakajima_overview.png",
+        "proc/img/2024_B_d.nakajima_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_B_h.nakamura",
+      "title": "個人差を考慮した可変インピーダンス支援",
+      "title_en": "Manipulation Assistance using Personalized Resistance Force",
+      "author": "中村 弘樹",
+      "student_id": "21EH036",
+      "year": 2024,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "力制御",
+        "重心動揺",
+        "個人差",
+        "人間センシング",
+        "個別化支援",
+        "可変インピーダンス支援",
+        "力覚フィードバック",
+        "VR環境",
+        "適応アシスト",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "ロボット支援において個人の身体特性や操作能力の違いを考慮した適応制御は重要な課題である。従来のインピーダンス制御は固定パラメータで動作するため、使用者によって最適でない支援となる場合がある。本研究では個人差を考慮して動的にインピーダンス特性を調整する可変支援システムを提案した。使用者の操作パターン、筋力、動作速度などの個人特性を学習し、最適な抵抗力と支援力を提供する適応アルゴリズムを開発した。",
+      "card_summary": "個人特性に適応する動的インピーダンス制御システム",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "力制御"
+      ],
+      "abstract_path": "project/abst/2024_B_h.nakamura_abst.md",
+      "detail_path": "project/detail/2024_B_h.nakamura_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_B_h.nakamura_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_B_h.nakamura_overview.png",
+      "gallery_images": [
+        "proc/img/2024_B_h.nakamura_overview.png",
+        "proc/img/2024_B_h.nakamura_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_B_mi.nakamura",
+      "title": "不器用さの自己認知が視覚フィードバックによる作業パフォーマンス変化に与える影響の調査",
+      "title_en": "Investigating the Impact of Self-Perception of Clumsiness on Changes in Work Performance with Visual Feedback",
+      "author": "中村 美月",
+      "student_id": "21EH037",
+      "year": 2024,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "学習支援",
+        "不器用さ",
+        "視覚フィードバック",
+        "自己効力感",
+        "VR",
+        "作業パフォーマンス",
+        "自己認知",
+        "サブリミナル",
+        "協調理論",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "二人での物体搬送作業において、互いの動きを同期させることは作業効率と安全性の向上にとって重要です。本研究では、音響フィードバックを用いて協調搬送における同期性を改善するシステムを開発しました。リアルタイムで両者の動作を検出し、適切なタイミングで音響信号を提示することで、言葉によるコミュニケーションを補完する協調支援システムを構築しました。実験により音フィードバックが同期性向上に有効であることを確認し、協調作業におけるチームワーク支援の新しいアプローチを提案しました。",
+      "card_summary": "音響フィードバックを用いた協調搬送動作の同期性向上システム",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "学習支援"
+      ],
+      "abstract_path": "project/abst/2024_B_mi.nakamura_abst.md",
+      "detail_path": "project/detail/2024_B_mi.nakamura_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_B_mi.nakamura_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_B_mi.nakamura_overview.png",
+      "gallery_images": [
+        "proc/img/2024_B_mi.nakamura_overview.png",
+        "proc/img/2024_B_mi.nakamura_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_B_s.imamura",
+      "title": "仮想環境におけるマルチタスクでの認知アシスト",
+      "title_en": "Cognitive Assistance in Multitasking in Virtual Environments",
+      "author": "今村 心哉",
+      "student_id": "21EH003",
+      "year": 2024,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "群ロボット",
+        "仮想環境",
+        "注意配分",
+        "作業支援",
+        "認知アシスト",
+        "探索アルゴリズム",
+        "協調理論",
+        "マルチタスク",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "視線追跡を活用したVR環境における注意誘導システム",
+      "card_summary": "視線追跡を活用したVR環境における注意誘導システム",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "群ロボット"
+      ],
+      "abstract_path": "project/abst/2024_B_s.imamura_abst.md",
+      "detail_path": "project/detail/2024_B_s.imamura_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_B_s.imamura_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_B_s.imamura_overview.png",
+      "gallery_images": [
+        "proc/img/2024_B_s.imamura_overview.png",
+        "proc/img/2024_B_s.imamura_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_B_r.kato",
+      "title": "マーカーを用いた群ロボットによる効率的な探索アルゴリズムの開発",
+      "title_en": "Development of An Efficient Exploration Algorithm Using Marker-based Swarm Robotics",
+      "author": "加藤 陸生",
+      "student_id": "21EH019",
+      "year": 2024,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "群ロボット",
+        "マーカー",
+        "探索アルゴリズム",
+        "協調理論",
+        "フェロモン型通信",
+        "協調探索",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "群ロボットによる効率的な分散探索を目的とし、エージェントが通過した領域を認識するためのマーカー手法を提案した。エージェントがマーカーからの斥力を考慮することで探索範囲の拡大を促進し、正規分布に基づく勾配を活用することで持続的な探索を可能とした。シミュレーション実験により、従来のランダムウォークやBoidモデルのみを用いた手法と比較して、本手法が探索率の向上に寄与することを確認し、特に勾配を考慮した場合には最終的なカバー率が98%に達することが示された。",
+      "card_summary": "感情状態に基づいた個人適応型音楽推薦システム",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "群ロボット"
+      ],
+      "abstract_path": "project/abst/2024_B_r.kato_abst.md",
+      "detail_path": "project/detail/2024_B_r.kato_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_B_r.kato_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_B_r.kato_overview.png",
+      "gallery_images": [
+        "proc/img/2024_B_r.kato_overview.png",
+        "proc/img/2024_B_r.kato_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_B_r.hiratsuka",
+      "title": "力覚フィードバックを用いたVR空間での重心動揺測定",
+      "title_en": "",
+      "author": "平塚 亮気",
+      "student_id": "21EH086",
+      "year": 2024,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "群ロボット",
+        "探索アルゴリズム",
+        "人間機械系",
+        "協調理論"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "高齢化社会において転倒予防のためのバランス能力評価が重要視されています。本研究では、VR環境で力覚フィードバックを用いた重心動揺測定システムを開発しました。従来の平衡機能検査とは異なり、仮想空間での様々な視覚刺激とハプティック刺激を組み合わせることで、より詳細で実用的なバランス評価を可能にしました。VR技術により安全で制御された環境での測定を実現し、リハビリテーションや予防医学分野への応用可能性を示しました。",
+      "card_summary": "VR環境における力覚フィードバックによる重心動揺測定システム",
+      "display_tags": [
+        "人間機械系",
+        "協調理論",
+        "群ロボット"
+      ],
+      "abstract_path": "project/abst/2024_B_r.hiratsuka_abst.md",
+      "detail_path": "project/detail/2024_B_r.hiratsuka_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_B_r.hiratsuka_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_B_r.hiratsuka_overview.png",
+      "gallery_images": [
+        "proc/img/2024_B_r.hiratsuka_overview.png",
+        "proc/img/2024_B_r.hiratsuka_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_B_k.hayashi",
+      "title": "虚偽心拍フィードバックを用いたパフォーマンスの向上",
+      "title_en": "To Improve Performance with False Heartbeat",
+      "author": "林 健輔",
+      "student_id": "21EH079",
+      "year": 2024,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "支援システム",
+        "バイオフィードバック",
+        "虚偽心拍フィードバック",
+        "心理的影響",
+        "パフォーマンス",
+        "運動能力",
+        "人間センシング",
+        "可変インピーダンス",
+        "個人差",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "日常生活においてストレス下でタスクを行うことは少なくありません。適切なストレス以外ではパフォーマンスが低下してしまいます。ヤーキーズ・ドットソンの法則によると、高すぎるストレスや低すぎるストレス下では、パフォーマンスが減少してしまいます。本研究では、虚偽心拍フィードバックを用いてストレスを変化させることで、逆にパフォーマンスを向上させることができないかと考えました。認知タスクのパフォーマンス変化を調査し、ストレス制御による作業効率改善の可能性を検証しました。",
+      "card_summary": "虚偽心拍フィードバックによる認知パフォーマンス制御技術",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "支援システム"
+      ],
+      "abstract_path": "project/abst/2024_B_k.hayashi_abst.md",
+      "detail_path": "project/detail/2024_B_k.hayashi_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_B_k.hayashi_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_B_k.hayashi_overview.png",
+      "gallery_images": [
+        "proc/img/2024_B_k.hayashi_overview.png",
+        "proc/img/2024_B_k.hayashi_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_B_m.kashiwagi",
+      "title": "エネルギー効率を考慮したマルチエージェントの誘導",
+      "title_en": "Energy-Efficient Multi-Agent Induction",
+      "author": "柏木 水輝",
+      "student_id": "21EH010",
+      "year": 2024,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "省エネルギー制御",
+        "最適化",
+        "エネルギー効率",
+        "重心動揺",
+        "誘導",
+        "人間センシング",
+        "力覚フィードバック",
+        "VR環境",
+        "人間機械系",
+        "マルチエージェント"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "近年、マルチエージェントシステムが注目されています。その手法のひとつとして、牧羊犬の動きから着想を得たシープドッグシステムというアルゴリズムがあります。このアルゴリズムはロボットによる目標物の誘導、回収や森林火災の燃焼防止などに用いることが期待されています。しかし、実用化するにはロボットのエネルギーを考慮する必要があります。",
+      "card_summary": "省エネルギーを考慮した効率的なマルチエージェント誘導システム",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "省エネルギー制御"
+      ],
+      "abstract_path": "project/abst/2024_B_m.kashiwagi_abst.md",
+      "detail_path": "project/detail/2024_B_m.kashiwagi_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_B_m.kashiwagi_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_B_m.kashiwagi_overview.png",
+      "gallery_images": [
+        "proc/img/2024_B_m.kashiwagi_overview.png",
+        "proc/img/2024_B_m.kashiwagi_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_B_r.morishita",
+      "title": "オペレータの操作特性を活用したロボットアームの予測制御",
+      "title_en": "Mastery Support System Using the Placebo Effect",
+      "author": "森下 陸",
+      "student_id": "21EH065",
+      "year": 2024,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "野球",
+        "プラセボ効果",
+        "予測",
+        "動作解析",
+        "スポーツ科学",
+        "熟達支援",
+        "機械操作",
+        "協調理論",
+        "人間機械系",
+        "バッティング",
+        "サブリミナルキャリブレーション"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "機械操作技能向上の新たな手法として心理的効果に着目し、プラセボ効果を活用した熟達支援システムの有効性を検証した。被験者に熟達アシストシステムが動作していると偽りながら2次元追従タスクを実行させ、通常タスク、サブリミナルキャリブレーション適用タスク、プラセボ適用タスクの3条件で性能を比較した。結果として、プラセボ効果のみでは明確な熟達効果は確認されなかったが、認知的アプローチによる技能向上の可能性と、機械の内部モデルを変更せずに済む手法の重要性を示した。",
+      "card_summary": "操作者の特性を学習するロボットアーム予測制御システム",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "野球"
+      ],
+      "abstract_path": "project/abst/2024_B_r.morishita_abst.md",
+      "detail_path": "project/detail/2024_B_r.morishita_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_B_r.morishita_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_B_r.morishita_overview.png",
+      "gallery_images": [
+        "proc/img/2024_B_r.morishita_overview.png",
+        "proc/img/2024_B_r.morishita_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_B_s.tahara",
+      "title": "触覚フィードバックを用いた遠隔操作システムの操作性向上",
+      "title_en": "Investigation of Muscle Synergy Changes in Response to External Factors",
+      "author": "田原 駿",
+      "student_id": "21EH049",
+      "year": 2024,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "筋電位",
+        "矯正",
+        "筋シナジー",
+        "運動学習",
+        "スキル改善",
+        "人間センシング",
+        "操作パフォーマンス",
+        "力覚提示",
+        "動作矯正",
+        "人間機械系",
+        "教示"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "触覚情報を活用した遠隔操作システムの操作性向上技術",
+      "card_summary": "触覚情報を活用した遠隔操作システムの操作性向上技術",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "筋電位"
+      ],
+      "abstract_path": "project/abst/2024_B_s.tahara_abst.md",
+      "detail_path": "project/detail/2024_B_s.tahara_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_B_s.tahara_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_B_s.tahara_overview.png",
+      "gallery_images": [
+        "proc/img/2024_B_s.tahara_overview.png",
+        "proc/img/2024_B_s.tahara_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_B_a.noto",
+      "title": "VR酔いを軽減する視覚的注意分布を利用したレンダリング手法の提案",
+      "title_en": "Proposal of Rendering Method Using Visual Attention Distribution to Reduce VR Sickness",
+      "author": "能登 彩花",
+      "student_id": "21EH071",
+      "year": 2024,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "中心窩レンダリング",
+        "レンダリング手法",
+        "VR酔い",
+        "人間センシング",
+        "視覚的注意分布",
+        "視覚疲労軽減",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "バーチャルリアリティ（VR）において、乗り物酔いに似た症状であるVR酔いは利用者の快適性を大きく損なう問題である。従来の中心窩レンダリング技術は注視点周辺を正確に描画し周辺部を簡略化するが、レンダリング範囲が固定のため広範囲を観察する際に違和感が生じる。本研究では視覚的注意を推定し、これをリアルタイムでレンダリング制御に応用するAttention Polar Grid手法を提案した。",
+      "card_summary": "視覚的注意を活用したVR酔い軽減のための適応的レンダリングシステム",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "中心窩レンダリング"
+      ],
+      "abstract_path": "project/abst/2024_B_a.noto_abst.md",
+      "detail_path": "project/detail/2024_B_a.noto_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_B_a.noto_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_B_a.noto_overview.png",
+      "gallery_images": [
+        "proc/img/2024_B_a.noto_overview.png",
+        "proc/img/2024_B_a.noto_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_B_y.takahashi",
+      "title": "疑似的な心拍同期が協調作業に及ぼす影響調査",
+      "title_en": "Investigation of the Effect of Pseudo Heart Rate Synchronization on Cooperative Work",
+      "author": "高橋 勇輝",
+      "student_id": "21EH050",
+      "year": 2024,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "自律移動",
+        "チームワーク",
+        "プラセボ効果",
+        "協調作業",
+        "重心動揺",
+        "振動刺激",
+        "心拍同期",
+        "安定性制御",
+        "巡回探索",
+        "協調理論",
+        "移動ロボット"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "多種生体信号を統合したリアルタイムストレス推定システム",
+      "card_summary": "多種生体信号を統合したリアルタイムストレス推定システム",
+      "display_tags": [
+        "チームワーク",
+        "協調理論",
+        "自律移動"
+      ],
+      "abstract_path": "project/abst/2024_B_y.takahashi_abst.md",
+      "detail_path": "project/detail/2024_B_y.takahashi_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_B_y.takahashi_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_B_y.takahashi_overview.png",
+      "gallery_images": [
+        "proc/img/2024_B_y.takahashi_overview.png",
+        "proc/img/2024_B_y.takahashi_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_M_m.nakamura",
+      "title": "VR空間のサブリミナルな物理パラメータ変化による投球コントロール熟達支援",
+      "title_en": "",
+      "author": "中村 美月",
+      "student_id": "23KMH33",
+      "year": 2024,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "VR",
+        "サブリミナル",
+        "学習支援",
+        "人間機械系",
+        "協調理論"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "VR技術を活用したスポーツスキル向上支援システムの研究です。投球動作の熟達には多くの練習時間が必要ですが、本研究では仮想環境において物理パラメータ（重力、空気抵抗など）をサブリミナルレベルで変化させることで、学習者が意識せずにより効果的な投球フォームを身につけられるシステムを開発しました。実験を通じて、従来の練習方法と比較して短時間での技能向上効果を検証し、VR環境でのスキル学習における新しいアプローチの有効性を示しました。",
+      "card_summary": "VR環境での潜在的な物理パラメータ調整による運動技能向上システム",
+      "display_tags": [
+        "人間機械系",
+        "協調理論",
+        "VR"
+      ],
+      "abstract_path": "project/abst/2024_M_m.nakamura_abst.md",
+      "detail_path": "project/detail/2024_M_m.nakamura_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_M_m.nakamura_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_M_m.nakamura_overview.png",
+      "gallery_images": [
+        "proc/img/2024_M_m.nakamura_overview.png",
+        "proc/img/2024_M_m.nakamura_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_M_n.ito",
+      "title": "仮想環境での振動触覚グローブを用いた力分布の提示が把持動作に及ぼす影響調査",
+      "title_en": "",
+      "author": "伊藤 那月",
+      "student_id": "23KMH34",
+      "year": 2024,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "温度",
+        "力覚生起",
+        "個人差",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "仮想環境において物体を自然に把持するためには、視覚情報だけでなく触覚情報も重要な役割を果たします。本研究では、振動触覚グローブを用いて仮想物体の力分布を指先に提示し、把持動作にどのような影響を与えるかを調査しました。様々な振動パターンと強度を組み合わせることで、実物に近い触覚感覚を再現し、仮想環境での精密な操作を可能にするシステムを開発しました。",
+      "card_summary": "振動触覚グローブを用いた仮想環境での力感覚提示システム",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "温度"
+      ],
+      "abstract_path": "project/abst/2024_M_n.ito_abst.md",
+      "detail_path": "project/detail/2024_M_n.ito_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_M_n.ito_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_M_n.ito_overview.png",
+      "gallery_images": [
+        "proc/img/2024_M_n.ito_overview.png",
+        "proc/img/2024_M_n.ito_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_M_i.kato",
+      "title": "機械学習を用いた追従操作におけるサプライズの推定",
+      "title_en": "",
+      "author": "加藤 一沙",
+      "student_id": "23KMH30",
+      "year": 2024,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "機械学習",
+        "追従操作",
+        "サプライズ",
+        "推定",
+        "協調理論",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "機械操作における熟達度評価は、教育や支援システム開発において重要な課題である。本研究では自由エネルギー原理（Free Energy Principle, FEP）に基づき、追従操作中のサプライズを機械学習により推定する手法を提案した。操作者の予測と実際の結果との乖離をサプライズとして定量化し、これを熟達度の指標として活用する。実験では追従タスクにおいて操作情報から脳内モデルを構築し、予測誤差によるサプライズ推定の有効性を検証した。",
+      "card_summary": "自由エネルギー原理に基づく操作熟達度の客観的評価システム",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "機械学習"
+      ],
+      "abstract_path": "project/abst/2024_M_i.kato_abst.md",
+      "detail_path": "project/detail/2024_M_i.kato_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_M_i.kato_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_M_i.kato_overview.png",
+      "gallery_images": [
+        "proc/img/2024_M_i.kato_overview.png",
+        "proc/img/2024_M_i.kato_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_M_k.ohya",
+      "title": "ストレス解析によるリアルタイム適応型インタフェースの設計",
+      "title_en": "",
+      "author": "大矢 和磨",
+      "student_id": "23KMH31",
+      "year": 2024,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "個人差",
+        "可変インピーダンス",
+        "支援システム",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "現代社会では精密機器や複雑システムの操作において、操作者の心理的負担が作業効率に大きな影響を与えている。本研究では、心拍変動解析によるストレス状態のリアルタイム評価に基づいて、動的に調整可能なアシストシステムを設計した。LF/HF比とRMSSDを用いた多面的なストレス評価により、操作者の状況に応じて支援のタイミングや内容を最適化するインタフェースを開発した。実験により、従来の一律支援と比較して、提案システムが操作パフォーマンスの向上と同時にストレス軽減を実現することを確認した。",
+      "card_summary": "心拍変動解析に基づくリアルタイム適応制御システム",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "個人差"
+      ],
+      "abstract_path": "project/abst/2024_M_k.ohya_abst.md",
+      "detail_path": "project/detail/2024_M_k.ohya_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_M_k.ohya_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_M_k.ohya_overview.png",
+      "gallery_images": [
+        "proc/img/2024_M_k.ohya_overview.png",
+        "proc/img/2024_M_k.ohya_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_M_y.yamada",
+      "title": "座位姿勢の解析および矯正に向けたワイヤアレイ",
+      "title_en": "",
+      "author": "山田 侑果",
+      "student_id": "23KMH38",
+      "year": 2024,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "個性模倣",
+        "自己学習",
+        "マルチエージェント",
+        "協調理論",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "深層強化学習による自律的なロボット群協調制御システム",
+      "card_summary": "深層強化学習による自律的なロボット群協調制御システム",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "個性模倣"
+      ],
+      "abstract_path": "project/abst/2024_M_y.yamada_abst.md",
+      "detail_path": "project/detail/2024_M_y.yamada_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_M_y.yamada_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_M_y.yamada_overview.png",
+      "gallery_images": [
+        "proc/img/2024_M_y.yamada_overview.png",
+        "proc/img/2024_M_y.yamada_result.png"
+      ]
+    },
+    {
+      "file_id": "2024_M_r.tanaka",
+      "title": "聴覚刺激の提示を伴う身体動揺評価",
+      "title_en": "",
+      "author": "田中 龍介",
+      "student_id": "23KMH36",
+      "year": 2024,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "ドライビングシミュレータ",
+        "注意状態",
+        "視線挙動",
+        "人間センシング",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "聴覚刺激が人間の身体動揺に与える影響を、骨導音を用いた実験により詳細に評価した研究です。従来の気導音による聴覚刺激と比較して、骨導音が身体動揺や重心移動に与える独特な効果を定量的に解析しました。聴覚的注意が向く方向と身体動揺の関係性を明らかにし、聴覚刺激による姿勢制御メカニズムの理解を深めました。バランス訓練やリハビリテーション、VR環境での没入感向上など、聴覚を活用した新しい身体制御技術への応用が期待されます。",
+      "card_summary": "視線情報共有による協調作業効率向上システム",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "ドライビングシミュレータ"
+      ],
+      "abstract_path": "project/abst/2024_M_r.tanaka_abst.md",
+      "detail_path": "project/detail/2024_M_r.tanaka_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2024_M_r.tanaka_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2024_M_r.tanaka_overview.png",
+      "gallery_images": [
+        "proc/img/2024_M_r.tanaka_overview.png",
+        "proc/img/2024_M_r.tanaka_result.png"
+      ]
+    },
+    {
+      "file_id": "2023_B_ke.nakamura",
+      "title": "ボトルネックにおいてすれ違う群衆の誘導アルゴリズムの提案",
+      "title_en": "Algorithm for Guiding passing Crowds at Bottlenecks",
+      "author": "中村 圭佑",
+      "student_id": "20EH035",
+      "year": 2023,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "ボトルネック",
+        "人流最適化",
+        "すれ違い制御",
+        "誘導アルゴリズム",
+        "協調理論",
+        "人間機械系",
+        "群衆"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "災害時の避難や日常的な混雑解消において、狭い通路での双方向の人流を効率的に誘導する方法が求められている。従来研究では一方向への避難誘導が中心であったが、本研究では両方向への移動に適した群衆誘導システムを提案し、その有効性を検証した。Social Force Modelを改良し、ボトルネック内での歩行者の壁を避ける力とすれ違う歩行者から受ける斥力を追加することで、より現実的な人流シミュレーションを実現した。",
+      "card_summary": "双方向人流に対応した群衆誘導システムの開発",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "ボトルネック"
+      ],
+      "abstract_path": "project/abst/2023_B_ke.nakamura_abst.md",
+      "detail_path": "project/detail/2023_B_ke.nakamura_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2023_B_ke.nakamura_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2023_B_ke.nakamura_overview.png",
+      "gallery_images": [
+        "proc/img/2023_B_ke.nakamura_overview.png",
+        "proc/img/2023_B_ke.nakamura_result.png"
+      ]
+    },
+    {
+      "file_id": "2023_B_r.uchida",
+      "title": "VDT作業時における眼球情報とストレスの関連性の調査",
+      "title_en": "Investigation of the relationship between eyeball information and stress during VDT work",
+      "author": "内田 凌太郎",
+      "student_id": "20EH020",
+      "year": 2023,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "ストレス",
+        "VDT作業",
+        "人間センシング",
+        "眼球情報",
+        "疲労評価",
+        "作業負荷",
+        "視線解析",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "VDT（Visual Display Terminal）作業の普及により眼精疲労やストレスが社会問題となっている。従来のストレス評価は心拍変動などの生体信号に依存していたが、作業に支障をきたす可能性がある。本研究では非接触で測定可能な眼球情報とストレスの関連性を内田 良太した。アイトラッカーを用いて眼球運動データを取得し、瞬きパターン、視線移動、瞳孔径変化などの特徴量とストレス指標との相関を分析した。",
+      "card_summary": "眼球運動解析による非接触ストレス推定手法の開発",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "ストレス"
+      ],
+      "abstract_path": "project/abst/2023_B_r.uchida_abst.md",
+      "detail_path": "project/detail/2023_B_r.uchida_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2023_B_r.uchida_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2023_B_r.uchida_overview.png",
+      "gallery_images": [
+        "proc/img/2023_B_r.uchida_overview.png",
+        "proc/img/2023_B_r.uchida_result.png"
+      ]
+    },
+    {
+      "file_id": "2023_B_j.ryuu",
+      "title": "聴覚刺激を用いたリズム誘導による協働作業におけるストレス増加の抑制の実現",
+      "title_en": "Rhythm Guide Using Auditory Stimuli to Reduce Increased Stress in Collaborative Works",
+      "author": "劉 樹鵬",
+      "student_id": "20EH048",
+      "year": 2023,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "ストレス抑制",
+        "チームワーク",
+        "同期現象",
+        "聴覚刺激",
+        "リズム誘導",
+        "作業リズム",
+        "協働作業",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "協働ロボットの普及が進む中、ロボットとの作業ペースのずれや主導権の問題によってストレスが発生し、作業効率が低下する課題がある。本研究では同期現象に着目し、聴覚刺激による無意識下でのリズム誘導によってストレス増加を抑制する手法を提案した。タッピングタスクを協働作業の周期的動作と見なし、心拍変動のLF/HF値によりストレス状態を評価した。",
+      "card_summary": "無意識下でのリズム誘導による協働作業ストレス軽減システム",
+      "display_tags": [
+        "チームワーク",
+        "人間機械系",
+        "ストレス抑制"
+      ],
+      "abstract_path": "project/abst/2023_B_j.ryuu_abst.md",
+      "detail_path": "project/detail/2023_B_j.ryuu_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2023_B_j.ryuu_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2023_B_j.ryuu_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2023_B_j.ryuu_overview.png",
+      "gallery_images": [
+        "proc/img/2023_B_j.ryuu_overview.png",
+        "proc/img/2023_B_j.ryuu_result.png"
+      ]
+    },
+    {
+      "file_id": "2023_B_h.kitaiwa",
+      "title": "握り動作における痛み緩和バイアスの調査",
+      "title_en": "Investigation of pain relief bias in grasping movements",
+      "author": "北岩 隼人",
+      "student_id": "20EH015",
+      "year": 2023,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "ボトルネック",
+        "触覚刺激",
+        "握り動作",
+        "誘導アルゴリズム",
+        "心理的効果",
+        "痛み",
+        "協調理論",
+        "痛み緩和バイアス",
+        "人間機械系",
+        "群衆",
+        "疼痛管理"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "痛み緩和方法として握り動作が看護現場で使用されているが、どの段階の痛みに作用するかや、主体的な握る動作と受動的な握られる動作のどちらが効果的かは不明である。本研究では主体的な握る動作に着目し、段階ごとの痛みに対する緩和効果を北岩 勇人した。非侵襲的な痛み提示方法としてThermal Grill Illusion（TGI）を用い、握り動作の有無による痛みの感じ方の変化をVAS（Visual Analog Scale）で評価した。",
+      "card_summary": "主体的な握り動作による痛み緩和効果の定量的評価",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "ボトルネック"
+      ],
+      "abstract_path": "project/abst/2023_B_h.kitaiwa_abst.md",
+      "detail_path": "project/detail/2023_B_h.kitaiwa_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2023_B_h.kitaiwa_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2023_B_h.kitaiwa_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2023_B_h.kitaiwa_overview.png",
+      "gallery_images": [
+        "proc/img/2023_B_h.kitaiwa_overview.png",
+        "proc/img/2023_B_h.kitaiwa_result.png"
+      ]
+    },
+    {
+      "file_id": "2023_B_g.otsuka",
+      "title": "振動刺激における睡眠導入の補助",
+      "title_en": "Sleep Onset Aids in Vibration Stimulation",
+      "author": "大塚 凱",
+      "student_id": "20EH018",
+      "year": 2023,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "振動刺激",
+        "睡眠導入",
+        "心拍変動",
+        "リラクゼーション",
+        "人間センシング",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "近年、ストレスや生活習慣により不眠症問題が増加している。既存の睡眠薬や熱療法は遅効性で個人差への対応が困難であるため、速効性とリズムによる入眠補助が可能な振動刺激に着目した。本研究では、入眠導入に適した振動大塚 雅人を目的とし、心拍変動による自律神経活動の測定を通じて振動提示位置の選定と振幅・周波数の許容範囲を大塚 雅人した。実験の結果、振動刺激は安静時と比較して副交感神経を優位にし、特に背中への提示が最も効果的であることが確認された。",
+      "card_summary": "振動刺激による入眠導入支援システムの開発と効果検証",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "振動刺激"
+      ],
+      "abstract_path": "project/abst/2023_B_g.otsuka_abst.md",
+      "detail_path": "project/detail/2023_B_g.otsuka_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2023_B_g.otsuka_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2023_B_g.otsuka_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2023_B_g.otsuka_overview.png",
+      "gallery_images": [
+        "proc/img/2023_B_g.otsuka_overview.png",
+        "proc/img/2023_B_g.otsuka_result.png"
+      ]
+    },
+    {
+      "file_id": "2023_B_r.yanase",
+      "title": "力覚提示による道具使用時の指先動作の熟達支援",
+      "title_en": "Proficiency Support for Fingertip Movements When Using Tools by Force Display",
+      "author": "梁瀬 琉真",
+      "student_id": "20EH046",
+      "year": 2023,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "筆記動作",
+        "道具使用",
+        "握力制御",
+        "熟達支援",
+        "指先動作",
+        "力覚提示",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "医療や工芸分野において精密な道具操作技能の習得は重要だが、従来の視覚的指導では指先の微細な力加減を伝達することが困難である。本研究では力覚フィードバックを用いた指先動作の熟達支援システムを提案した。理想的な動作パターンと学習者の動作との差分を力覚として提示することで、効率的な技能習得を目指した。ペン操作タスクを用いた実験では、力覚提示あり群が力覚提示なし群と比較して有意に高い習熟度を示した。",
+      "card_summary": "力覚フィードバックを用いた技能習得支援システム",
+      "display_tags": [
+        "人間機械系",
+        "筆記動作",
+        "道具使用"
+      ],
+      "abstract_path": "project/abst/2023_B_r.yanase_abst.md",
+      "detail_path": "project/detail/2023_B_r.yanase_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2023_B_r.yanase_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2023_B_r.yanase_overview.png",
+      "gallery_images": [
+        "proc/img/2023_B_r.yanase_overview.png",
+        "proc/img/2023_B_r.yanase_result.png"
+      ]
+    },
+    {
+      "file_id": "2023_B_s.fujiwara",
+      "title": "温度変化による力覚生起現象の定量化",
+      "title_en": "",
+      "author": "藤原 志温",
+      "student_id": "20EH041",
+      "year": 2023,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "感情状態",
+        "ストレス",
+        "定量計測",
+        "人間センシング",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "温度変化によって力覚が生起する現象は興味深い感覚統合の例だが、その定量的な評価は十分に行われていない。本研究では温度刺激による力覚生起現象を科学的に定量化することを目的とした。実験装置では温度制御可能なデバイスを用いて段階的な温度変化を提示し、被験者が感じる力覚の強度を評価した。温度上昇時と下降時で異なる力覚パターンが観測され、温度変化率と感じる力の大きさの間に相関関係があることが確認された。また、個人差や部位による違いも明らかになった。",
+      "card_summary": "温度変化による力覚生起現象の科学的定量化",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "感情状態"
+      ],
+      "abstract_path": "project/abst/2023_B_s.fujiwara_abst.md",
+      "detail_path": "project/detail/2023_B_s.fujiwara_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2023_B_s.fujiwara_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2023_B_s.fujiwara_overview.png",
+      "gallery_images": [
+        "proc/img/2023_B_s.fujiwara_overview.png",
+        "proc/img/2023_B_s.fujiwara_result.png"
+      ]
+    },
+    {
+      "file_id": "2023_B_k.sudo",
+      "title": "他部位刺激による硬さ感覚の向上",
+      "title_en": "Enhancement of Hardness Sensation Using Stimulation of the Other Part of the Body",
+      "author": "須藤 浩介",
+      "student_id": "20EH029",
+      "year": 2023,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "他部位刺激",
+        "感覚増強",
+        "触覚錯覚",
+        "硬さ感覚",
+        "振動",
+        "硬さ提示"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "VRや遠隔操作において物体の硬さを提示する技術は重要だが、従来の力覚フィードバックは大型装置が必要で可搬性に劣るという課題がある。振動のみを用いた硬さ提示は軽量だが、物理的フィードバックに比べて感覚が弱いという欠点を持つ。本研究では振動による硬さ提示のメリットを損なわずに硬さ感覚の向上を目的とし、他部位への刺激による効果を須藤 晃大した。実験では接触部位とは異なる身体部位に振動刺激を与えることで、硬さ感覚の向上効果を検証した。",
+      "card_summary": "他部位への振動刺激による硬さ感覚向上手法の研究",
+      "display_tags": [
+        "他部位刺激",
+        "感覚増強",
+        "触覚錯覚"
+      ],
+      "abstract_path": "project/abst/2023_B_k.sudo_abst.md",
+      "detail_path": "project/detail/2023_B_k.sudo_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2023_B_k.sudo_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2023_B_k.sudo_overview.png",
+      "gallery_images": [
+        "proc/img/2023_B_k.sudo_overview.png",
+        "proc/img/2023_B_k.sudo_result.png"
+      ]
+    },
+    {
+      "file_id": "2023_M_la.nicolas",
+      "title": "ネットワーク計画ツールとしての欲求経路創発シミュレーションマルチエージェントシステムの開発と評価",
+      "title_en": "",
+      "author": "ニコラ ルイアンドレ",
+      "student_id": "22KMH30",
+      "year": 2023,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "ネットワーク計画",
+        "欲求経路創発",
+        "マルチエージェント",
+        "シミュレーション",
+        "協調理論",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "都市計画や施設設計において、利用者が自然に形成する非公式な経路（欲求経路）を予測し計画に反映することは重要だが、従来手法では限界がある。本研究では欲求経路の創発過程をシミュレートするマルチエージェントシステムを開発し、ネットワーク計画ツールとしての有効性を評価した。各エージェントが個別の移動目的と制約を持ち、環境との相互作用を通じて集合的に経路を形成する仕組みを構築した。",
+      "card_summary": "欲求経路創発をシミュレートするネットワーク計画支援システム",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "ネットワーク計画"
+      ],
+      "abstract_path": "project/abst/2023_M_la.nicolas_abst.md",
+      "detail_path": "project/detail/2023_M_la.nicolas_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2023_M_la.nicolas_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2023_M_la.nicolas_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2023_M_la.nicolas_thumbnail.png"
+      ]
+    },
+    {
+      "file_id": "2023_M_n.ito",
+      "title": "仮想環境での振動触覚グローブを用いた力分布の提示が把持動作に及ぼす影響調査",
+      "title_en": "",
+      "author": "伊藤 那月",
+      "student_id": "22KMH31",
+      "year": 2023,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "仮想環境",
+        "振動触覚",
+        "グローブ",
+        "力分布",
+        "把持動作",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "VRや遠隔操作において、物体の把持感覚を正確に伝達することは重要な課題である。本研究では振動触覚グローブを用いて仮想環境での力分布提示が把持動作に与える影響を伊藤 直樹した。指先への振動パターンにより物体の硬さや表面特性、接触力分布を表現し、被験者の把持動作の変化を詳細に分析した。実験では振動提示の有無による把持力制御の精度、動作の安定性、主観的な操作感を比較評価した。結果として、適切な振動触覚フィードバックが把持動作の精度向上と操作者の満足度向上に寄与することが確認された。",
+      "card_summary": "振動触覚フィードバックによる仮想環境での把持動作向上",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "仮想環境"
+      ],
+      "abstract_path": "project/abst/2023_M_n.ito_abst.md",
+      "detail_path": "project/detail/2023_M_n.ito_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2023_M_n.ito_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2023_M_n.ito_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2023_M_n.ito_thumbnail.png"
+      ]
+    },
+    {
+      "file_id": "2023_M_m.tagaya",
+      "title": "特徴量検出による投射動作の運動熟達支援",
+      "title_en": "",
+      "author": "多賀谷 光",
+      "student_id": "22KMH26",
+      "year": 2023,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "指先動作",
+        "力覚提示",
+        "熟達支援",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "投射動作における運動熟達を効果的に支援するため、動作の重要な特徴量を自動検出し、学習者に対して的確なフィードバックを提供するシステムを提案した。高精度モーションキャプチャシステムによる詳細な動作解析により、熟練者と初心者の投射動作パターンの差異を定量的に明らかにし、運動技能向上に寄与する重要な特徴量を特定した。機械学習手法を活用することで個人の運動特性を学習し、リアルタイムでの動作評価と具体的な改善提案を実現した。",
+      "card_summary": "投射動作における運動熟達を効果的に支援するため、動作の重要な特徴量を自動検出し、学習者に対して的確なフィードバックを提供するシステムを提案した。高精度モーションキャプチャシステムによる詳細な動作解析により、熟練者と初心者の投射動作パターンの差異を定量的に明らかにし、運動技能向上に寄与する重要な特徴量を特定した。機械学習手法を活用することで個人の運動特性を学習し、リアルタイムでの動作評価と具体的な改善提案を実現した。",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "指先動作"
+      ],
+      "abstract_path": "project/abst/2023_M_m.tagaya_abst.md",
+      "detail_path": "project/detail/2023_M_m.tagaya_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2023_M_m.tagaya_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2023_M_m.tagaya_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2023_M_m.tagaya_thumbnail.png",
+        "proc/img_all/2023_M_m.tagaya-p014-img01.png"
+      ]
+    },
+    {
+      "file_id": "2023_M_k.ohya",
+      "title": "ストレス解析によるリアルタイム適応型インタフェースの設計",
+      "title_en": "",
+      "author": "大矢 和磨",
+      "student_id": "22KMH28",
+      "year": 2023,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "ストレス解析",
+        "リアルタイム",
+        "適応型インタフェース",
+        "人間センシング",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "現代社会では精密機器や複雑システムの操作において、操作者の心理的負担が作業効率に大きな影響を与えている。本研究では、心拍変動解析によるストレス状態のリアルタイム評価に基づいて、動的に調整可能なアシストシステムを設計した。LF/HF比とRMSSDを用いた多面的なストレス評価により、操作者の状況に応じて支援のタイミングや内容を最適化するインタフェースを開発した。実験により、従来の一律支援と比較して、提案システムが操作パフォーマンスの向上と同時にストレス軽減を実現することを確認した。",
+      "card_summary": "心拍変動解析に基づくリアルタイム適応制御システム",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "ストレス解析"
+      ],
+      "abstract_path": "project/abst/2023_M_k.ohya_abst.md",
+      "detail_path": "project/detail/2023_M_k.ohya_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2023_M_k.ohya_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2023_M_k.ohya_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2023_M_k.ohya_thumbnail.png"
+      ]
+    },
+    {
+      "file_id": "2023_M_k.kobayashi",
+      "title": "個性模倣と自己学習を備えたマルチエージェントによる不確かなターゲット群の適応誘導システム",
+      "title_en": "",
+      "author": "小林 虎太郎",
+      "student_id": "22KMH25",
+      "year": 2023,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "協調フロー",
+        "評価",
+        "チームワーク",
+        "協調理論"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "不確かなターゲット群に対して、個性模倣と自己学習機能を統合した革新的なマルチエージェントシステムによる適応誘導手法を提案した。従来の静的な誘導アルゴリズムとは異なり、各エージェントがターゲットの個別の行動パターンを動的に学習し、状況に応じて戦略を適応させることで、不確実性の高い環境でも高い性能で誘導を実現した。精密なシミュレーション評価では、異質な行動を示すターゲット群に対して、提案手法が従来の手法と比較して顕著に優れた性能を示すことを実証した。",
+      "card_summary": "不確かなターゲット群に対して、個性模倣と自己学習機能を統合した革新的なマルチエージェントシステムによる適応誘導手法を提案した。従来の静的な誘導アルゴリズムとは異なり、各エージェントがターゲットの個別の行動パターンを動的に学習し、状況に応じて戦略を適応させることで、不確実性の高い環境でも高い性能で誘導を実現した。精密なシミュレーション評価では、異質な行動を示すターゲット群に対して、提案手法が従来の手法と比較して顕著に優れた性能を示すことを実証した。",
+      "display_tags": [
+        "チームワーク",
+        "協調理論",
+        "協調フロー"
+      ],
+      "abstract_path": "project/abst/2023_M_k.kobayashi_abst.md",
+      "detail_path": "project/detail/2023_M_k.kobayashi_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2023_M_k.kobayashi_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2023_M_k.kobayashi_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2023_M_k.kobayashi_thumbnail.png",
+        "proc/img_all/2023_M_k.kobayashi_page10_img0.png"
+      ]
+    },
+    {
+      "file_id": "2023_M_onogawa",
+      "title": "仮想環境における変化の見落としを予測可能なAttention TriGridの提案",
+      "title_en": "",
+      "author": "小野川 樹",
+      "student_id": "22KMH32",
+      "year": 2023,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "仮想環境",
+        "変化の見落とし",
+        "Attention TriGrid",
+        "予測",
+        "人間機械系",
+        "協調理論"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "VRやARなどの仮想環境において、ユーザーが重要な変化を見落とすことは安全性や作業効率に大きな影響を与える。本研究では人間の注意メカニズムを解析し、変化の見落としを事前に予測可能なAttention TriGridシステムを提案した。視線追跡データと認知負荷を組み合わせ、三角格子状の注意マップを構築することで、ユーザーの注意分布をリアルタイムで推定し、見落とし発生の確率を予測する手法を開発した。",
+      "card_summary": "注意分散予測による仮想環境での見落とし防止システム",
+      "display_tags": [
+        "人間機械系",
+        "協調理論",
+        "仮想環境"
+      ],
+      "abstract_path": "project/abst/2023_M_onogawa_abst.md",
+      "detail_path": "project/detail/2023_M_onogawa_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2023_M_onogawa_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2023_M_onogawa_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2023_M_onogawa_thumbnail.png"
+      ]
+    },
+    {
+      "file_id": "2023_M_y.yamada",
+      "title": "座位姿勢の解析および矯正に向けたワイヤアレイセンサの開発",
+      "title_en": "",
+      "author": "山田 侑果",
+      "student_id": "22KMH34",
+      "year": 2023,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "座位姿勢",
+        "解析",
+        "矯正",
+        "ワイヤアレイセンサ",
+        "人間センシング",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "長時間のデスクワークによる不良姿勢は健康問題の原因となるが、既存の姿勢計測システムは高コストかつ設置が複雑である。本研究では椅子に組み込み可能なワイヤアレイセンサを開発し、座位姿勢のリアルタイム解析と矯正支援を実現した。複数のワイヤセンサを格子状に配置することで、座面および背もたれでの圧力分布を高精度で計測し、機械学習により姿勢パターンを分類・評価する手法を構築した。",
+      "card_summary": "低コストワイヤセンサによる座位姿勢モニタリングシステム",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "座位姿勢"
+      ],
+      "abstract_path": "project/abst/2023_M_y.yamada_abst.md",
+      "detail_path": "project/detail/2023_M_y.yamada_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2023_M_y.yamada_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2023_M_y.yamada_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2023_M_y.yamada_thumbnail.png"
+      ]
+    },
+    {
+      "file_id": "2023_M_r.tanaka",
+      "title": "聴覚刺激の提示を伴う身体動揺評価 - 骨導音での実験と検討",
+      "title_en": "",
+      "author": "田中 龍介",
+      "student_id": "22KMH33",
+      "year": 2023,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "聴覚刺激",
+        "身体動揺",
+        "骨導音",
+        "評価",
+        "人間センシング",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "身体バランスの評価は高齢者の転倒予防や疾患診断において重要だが、従来の静的評価では限界がある。本研究では骨導音による聴覚刺激を用いて身体動揺を誘発し、動的な平衡機能を評価する新しい手法を提案した。骨導音は外耳を経由せず直接内耳に伝達されるため、従来の気導音では困難な精密な刺激制御が可能である。様々な周波数と強度の骨導音刺激に対する身体動揺パターンを詳細に分析し、個人の平衡機能特性を定量化する指標を開発した。",
+      "card_summary": "骨導音刺激による動的平衡機能評価システム",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "聴覚刺激"
+      ],
+      "abstract_path": "project/abst/2023_M_r.tanaka_abst.md",
+      "detail_path": "project/detail/2023_M_r.tanaka_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2023_M_r.tanaka_detail.md",
+      "detail_is_generic": true,
+      "card_image": "proc/img/2023_M_r.tanaka_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2023_M_r.tanaka_thumbnail.png"
+      ]
+    },
+    {
+      "file_id": "2023_M_t.kassai",
+      "title": "操作支援下における自己主体感の評価",
+      "title_en": "",
+      "author": "葛西 大河",
+      "student_id": "22KMH24",
+      "year": 2023,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "機械学習",
+        "牧羊犬アルゴリズム",
+        "協調理論",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "この研究の概要を2023_M_t.kassai.mdから抽出して作成する必要があります。",
+      "card_summary": "この研究の概要を2023_M_t.kassai.mdから抽出して作成する必要があります。",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "機械学習"
+      ],
+      "abstract_path": "project/abst/2023_M_t.kassai_abst.md",
+      "detail_path": "project/detail/2023_M_t.kassai_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2023_M_t.kassai_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2023_M_t.kassai_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2023_M_t.kassai_thumbnail.png",
+        "proc/img_all/2023_M_t.kassai-p011-img01.png"
+      ]
+    },
+    {
+      "file_id": "2022_B_m.nakamura",
+      "title": "把持物体への衝撃位置を再現可能な小型の触覚デバイス",
+      "title_en": "",
+      "author": "中村 美月",
+      "student_id": "19EH036",
+      "year": 2022,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "振動",
+        "硬さ提示",
+        "他部位刺激"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "VR（仮想現実）空間で物体に触った時の感覚をリアルに再現する小型デバイスの開発研究です。VRでは視覚情報は豊富ですが、触覚情報が不足しがちです。本研究では、物体に衝撃が加わった時の力の大きさと位置を手に装着した小型デバイスで再現する技術を開発しました。ボールを投げた時の衝撃感や、工具で物を叩いた時の反動など、様々な触覚体験をVR空間で実現できます。VRゲームや職業訓練、リハビリテーションなど幅広い分野での応用が期待される技術です。",
+      "card_summary": "VR環境で衝撃の力と位置を小型デバイスで再現する触覚提示技術",
+      "display_tags": [
+        "振動",
+        "硬さ提示",
+        "他部位刺激"
+      ],
+      "abstract_path": "project/abst/2022_B_m.nakamura_abst.md",
+      "detail_path": "project/detail/2022_B_m.nakamura_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2022_B_m.nakamura_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2022_B_m.nakamura_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2022_B_m.nakamura_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2022_B_m.nakamura_thumbnail.png",
+        "proc/img_all/2022_B_m.nakamura-p014-img01.png"
+      ]
+    },
+    {
+      "file_id": "2022_B_n.ito",
+      "title": "仮想環境における振動グローブを用いた力分布の偏り表現",
+      "title_en": "",
+      "author": "伊藤 那月",
+      "student_id": "19EH006",
+      "year": 2022,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "温度",
+        "力覚生起",
+        "個人差",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "VR空間で物体を持った時の重さの偏りや重心の位置を、振動を使って手に伝える技術の研究です。実際に物を持つ時、重心がどちらに偏っているかは手の感覚で分かりますが、VR空間ではこの情報が得られません。本研究では手に装着する振動グローブを開発し、物体の重心位置に応じて指先に異なる振動パターンを提示することで、重心の偏りを直感的に感じられるシステムを構築しました。VRでの物体操作がより自然で正確になり、VRトレーニングや遠隔作業支援への応用が期待されます。",
+      "card_summary": "振動グローブによる物体把持時の重心偏りの触覚提示システム",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "温度"
+      ],
+      "abstract_path": "project/abst/2022_B_n.ito_abst.md",
+      "detail_path": "project/detail/2022_B_n.ito_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2022_B_n.ito_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2022_B_n.ito_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2022_B_n.ito_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2022_B_n.ito_thumbnail.png",
+        "proc/img_all/2022_B_n.ito-p007-img01.png"
+      ]
+    },
+    {
+      "file_id": "2022_B_s.sanuka",
+      "title": "視覚刺激による疑似触力覚効果の評価",
+      "title_en": "",
+      "author": "佐怒賀 慎吾",
+      "student_id": "19EH024",
+      "year": 2022,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "力覚フィードバック",
+        "指先動作",
+        "熟達支援",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "触覚デバイスを使わずに、視覚の錯覚だけで力や重さを感じさせる「疑似ハプティクス」技術の研究です。人間の脳は視覚情報と触覚情報を統合して物体の性質を判断するため、視覚的な演出により実際には存在しない力覚を体験できます。本研究では、軽く触れるだけで得られる「ライトタッチ効果」を活用し、視覚刺激による疑似的な力覚体験の効果を定量的に評価しました。安価で簡単な方法でリアルな触覚体験を提供できるため、VRゲームや教育コンテンツでの活用が期待されます。",
+      "card_summary": "ライトタッチ効果を用いた疑似触力覚の定量評価手法の開発",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "力覚フィードバック"
+      ],
+      "abstract_path": "project/abst/2022_B_s.sanuka_abst.md",
+      "detail_path": "project/detail/2022_B_s.sanuka_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2022_B_s.sanuka_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2022_B_s.sanuka_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2022_B_s.sanuka_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2022_B_s.sanuka_thumbnail.png",
+        "proc/img_all/2022_B_s.sanuka-p007-img01.png"
+      ]
+    },
+    {
+      "file_id": "2022_B_k.sato",
+      "title": "マルチロボットシステムによる協調作業及び人間介入がシステムに及ぼす影響",
+      "title_en": "",
+      "author": "佐藤 航成",
+      "student_id": "19EH026",
+      "year": 2022,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "マルチエージェント",
+        "強化学習",
+        "模倣学習",
+        "協調理論",
+        "チームワーク"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "複数のロボットが協力して作業する「マルチロボットシステム」の研究です。牧羊犬が羊を誘導するように、複数のロボットが協力して物体を目標地点へ運ぶタスクを扱いました。ロボットがAI（強化学習）で自動的に学習する方法と、人間が遠隔操作で教える方法を組み合わせることで、より効率的なシステムを開発しました。AI単体では学習に膨大な時間がかかりますが、人間の操作例を参考にすることで学習時間を大幅に短縮できることを確認しました。",
+      "card_summary": "強化学習と模倣学習を組み合わせたマルチロボット協調システムの開発",
+      "display_tags": [
+        "協調理論",
+        "チームワーク",
+        "マルチエージェント"
+      ],
+      "abstract_path": "project/abst/2022_B_k.sato_abst.md",
+      "detail_path": "project/detail/2022_B_k.sato_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2022_B_k.sato_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2022_B_k.sato_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2022_B_k.sato_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2022_B_k.sato_thumbnail.png",
+        "proc/img_all/2022_B_k.sato_page10_img0.png"
+      ]
+    },
+    {
+      "file_id": "2022_B_i.kato",
+      "title": "温度に着目した適度なストレス誘導デバイスの開発",
+      "title_en": "",
+      "author": "加藤 一沙",
+      "student_id": "19EH015",
+      "year": 2022,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "個人適応",
+        "ロボット",
+        "操作支援",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "パソコン作業の増加により、心理的ストレスによる作業効率の低下が問題となっています。ストレスが低すぎても高すぎても最高のパフォーマンスは発揮できません。本研究では心拍を測定してストレス状態を把握し、ストレスが高くなりすぎた時に温度刺激でリラックス効果を誘導するデバイスを開発しました。適度なストレス状態を自動的に維持することで、長時間のパソコン作業でも集中力と作業効率を保つことができるシステムを目指しています。オフィスワーカーの健康管理と生産性向上の両立を実現する実用的な技術です。",
+      "card_summary": "VDT作業における心理的ストレスを適度なレベルに制御するデバイスの開発",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "個人適応"
+      ],
+      "abstract_path": "project/abst/2022_B_i.kato_abst.md",
+      "detail_path": "project/detail/2022_B_i.kato_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2022_B_i.kato_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2022_B_i.kato_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2022_B_i.kato_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2022_B_i.kato_thumbnail.png",
+        "proc/img_all/2022_B_i.kato-p007-img01.png"
+      ]
+    },
+    {
+      "file_id": "2022_B_k.ohya",
+      "title": "呼吸手法の変化による自律神経機能活性度への影響",
+      "title_en": "",
+      "author": "大矢 和磨",
+      "student_id": "19EH020",
+      "year": 2022,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "可変インピーダンス",
+        "個人差",
+        "支援システム",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "現代社会では多くの人が日常的にストレスを感じており、その解消が重要な課題となっています。本研究では、場所や時間を問わず誰でも簡単に実践できる呼吸法に着目し、異なる呼吸手法が自律神経系に与える影響を調査しました。心電図（ECG）による心拍計測を行い、自律神経機能活性度（LF/HF）を指標として、呼吸手法ごとの自律神経への効果を定量的に評価しました。",
+      "card_summary": "異なる呼吸手法が自律神経系に与える影響の定量的評価",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "可変インピーダンス"
+      ],
+      "abstract_path": "project/abst/2022_B_k.ohya_abst.md",
+      "detail_path": "project/detail/2022_B_k.ohya_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2022_B_k.ohya_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2022_B_k.ohya_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2022_B_k.ohya_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2022_B_k.ohya_thumbnail.png",
+        "proc/img_all/2022_B_k.ohya_page12_img0.png"
+      ]
+    },
+    {
+      "file_id": "2022_B_t.onogawa",
+      "title": "気づかれない行動のための眼球運動に伴う三次元注意分布推定",
+      "title_en": "",
+      "author": "小野川 樹",
+      "student_id": "19EH019",
+      "year": 2022,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "サーモグラフィ",
+        "SLAM",
+        "システム開発",
+        "人間センシング",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "人がどこに注意を向けているかを眼球の動きから推定し、ロボットが人に気づかれずに行動できるシステムの研究です。人間の注意は空間的に分布しており、注視点以外にも周辺視野で様々な情報を処理しています。本研究では眼球運動データから三次元空間での注意の分布を推定し、人が注意を向けていない領域でロボットが作業を行う技術を開発しました。人の作業を邪魔せずにサポートを提供する家庭用ロボットや、自然な共存を目指すサービスロボットへの応用が期待されます。",
+      "card_summary": "眼球運動データから三次元注意分布を推定し気づかれない行動を実現",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "サーモグラフィ"
+      ],
+      "abstract_path": "project/abst/2022_B_t.onogawa_abst.md",
+      "detail_path": "project/detail/2022_B_t.onogawa_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2022_B_t.onogawa_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2022_B_t.onogawa_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2022_B_t.onogawa_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2022_B_t.onogawa_thumbnail.png",
+        "proc/img_all/2022_B_t.onogawa-p010-img01.png"
+      ]
+    },
+    {
+      "file_id": "2022_B_t.bitoh",
+      "title": "脳波を用いた温度変化による心理的ストレスの低減",
+      "title_en": "",
+      "author": "尾藤 友樹",
+      "student_id": "19EH018",
+      "year": 2022,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "温度提示",
+        "感情値",
+        "ストレス評価",
+        "人間センシング",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "現代社会では日常的なストレスが様々な健康問題を引き起こしており、ストレス低減技術の開発が重要な課題となっています。従来のストレス評価は身体的評価と心理的評価に分けられますが、心理的評価は主観的なアンケートに依存することが多く、客観性に課題がありました。本研究では、脳波を用いて感情値を推定することで、被験者の心理的ストレスを定量的に評価する手法を提案しました。",
+      "card_summary": "脳波による感情値推定を用いた温度刺激のストレス低減効果の客観評価",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "温度提示"
+      ],
+      "abstract_path": "project/abst/2022_B_t.bitoh_abst.md",
+      "detail_path": "project/detail/2022_B_t.bitoh_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2022_B_t.bitoh_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2022_B_t.bitoh_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2022_B_t.bitoh_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2022_B_t.bitoh_thumbnail.png",
+        "proc/img_all/2022_B_t.bitoh-p010-img01.png"
+      ]
+    },
+    {
+      "file_id": "2022_B_y.yamada",
+      "title": "座位姿勢の解析および矯正に向けたワイヤアレイセンサの開発",
+      "title_en": "",
+      "author": "山田 侑果",
+      "student_id": "19EH043",
+      "year": 2022,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "個性模倣",
+        "自己学習",
+        "マルチエージェント",
+        "協調理論",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "コロナウイルスの蔓延により在宅ワークやオンライン授業が普及し、椅子に座る機会が大幅に増加しました。これに伴い座位姿勢不良による健康被害が多発するようになり、座位姿勢の検知や矯正技術の重要性が高まっています。従来の座位姿勢矯正研究にはいくつかの課題が報告されており、本研究ではこれらの問題点を解決する新しいアプローチを提案しました。座位姿勢の解析と矯正が可能なワイヤアレイセンサを開発し、椅子の座面や背もたれに作用する圧力およびせん断力を詳細に測定できるシステムを構築しました。",
+      "card_summary": "圧力とせん断力を測定可能なワイヤアレイセンサによる座位姿勢解析",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "個性模倣"
+      ],
+      "abstract_path": "project/abst/2022_B_y.yamada_abst.md",
+      "detail_path": "project/detail/2022_B_y.yamada_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2022_B_y.yamada_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2022_B_y.yamada_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2022_B_y.yamada_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2022_B_y.yamada_thumbnail.png",
+        "proc/img_all/2022_B_y.yamada-p010-img01.png"
+      ]
+    },
+    {
+      "file_id": "2022_B_r.tanaka",
+      "title": "聴覚刺激を用いた重心動揺の評価",
+      "title_en": "",
+      "author": "田中 龍介",
+      "student_id": "19EH031",
+      "year": 2022,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "ドライビングシミュレータ",
+        "注意状態",
+        "視線挙動",
+        "人間センシング",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "高齢者の増加に伴い転倒事故が多発しており、その主要因であるバランス能力の低下が重大な問題となっています。直立二足歩行を基本とする人間にとってバランスは健康維持の重要な要素です。本研究では、従来の視覚的・触覚的刺激によるバランス研究に対して、聴覚刺激を用いた新しいアプローチを試みました。音の様々な要素の中でも特に音の定位（位置）に注目し、聴覚刺激が人の重心動揺に与える影響を調査しました。",
+      "card_summary": "音の定位を利用した聴覚刺激によるバランス能力への影響評価",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "ドライビングシミュレータ"
+      ],
+      "abstract_path": "project/abst/2022_B_r.tanaka_abst.md",
+      "detail_path": "project/detail/2022_B_r.tanaka_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2022_B_r.tanaka_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2022_B_r.tanaka_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2022_B_r.tanaka_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2022_B_r.tanaka_thumbnail.png",
+        "proc/img_all/2022_B_r.tanaka-p020-img01.png"
+      ]
+    },
+    {
+      "file_id": "2022_B_t.oriuchi",
+      "title": "視線分析による注意推定から必要なアシストを選別するシステム",
+      "title_en": "",
+      "author": "織内 翼",
+      "student_id": "19EH017",
+      "year": 2022,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "リアルタイム計測",
+        "生体信号",
+        "認知負荷",
+        "人間センシング",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "ネットワーク技術とロボティクス技術の発達により遠隔操縦ロボットが実用化されていますが、遠隔操縦は難易度が高く、操縦支援技術が重要な課題となっています。しかし、不適切なタイミングでの操縦支援は危険を誘発したり、作業を妨げたりする問題があります。本研究では、不要なアシストが一定数発生することを前提として、視線分析による注意推定を活用してアシストの選別を行うシステムを提案しました。",
+      "card_summary": "視線分析による注意推定を活用した適切な操縦支援の選別システム",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "リアルタイム計測"
+      ],
+      "abstract_path": "project/abst/2022_B_t.oriuchi_abst.md",
+      "detail_path": "project/detail/2022_B_t.oriuchi_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2022_B_t.oriuchi_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2022_B_t.oriuchi_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2022_B_t.oriuchi_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2022_B_t.oriuchi_thumbnail.png",
+        "proc/img_all/2022_B_t.oriuchi-p009-img01.png"
+      ]
+    },
+    {
+      "file_id": "2022_B_y.noguchi",
+      "title": "電気刺激を用いた眠気低減システム",
+      "title_en": "",
+      "author": "野口 柚祐",
+      "student_id": "19EH038",
+      "year": 2022,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "円軌道追従",
+        "操作パフォーマンス",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "運転中や作業中の眠気による事故を防ぐため、電気刺激を用いて眠気を低減するシステムの研究です。眠気は交通事故や作業ミスの主要な原因の一つですが、従来の対策は限定的でした。本研究では手のひらに低周波の電気刺激を与えることで、安全かつ効果的に覚醒状態を維持する方法を開発しました。リアルタイムで眠気レベルを検出し、必要な時だけ適切な強度の刺激を提供することで、自然な覚醒を促進します。長距離運転や夜勤作業など、眠気との戦いが必要な現場での実用化が期待されます。",
+      "card_summary": "手掌部への低周波電気刺激によるリアルタイム眠気低減システム",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "円軌道追従"
+      ],
+      "abstract_path": "project/abst/2022_B_y.noguchi_abst.md",
+      "detail_path": "project/detail/2022_B_y.noguchi_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2022_B_y.noguchi_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2022_B_y.noguchi_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2022_B_y.noguchi_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2022_B_y.noguchi_thumbnail.png",
+        "proc/img_all/2022_B_y.noguchi-p010-img01.png"
+      ]
+    },
+    {
+      "file_id": "2022_M_h.yoshida",
+      "title": "熱刺激を用いた覚醒補助がもたらす睡眠慣性抑制効果の検証",
+      "title_en": "",
+      "author": "吉田 悠虎",
+      "student_id": "21KMH22",
+      "year": 2022,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "個性模倣",
+        "自己学習",
+        "マルチエージェント",
+        "協調理論",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "朝起きた時の頭がぼーっとした状態（睡眠慣性）を、熱刺激によって改善する研究です。睡眠慣性は起床後の作業効率や安全性に大きく影響します。本研究では、自然な体温上昇を模倣した温熱刺激により、目覚めをサポートするシステムを開発しました。従来のアラーム音による強制的な覚醒とは異なり、体の生理的反応を利用した穏やかで効果的な覚醒方法を提案しています。実験により、熱刺激が睡眠慣性の抑制に有効であることを確認し、快適で健康的な起床を支援する技術の基盤を確立しました。",
+      "card_summary": "熱刺激による自然な覚醒促進と睡眠慣性抑制効果の検証",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "個性模倣"
+      ],
+      "abstract_path": "project/abst/2022_M_h.yoshida_abst.md",
+      "detail_path": "project/detail/2022_M_h.yoshida_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2022_M_h.yoshida_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2022_M_h.yoshida_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2022_M_h.yoshida_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2022_M_h.yoshida_thumbnail.png",
+        "proc/img_all/2022_M_h.yoshida-p009-img01.png"
+      ]
+    },
+    {
+      "file_id": "2022_M_a.nishimura",
+      "title": "アシストシステムに対する個人差を考慮した依存度の推定手法の提案",
+      "title_en": "",
+      "author": "西村 晃",
+      "student_id": "21KMH24",
+      "year": 2022,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "触覚技術",
+        "物理シミュレーション",
+        "データ駆動型",
+        "人間機械系",
+        "協調理論"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "人間を支援するロボットシステムにおいて、人がどの程度そのシステムに依存しているかを推定する技術の研究です。過度な依存は人間の能力低下を招き、依存不足は支援効果を減少させるため、適切な依存度の維持が重要です。本研究では、個人の特性や経験、作業内容を考慮して、一人ひとりのアシストシステムへの依存度をリアルタイムで推定する手法を提案しました。",
+      "card_summary": "個人差を考慮したアシストシステムへの依存度推定手法",
+      "display_tags": [
+        "人間機械系",
+        "協調理論",
+        "触覚技術"
+      ],
+      "abstract_path": "project/abst/2022_M_a.nishimura_abst.md",
+      "detail_path": "project/detail/2022_M_a.nishimura_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2022_M_a.nishimura_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2022_M_a.nishimura_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2022_M_a.nishimura_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2022_M_a.nishimura_thumbnail.png",
+        "proc/img_all/2022_M_a.nishimura-p010-img01.png"
+      ]
+    },
+    {
+      "file_id": "2022_M_y.baba",
+      "title": "個々の聞き手の解釈に基づく話者の表現のモデルへの検討",
+      "title_en": "",
+      "author": "馬場 柚貴",
+      "student_id": "21KMH21",
+      "year": 2022,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "多層化マッピング",
+        "位置情報",
+        "重畳センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "同じ言葉でも人によって受け取り方が異なることに着目し、聞き手の個人的な解釈特性を考慮した音声コミュニケーションシステムの研究です。声の調子、話すスピード、間の取り方などのパラ言語情報は、聞き手によって異なる印象を与えます。本研究では、個々の聞き手がどのように話者の表現を解釈するかをモデル化し、より効果的なコミュニケーション支援を目指しました。この技術により、会議システムや教育支援、介護コミュニケーションなどで、お互いの意図がより正確に伝わる環境の構築が期待されます。",
+      "card_summary": "聞き手の個人的解釈特性に基づく話者表現モデルの構築",
+      "display_tags": [
+        "多層化マッピング",
+        "位置情報",
+        "重畳センシング"
+      ],
+      "abstract_path": "project/abst/2022_M_y.baba_abst.md",
+      "detail_path": "project/detail/2022_M_y.baba_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2022_M_y.baba_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2022_M_y.baba_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2022_M_y.baba_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2022_M_y.baba_thumbnail.png",
+        "proc/img_all/2022_M_y.baba-p017-img01.png"
+      ]
+    },
+    {
+      "file_id": "2021_B_t.shike",
+      "title": "快・不快を用いた温度提示による覚醒状態の促進",
+      "title_en": "",
+      "author": "四家 大輝",
+      "student_id": "18EH608",
+      "year": 2021,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "感情状態",
+        "ストレス",
+        "定量計測",
+        "人間センシング",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "居眠り運転による交通事故を防ぐため、温度を使って自然に目を覚まさせる技術の研究です。従来の音や振動による警告は不快感を伴いがちでしたが、本研究では人が「気持ちいい」と感じる温度刺激を活用しました。暖かさや涼しさを適切にコントロールすることで、ストレスを感じることなく覚醒状態を維持できる方法を開発しました。眠気の程度を自動検出し、その人にとって最適な温度で覚醒を促すシステムを構築しています。長距離運転、夜勤作業、集中を要する作業現場での安全性向上に貢献する技術として期待されます。",
+      "card_summary": "快不快による温度提示を用いた覚醒状態促進システムの検証",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "感情状態"
+      ],
+      "abstract_path": "project/abst/2021_B_t.shike_abst.md",
+      "detail_path": "project/detail/2021_B_t.shike_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2021_B_t.shike_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2021_B_t.shike_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2021_B_t.shike_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2021_B_t.shike_thumbnail.png",
+        "proc/img_all/2021_B_t.shike-p011-img01.png"
+      ]
+    },
+    {
+      "file_id": "2021_B_h.tagaya",
+      "title": "特徴量検出による投射動作の運動熟達支援",
+      "title_en": "",
+      "author": "多賀谷 光",
+      "student_id": "18EH601",
+      "year": 2021,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "指先動作",
+        "力覚提示",
+        "熟達支援",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "ボールを投げる動作やダーツを投げる動作など、「投げる」という運動の上達を支援するシステムの研究です。Kinectセンサーを使って体の動きを詳細に分析し、上手な人と初心者の違いを数値化しました。肩や肘の角度、体重移動のタイミングなど、投射動作の重要なポイントを自動的に検出し、個人の癖や改善点を具体的に指摘できるシステムを開発しました。従来は指導者の感覚に頼っていた運動指導を、客観的なデータに基づいて行えるようになります。スポーツ指導や理学療法の現場での活用が期待されます。",
+      "card_summary": "Kinectによる骨格検出を用いた投射動作の特徴量検出システム",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "指先動作"
+      ],
+      "abstract_path": "project/abst/2021_B_h.tagaya_abst.md",
+      "detail_path": "project/detail/2021_B_h.tagaya_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2021_B_h.tagaya_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2021_B_h.tagaya_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2021_B_h.tagaya_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2021_B_h.tagaya_thumbnail.png",
+        "proc/img_all/2021_B_h.tagaya-p009-img01.png"
+      ]
+    },
+    {
+      "file_id": "2021_B_k.kobayashi",
+      "title": "未知ターゲットを適応的に誘導するマルチエージェントの設計",
+      "title_en": "",
+      "author": "小林 虎太郎",
+      "student_id": "18EH616",
+      "year": 2021,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "協調フロー",
+        "評価システム",
+        "チームワーク",
+        "協調理論"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "牧羊犬が初めて見る羊の群れでも上手に誘導できるように、複数のロボットが協力して未知の対象を目標地点まで誘導するシステムの研究です。従来の方法では事前に対象の行動パターンを詳しく調べる必要がありましたが、本研究では「個性模倣」という新しい技術を使って、リアルタイムで対象の特徴を学習し適応する方法を開発しました。まるで経験豊富な牧羊犬のように、その場の状況に応じて最適な誘導戦略を自動的に選択できます。災害時の避難誘導や工場での搬送作業など、様々な場面での応用が期待されます。",
+      "card_summary": "個性模倣を活用したターゲット事前モデル化不要の適応誘導システム",
+      "display_tags": [
+        "チームワーク",
+        "協調理論",
+        "協調フロー"
+      ],
+      "abstract_path": "project/abst/2021_B_k.kobayashi_abst.md",
+      "detail_path": "project/detail/2021_B_k.kobayashi_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2021_B_k.kobayashi_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2021_B_k.kobayashi_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2021_B_k.kobayashi_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2021_B_k.kobayashi_thumbnail.png",
+        "proc/img_all/2021_B_k.kobayashi_page13_img0.png"
+      ]
+    },
+    {
+      "file_id": "2021_B_c.xu",
+      "title": "筋疲労を考慮したアダプティブパワーアシストスーツ",
+      "title_en": "",
+      "author": "徐 暢",
+      "student_id": "17EH602",
+      "year": 2021,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "筋疲労",
+        "パワーアシスト",
+        "スーツ",
+        "人間センシング",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "事故や病気で手や腕の機能に障害を負った患者さんがリハビリ訓練を行う時、頑張りすぎると逆効果になることがあります。本研究では、筋肉の疲れ具合を自動的に判断して、その人に最適な訓練強度に調整してくれるパワーアシストスーツを開発しました。筋電図という筋肉の電気信号を分析することで疲労度を検出し、疲れていない時は少し負荷を上げ、疲れている時は負荷を下げるように自動調整します。これにより、患者さん一人ひとりの体調に合わせた安全で効果的なリハビリテーションが可能になります。",
+      "card_summary": "筋疲労状態を考慮して適応的に制御するパワーアシストスーツの開発",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "筋疲労"
+      ],
+      "abstract_path": "project/abst/2021_B_c.xu_abst.md",
+      "detail_path": "project/detail/2021_B_c.xu_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2021_B_c.xu_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2021_B_c.xu_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2021_B_c.xu_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2021_B_c.xu_thumbnail.png",
+        "proc/img_all/2021_B_c.xu-p007-img01.png"
+      ]
+    },
+    {
+      "file_id": "2021_B_t.kassai",
+      "title": "機械操作における自己主体感の評価",
+      "title_en": "",
+      "author": "葛西 大河",
+      "student_id": "18EH602",
+      "year": 2021,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "機械学習",
+        "牧羊犬アルゴリズム",
+        "協調理論",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "ロボットや機械を操作する時に感じる「自分がコントロールしている」という感覚（主体感）を数値化して評価する技術の研究です。主体感が高いと操作に集中でき、低いと疲れやすくなったりミスが増えたりします。本研究では、操作中の様々なデータをAI技術で分析することで、リアルタイムで主体感の強さを測定する方法を開発しました。この技術により、一人ひとりに最適化された機械操作システムの設計が可能になります。",
+      "card_summary": "ロボットや機械を操作する時に感じる「自分がコントロールしている」という感覚（主体感）を数値化して評価する技術の研究です。主体感が高いと操作に集中でき、低いと疲れやすくなったりミスが増えたりします。本研究では、操作中の様々なデータをAI技術で分析することで、リアルタイムで主体感の強さを測定する方法を開発しました。この技術により、一人ひとりに最適化された機械操作システムの設計が可能になります。",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "機械学習"
+      ],
+      "abstract_path": "project/abst/2021_B_t.kassai_abst.md",
+      "detail_path": "project/detail/2021_B_t.kassai_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2021_B_t.kassai_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2021_B_t.kassai_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2021_B_t.kassai_thumbnail.png",
+        "proc/img_all/2021_B_t.kassai-p011-img01.png"
+      ]
+    },
+    {
+      "file_id": "2021_B_m.suga",
+      "title": "感性値を用いた Human Adaptive Air Unit の開発",
+      "title_en": "",
+      "author": "須賀 美晴",
+      "student_id": "18EH609",
+      "year": 2021,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "温度",
+        "力覚生起",
+        "定量化",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "デスクワークによる肩こりや疲労を解消するため、その人の感情や好みに合わせて自動調整してくれるエアーマッサージシステムの研究です。脳波を測定して「気持ちいい」「不快」といった感性を数値化し、一人ひとりに最適なマッサージの強さやリズムを自動的に調整します。同じマッサージでも人によって感じ方が違うため、個人の感性に適応することで効果を最大化できます。特にテレワークが増えた現代において、自宅で手軽に疲労回復ができる技術として注目されます。",
+      "card_summary": "脳波による感性値推定を用いた個人適応型エアーマッサージシステム",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "温度"
+      ],
+      "abstract_path": "project/abst/2021_B_m.suga_abst.md",
+      "detail_path": "project/detail/2021_B_m.suga_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2021_B_m.suga_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2021_B_m.suga_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2021_B_m.suga_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2021_B_m.suga_thumbnail.png",
+        "proc/img_all/2021_B_m.suga-p014-img01.png"
+      ]
+    },
+    {
+      "file_id": "2021_M_h.nakanishi",
+      "title": "早期楽器演奏熟達支援システム",
+      "title_en": "",
+      "author": "中西 光",
+      "student_id": "20KMH19",
+      "year": 2021,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "楽器演奏",
+        "熟達支援",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "ピアノなどの楽器演奏の上達には長い時間がかかりますが、効率的に学習できる支援システムを開発しました。初心者と上級者の演奏データを詳しく分析し、鍵盤を押すタイミング、強さ、正確性などの違いを明らかにしました。MIDIという音楽データ形式を活用して演奏を数値化し、学習者の現在のレベルに応じた個別指導を自動的に提供するシステムを構築しました。",
+      "card_summary": "初心者と熟練者の打鍵解析に基づく段階的楽器演奏学習支援",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "楽器演奏"
+      ],
+      "abstract_path": "project/abst/2021_M_h.nakanishi_abst.md",
+      "detail_path": "project/detail/2021_M_h.nakanishi_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2021_M_h.nakanishi_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2021_M_h.nakanishi_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2021_M_h.nakanishi_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2021_M_h.nakanishi_thumbnail.png",
+        "proc/img_all/2021_M_h.nakanishi-p015-img01.png"
+      ]
+    },
+    {
+      "file_id": "2021_M_k.kobayashi",
+      "title": "チームワーク評価における協調作業解析手法",
+      "title_en": "",
+      "author": "小林 航大",
+      "student_id": "20KMH18",
+      "year": 2021,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "協調フロー",
+        "評価",
+        "チームワーク",
+        "協調理論"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "良いチームワークとは何かを客観的に測定・評価する技術の研究です。スポーツチーム、企業のプロジェクトチーム、医療チームなど、様々な場面でチームワークが重要ですが、これまでは主観的な評価に頼っていました。本研究では、CFO（協調フローオペレーション）という新しい指標を用いて、チームメンバーの動きや連携を数値化し、定量的にチームワークを評価する手法を開発しました。どのような行動が良いチームワークにつながるかを明確にし、チームの改善点を具体的に指摘できるシステムを構築しました。",
+      "card_summary": "CFO指標による定量的協調作業解析とチームワーク評価手法",
+      "display_tags": [
+        "チームワーク",
+        "協調理論",
+        "協調フロー"
+      ],
+      "abstract_path": "project/abst/2021_M_k.kobayashi_abst.md",
+      "detail_path": "project/detail/2021_M_k.kobayashi_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2021_M_k.kobayashi_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2021_M_k.kobayashi_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2021_M_k.kobayashi_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2021_M_k.kobayashi_thumbnail.png",
+        "proc/img_all/2021_M_k.kobayashi_page10_img0.png"
+      ]
+    },
+    {
+      "file_id": "2021_M_k.tozuka",
+      "title": "VR技術の更なる発展に向けて：汎用的な触覚モデリング",
+      "title_en": "",
+      "author": "戸塚 圭亮",
+      "student_id": "20KMH21",
+      "year": 2021,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "マルチエージェント",
+        "適応誘導",
+        "協調理論",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "VR（仮想現実）で様々な材質の手触りをリアルに再現するための汎用的な触覚技術を開発しました。木の温かさ、金属の冷たさ、布の柔らかさなど、現実世界の多様な触感をVR空間で正確に表現することは大きな課題でした。本研究では、物理法則に基づくシミュレーションと実際のデータ収集を組み合わせることで、様々な素材の触感を統一的にモデル化する技術を確立しました。これにより、VRゲーム、職業訓練、医療シミュレーションなど幅広い分野で、より没入感の高い体験を提供できるようになります。",
+      "card_summary": "物理シミュレーションとデータ駆動型を統合した汎用触覚モデリング",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "マルチエージェント"
+      ],
+      "abstract_path": "project/abst/2021_M_k.tozuka_abst.md",
+      "detail_path": "project/detail/2021_M_k.tozuka_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2021_M_k.tozuka_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2021_M_k.tozuka_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2021_M_k.tozuka_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2021_M_k.tozuka_thumbnail.png",
+        "proc/img_all/2021_M_k.tozuka_page18_img0.png"
+      ]
+    },
+    {
+      "file_id": "2021_M_h.sugano",
+      "title": "個性模倣と多様性維持による環境に合わせた動作設計手法",
+      "title_en": "",
+      "author": "菅野 遥平",
+      "student_id": "20KMH20",
+      "year": 2021,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "個性模倣",
+        "自己学習",
+        "マルチエージェント",
+        "適応誘導",
+        "協調理論",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "動物の群れが環境に応じて柔軟に行動を変える仕組みを模倣し、複数のロボットが協力して様々な状況に対応できるシステムを開発しました。鳥の群れや魚の群れが個々の「個性」を保ちながらも全体として協調行動を取ることに着目し、「個性模倣」と「多様性維持」を両立させる新しい手法を提案しました。各ロボットが独自の特徴を持ちながら、環境の変化に応じて最適な役割分担と協調行動を自動的に生み出します。",
+      "card_summary": "個性模倣と多様性維持を組み合わせた環境適応型動作設計手法",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "個性模倣"
+      ],
+      "abstract_path": "project/abst/2021_M_h.sugano_abst.md",
+      "detail_path": "project/detail/2021_M_h.sugano_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2021_M_h.sugano_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2021_M_h.sugano_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2021_M_h.sugano_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2021_M_h.sugano_thumbnail.png",
+        "proc/img_all/2021_M_h.sugano_page15_img0.png"
+      ]
+    },
+    {
+      "file_id": "2021_M_n.takahashi",
+      "title": "描画動作のための力覚提示デバイスによる相補教示支援",
+      "title_en": "",
+      "author": "高橋 奈央",
+      "student_id": "20KMH15",
+      "year": 2021,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "描画動作",
+        "力覚提示",
+        "相補教示",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "絵や文字を上手に描けるようになるため、手の動きを直接ガイドしてくれる力覚提示デバイスを使った学習支援システムの研究です。従来の動画や図解による説明では伝わりにくい「筆圧の変化」や「手首の使い方」などの微細な技術を、実際に手に感じる力で教えることができます。熟練者の描画動作を記録し、学習者の手を適切な力で誘導することで、体で覚える効率的な学習を実現しました。「相補教示」という方法により、学習者の自主性を保ちながら必要な部分だけをサポートします。",
+      "card_summary": "力覚提示デバイスを用いた描画動作の相補教示支援システム",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "描画動作"
+      ],
+      "abstract_path": "project/abst/2021_M_n.takahashi_abst.md",
+      "detail_path": "project/detail/2021_M_n.takahashi_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2021_M_n.takahashi_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2021_M_n.takahashi_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2021_M_n.takahashi_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2021_M_n.takahashi_thumbnail.png",
+        "proc/img_all/2021_M_n.takahashi_page13_img0.png"
+      ]
+    },
+    {
+      "file_id": "2020_B_a.inoue",
+      "title": "複数のCoaxial-UAVによる協調搬送に向けた姿勢制御",
+      "title_en": "",
+      "author": "井上 温",
+      "student_id": "17EH005",
+      "year": 2020,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "Coaxial-UAV",
+        "分散制御",
+        "人間センシング",
+        "自律システム",
+        "STA Architecture",
+        "ストレス計測",
+        "協調搬送",
+        "人間機械系",
+        "対向回転モータ",
+        "作業時",
+        "姿勢制御",
+        "LSTM",
+        "IoT",
+        "マルチロータ",
+        "IMUセンサ"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "ドローン（UAV）は宅配や災害救助で活用されていますが、1台では運べる荷物の重さに限界があります。本研究では、複数のドローンが協力して重い荷物を運ぶシステムを開発しました。従来の方法では、各ドローンの正確な位置を常に把握する必要があり、システムが複雑でした。本研究では「Coaxial-UAV」という上下2つのプロペラを持つ安定性の高いドローンを使い、AI技術を活用して複雑な計算なしに協調制御を実現しました。",
+      "card_summary": "STAアーキテクチャを用いた複数Coaxial-UAVによる協調搬送システム",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "Coaxial-UAV"
+      ],
+      "abstract_path": "project/abst/2020_B_a.inoue_abst.md",
+      "detail_path": "project/detail/2020_B_a.inoue_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2020_B_a.inoue_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2020_B_a.inoue_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2020_B_a.inoue_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2020_B_a.inoue_thumbnail.png",
+        "proc/img_all/2020_B_a.inoue-p007-img01.png"
+      ]
+    },
+    {
+      "file_id": "2020_B_k.yoshida",
+      "title": "視線情報を用いた運転行動の推定",
+      "title_en": "",
+      "author": "吉田 光佑",
+      "student_id": "17EH087",
+      "year": 2020,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "視線情報",
+        "運転行動",
+        "推定",
+        "人間センシング",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "自動車の事故を減らすために、ドライバーがどこを見ているかから次の行動を予測する技術の研究です。右折、左折、直進などの運転行動は、実際にハンドルを切る前に視線の動きに現れます。本研究では、高精度なアイトラッキング装置を使って視線の動きを詳細に分析し、特に視線の「躍度」（動きの変化率）に着目しました。ドライビングシミュレータでの実験により、視線の動きから運転行動を事前に推定できることを確認しました。",
+      "card_summary": "視線運動の躍度を用いた運転行動推定システム",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "視線情報"
+      ],
+      "abstract_path": "project/abst/2020_B_k.yoshida_abst.md",
+      "detail_path": "project/detail/2020_B_k.yoshida_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2020_B_k.yoshida_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2020_B_k.yoshida_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2020_B_k.yoshida_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2020_B_k.yoshida_thumbnail.png",
+        "proc/img_all/2020_B_k.yoshida-p005-img01.png"
+      ]
+    },
+    {
+      "file_id": "2020_B_y.yoshida",
+      "title": "仮眠中の体温変化が及ぼすその後の作業効率の変化",
+      "title_en": "",
+      "author": "吉田 悠虎",
+      "student_id": "17EH090",
+      "year": 2020,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "音声コミュニケーション",
+        "口調解析",
+        "チームワーク",
+        "協調理論"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "昼間の短い仮眠が作業効率にどう影響するかを、体温の変化に着目して研究しました。仮眠は疲労回復に効果的ですが、深く眠りすぎると目覚めた後にぼーっとしてしまい（睡眠慣性）、かえって作業効率が下がることがあります。本研究では、仮眠中の体温を人工的に調整することで睡眠の深さをコントロールし、最適な仮眠効果を得る方法を開発しました。心拍変動の分析により自律神経の状態を評価し、体温制御が仮眠の質と目覚め後の作業効率に与える影響を科学的に検証しました。",
+      "card_summary": "仮眠中の体温変化による睡眠深度制御と作業効率への影響評価",
+      "display_tags": [
+        "チームワーク",
+        "協調理論",
+        "音声コミュニケーション"
+      ],
+      "abstract_path": "project/abst/2020_B_y.yoshida_abst.md",
+      "detail_path": "project/detail/2020_B_y.yoshida_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2020_B_y.yoshida_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2020_B_y.yoshida_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2020_B_y.yoshida_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2020_B_y.yoshida_thumbnail.png",
+        "proc/img_all/2020_B_y.yoshida_page10_img0.png"
+      ]
+    },
+    {
+      "file_id": "2020_B_y.okakuji",
+      "title": "ウェアラブルデバイス SLAM",
+      "title_en": "",
+      "author": "大角地 優季",
+      "student_id": "17EH067",
+      "year": 2020,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "眼球運動",
+        "運転者",
+        "信頼推定",
+        "人間センシング",
+        "チームワーク"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "災害現場で救助隊員が安全に活動できるよう、身に着けて使える位置把握システムの研究です。SLAM（スラム）という技術を使って、未知の環境でも自分の位置を把握しながら同時に周囲の地図を作成します。災害現場では煙や瓦礫で視界が悪く、GPSも使えないことが多いため、レーザーセンサーとサーモグラフィ（熱画像）カメラを組み合わせた装置を開発しました。これを体に装着することで、救助隊員は自分の位置を常に把握でき、熱源（生存者の可能性）も同時に検出できます。",
+      "card_summary": "災害現場での安全性向上を目的としたウェアラブルSLAMシステム",
+      "display_tags": [
+        "人間センシング",
+        "チームワーク",
+        "眼球運動"
+      ],
+      "abstract_path": "project/abst/2020_B_y.okakuji_abst.md",
+      "detail_path": "project/detail/2020_B_y.okakuji_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2020_B_y.okakuji_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2020_B_y.okakuji_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2020_B_y.okakuji_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2020_B_y.okakuji_thumbnail.png",
+        "proc/img_all/2020_B_y.okakuji_page13_img0.png"
+      ]
+    },
+    {
+      "file_id": "2020_B_y.oda",
+      "title": "眼球運動測定によるリアルタイムストレス評価",
+      "title_en": "",
+      "author": "小田 侑暉",
+      "student_id": "17EH065",
+      "year": 2020,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "眼球運動",
+        "ストレス評価",
+        "相関性",
+        "人間センシング",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "ストレスを感じている時、目の動きや瞳孔の大きさが変化することが知られています。本研究では、目の動きを詳しく測定することで、その人が今どの程度ストレスを感じているかをリアルタイムで評価するシステムを開発しました。瞳孔の大きさの変化や視線の動きの激しさを分析することで、従来の心拍測定や血圧測定よりも簡単にストレス状態を把握できます。VR空間での実験により、目の動きがストレス状態を正確に反映することを確認しました。",
+      "card_summary": "眼球運動による自律神経反映を用いたリアルタイムストレス評価",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "眼球運動"
+      ],
+      "abstract_path": "project/abst/2020_B_y.oda_abst.md",
+      "detail_path": "project/detail/2020_B_y.oda_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2020_B_y.oda_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2020_B_y.oda_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2020_B_y.oda_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2020_B_y.oda_thumbnail.png",
+        "proc/img_all/2020_B_y.oda-p012-img01.png"
+      ]
+    },
+    {
+      "file_id": "2020_B_r.hikino",
+      "title": "握力を利用したステアリングアシスト機構",
+      "title_en": "",
+      "author": "引野 諒平",
+      "student_id": "17EH095",
+      "year": 2020,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "握力変化",
+        "ステアリングアシスト",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "運転中の安全性を向上させるため、ハンドルを握る力から運転者の意図を読み取って支援するシステムの研究です。人は曲がろうとする時やブレーキをかけようとする時に、無意識にハンドルを握る力が変わります。本研究では、ハンドルに圧力センサを取り付けて握力の変化を測定し、運転者がこれから何をしようとしているかを予測する技術を開発しました。急ハンドルや急ブレーキを察知して適切なアシストを提供することで、より安全で疲れにくい運転を実現できます。",
+      "card_summary": "ステアリング握力から操作意図を予測するアシストシステム",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "握力変化"
+      ],
+      "abstract_path": "project/abst/2020_B_r.hikino_abst.md",
+      "detail_path": "project/detail/2020_B_r.hikino_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2020_B_r.hikino_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2020_B_r.hikino_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2020_B_r.hikino_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2020_B_r.hikino_thumbnail.png",
+        "proc/img_all/2020_B_r.hikino_page15_img0.png"
+      ]
+    },
+    {
+      "file_id": "2020_B_h.nishimura",
+      "title": "自動化した機械操作に対する人間の信頼推定",
+      "title_en": "",
+      "author": "西村 晃",
+      "student_id": "17EH088",
+      "year": 2020,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "仮想デバイス",
+        "両手操作",
+        "支援システム",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "自動運転車や自動化された工場設備など、機械が自動で作業を行うシステムが増えています。しかし、人間がこれらのシステムを「信頼しすぎる」と油断して事故が起き、「信頼しなさすぎる」と効率が悪くなってしまいます。本研究では、人間が自動化システムをどの程度信頼しているかをリアルタイムで推定する技術を開発しました。円を描く作業を通じて、人の操作の仕方や反応時間を分析し、信頼度を数値化することに成功しました。",
+      "card_summary": "自動化システムに対する人間の信頼状況を推定可能なシステム",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "仮想デバイス"
+      ],
+      "abstract_path": "project/abst/2020_B_h.nishimura_abst.md",
+      "detail_path": "project/detail/2020_B_h.nishimura_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2020_B_h.nishimura_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2020_B_h.nishimura_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2020_B_h.nishimura_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2020_B_h.nishimura_thumbnail.png",
+        "proc/img_all/2020_B_h.nishimura_page10_img0.png"
+      ]
+    },
+    {
+      "file_id": "2020_B_y.baba",
+      "title": "口調から言葉の尺度を推定する会話システム",
+      "title_en": "",
+      "author": "馬場 柚貴",
+      "student_id": "17EH092",
+      "year": 2020,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "多層化マッピング",
+        "位置情報",
+        "重畳センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "同じ言葉でも話し方によって全く違う意味になることがあります。例えば「いいね」という言葉も、嬉しそうに言うのと嫌々言うのでは正反対の意味になります。本研究では、声の調子や話し方から、その人が本当に言いたいことを理解する会話システムを開発しました。音声の周波数や強弱のパターンを詳細に分析し、言葉の裏にある本当の感情や意図を推定する技術を確立しました。このシステムにより、会議やチームワークにおいて、お互いの本音をより正確に理解し合えるようになります。",
+      "card_summary": "音声の口調から言葉の尺度を分析し話者意図を推定するシステム",
+      "display_tags": [
+        "多層化マッピング",
+        "位置情報",
+        "重畳センシング"
+      ],
+      "abstract_path": "project/abst/2020_B_y.baba_abst.md",
+      "detail_path": "project/detail/2020_B_y.baba_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2020_B_y.baba_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2020_B_y.baba_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2020_B_y.baba_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2020_B_y.baba_thumbnail.png",
+        "proc/img_all/2020_B_y.baba_page20_img0.png"
+      ]
+    },
+    {
+      "file_id": "2020_M_b.poitrimol",
+      "title": "Grasping Interface for Virtual Reality Using Wire-Driven Positioning Interface",
+      "title_en": "",
+      "author": "Poitrimol Bastien",
+      "student_id": "19KMH06",
+      "year": 2020,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "仮想空間",
+        "ワイヤ駆動",
+        "ハプティクス",
+        "グラスピング",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "VR（仮想現実）空間で物体を自然に掴む感覚を再現するため、ワイヤを使った触覚提示システムの研究です。現在のVRでは視覚情報は豊富ですが、物を掴む時の重さや硬さなどの触覚情報が不足しています。本研究では、複数のワイヤを使って手に力を伝える「SPIDAR」という装置を改良し、VR空間での掴み動作をよりリアルに再現する技術を開発しました。ワイヤの張力を細かく制御することで、様々な材質や重さの物体を掴む感覚を正確に表現できます。",
+      "card_summary": "ワイヤ駆動位置決めインタフェースを用いたVR向けグラスピングシステム",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "仮想空間"
+      ],
+      "abstract_path": "project/abst/2020_M_b.poitrimol_abst.md",
+      "detail_path": "project/detail/2020_M_b.poitrimol_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2020_M_b.poitrimol_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2020_M_b.poitrimol_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2020_M_b.poitrimol_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2020_M_b.poitrimol_thumbnail.png",
+        "proc/img_all/2020_M_b.poitrimol_page10_img0.png"
+      ]
+    },
+    {
+      "file_id": "2020_M_k.nakamura",
+      "title": "ストレス応答と操作パフォーマンスの相関性検討",
+      "title_en": "",
+      "author": "中村 叶弥",
+      "student_id": "19KMH07",
+      "year": 2020,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "内部モデル",
+        "力覚生起",
+        "運動学習",
+        "機械操作",
+        "人間センシング",
+        "予測制御",
+        "作業パフォーマンス",
+        "生体情報",
+        "ストレス評価",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "作業中のストレスレベルが作業の出来栄えにどう影響するかを科学的に分析した研究です。心電図、血流、皮膚の電気抵抗など複数の生体信号を同時に測定し、ストレス状態と作業パフォーマンスの関係を詳しく調べました。適度なストレスは集中力を高めますが、過度なストレスは作業効率を低下させることを定量的に証明しました。IoT技術を活用した小型デバイスで、日常的にストレス状態をモニタリングできるシステムを構築しました。",
+      "card_summary": "複数生体信号によるストレス応答と操作パフォーマンスの相関分析",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "内部モデル"
+      ],
+      "abstract_path": "project/abst/2020_M_k.nakamura_abst.md",
+      "detail_path": "project/detail/2020_M_k.nakamura_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2020_M_k.nakamura_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2020_M_k.nakamura_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2020_M_k.nakamura_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2020_M_k.nakamura_thumbnail.png",
+        "proc/img_all/2020_M_k.nakamura_page10_img0.png"
+      ]
+    },
+    {
+      "file_id": "2020_M_t.kosaka",
+      "title": "重畳情報分離のための回転複合センサによる多層化マッピング",
+      "title_en": "",
+      "author": "小坂 太一",
+      "student_id": "19KMH04",
+      "year": 2020,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "仮眠",
+        "体温制御",
+        "睡眠慣性",
+        "人間センシング",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "自動運転車やロボットが周囲の環境を正確に把握するため、複数のセンサーを組み合わせて立体的な地図を作成する技術の研究です。従来の方法では、複数の物体が重なって見える場合（重畳情報）を正確に分離することが困難でした。本研究では、回転する複合センサを使って様々な角度から環境を観測し、重なった情報を効果的に分離する「多層化マッピング」という新しい手法を開発しました。",
+      "card_summary": "回転複合センサを用いた重畳情報の効果的分離マッピング手法",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "仮眠"
+      ],
+      "abstract_path": "project/abst/2020_M_t.kosaka_abst.md",
+      "detail_path": "project/detail/2020_M_t.kosaka_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2020_M_t.kosaka_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2020_M_t.kosaka_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2020_M_t.kosaka_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2020_M_t.kosaka_thumbnail.png",
+        "proc/img_all/2020_M_t.kosaka-p007-img01.png"
+      ]
+    },
+    {
+      "file_id": "2020_M_s.koizumi",
+      "title": "両手操作における自己規範操作支援",
+      "title_en": "",
+      "author": "小泉 芹直",
+      "student_id": "19KMH05",
+      "year": 2020,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "バイマニュアル",
+        "オペレーション",
+        "自己規範支援",
+        "人間機械系",
+        "人間センシング"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "楽器演奏や手術、精密作業など、両手を協調させて行う複雑な操作を支援するシステムの研究です。人それぞれ異なる両手の動かし方の癖や得意なパターンを学習し、その人に最適化された操作支援を提供する技術を開発しました。「自己規範支援」という新しい概念により、他人の操作パターンを押し付けるのではなく、その人自身の操作の特徴を活かしながら改善点をサポートします。モータ制御技術と外乱推定技術を組み合わせ、微細な両手の動きを正確に検出・支援できるシステムを構築しました。",
+      "card_summary": "個人の操作パターンを学習する自己規範化両手操作支援システム",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "バイマニュアル"
+      ],
+      "abstract_path": "project/abst/2020_M_s.koizumi_abst.md",
+      "detail_path": "project/detail/2020_M_s.koizumi_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2020_M_s.koizumi_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2020_M_s.koizumi_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2020_M_s.koizumi_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2020_M_s.koizumi_thumbnail.png",
+        "proc/img_all/2020_M_s.koizumi_page12_img0.png"
+      ]
+    },
+    {
+      "file_id": "2020_M_y.yamasaki",
+      "title": "サブリミナルキャリブレーションによる内部モデル修正支援",
+      "title_en": "",
+      "author": "山崎 友輔",
+      "student_id": "19KMH03",
+      "year": 2020,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "サブリミナル",
+        "キャリブレーション",
+        "内部モデル",
+        "協調理論",
+        "人間機械系"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "人間が技能を習得する時、脳内に「どう動けばどうなる」という内部モデルが形成されます。本研究では、この内部モデルを意識下レベルで自然に修正し、操作技能の習得を支援する技術を開発しました。「サブリミナルキャリブレーション」という手法により、学習者が気づかないほど微細な調整を加えながら、正しい操作感覚を体に覚えさせます。従来の強制的な指導とは異なり、自然な学習プロセスを維持しながら効率的な技能習得を実現しました。",
+      "card_summary": "意識下レベルでの内部モデル修正による操作技能習得支援",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "サブリミナル"
+      ],
+      "abstract_path": "project/abst/2020_M_y.yamasaki_abst.md",
+      "detail_path": "project/detail/2020_M_y.yamasaki_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2020_M_y.yamasaki_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2020_M_y.yamasaki_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2020_M_y.yamasaki_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2020_M_y.yamasaki_thumbnail.png",
+        "proc/img_all/2020_M_y.yamasaki-p007-img01.png"
+      ]
+    },
+    {
+      "file_id": "2019_B_h.nakanishi",
+      "title": "ダイナミクス変化による鍵盤楽器学習支援システムの提案",
+      "title_en": "",
+      "author": "中西 光",
+      "student_id": "16EH081",
+      "year": 2019,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "ダイナミクス",
+        "鍵盤楽器",
+        "学習支援",
+        "システム",
+        "人間機械系",
+        "協調理論",
+        "ハプティクス",
+        "鍵盤型アクチュエータ",
+        "インピーダンス制御",
+        "PID制御",
+        "力覚フィードバック",
+        "打鍵速度",
+        "音楽学習支援",
+        "運動学習"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "ピアノなどの鍵盤楽器を上達するには、正しい指の力加減や動かし方を身につけることが重要です。本研究では、鍵盤の重さや反発力を人工的に調整できるシステムを開発し、効率的な楽器学習を支援する技術を提案しました。初心者には軽くて押しやすい鍵盤で基本を覚えてもらい、慣れてきたら本物のピアノと同じ重さに調整するなど、学習段階に応じて最適な練習環境を提供できます。触覚フィードバック技術により、指先に適切な感覚を伝えることで、従来の練習方法では気づきにくい微細な技術も効率的に習得できます。",
+      "card_summary": "触覚フィードバックとダイナミクス変化を用いた鍵盤楽器演奏学習支援システム",
+      "display_tags": [
+        "人間機械系",
+        "協調理論",
+        "ダイナミクス"
+      ],
+      "abstract_path": "project/abst/2019_B_h.nakanishi_abst.md",
+      "detail_path": "project/detail/2019_B_h.nakanishi_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2019_B_h.nakanishi_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2019_B_h.nakanishi_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2019_B_h.nakanishi_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2019_B_h.nakanishi_thumbnail.png",
+        "proc/img_all/2019_B_h.nakanishi-p013-img01.png"
+      ]
+    },
+    {
+      "file_id": "2019_B_r.maruyama",
+      "title": "二重反転プロペラを用いた天井吸着ドローン",
+      "title_en": "Ceiling Adsorption UAV using Contra Rotating Propellers",
+      "author": "丸山 凌一",
+      "student_id": "16EH104",
+      "year": 2019,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "天井吸着",
+        "真空システム",
+        "人間センシング",
+        "垂直離着陸",
+        "対回転プロペラ",
+        "航空ロボティクス",
+        "人間機械系",
+        "ロードセル",
+        "同軸ロータ",
+        "推力計測",
+        "UAV",
+        "吸着力",
+        "ダイヤフラムポンプ"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "建物の点検や監視を効率的に行うため、天井にくっついて作業できる特殊なドローンを開発しました。通常のドローンは常に飛び続ける必要があり、電池の消費が激しいという問題がありました。本研究では、上下2つのプロペラが逆方向に回転する「二重反転プロペラ」と吸引装置を組み合わせることで、天井に張り付いて長時間の作業ができるドローンを実現しました。必要な時だけ飛行し、作業中は天井に吸着して電力を節約できるため、従来よりもはるかに長時間の活動が可能です。",
+      "card_summary": "二重反転プロペラとダイヤフラムポンプによる天井吸着機能付きドローン",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "天井吸着"
+      ],
+      "abstract_path": "project/abst/2019_B_r.maruyama_abst.md",
+      "detail_path": "project/detail/2019_B_r.maruyama_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2019_B_r.maruyama_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2019_B_r.maruyama_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2019_B_r.maruyama_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2019_B_r.maruyama_thumbnail.png",
+        "proc/img_all/2019_B_r.maruyama-p006-img01.png"
+      ]
+    },
+    {
+      "file_id": "2019_B_r.mukawa",
+      "title": "協調性向上のためのAttention Gridによる注意推定",
+      "title_en": "",
+      "author": "夢川 凌央",
+      "student_id": "16EH102",
+      "year": 2019,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "Attention Grid",
+        "認知負荷",
+        "個性模倣",
+        "適応学習",
+        "VR",
+        "マルチエージェント",
+        "協調理論",
+        "人間機械系",
+        "視覚的注意",
+        "FOVE 0 HMD",
+        "注意推定",
+        "3D視線マッピング",
+        "視線追跡"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "チームで作業する時、メンバーがどこに注意を向けているかを把握できれば、より良い協力ができます。本研究では、人の視線を分析して3次元空間での注意の向き先を推定する「Attention Grid」という新しい技術を開発しました。従来の方法では視線の中心点しか分からなかったのに対し、本システムでは周辺視野も含めた広い範囲での注意分布を把握できます。VR技術を使った実験により、チームメンバーの注意状態をリアルタイムで可視化し、お互いの行動を予測してより効率的な協調作業を支援します。",
+      "card_summary": "周辺視野を考慮したAttention Gridによる三次元空間での注意推定システム",
+      "display_tags": [
+        "協調理論",
+        "人間機械系",
+        "Attention Grid"
+      ],
+      "abstract_path": "project/abst/2019_B_r.mukawa_abst.md",
+      "detail_path": "project/detail/2019_B_r.mukawa_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2019_B_r.mukawa_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2019_B_r.mukawa_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2019_B_r.mukawa_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2019_B_r.mukawa_thumbnail.png",
+        "proc/img_all/2019_B_r.mukawa-p006-img01.png"
+      ]
+    },
+    {
+      "file_id": "2019_B_k.kobayashi",
+      "title": "力のインタラクションを考慮した人間モデルによるCFOの推定とチームワーク評価",
+      "title_en": "",
+      "author": "小林 航大",
+      "student_id": "15EH040",
+      "year": 2019,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "力のインタラクション",
+        "人間モデル",
+        "適応的誘導",
+        "人間機械系",
+        "協調理論",
+        "CFO推定",
+        "ニューラルネットワーク",
+        "チームワーク評価",
+        "シーソータスク",
+        "機械学習",
+        "リアルタイム解析",
+        "HMD",
+        "協調ロボティクス"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "スポーツチームや仕事のチームで「良いチームワーク」を科学的に測定・評価する技術の研究です。CFO（協調フローオペレーション）という新しい指標を使って、チームメンバー同士がどのように協力し合っているかを数値化しました。特に、物を一緒に持ち運ぶ時などに発生する「力のやりとり」に注目し、お互いがどれだけ相手のことを考えて行動しているかを客観的に評価できるシステムを開発しました。",
+      "card_summary": "CFO指標と人間モデルを用いたリアルタイムチームワーク評価システム",
+      "display_tags": [
+        "人間機械系",
+        "協調理論",
+        "力のインタラクション"
+      ],
+      "abstract_path": "project/abst/2019_B_k.kobayashi_abst.md",
+      "detail_path": "project/detail/2019_B_k.kobayashi_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2019_B_k.kobayashi_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2019_B_k.kobayashi_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2019_B_k.kobayashi_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2019_B_k.kobayashi_thumbnail.png",
+        "proc/img_all/2019_B_k.kobayashi_page11_img0.png"
+      ]
+    },
+    {
+      "file_id": "2019_B_r.ogasawara",
+      "title": "視覚負荷における視線動作を用いたストレス推定",
+      "title_en": "",
+      "author": "小笠原 涼",
+      "student_id": "16EH062",
+      "year": 2019,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "心拍変動",
+        "視覚負荷",
+        "協調理論",
+        "サッケード検出",
+        "Tobii Eye Tracker",
+        "評価",
+        "チームワーク",
+        "生体信号",
+        "LF/HF比",
+        "視線動作解析",
+        "ストレス推定",
+        "協調フロー"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "長時間のパソコン作業や細かい作業による目の疲れがストレスにどう影響するかを研究しました。目の動きを詳細に追跡し、視線のブレや追従能力の変化を分析することで、視覚的なストレス状態を客観的に測定する技術を開発しました。動く点を目で追いかける実験を通じて、疲労が蓄積すると視線の動きがどのように変化するかを明らかにしました。従来の心拍や血圧測定とは異なり、目の動きだけでストレス状態を把握できるため、より手軽で日常的な健康管理が可能になります。",
+      "card_summary": "視線追従タスクと視線動作分析による視覚負荷ストレス推定手法",
+      "display_tags": [
+        "協調理論",
+        "チームワーク",
+        "心拍変動"
+      ],
+      "abstract_path": "project/abst/2019_B_r.ogasawara_abst.md",
+      "detail_path": "project/detail/2019_B_r.ogasawara_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2019_B_r.ogasawara_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2019_B_r.ogasawara_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2019_B_r.ogasawara_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2019_B_r.ogasawara_thumbnail.png",
+        "proc/img_all/2019_B_r.ogasawara_page12_img0.png"
+      ]
+    },
+    {
+      "file_id": "2019_B_k.tozuka",
+      "title": "触覚提示を利用した仮想ペットロボット",
+      "title_en": "",
+      "author": "戸塚 圭亮",
+      "student_id": "16EH077",
+      "year": 2019,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "触覚提示",
+        "仮想ペット",
+        "ロボット",
+        "人間機械系",
+        "人間センシング",
+        "ケーブル駆動システム",
+        "触覚インタフェース",
+        "バーチャルリアリティ",
+        "力覚提示",
+        "ロボットセラピー",
+        "Unity3D",
+        "モータ制御",
+        "アニマルセラピー"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "高齢者の癒しや子どもの情操教育のため、触ることができる仮想のペットロボットシステムを開発しました。従来のペットロボットは形が決まっていましたが、本研究ではコンピュータグラフィックス（CG）で様々な動物を自由に表現し、特殊な装置を使って実際に「触った感覚」も再現できます。犬、猫、うさぎなど、好みに合わせて様々なペットを選ぶことができ、撫でる時の毛の感触や動物の体温なども感じられます。",
+      "card_summary": "CG技術と触覚提示を組み合わせた自由度の高い仮想ペットロボットシステム",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "触覚提示"
+      ],
+      "abstract_path": "project/abst/2019_B_k.tozuka_abst.md",
+      "detail_path": "project/detail/2019_B_k.tozuka_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2019_B_k.tozuka_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2019_B_k.tozuka_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2019_B_k.tozuka_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2019_B_k.tozuka_thumbnail.png",
+        "proc/img_all/2019_B_k.tozuka_page10_img0.png"
+      ]
+    },
+    {
+      "file_id": "2019_B_h.emori",
+      "title": "生体信号と体温の相関性を用いたストレス軽減デバイスの開発",
+      "title_en": "",
+      "author": "江森 弘樹",
+      "student_id": "16EH013",
+      "year": 2019,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "生体信号",
+        "体温",
+        "ストレス",
+        "デバイス開発",
+        "人間センシング",
+        "人間機械系",
+        "心拍変動解析",
+        "脈波センサ",
+        "ペルチェ素子",
+        "温度制御システム",
+        "LF/HF比",
+        "リアルタイム計測",
+        "自律神経系",
+        "Arduino制御",
+        "ウェアラブルデバイス"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "現代社会では多くの人がストレスを抱えており、心や体の健康に悪影響を与えています。本研究では、心拍などの生体信号と体温の関係に注目し、ストレス状態をリアルタイムで測定できるシステムを開発しました。足先の温度変化と心拍の変化を詳しく調べ、どのレベルからストレスと感じるかの基準を明らかにしました。そして、ストレスを感じた時に自動的に足を心地よい温度に調整してリラックスさせるデバイスを作成しました。",
+      "card_summary": "生体信号と体温の相関性を利用したリアルタイムストレス測定・軽減デバイスの開発",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "生体信号"
+      ],
+      "abstract_path": "project/abst/2019_B_h.emori_abst.md",
+      "detail_path": "project/detail/2019_B_h.emori_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2019_B_h.emori_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2019_B_h.emori_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2019_B_h.emori_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2019_B_h.emori_thumbnail.png",
+        "proc/img_all/2019_B_h.emori-p009-img01.png"
+      ]
+    },
+    {
+      "file_id": "2019_B_y.sugano",
+      "title": "個性模倣によるリアルタイム環境適応アルゴリズム",
+      "title_en": "",
+      "author": "菅野 遥平",
+      "student_id": "16EH069",
+      "year": 2019,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "自己組織化",
+        "個性模倣",
+        "協調意識",
+        "協調理論",
+        "マルチエージェント",
+        "定量評価",
+        "チームワーク",
+        "協調作業",
+        "ニューラルネットワーク",
+        "環境適応",
+        "Boidモデル",
+        "群知能",
+        "自律エージェント"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "鳥の群れや魚の群れが環境の変化に柔軟に対応する仕組みを模倣し、複数のロボットが協力して様々な状況に適応できるシステムを開発しました。「個性模倣」という新しい概念により、各ロボットが独自の特徴を持ちながらも、状況に応じて他のロボットの良い行動を学習・模倣します。従来の画一的なシステムとは異なり、多様性を保ちながら全体として最適な行動を生み出すことができます。",
+      "card_summary": "個性模倣と多様性維持を規範とした複数ロボットの環境適応アルゴリズム",
+      "display_tags": [
+        "協調理論",
+        "チームワーク",
+        "自己組織化"
+      ],
+      "abstract_path": "project/abst/2019_B_y.sugano_abst.md",
+      "detail_path": "project/detail/2019_B_y.sugano_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2019_B_y.sugano_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2019_B_y.sugano_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2019_B_y.sugano_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2019_B_y.sugano_thumbnail.png",
+        "proc/img_all/2019_B_y.sugano_page13_img0.png"
+      ]
+    },
+    {
+      "file_id": "2019_B_n.takahashi",
+      "title": "描画動作のための力覚提示デバイスによる相補教示支援",
+      "title_en": "",
+      "author": "高橋 奈央",
+      "student_id": "16EH064",
+      "year": 2019,
+      "degree_type": "学士論文",
+      "degree_code": "B",
+      "keywords": [
+        "描画動作",
+        "力覚提示",
+        "相補教示",
+        "支援",
+        "人間機械系",
+        "人間センシング",
+        "バイラテラル制御",
+        "スキル伝達",
+        "PID制御",
+        "外乱オブザーバ",
+        "反力オブザーバ",
+        "運動学習",
+        "触覚インタフェース"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "絵や文字を上手に描けるようになるため、手の動きを直接ガイドしてくれる学習支援システムの研究です。従来の動画や本による説明では伝わりにくい「筆圧の加減」や「手首の使い方」などの細かい技術を、実際に手に感じる力で教えることができます。熟練者の描画動作を記録し、学習者の手を適切な力で誘導することで、体で覚える効率的な学習を実現しました。バイラテラル制御という技術により、強制的に動かすのではなく、学習者の意志を尊重しながら必要な部分だけをサポートします。",
+      "card_summary": "バイラテラル制御による力覚フィードバックを用いた描画技術学習支援システム",
+      "display_tags": [
+        "人間機械系",
+        "人間センシング",
+        "描画動作"
+      ],
+      "abstract_path": "project/abst/2019_B_n.takahashi_abst.md",
+      "detail_path": "project/detail/2019_B_n.takahashi_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2019_B_n.takahashi_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2019_B_n.takahashi_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2019_B_n.takahashi_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2019_B_n.takahashi_thumbnail.png",
+        "proc/img_all/2019_B_n.takahashi-p009-img01.png"
+      ]
+    },
+    {
+      "file_id": "2019_M_g.sasaki",
+      "title": "協調技能を考慮した力覚フィードバックによる協調作業アシスト",
+      "title_en": "",
+      "author": "佐々木 元気",
+      "student_id": "18KMH09",
+      "year": 2019,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "定量化",
+        "バイラテラル制御",
+        "協調意識",
+        "力覚フィードバック",
+        "協調理論",
+        "協調技能",
+        "協調ロボティクス",
+        "チームワーク",
+        "協調作業",
+        "スキル評価",
+        "力のインタラクション",
+        "人間ロボット協調"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "重い物を二人で持ち運ぶ時や、精密な作業を共同で行う時に必要な「気づかい」を科学的に分析し、より良い協調作業を支援するシステムを開発しました。人間同士の協調作業では、相手の動きを予測したり、負担を分け合ったりする「協調技能」が重要です。本研究では、この「気づかい」の度合いを数値化し、力覚フィードバック技術を使って適切なタイミングで支援を提供する技術を確立しました。Joint Action（共同動作）の理論に基づき、協調作業中の微細な力のやりとりから相手への配慮レベルを推定します。",
+      "card_summary": "「気づかい」概念を用いた力覚フィードバックによる協調作業支援システム",
+      "display_tags": [
+        "協調理論",
+        "チームワーク",
+        "定量化"
+      ],
+      "abstract_path": "project/abst/2019_M_g.sasaki_abst.md",
+      "detail_path": "project/detail/2019_M_g.sasaki_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2019_M_g.sasaki_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2019_M_g.sasaki_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2019_M_g.sasaki_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2019_M_g.sasaki_thumbnail.png",
+        "proc/img_all/2019_M_g.sasaki-p007-img01.png"
+      ]
+    },
+    {
+      "file_id": "2019_M_y.uchida",
+      "title": "触覚刺激による運動錯覚時の上腕運動特性評価",
+      "title_en": "",
+      "author": "内田 優",
+      "student_id": "18KMH12",
+      "year": 2019,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "EMG解析",
+        "運動錯覚",
+        "触覚フィードバック",
+        "バイラテラル制御",
+        "人間センシング",
+        "固有受容感覚",
+        "触覚デバイス",
+        "筋力解析",
+        "人間機械系",
+        "運動学習",
+        "振動刺激",
+        "筋紡錘",
+        "身体振動"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "人間の筋肉に振動を与えると、実際には動いていないのに体が動いているような感覚（運動錯覚）が起こります。この研究では、上腕の筋肉に振動刺激を与えて運動錯覚を人工的に作り出し、そのときの腕の動きや筋肉の力がどう変化するかを詳しく調べました。特に、高精度なモータシステムと筋電信号測定技術を組み合わせて、錯覚の強さを客観的に評価する新しい方法を開発しました。実験の結果、100Hzの振動刺激が最も効果的で、運動錯覚によって腕の位置や発揮する力が明確に変化することを確認しました。",
+      "card_summary": "振動刺激による運動錯覚の定量評価手法と上腕運動特性への影響解析",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "EMG解析"
+      ],
+      "abstract_path": "project/abst/2019_M_y.uchida_abst.md",
+      "detail_path": "project/detail/2019_M_y.uchida_detail.md",
+      "legacy_detail_path": null,
+      "preferred_detail_path": "project/detail/2019_M_y.uchida_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2019_M_y.uchida_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2019_M_y.uchida_thumbnail.png",
+        "proc/img_all/2019_M_y.uchida_page10_img0.png"
+      ]
+    },
+    {
+      "file_id": "2019_M_z.meng",
+      "title": "個人操作特性を考慮した操作対象ダイナミクスの最適化",
+      "title_en": "",
+      "author": "孟 子群",
+      "student_id": "18KMH11",
+      "year": 2019,
+      "degree_type": "修士論文",
+      "degree_code": "M",
+      "keywords": [
+        "個人適応化",
+        "仮想物体操作",
+        "人間センシング",
+        "ユーザモデリング",
+        "力覚提示",
+        "触覚デバイス",
+        "人間機械系",
+        "操作特性",
+        "ダイナミクス最適化",
+        "インピーダンス制御",
+        "適応制御",
+        "ワイヤ駆動"
+      ],
+      "abstract": "",
+      "overview": "",
+      "summary": "一人ひとり異なる操作の癖や特徴に合わせて、機械の応答性を最適化する技術の研究です。同じ車を運転しても、人によって運転スタイルは大きく異なります。本研究では、個人の操作パターンを詳細に分析し、その人にとって最も操作しやすいように機械側のダイナミクス（応答特性）を自動調整するシステムを開発しました。運転支援システムを例に、アクセルやハンドルの操作特性から個人の意図を推定し、一人ひとりに最適化された支援を提供します。これにより、操作ミスの減少と疲労軽減を同時に実現できます。",
+      "card_summary": "一人ひとり異なる操作の癖や特徴に合わせて、機械の応答性を最適化する技術の研究です。同じ車を運転しても、人によって運転スタイルは大きく異なります。本研究では、個人の操作パターンを詳細に分析し、その人にとって最も操作しやすいように機械側のダイナミクス（応答特性）を自動調整するシステムを開発しました。運転支援システムを例に、アクセルやハンドルの操作特性から個人の意図を推定し、一人ひとりに最適化された支援を提供します。これにより、操作ミスの減少と疲労軽減を同時に実現できます。",
+      "display_tags": [
+        "人間センシング",
+        "人間機械系",
+        "個人適応化"
+      ],
+      "abstract_path": "project/abst/2019_M_z.meng_abst.md",
+      "detail_path": "project/detail/2019_M_z.meng_detail.md",
+      "legacy_detail_path": "project/detail_legacy/2019_M_z.meng_detail.md",
+      "preferred_detail_path": "project/detail_legacy/2019_M_z.meng_detail.md",
+      "detail_is_generic": false,
+      "card_image": "proc/img/2019_M_z.meng_thumbnail.png",
+      "gallery_images": [
+        "proc/img/2019_M_z.meng_thumbnail.png",
+        "proc/img_all/2019_M_z.meng-p007-img01.png"
+      ]
+    }
+  ]
+}

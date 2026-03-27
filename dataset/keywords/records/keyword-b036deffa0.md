@@ -1,0 +1,18 @@
+---
+record_type: "keyword_record"
+keyword: "睡眠導入"
+count: 1
+categories: []
+research_ids:
+  - "2023_B_g.otsuka"
+---
+
+# 睡眠導入
+
+- Keyword: 睡眠導入
+- Count: 1
+- Categories: N/A
+
+## Related Research
+
+- [`2023_B_g.otsuka`](../../research/records/2023_B_g.otsuka/index.md): 振動刺激における睡眠導入の補助
