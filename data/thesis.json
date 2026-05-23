@@ -1,7 +1,7 @@
 {
   "metadata": {
     "description": "論文データベース（dataset/research から build_derived.py で生成）",
-    "generated": "2026-04-21",
+    "generated": "2026-05-23",
     "source": "dataset/research/records/*/index.md",
     "total_records": 90,
     "bachelor_count": 55,
