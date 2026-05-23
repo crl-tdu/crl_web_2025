@@ -85,6 +85,8 @@ dataset/research/records/<file_id>/
 
 `keywords` は研究内のテクニカル用語で、現状ほぼ日本語。SEO 用の検索意図ワードは別フィールド `keywords_seo` を新設し、こちらは多言語サフィックス併用（`keywords_seo_ja[]` / `keywords_seo_en[]`）。
 
+> **責任分担とスコープ注記**: `keywords`（ADR-0001 で「自由語彙として維持」）は研究内容のテクニカル語彙（タグクラウド・フリーテキスト検索用）、`keywords_seo` は検索エンジン向けの検索意図フレーズ（人間が読む文章に近い）であり、用途が異なるため重複を許容する。ただし `keywords_seo` の**キーワード戦略**（どの語を選ぶか、どの派生 JSON に載せるか、`build_derived.py`/`build_web_views.py` のどちらが出力するか）は本 ADR のスコープ外とし、SEO 戦略 ADR（別途）で定義する。本 ADR では `keywords_seo` の**置き場所と多言語規約のみ**を決める（現状スクリプトは未参照＝未実装）。
+
 ## Alternatives Considered
 
 | 案 | メリット | デメリット | 採否 |
@@ -99,7 +101,7 @@ dataset/research/records/<file_id>/
 ### Positive
 - 短いフィールドはレビュー時に日英対訳が同じ画面で見られる
 - 長文の翻訳着手率を「ファイルの有無」で機械的に追跡可能
-- 既存の build_derived.py YAML パーサが Unicode 対応している（検証済み）ため、新フィールド追加の追加実装は不要
+- 既存の build_derived.py YAML パーサは Python 3 の文字列仕様により Unicode を扱うため、新フィールド追加に追加実装は不要（これは正式なテストスイートによる検証ではなく、Python 3 仕様と試験適用レコード `2025_M_g.otsuka/index.md` の派生成功による確認）
 - 英語サイト・日本語サイトの両方を同一データから派生可能
 
 ### Negative / Risk
@@ -108,11 +110,16 @@ dataset/research/records/<file_id>/
 - 規約が「短=サフィックス、長=拡張子」と 2 種類存在することによる学習コスト
 
 ### Implementation Notes
-- マイグレーション順序: (1) 新規スキーマで `2025_M_g.otsuka` 試験適用 → (2) `build_derived.py` を新スキーマ対応 → (3) 残り 89 件を機械的に `title` → `title_ja` リネーム → (4) `tagline_ja` / `meta_description_ja` 等を順次手書き
+- マイグレーション順序: (1) `2025_M_g.otsuka` 試験適用（`index.md` は `title_ja`/`title_en` 適用済み、ただし旧 `title` も併存。`summary.md` は **未移行**で旧 `title`/`title_en`/`display_tags` が残存）→ (2) `build_derived.py` を新スキーマ対応 → (3) 残り 89 件を機械的に `title` → `title_ja` リネーム → (4) `tagline_ja` / `meta_description_ja` 等を順次手書き
+- **移行中間状態の挙動**: `build_derived.py` は `title_ja` を優先し未存在なら旧 `title` にフォールバックする（`r.get("title_ja") or r.get("title", "")`、`build_web_views.py:188` 実装済み）。これによりリネーム未完了レコードでもフィールド欠損は起きない。旧 `title` はリネーム完了後にレコードから削除する（`index.md` の `title`/`title_ja` 併存は過渡的状態）。
+- **規約違反の検出（linter）**: 「短文=frontmatter サフィックス、長文=拡張子分離」の 2 規約を人間の記憶に委ねないため `make check` に linter を追加する: (a) 長文本文相当のキー（`summary`/`detail`）が frontmatter に出現したら警告、(b) `*.en.md` に対応する canonical（無印）が無ければ警告、(c) `_ja`/`_en` サフィックスのキーが対で存在するか確認（英訳の値は空文字許容だが、キーの対存在を要求）。
+- **フィールドの型・制約（コメントではなく本 Notes を SSOT とする）**: `meta_description_ja` は 120–155 字、`meta_description_en` は 150–160 characters（英語 SERP 標準）。`keywords_seo_ja[]`/`keywords_seo_en[]` は各最大 10 要素・1 要素 40 字以内。`make check` で検証する。
+- **`assets.md` のスキーマ所有権**: 画像 `alt_ja`/`alt_en` は `assets.md` の frontmatter サフィックスで持ち、その frontmatter スキーマ定義は本 ADR-0002 が所有する（ADR-0004 の派生 `card_image_alt_ja`/`card_image_alt_en` はこれを集計したもの）。
 - `make derive` 拡張で英訳カバレッジ集計を追加
 - `make scaffold` 拡張で `title_ja` / `title_en` を必須引数化（英訳は空文字許容）
 
 ## Open Questions
 
-- 日本語 canonical のファイル名を `.ja.md` で明示するか、無印のままにするか → 無印が短くて済むが、後から英語 canonical のテーマ（例: 英語論文の和訳）が出てきた場合に逆転する。当面無印で進め、必要に応じて再検討。
+- **英訳未整備時のフォールバック方針（研究成果への公正なアクセス）**: `.en.md` 不在時に英語サイトで「日本語をそのまま出す」か「英訳準備中を出す」かは、海外研究者への公正なアクセスに関わる倫理的選択である。既定を **(a) `title_en`/`tagline_en` が存在すればそれを表示、(b) 長文本文が未英訳なら「英訳準備中」+ 日本語原文への明示リンク** とし、英語ユーザに「劣化した自動翻訳」ではなく「原文への明示的導線」を提供する。UI 実装時に確定。
+- 日本語 canonical のファイル名を `.ja.md` で明示するか、無印のままにするか → 無印が短くて済むが、後から英語 canonical のコンテンツ（例: 英語論文の和訳）が出た場合に逆転する。**逆転の発生条件を「英語が原著で日本語が翻訳であるレコードが 1 件でも現れた時点」と定義し、その時点で `.ja.md`/`.en.md` 両明示の規約へ全面移行する**。それまでは無印で進める。
 - テーマ説明（`themes/records/<slug>.md`）は短文のみなので frontmatter サフィックスで完結する想定だが、将来テーマごとに長文紹介を書きたくなる可能性あり → その時に再検討
