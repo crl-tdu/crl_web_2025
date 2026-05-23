@@ -16,6 +16,22 @@ active_years:
 highest_degree: "修士論文"
 research_period: "2020-2025"
 category: null
+schema_version: "2.0-pilot"
+
+# === Multilingual short fields (ADR-0002) ===
+name_ja: "大塚 凱"
+name_en: "Gai Otsuka"
+
+# === Display consent default (ADR-0003) ===
+display_consent_default:
+  show_full_name: true
+  show_face_photo: false
+  show_thesis_body: true
+  display_name_preference: "full"
+  consent_date: "2026-05-23"
+  consent_revocation_policy: "5y"
+  contact_consent: false
+
 degree_records:
   -
     file_id: "2023_B_g.otsuka"

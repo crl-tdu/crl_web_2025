@@ -53,6 +53,10 @@ def _parse_scalar(value: str) -> Any:
         return ""
     if value == "null":
         return None
+    if value == "true":
+        return True
+    if value == "false":
+        return False
     if value == "[]":
         return []
     m = _SCALAR_RE.match(value)

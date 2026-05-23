@@ -45,16 +45,22 @@ scaffold:
 
 derive:
 	$(PY) $(SCRIPTS)/build_derived.py
+	$(PY) $(SCRIPTS)/build_web_views.py
 
 check:
 	@tmp=$$(mktemp -d); \
 	cp data/thesis.json $$tmp/; cp data/members.json $$tmp/; cp dataset/quality.md $$tmp/; \
+	cp data/cards.json $$tmp/; cp data/facets.json $$tmp/; \
 	$(PY) $(SCRIPTS)/build_derived.py >/dev/null; \
+	$(PY) $(SCRIPTS)/build_web_views.py >/dev/null; \
 	diff -q $$tmp/thesis.json data/thesis.json && \
 	diff -q $$tmp/members.json data/members.json && \
-	diff -q $$tmp/quality.md dataset/quality.md; \
+	diff -q $$tmp/quality.md dataset/quality.md && \
+	diff -q $$tmp/cards.json data/cards.json && \
+	diff -q $$tmp/facets.json data/facets.json; \
 	status=$$?; \
 	cp $$tmp/thesis.json data/; cp $$tmp/members.json data/; cp $$tmp/quality.md dataset/; \
+	cp $$tmp/cards.json data/; cp $$tmp/facets.json data/; \
 	rm -rf $$tmp; \
 	if [ $$status -ne 0 ]; then \
 	  echo "derived artifacts are stale — run 'make derive'"; exit 1; \
