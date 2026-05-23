@@ -1,9 +1,19 @@
 # Dataset Quality Report
 
-- Research records: 86
+- Generated: 2026-05-23
+- Research records: 90
 - Bachelor records: 55
-- Master records: 31
+- Master records: 35
 - Doctoral records: 0
+
+## Skeleton Records
+
+- Count: 4
+
+- [`2025_M_g.otsuka`](research/records/2025_M_g.otsuka/index.md)
+- [`2025_M_h.kitaiwa`](research/records/2025_M_h.kitaiwa/index.md)
+- [`2025_M_j.ryuu`](research/records/2025_M_j.ryuu/index.md)
+- [`2025_M_r.yanase`](research/records/2025_M_r.yanase/index.md)
 
 ## Generic Detail Records
 
@@ -43,13 +53,16 @@
 
 ## Missing Thumbnails
 
-- Count: 0
+- Count: 4
 
-- None
+- [`2025_M_g.otsuka`](research/records/2025_M_g.otsuka/index.md)
+- [`2025_M_h.kitaiwa`](research/records/2025_M_h.kitaiwa/index.md)
+- [`2025_M_j.ryuu`](research/records/2025_M_j.ryuu/index.md)
+- [`2025_M_r.yanase`](research/records/2025_M_r.yanase/index.md)
 
 ## Missing Symbolic Images
 
-- Count: 6
+- Count: 10
 
 - [`2023_M_k.ohya`](research/records/2023_M_k.ohya/index.md)
 - [`2023_M_la.nicolas`](research/records/2023_M_la.nicolas/index.md)
@@ -57,10 +70,14 @@
 - [`2023_M_onogawa`](research/records/2023_M_onogawa/index.md)
 - [`2023_M_r.tanaka`](research/records/2023_M_r.tanaka/index.md)
 - [`2023_M_y.yamada`](research/records/2023_M_y.yamada/index.md)
+- [`2025_M_g.otsuka`](research/records/2025_M_g.otsuka/index.md)
+- [`2025_M_h.kitaiwa`](research/records/2025_M_h.kitaiwa/index.md)
+- [`2025_M_j.ryuu`](research/records/2025_M_j.ryuu/index.md)
+- [`2025_M_r.yanase`](research/records/2025_M_r.yanase/index.md)
 
 ## Missing Extracted Images
 
-- Count: 7
+- Count: 11
 
 - [`2023_M_k.ohya`](research/records/2023_M_k.ohya/index.md)
 - [`2023_M_la.nicolas`](research/records/2023_M_la.nicolas/index.md)
@@ -69,6 +86,10 @@
 - [`2023_M_r.tanaka`](research/records/2023_M_r.tanaka/index.md)
 - [`2023_M_y.yamada`](research/records/2023_M_y.yamada/index.md)
 - [`2024_B_r.kato`](research/records/2024_B_r.kato/index.md)
+- [`2025_M_g.otsuka`](research/records/2025_M_g.otsuka/index.md)
+- [`2025_M_h.kitaiwa`](research/records/2025_M_h.kitaiwa/index.md)
+- [`2025_M_j.ryuu`](research/records/2025_M_j.ryuu/index.md)
+- [`2025_M_r.yanase`](research/records/2025_M_r.yanase/index.md)
 
 ## Doctoral Records
 

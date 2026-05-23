@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "description": "ファセット検索用集計 (ADR-0004)",
+    "generated_at": "2026-05-23",
+    "source": "dataset/research/records/*/index.md",
+    "schema_version": "1.0",
+    "visible_records": 90,
+    "unrecognized_themes": {}
+  },
+  "themes": [
+    {
+      "slug": "human-sensing",
+      "count": 1
+    },
+    {
+      "slug": "haptic-interaction",
+      "count": 1
+    },
+    {
+      "slug": "wellness-engineering",
+      "count": 1
+    }
+  ],
+  "keywords": [
+    {
+      "value": "人間機械系",
+      "count": 72
+    },
+    {
+      "value": "人間センシング",
+      "count": 48
+    },
+    {
+      "value": "協調理論",
+      "count": 32
+    },
+    {
+      "value": "チームワーク",
+      "count": 11
+    },
+    {
+      "value": "マルチエージェント",
+      "count": 10
+    },
+    {
+      "value": "力覚提示",
+      "count": 8
+    },
+    {
+      "value": "個性模倣",
+      "count": 6
+    },
+    {
+      "value": "熟達支援",
+      "count": 6
+    },
+    {
+      "value": "個人差",
+      "count": 6
+    },
+    {
+      "value": "力覚フィードバック",
+      "count": 5
+    },
+    {
+      "value": "運動学習",
+      "count": 5
+    },
+    {
+      "value": "ストレス",
+      "count": 4
+    },
+    {
+      "value": "機械学習",
+      "count": 4
+    },
+    {
+      "value": "評価",
+      "count": 4
+    },
+    {
+      "value": "協調フロー",
+      "count": 4
+    },
+    {
+      "value": "支援システム",
+      "count": 4
+    },
+    {
+      "value": "力覚生起",
+      "count": 4
+    },
+    {
+      "value": "指先動作",
+      "count": 4
+    },
+    {
+      "value": "自己学習",
+      "count": 4
+    },
+    {
+      "value": "生体信号",
+      "count": 3
+    },
+    {
+      "value": "学習支援",
+      "count": 3
+    },
+    {
+      "value": "バイラテラル制御",
+      "count": 3
+    },
+    {
+      "value": "VR",
+      "count": 3
+    },
+    {
+      "value": "協調作業",
+      "count": 3
+    },
+    {
+      "value": "振動刺激",
+      "count": 3
+    },
+    {
+      "value": "ストレス評価",
+      "count": 3
+    },
+    {
+      "value": "サブリミナル",
+      "count": 3
+    },
+    {
+      "value": "温度",
+      "count": 3
+    },
+    {
+      "value": "可変インピーダンス",
+      "count": 3
+    },
+    {
+      "value": "仮想環境",
+      "count": 3
+    },
+    {
+      "value": "重心動揺",
+      "count": 3
+    },
+    {
+      "value": "群ロボット",
+      "count": 3
+    },
+    {
+      "value": "探索アルゴリズム",
+      "count": 3
+    },
+    {
+      "value": "LF/HF比",
+      "count": 2
+    },
+    {
+      "value": "リアルタイム計測",
+      "count": 2
+    },
+    {
+      "value": "ハプティクス",
+      "count": 2
+    },
+    {
+      "value": "インピーダンス制御",
+      "count": 2
+    },
+    {
+      "value": "PID制御",
+      "count": 2
+    },
+    {
+      "value": "力のインタラクション",
+      "count": 2
+    },
+    {
+      "value": "ニューラルネットワーク",
+      "count": 2
+    },
+    {
+      "value": "協調ロボティクス",
+      "count": 2
+    },
+    {
+      "value": "ロボット",
+      "count": 2
+    },
+    {
+      "value": "触覚インタフェース",
+      "count": 2
+    },
+    {
+      "value": "描画動作",
+      "count": 2
+    },
+    {
+      "value": "相補教示",
+      "count": 2
+    },
+    {
+      "value": "認知負荷",
+      "count": 2
+    },
+    {
+      "value": "心拍変動",
+      "count": 2
+    },
+    {
+      "value": "協調意識",
+      "count": 2
+    },
+    {
+      "value": "定量化",
+      "count": 2
+    },
+    {
+      "value": "触覚デバイス",
+      "count": 2
+    }
+  ],
+  "years": [
+    {
+      "year": 2025,
+      "count": 4
+    },
+    {
+      "year": 2024,
+      "count": 18
+    },
+    {
+      "year": 2023,
+      "count": 17
+    },
+    {
+      "year": 2022,
+      "count": 15
+    },
+    {
+      "year": 2021,
+      "count": 11
+    },
+    {
+      "year": 2020,
+      "count": 13
+    },
+    {
+      "year": 2019,
+      "count": 12
+    }
+  ],
+  "degrees": [
+    {
+      "code": "B",
+      "count": 55
+    },
+    {
+      "code": "M",
+      "count": 35
+    }
+  ]
+}
